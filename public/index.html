@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.108.0">
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-3Z83G8WLEK', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<meta property="og:title" content="SpiffWorkflow" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://spiffworkflow.org/" />
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.3800f4a0f37a900c9dc48f9d2bd0deee9d946f197566472c5881419cf361b8b7.css" integrity="sha256-OAD0oPN6kAydxI&#43;dK9De7p2Ubxl1ZkcsWIFBnPNhuLc=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+    
+    <section class="hero is-fullheight is-default is-bold">
+  
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+      <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-start">
+          <a class="navbar-item is-hidden-mobile">
+            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+              <svg width="1000px" height="1000px">
+                <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                <path class="path2" d="M 300 500 L 700 500"></path>
+                <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+              </svg>
+              <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+            </div>
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Dropdown
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/" class="navbar-item">
+                Dropdown item
+              </a>
+              <a href="/" class="navbar-item">
+                Dropdown item
+              </a>
+              <a href="/" class="navbar-item">
+                Dropdown item
+              </a>
+            </div>
+          </div>
+          <a href="/" class="navbar-item is-secondary">
+            Log in
+          </a>
+          <a href="/" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              Sign up
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+  
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+      <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+      <div class="navbar-start">
+        <a class="navbar-item is-hidden-mobile">
+          <div id="cloned-menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="cloned-menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <a href="/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Dropdown
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/" class="navbar-item">
+              Dropdown item
+            </a>
+            <a href="/" class="navbar-item">
+              Dropdown item
+            </a>
+            <a href="/" class="navbar-item">
+              Dropdown item
+            </a>
+          </div>
+        </div>
+        <a href="/" class="navbar-item is-secondary">
+          Log in
+        </a>
+        <a href="/" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            Sign up
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+  
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-1 is-bold is-spaced">
+          Executable Diagrams
+        </h1>
+        
+        <h2 class="subtitle is-5 is-muted">
+          Connect people and software together in a way that makes sense to everyone.
+        </h2>
+        
+        <p>
+          <a class="button cta rounded primary-btn raised" href="#">
+            Get started
+          </a>
+        </p>
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="image is-4by3">
+          <img src="/images/illustrations/flow.svg" alt="Description">
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/status.svg">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/uva.svg">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/appomni.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+    
+
+    
+    
+<section class="section section-feature-grey is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Open Source Software</h2>
+      <h3 class="subtitle is-5 is-muted">It&#39;s all open.  All of it. The whole enchelada. (well it would be a taquito then, wouldn&#39;t it?).</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>SpiffWorkflow</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/mouse-globe.svg">
+            </div>
+            <div class="card-text">
+                <p>a super lightweight diagram execution library</p>
+            </div>
+            <div class="card-action">
+              <a href="/" class="button btn-align-md accent-btn raised">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>SpiffArena</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/laptop-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>A ready to run system for building, running, and managing diagrams.</p>
+            </div>
+            <div class="card-action">
+              <a href="/" class="button btn-align-md accent-btn raised">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>SpiffDiagram</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/plug-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>SpiffWorkflow Extensions for the popular BPMN.io diagram editor.</p>
+            </div>
+            <div class="card-action">
+              <a href="/" class="button btn-align-md accent-btn raised">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+    
+<section class="section is-medium" id="section2">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">It&#39;s about people, how they connect, and respecting their time.</h1>
+        <h3 class="subtitle is-5 is-muted">Connect your teams with transparency and shared understanding. Glue your software systems together to minimize the noise.  Then don&#39;t both people, until they need to be bothered.</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-7 mt-60">
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/illustrations/icons/doc-sync.svg">
+            </p>
+          </figure>
+          <div class="media-content mt-50">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Create Transparency</span>
+
+                <span class="icon-box-text">Only when people understand processes will they can contribute to their improvement.  Executable diagrams allow people to see what is happening behind the curtains.  That transparency is two fold.  It creates empathy (&ldquo;I didn&rsquo;t know you were handling so much!&rdquo;) while also creating power (&ldquo;Hey, if we reviewed this earlier, it would save everyone a lot of time&rdquo;).</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/illustrations/icons/laptop-globe.svg">
+            </p>
+          </figure>
+          <div class="media-content mt-50">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Automate The Bots</span>
+
+                <span class="icon-box-text">No one wants 20 applications telling them what to do all day.  In many cases, what is needed is a little glue &ndash; a way to pull information from one system, and use it in another.  The Services Task in our diagrams allows us to talk to services, gather information, send them to other services, and automate ourselves out of the loop.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/illustrations/icons/mobile-feed.svg">
+            </p>
+          </figure>
+          <div class="media-content mt-50">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Deliver on Schedule</span>
+
+                <span class="icon-box-text">We need more time by the fireplace for contempation, less time by the phone and it&rsquo;s distractions.  If we can reduce the noise, then we we can think in peace. Perhaps, maybe, do something of merit, of consequence.  Something worthy.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+    
+<section class="section section-feature-grey is-medium" id="section3">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="has-text-centered">
+          <img class="pushed-image" src="/images/illustrations/school.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Should we cancel school today?</h2>
+      <h3 class="subtitle is-5 is-muted">Diagrams can be intutive AND executable - removing monotony, adding transpaency and opening opertunities for improvement and adaptation.</h3>
+    </div>
+
+    <p class="has-text-centered mt-20">
+      <a class="button cta is-large rounded secondary-btn raised" href="#">
+        Get started
+      </a>
+    </p>
+  </div>
+</section>
+    
+
+    
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Join the Innovators</h2>
+      <h3 class="subtitle is-5 light-text">We are just getting started.  SpiffWorkflow is over 10 years old, but SpiffArena is just a few months old.  We need more leaders innovators like ...</h3>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>
+              Absolutely amazing work, thank you so very much for pulling off the MVP, it&#39;s exactly what I was hoping for and really appreciate working with you guys...
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/jarrad.png" alt=""/>
+              <h5>Jarrad Hope</h5>
+              <span>CoFounder - Status.im</span>
+            </div>
+          </figure>
+        </div>
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>
+              You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/ron.png" alt=""/>
+              <h5>Ron Hutchins</h5>
+              <span>VP - IT - UVA</span>
+            </div>
+          </figure>
+        </div>
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>
+              Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/brian.png" alt=""/>
+              <h5>Brian Sobe</h5>
+              <span>CTO</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+    <section class="section section-light-grey is-medium" id="section5">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">Drop us a line or two </h2>
+      <h3 class="subtitle is-5 is-muted">We'd love to hear from you</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <form>
+            <div class="columns is-multiline">
+              <div class="column is-6">
+                <input class="input is-medium" type="text" placeholder="Enter your name">
+              </div>
+              <div class="column is-6">
+                <input class="input is-medium" type="email" placeholder="Enter your email address">
+              </div>
+              <div class="column is-12">
+                <textarea class="textarea" rows="10" placeholder="Write someting..."></textarea>
+              </div>
+              <div class="form-footer has-text-centered mt-10">
+                <button class="button cta is-large primary-btn raised is-clear">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/fresh-white-alt.svg">
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Product</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/">
+                  Discover features
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Why choose our product?
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Compare features
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Our roadmap
+                </a>
+              </li>
+              <li>
+                <a href="/agb">
+                  AGB
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  User guides
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Admin guide
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Developers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/blog/first">
+                  Latest news
+                </a>
+              </li>
+              <li>
+                <a href="/blog/second">
+                  Tech articles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Follow Us</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://github.com/lucperkins/github-fresh">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://dribbble.com/#">
+                  <span class="icon"><i class="fa fa-dribbble"></i></span>
+                </a>
+                <a class="level-item" href="https://facebook.com/#">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/lucperkins">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://bitbucket.org/#">
+                  <span class="icon"><i class="fa fa-bitbucket"></i></span>
+                </a>
+              </div>
+            </nav>
+            <a href="https://bulma.io" target="_blank">
+              <img src="/images/logos/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/fresh-square.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-user"></span>
+          User
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Account
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Settings
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-envelope"></span>
+          Messages
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              Inbox
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Compose
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-image"></span>
+          Images
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              Library
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Upload
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-cog"></span>
+          Settings
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              User settings
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              App settings
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+    
+    
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/fresh-square.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-user"></span>
+          User
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Account
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Settings
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-envelope"></span>
+          Messages
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              Inbox
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Compose
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-image"></span>
+          Images
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              Library
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Upload
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-cog"></span>
+          Settings
+        </a>
+        <ul>
+          <li>
+            <a href="/">
+              User settings
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              App settings
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
