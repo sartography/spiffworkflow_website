@@ -1,0 +1,8 @@
+
+.content {
+    max-width: 860px;
+}
+
+.content p, .content li, .content ul {
+    font-size: 1.3em;
+}

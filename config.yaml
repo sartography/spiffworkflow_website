@@ -44,15 +44,20 @@ params:
     clientlogos:
     - status
     - uva
-    - appomni
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Features
-    url: /
+    url: /pages/features
   - title: Projects
-    url: /
+    sublinks:
+      - title: SpiffWorkflow
+        url: /pages/spiffworkflow
+      - title: SpiffArena
+        url: /pages/spiffarena
+      - title: SpiffEditor
+        url: /pages/spiffeditor
   - title: Get Started
-    url: /
+    url: /posts/get_started
     button: true
   sidebar:
     # Logo (from /images/logos/___.svg)
@@ -127,7 +132,7 @@ params:
       quote: You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
       job: VP - IT - UVA
       img: ron
-    - name: Brian Sobe
+    - name: Anonymous CTO
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: CTO
       img: brian
