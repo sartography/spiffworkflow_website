@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+</head>
+<body>
+{{ if ne .Site.Params.preloader false }}
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+{{ end }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+                <h1 class="title section-title">{{ .Title }}</h1>
+                <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            {{ .Content }}
+            <div class="list-container">
+                {{ range .Paginator.Pages }}
+                <div class="item-container">
+                    <section class="item">
+                        <div class="item-thumbnail">
+                            <a href="{{.Permalink}}">
+                            {{ with .Params.thumbnail }}
+                            <img src="{{ . | relURL }}" alt="Thumbnail">
+                            {{ else }}
+                            <img src="{{"images/default_thumbnail.png" | relURL}}" alt="Thumbnail">
+                            {{ end }}
+                            </a>
+                        </div>
+                        <div class="item-text">
+                            <a href="{{.Permalink}}">
+                              <p class="title">{{ .Title }}</p>
+                            </a>
+                            <div class="brief">
+                                <p>
+                                    {{ with .Params.summary }}
+                                    {{ . }}
+                                    {{ else }}
+                                    {{ .Summary }}
+                                    {{ end }}
+                                </p>
+                            </div>
+                            <div class="meta">
+                                <p>
+                                    <span>{{.Date.Format "Jan 2, 2006"}}</span>
+                                    <span>
+                        By {{ if ne .Params.author "" }}
+                        {{ .Params.author }}
+                        {{ else }}
+                        {{ .Site.Author.name }}
+                        {{ end }}
+                        </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                {{ end }}
+
+            </div>
+
+            <!-- Bare bones
+            <ul>
+                {{ range .Pages }}
+                <li>
+                    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                </li>
+                {{ end }}
+            </ul>
+            -->
+
+        </div>
+    </div>
+</section>
+
+
+{{ if .Params.include_footer }}
+{{ partial "footer.html" . }}
+{{ end }}
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+{{ if .Params.sidebar }}
+{{ partial "single/sidebar.html" . }}
+{{ end }}
+
+
+{{ partial "javascript.html" . }}
+</body>
+</html>
+
+
+

@@ -2,7 +2,9 @@
 title: "Getting Started"
 date: 2022-12-27T13:15:00-05:00
 draft: false
----
+author: Dan Funk
+thumbnail: /images/articles/get_started_thumbnail.png
+--- 
 In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram.  We'll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools.  Let's get started and you can see for yourself ...
 
 ![spiff arena image](/images/getting_started/spiff_arena.png)
@@ -13,6 +15,8 @@ In this article (and accompanying video) you will create and run your first exec
 You will need to install Docker and Docker-Compose.  Please follow [the Docker Installation instructions](https://docs.docker.com/compose/install/) if you do not have these already.  
 Docker is a way for you to run on your laptop what was designed to run on larger computers and be accessible to many people throughout an organization.  It will not alter your computer, and you can fully remove all the files with a few commands provided at the end of this article.
 
+## Video Instructions
+You can follow the directions below, or you can watch this 10-minute video and follow along. 
 {{< video "/videos/getting_started.mp4" "my-5" >}}
 
 ### Downloading and Starting SpiffArena

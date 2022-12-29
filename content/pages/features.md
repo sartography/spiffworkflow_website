@@ -47,7 +47,7 @@ With editors for Python, Markdown, and Json - you can quickly jump from drawing 
 
 
 ### Data Encapsulation
-SpiffWorkflow supports BPMN's Data Objects, Data Inputs and Data Outputs, allowing you to visually control what data is accessible to which components.  When composing diagrams within diagrams you can declare the expected variables that will be provided, and the ones that will return, keeping your workflows clean, consistent, and easy to understand.
+SpiffWorkflow supports BPMN's Data Objects, Data Inputs and Data Outputs, allowing you to visually control what data is accessible to which components.  When composing diagrams within diagrams you can declare the expected variables that will be provided, and the ones that will be returned, keeping your workflows clean, consistent, and easy to understand.
 
 ### Python Editor with builtin unit tests
 A robust python editor allows you to write small bits of code that help modify data (say user input on a form) to fit a different purpose (sending a formatted message to Slack).  To make these modifications you can use script tasks.  And to make sure they are working correctly we provided a way to test them in place to make sure they do what you expect them to do!

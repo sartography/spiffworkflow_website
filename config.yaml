@@ -37,7 +37,7 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: "/posts/articles/get_started"
     # Hero image (from static/images/___)
     image: illustrations/flow.svg
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -57,7 +57,7 @@ params:
       - title: SpiffEditor
         url: /pages/spiffeditor
   - title: Get Started
-    url: /posts/get_started
+    url: /posts/articles/get_started
     button: true
   sidebar:
     # Logo (from /images/logos/___.svg)
@@ -67,20 +67,18 @@ params:
       icon: user
       links:
       - text: SpiffWorkflow
-        url: /
+        url: /pages/spiffworkflow
       - text: SpiffArena
-        url: /
+        url: /pages/spiffarena
       - text: SpiffEditor
-        url: /
+        url: /pages/spiffeditor
     - title: Articles
       icon: envelope
       links:
-      - text: Intro Articles
-        url: /
-      - text: Business Articles
-        url: /
-      - text: Technical Articles
-        url: /
+      - text: Introduction Articles
+        url: /posts/articles
+      - text: Deep Dive Articles
+        url: /posts/deep_dives
   section1:
     title: Open Source Software
     subtitle:  It's all open.  All of it. The whole enchelada. (well it would be a taquito then, wouldn't it?).
@@ -88,12 +86,12 @@ params:
     - title: SpiffWorkflow
       icon: spiffworkflow
       text: The original lightweight diagram execution library.
-      url: /
+      url: /pages/spiffworkflow
       buttonText: Learn More
     - title: SpiffArena
       icon: spiffarena
       text: A complete platform for managing diagrams.
-      url: /
+      url: /pages/spiffarena
       buttonText: Learn More
     - title: SpiffEditor
       icon: spiffedit
@@ -119,7 +117,7 @@ params:
     subtitle: Diagrams can be intutive AND executable - removing monotony, adding transpaency and opening opertunities for improvement and adaptation.
     image: illustrations/school.svg
     buttonText: Get started
-    buttonLink: "#"
+    buttonLink: "/posts/articles/get_started"
   section4:
     title: Join the Innovators
     subtitle: We are just getting started.  Join these innovators and help us continue to refine and improve this important open source project
@@ -159,25 +157,19 @@ params:
         title: "Projects"
         links:
         - text: SpiffArena
-          link: /
+          link: /pages/spiffarena
         - text: SpiffWorkflow
-          link: /
+          link: /pages/spiffworkflow
         - text: SpiffEditor
-          link: /
-        - text: Our roadmap
-          link: /
+          link: /pages/spiffeditor
       column2:
         title: "Docs"
         links:
         - text: Get started
-          link: /
-        - text: Detailed Documentation
-          link: /
+          link: /posts/articles/get_started
       column3:
         title: "Blog"
         links:
-        - text: Intro articles
-          link: /blog/intro
         - text: Business articles
           link: /blog/business
         - text: Techincal articles

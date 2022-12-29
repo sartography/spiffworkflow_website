@@ -3,6 +3,41 @@
     max-width: 860px;
 }
 
-.content p, .content li, .content ul {
+.content p, .content ol, .content ul {
     font-size: 1.3em;
+}
+
+.content figure figcaption {
+    font-size: .875em;
+    font-style: normal;
+    color: #6c757d;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.brief {
+    color: #6c757d;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+.item-thumbnail {
+    min-width: 150px;
+    padding-right: 30px;
+}
+
+.meta {
+    font-size: .875rem;
+    color: #adb5bd;
 }
