@@ -3,6 +3,14 @@ languageCode: en-us
 title: SpiffWorkflow
 theme: fresh
 googleAnalytics: G-3Z83G8WLEK
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: true
+
 # Disables warnings
 disableKinds:
 - taxonomy
@@ -56,8 +64,14 @@ params:
         url: /pages/spiffarena
       - title: SpiffEditor
         url: /pages/spiffeditor
-  - title: Get Started
-    url: /posts/articles/get_started
+  - title: Articles
+    sublinks:
+      - title: Introductory Articles
+        url: /posts/articles
+      - title: Deep Dives
+        url: /posts/deep_dives
+  - title: Support
+    url: /pages/support
     button: true
   sidebar:
     # Logo (from /images/logos/___.svg)
@@ -75,7 +89,7 @@ params:
     - title: Articles
       icon: envelope
       links:
-      - text: Introduction Articles
+      - text: Introductory Articles
         url: /posts/articles
       - text: Deep Dive Articles
         url: /posts/deep_dives
@@ -166,7 +180,7 @@ params:
       column3:
         title: "Blog"
         links:
-        - text: Business articles
-          link: /blog/business
-        - text: Techincal articles
-          link: /blog/technical
+        - text: Introductory Articles
+          link: /posts/articles
+        - text: Deep Dives
+          link: /posts/deep_dives

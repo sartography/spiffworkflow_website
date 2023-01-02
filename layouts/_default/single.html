@@ -18,19 +18,22 @@
 
     {{ partial "single/single.html" . }}
 
-    {{ if .Params.include_footer }}
-    {{ partial "footer.html" . }}
+    {{ if not .Params.no_comments }}
+    <div>
+      {{ partial "comments.html" . }}
+    </div>
     {{ end }}
+
+    {{ partial "footer.html" . }}
 
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
 
-    {{ if .Params.sidebar }}
-    {{ partial "single/sidebar.html" . }}
-    {{ end }}
+    {{ partial "sidebar.html" . }}
 
     {{ end }}
 
     {{ partial "javascript.html" . }}
+
   </body>
 </html>

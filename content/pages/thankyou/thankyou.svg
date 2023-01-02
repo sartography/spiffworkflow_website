@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- created with bpmn-js / http://bpmn.io -->
+
+<svg
+   width="588"
+   height="104"
+   viewBox="146 74 588 104"
+   version="1.1"
+   id="svg5336"
+   sodipodi:docname="thankyou.svg"
+   inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5338"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.7612508"
+     inkscape:cx="247.8949"
+     inkscape:cy="49.071964"
+     inkscape:window-width="1916"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="72"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5336" />
+  <defs
+     id="defs5166">
+    <marker
+       id="sequenceflow-end-white-black-cf6i4dl7sohspx7f1cga2vxqw"
+       viewBox="0 0 20 20"
+       refX="11"
+       refY="10"
+       markerWidth="10"
+       markerHeight="10"
+       orient="auto">
+      <path
+         d="M 1 5 L 11 10 L 1 15 Z"
+         style="fill: black; stroke-width: 1px; stroke-linecap: round; stroke-dasharray: 10000, 1; stroke: black;"
+         id="path5157" />
+    </marker>
+    <marker
+       id="messageflow-end-white-black-cf6i4dl7sohspx7f1cga2vxqw"
+       viewBox="0 0 20 20"
+       refX="8.5"
+       refY="5"
+       markerWidth="20"
+       markerHeight="20"
+       orient="auto">
+      <path
+         d="m 1 5 l 0 -3 l 7 3 l -7 3 z"
+         style="fill: white; stroke-width: 1px; stroke-linecap: butt; stroke-dasharray: 10000, 1; stroke: black;"
+         id="path5160" />
+    </marker>
+    <marker
+       id="messageflow-start-white-black-cf6i4dl7sohspx7f1cga2vxqw"
+       viewBox="0 0 20 20"
+       refX="6"
+       refY="6"
+       markerWidth="20"
+       markerHeight="20"
+       orient="auto">
+      <circle
+         cx="6"
+         cy="6"
+         r="3.5"
+         style="fill: white; stroke-width: 1px; stroke-linecap: round; stroke-dasharray: 10000, 1; stroke: black;"
+         id="circle5163" />
+    </marker>
+  </defs>
+  <g
+     class="djs-group"
+     id="g5178">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="Flow_1czymub"
+       style="display: block;"
+       id="g5176">
+      <g
+         class="djs-visual"
+         id="g5170">
+        <path
+           d="m  188,120L240,120 "
+           style="fill: none; stroke-width: 2px; stroke: black; stroke-linejoin: round; marker-end: url('#sequenceflow-end-white-black-cf6i4dl7sohspx7f1cga2vxqw');"
+           id="path5168" />
+      </g>
+      <polyline
+         points="188,120 240,120 "
+         class="djs-hit djs-hit-stroke"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline5172" />
+      <rect
+         x="182"
+         y="114"
+         width="64"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect5174" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g5190">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="Flow_0lqo4g2"
+       style="display: block;"
+       id="g5188">
+      <g
+         class="djs-visual"
+         id="g5182">
+        <path
+           d="m  340,120L422,120 "
+           style="fill: none; stroke-width: 2px; stroke: black; stroke-linejoin: round; marker-end: url('#sequenceflow-end-white-black-cf6i4dl7sohspx7f1cga2vxqw');"
+           id="path5180" />
+      </g>
+      <polyline
+         points="340,120 422,120 "
+         class="djs-hit djs-hit-stroke"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline5184" />
+      <rect
+         x="334"
+         y="114"
+         width="94"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect5186" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g5202">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="Flow_1rs097s"
+       style="display: block;"
+       id="g5200">
+      <g
+         class="djs-visual"
+         id="g5194">
+        <path
+           d="m  640,120L692,120 "
+           style="fill: none; stroke-width: 2px; stroke: black; stroke-linejoin: round; marker-end: url('#sequenceflow-end-white-black-cf6i4dl7sohspx7f1cga2vxqw');"
+           id="path5192" />
+      </g>
+      <polyline
+         points="640,120 692,120 "
+         class="djs-hit djs-hit-stroke"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline5196" />
+      <rect
+         x="634"
+         y="114"
+         width="64"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect5198" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g5214">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="Flow_0jibktt"
+       style="display: block;"
+       id="g5212">
+      <g
+         class="djs-visual"
+         id="g5206">
+        <path
+           d="m  458,120L540,120 "
+           style="fill: none; stroke-width: 2px; stroke: black; stroke-linejoin: round; marker-end: url('#sequenceflow-end-white-black-cf6i4dl7sohspx7f1cga2vxqw');"
+           id="path5204" />
+      </g>
+      <polyline
+         points="458,120 540,120 "
+         class="djs-hit djs-hit-stroke"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline5208" />
+      <rect
+         x="452"
+         y="114"
+         width="94"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect5210" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g5226">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="StartEvent_1"
+       style="display: block;"
+       transform="matrix(1 0 0 1 152 102)"
+       id="g5224">
+      <g
+         class="djs-visual"
+         id="g5218">
+        <circle
+           cx="18"
+           cy="18"
+           r="18"
+           style="stroke: black; stroke-width: 2px; fill: white; fill-opacity: 0.95;"
+           id="circle5216" />
+      </g>
+      <rect
+         class="djs-hit djs-hit-all"
+         x="0"
+         y="0"
+         width="36"
+         height="36"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect5220" />
+      <rect
+         x="-6"
+         y="-6"
+         width="48"
+         height="48"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect5222" />
+    </g>
+  </g>
+  <rect
+     x="240"
+     y="80"
+     width="100"
+     height="80"
+     rx="10"
+     ry="10"
+     style="fill:#dcdcdc;fill-opacity:0.95;stroke:#000000;stroke-width:2px"
+     id="rect5228" />
+  <path
+     d="m 245.985,84.998 v 14 h 21 v -14 z m 0,0 10.5,6 10.5,-6"
+     style="fill:#000000;stroke:#ffffff;stroke-width:1px"
+     id="path5234" />
+  <rect
+     class="djs-hit djs-hit-all"
+     x="240"
+     y="80"
+     width="100"
+     height="80"
+     style="fill:none;stroke:#ffffff;stroke-width:15px;stroke-opacity:0"
+     id="rect5238" />
+  <rect
+     x="234"
+     y="74"
+     width="112"
+     height="92"
+     class="djs-outline"
+     style="fill:none"
+     id="rect5240" />
+  <circle
+     cx="440"
+     cy="120"
+     r="18"
+     style="fill:#ffff00;fill-opacity:0.95;stroke:#000000;stroke-width:1px"
+     id="circle5246" />
+  <circle
+     cx="440"
+     cy="120"
+     r="15"
+     style="fill:#ffff00;stroke:#000000;stroke-width:1px"
+     id="circle5248" />
+  <circle
+     cx="440"
+     cy="120"
+     r="11"
+     style="fill:#ffd700;stroke:#000000;stroke-width:2px"
+     id="circle5250" />
+  <path
+     d="m 440,120 2.25,-7.5 m -2.25,7.5 5.25,1.5"
+     style="fill:none;stroke:#000000;stroke-width:2px;stroke-linecap:square"
+     id="path5252" />
+  <path
+     d="m 440,120 m 0,7.5 v 2.25"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5254" />
+  <path
+     d="m 440,120 m -3.75,6.49519 -1.125,1.94856"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5256" />
+  <path
+     d="m 440,120 m -6.49519,3.75 -1.94856,1.125"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5258" />
+  <path
+     d="m 440,120 m -7.5,0 h -2.25"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5260" />
+  <path
+     d="m 440.00001,120 m -6.49519,-3.75 -1.94856,-1.125"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5262" />
+  <path
+     d="m 440,120 m -3.75,-6.49519 -1.125,-1.94856"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5264" />
+  <path
+     d="m 440,120 m 0,-7.5 v -2.25"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5266" />
+  <path
+     d="m 440,120 m 3.75,-6.49519 1.125,-1.94856"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5268" />
+  <path
+     d="m 439.99999,120 m 6.4952,-3.75 1.94855,-1.125"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5270" />
+  <path
+     d="m 440,120 m 7.5,0 h 2.25"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5272" />
+  <path
+     d="m 440,120 m 6.49519,3.75 1.94856,1.125"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5274" />
+  <path
+     d="m 440,120 m 3.75,6.49519 1.125,1.94856"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:square"
+     id="path5276" />
+  <rect
+     class="djs-hit djs-hit-all"
+     x="422"
+     y="102"
+     width="36"
+     height="36"
+     style="fill:none;stroke:#ffffff;stroke-width:15px;stroke-opacity:0"
+     id="rect5280" />
+  <rect
+     x="416"
+     y="96"
+     width="48"
+     height="48"
+     class="djs-outline"
+     style="fill:none"
+     id="rect5282" />
+  <text
+     lineHeight="1.2"
+     class="djs-label"
+     style="font-weight:normal;font-size:11px;font-family:Arial, sans-serif;fill:#000000"
+     id="text5292"
+     x="397"
+     y="145" />
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-weight:normal;font-size:12px;line-height:130%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;overflow:visible;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;font-style:normal;font-stretch:normal;font-variant:normal"
+     x="442.89789"
+     y="152.49229"
+     id="text9169"><tspan
+       sodipodi:role="line"
+       id="tspan9167"
+       x="442.89789"
+       y="152.49229">Wait a bit...</tspan></text>
+  <g
+     class="djs-group"
+     id="g5314">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="Event_1hc689e"
+       style="display: block;"
+       transform="matrix(1 0 0 1 692 102)"
+       id="g5312">
+      <g
+         class="djs-visual"
+         id="g5306">
+        <circle
+           cx="18"
+           cy="18"
+           r="18"
+           style="stroke: black; stroke-width: 4px; fill: white; fill-opacity: 0.95;"
+           id="circle5304" />
+      </g>
+      <rect
+         class="djs-hit djs-hit-all"
+         x="0"
+         y="0"
+         width="36"
+         height="36"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect5308" />
+      <rect
+         x="-6"
+         y="-6"
+         width="48"
+         height="48"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect5310" />
+    </g>
+  </g>
+  <rect
+     x="540"
+     y="80"
+     width="100"
+     height="80"
+     rx="10"
+     ry="10"
+     style="fill:#ffffff;fill-opacity:0.95;stroke:#000000;stroke-width:2px"
+     id="rect5316" />
+  <rect
+     class="djs-hit djs-hit-all"
+     x="540"
+     y="80"
+     width="100"
+     height="80"
+     style="fill:none;stroke:#ffffff;stroke-width:15px;stroke-opacity:0"
+     id="rect5328" />
+  <rect
+     x="534"
+     y="74"
+     width="112"
+     height="92"
+     class="djs-outline"
+     style="fill:none"
+     id="rect5330" />
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-weight:normal;font-size:12px;line-height:130%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;overflow:visible;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;font-style:normal;font-stretch:normal;font-variant:normal"
+     x="289.28549"
+     y="120.57407"
+     id="text14563"><tspan
+       sodipodi:role="line"
+       id="tspan14561"
+       x="289.28549"
+       y="120.57407">Send us a</tspan><tspan
+       sodipodi:role="line"
+       x="289.28549"
+       y="137.90735"
+       id="tspan14565">Message</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-weight:normal;font-size:12px;line-height:130%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;overflow:visible;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;font-style:normal;font-stretch:normal;font-variant:normal"
+     x="589.50183"
+     y="107.9958"
+     id="text14563-1"><tspan
+       sodipodi:role="line"
+       x="589.50183"
+       y="107.9958"
+       id="tspan14565-7">Build something</tspan><tspan
+       sodipodi:role="line"
+       x="589.50183"
+       y="125.32909"
+       id="tspan16295">beautiful</tspan><tspan
+       sodipodi:role="line"
+       x="589.50183"
+       y="142.66237"
+       id="tspan16297">together</tspan></text>
+</svg>
