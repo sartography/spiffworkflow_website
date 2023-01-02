@@ -130,10 +130,6 @@ params:
       quote: You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
       job: VP - IT - UVA
       img: ron
-    - name: Anonymous CTO
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: CTO
-      img: brian
   section5: true
   footer:
     # Logo (from /images/logos/___)

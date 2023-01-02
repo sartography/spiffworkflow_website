@@ -3,6 +3,10 @@
     max-width: 860px;
 }
 
+.content img {
+    display: block;
+    margin: auto;
+}
 .content p, .content ol, .content ul {
     font-size: 1.3em;
 }

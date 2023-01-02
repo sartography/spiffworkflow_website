@@ -7,7 +7,7 @@ thumbnail: /images/articles/get_started_thumbnail.png
 --- 
 In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram.  We'll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools.  Let's get started and you can see for yourself ...
 
-![spiff arena image](/images/getting_started/spiff_arena.png)
+![spiff arena image](spiff_arena.png)
 
 ## Install and Start SpiffArena
 
@@ -48,22 +48,22 @@ Let’s build and run a very simple workflow to get familiar with the interface,
 
 **Select “Processes” from the Main Menu**
 
-![main menu image](/images/getting_started/select_processes.png)
+![main menu image](select_processes.png)
 
 **Select “Add a process group”**
 
-![add process button](/images/getting_started/add_process.png)
+![add process button](add_process.png)
 
 **Provide the following information:**
   1. Display Name:  “Playground”  _The identifier will automatically be set to “playground”.    We will cover other fields and options at another time._
   2. Description:  “These are my test processes.”
   3. Click “Submit”
 
-![process group form](/images/getting_started/process_goup_form.png)
+![process group form](process_goup_form.png)
 
 **Select “Add a process model” (the second button)**
 
-![add_process_model](/images/getting_started/add_process_model.png)
+![add_process_model](add_process_model.png)
 
 **Provide the following information:**
  * Display Name:  “Simple Example”
@@ -78,41 +78,41 @@ Let’s draw a simple functional BPMN Diagram
 
 Every new BPMN diagram is initially populated with a Start Event, which looks like an open circle.  Click on it and it will show a blue outline and a “context menu” – find the “Task” icon in the menu (the rectangle with rounded corners) and click it to “Append Task”.
 
-![append task](/images/getting_started/append_task.png)
+![append task](append_task.png)
 
 Your diagram should now look like this:
 
-![diagram 1](/images/getting_started/diagram_1.png)
+![diagram 1](diagram_1.png)
 
-Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon ![wrench icon](/images/getting_started/wrench.png), and select ![script task](/images/getting_started/script_task.png) “Script Task” from the list of options.
+Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon ![wrench icon](wrench.png), and select ![script task](script_task.png) “Script Task” from the list of options.
 At this point your cursor will be blinking inside of the Task icon, allowing you to enter the name of the Task.  For this time we will use an alternative method, described in the next step
 Click anywhere off the Task and your diagram should now look like this:
 
-![diagram 2](/images/getting_started/diagram_2.png)
+![diagram 2](diagram_2.png)
 
 Select the Script Task (the rectangle should have a blue outline around it) and then take a look at the options in the Properties Panel on the right.  You should see something like the image below.  There are three sections.  When you click on a section it will expand.
 
-![Script Properties Panel](/images/getting_started/prop_panel_script.png)
+![Script Properties Panel](prop_panel_script.png)
 
 Click General so it is expanded, we can give the Task a name.  Let’s call it “Set  Name”.  Your diagram should now look like this:
 
-![diagram 3](/images/getting_started/diagram_3.png)
+![diagram 3](diagram_3.png)
 
 For this exercise we’ll need two Tasks, so similar to how you added the first Task after the Start Event click on the Script Task you just added, and append a second task,
 
-![diagram 4](/images/getting_started/diagram_4.png)
+![diagram 4](diagram_4.png)
 
 so the diagram looks like this:
 
-![diagram 5](/images/getting_started/diagram_5.png)
+![diagram 5](diagram_5.png)
 
 Take advantage of the blinking cursor in the middle of the newly added Task and name it “Display Message”.  Next click on the wrench icon and select “Manual Task” .  And to complete the diagram, click on the bolded circle at the top left, it should say “Append EndEvent” as shown below.
 
-![diagram 6](/images/getting_started/diagram_6.png)
+![diagram 6](diagram_6.png)
 
 Your diagram should now look like this:
 
-![diagram 7](/images/getting_started/diagram_7.png)
+![diagram 7](diagram_7.png)
 
 Now let’s add a bit of Python code to execute.  Click in the Script Task and expand the “Script” Section and click the “Launch Editor” button – which will bring up a python editor.  Paste in the following code, and click the Close Button.
 {{< highlight Python "linenos=true" >}}
@@ -131,7 +131,7 @@ Welcome to SpiffWorkflow!
 
 The right hand Property Panel should look like this (you may need to grab the bottom left of the Instruction box and drag it down to see everything you pasted in there).
 
-![Manual Properties Panel](/images/getting_started/prop_panel_manual.png)
+![Manual Properties Panel](prop_panel_manual.png)
 
 Save the diagram using the save button in the upper left.  When it asks for a name call it “hello_world”
 
@@ -141,7 +141,7 @@ Click the Start button, and you should be greeted with your “Hello World!” m
 
 Click the Continue button to return to the Home page and then the Completed tab to see your first completed process instance!
 
-![Hello World Run](/images/getting_started/final_screen.png)
+![Hello World Run](final_screen.png)
 
 
 ### Shutting it all down

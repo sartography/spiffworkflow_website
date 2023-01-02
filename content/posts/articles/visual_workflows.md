@@ -7,7 +7,7 @@ author: Dan Funk
 thumbnail: images/articles/lowcode_thumbnail.png
 ---
 
-![Silly picture of my dog](/images/articles/lowcode.png)
+![Silly picture of my dog](lowcode.png)
 
 (originally posted on [Medium](https://medium.com/@danfunk/a-visual-workflow-library-for-python-d19e1387653))
 
@@ -26,7 +26,7 @@ Visual software development environments are key for handling many of the busine
 
 The term “Workflow” can mean many things in software. Our focus is on Business Processes — such as the complex approval process necessary for launching a medical research study at a university (our core use case at the moment). There is a well established standard for visualizing business processes called BPMN (Business Process Modeling Notation) that looks a heck of a lot like a flow chart (see image below). Version 2.0 published in 2010 was designed to be executable. This is important.
 
-{{< figure src="/images/articles/lowcode_diagram.png" caption="Not to delve too deeply, but the arrows in the diagram above dictate motion from one task to the next. The boxes with people are User Tasks, and are often powered by user interfaces that allow real people to provide input. The X’s are crossroads where different paths can be taken. The script tasks (with the piece of curvy paper) are where we can inject brief bits of code to make calculations and call out to other software systems and APIs. This is a very small example of all that is possible within the enormous 538 page BPMN standard, but it is a valid example, and demonstrates that powerful diagramming tools can still be intuitive." >}}
+{{< figure src="lowcode_diagram.png" caption="Not to delve too deeply, but the arrows in the diagram above dictate motion from one task to the next. The boxes with people are User Tasks, and are often powered by user interfaces that allow real people to provide input. The X’s are crossroads where different paths can be taken. The script tasks (with the piece of curvy paper) are where we can inject brief bits of code to make calculations and call out to other software systems and APIs. This is a very small example of all that is possible within the enormous 538 page BPMN standard, but it is a valid example, and demonstrates that powerful diagramming tools can still be intuitive." >}}
 
 What’s great about BPMN is that you can potentially create software even a CEO can understand. Imagine having a board meeting where everyone around the table actually knew what they were talking about. This is the glorious promise of BPMN. A diagram that doesn’t roughly abstract the general meaning of what we think the software does. It’s a diagram that IS the software.
 
