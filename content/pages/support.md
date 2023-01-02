@@ -12,3 +12,4 @@ Reach out to learn how our SpiffWorkflow Consutling Services can help you Design
 
 {{% contact_us %}}
 
+You can also reach out directly to core contributor Dan Funk at 540-457-0024, or contact him via email at dan@sartography.com.

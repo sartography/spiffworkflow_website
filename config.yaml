@@ -149,9 +149,11 @@ params:
     # Logo (from /images/logos/___)
     logo: spiffworkflow_white.svg
     # Social Media Title
-    socialmediatitle: Follow Us
+    socialmediatitle: Connect
     # Social media links (GitHub, Twitter, etc.). All are optional./
     socialmedia:
+    - link: https://discord.gg/F6Kb7HNK7B
+      icon: comments
     - link: https://github.com/sartography
       # Icons are from Font Awesome
       icon: github
