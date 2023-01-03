@@ -10,7 +10,7 @@ SpiffArena combines many tools into a single web-based application.  If you woul
 
 ![SpiffArena](/images/spiffarena/spiffarena.png)
 
-You can create your first diagram using SpiffArena right now by following our [Getting Started](/posts/get_started) guide.  
+You can create your first diagram using SpiffArena right now by following our [Getting Started](/posts/articles/get_started) guide.
 
 If you need support, please [contact us](/pages/support) for a free consultation.  We look forward to talking to you. 
 
