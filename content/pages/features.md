@@ -3,6 +3,7 @@ title: "Features"
 subtitle: "Thse are just a handful of the major features available"
 date: 2022-12-27T16:05:00-05:00
 draft: false
+description: A list of the major features of SpiffArena and it's components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors and more...
 ---
 
 ### User Tasks -- Gather information from people

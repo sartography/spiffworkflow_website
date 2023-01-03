@@ -3,6 +3,7 @@ title: "SpiffEditor (and other open source projects)"
 subtitle: "More tools for working with SpiffWorkfow and SpiffArena"
 date: 2022-12-27T16:05:00-05:00
 draft: false
+description: A brief description of SpiffEditor - extensntions to BPMN.js that customize this popular diagram editor so it can work well with SpiffWorkflow and SpiffArena.
 ---
 
 ## SpiffEditor

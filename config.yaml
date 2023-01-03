@@ -24,7 +24,7 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
-  description:
+  description: Homepage for SpiffWorkflow and SpiffArena - open source projects which seek to improve transparency and understanding in organizations through intuitive executable diagrams.  These projects are based on the OMG's BPMN and DMN standards.
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
   navbarlogo:
@@ -131,7 +131,7 @@ params:
     subtitle: Diagrams can be intuitive AND executable - removing monotony, adding transparency and opening opportunities for improvement and adaptation.
     image: illustrations/school.svg
     buttonText: Major Features
-    buttonLink: "/posts/pages/features"
+    buttonLink: "/pages/features"
   section4:
     title: Join the Innovators
     subtitle: We are just getting started.  Join these innovators and help us continue to refine and improve this important open source project.

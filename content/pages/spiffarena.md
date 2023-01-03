@@ -4,6 +4,7 @@ subtitle: "A turnkey solution for managing workflows"
 date: 2022-12-27T16:05:00-05:00
 author: Dan Funk
 draft: false
+description: A brief description of SpiffArena - a combination of open source systems that creates a single web based application for creating, running and managing workflow diagrams.
 ---
 
 SpiffArena combines many tools into a single web-based application.  If you would like access to all of the [Features](/pages/features) (plus a lot more) this is the tool you want.  
