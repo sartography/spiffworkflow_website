@@ -1,6 +1,6 @@
 ---
 title: "SpiffEditor (and other open source projects)"
-subtitle: "Here are few more tools for working with SpiffWorkfow and SpiffArena"
+subtitle: "More tools for working with SpiffWorkfow and SpiffArena"
 date: 2022-12-27T16:05:00-05:00
 draft: false
 ---
@@ -10,13 +10,13 @@ We've built a number of extensions to the excellent open source [BPMN.js](https:
 
 * **Data Objects, Inputs and Outputs**:  Improved support for adding, referencing and updating data references, providing a standards based way to manage data within a diagram.
 * **Call Activities**: Offers tight integration with SpiffArena so you can quickly navigate to diagrams referenced within other diagrams. 
-* **Custom Properties Panel**: A new properties panel with multiple features including: custom editors for Python, Markdown and Json, the ability to add short pre- and post- scripts to any task, and a Python Unit Testing editor, among many other enhancements. 
-* **Messages**: We added support for the BPMN Messaging standard to assure you can easily create Messages and associated conversation elements (correlation properties and keys).
+* **Custom Properties Panel**: A new properties panel with multiple features including: custom editors for Python, Markdown and Json; the ability to add short pre- and post- scripts to any task; and a Python Unit Testing editor, among many other enhancements.
+* **Messages**: We added support for the BPMN Messaging standard to ensure you can easily create Messages and associated conversation elements (correlation properties and keys).
 
 ## Connector Proxy and Connectors
-Connector Proxies provide a discoverable, plug-in style architecture for adding connections to third party applications that work seamlessly with SpiffWorkflow, SpiffArena and the SpiffEditor.  We created a [Demo Connector Proxy](https://github.com/sartography/connector-proxy-demo) that you can use to get started. 
+Connector Proxies provide a discoverable, plug-in style architecture for adding connections to third party applications that work seamlessly with SpiffWorkflow, SpiffArena, and the SpiffEditor.  We created a [Demo Connector Proxy](https://github.com/sartography/connector-proxy-demo) that you can use to get started.
 
-Each Connector included in the Connector Proxy is itself a small standalone Python application. Checkout our [AWS Connector](https://github.com/sartography/connector-aws) for an example.  Adding new plugins should be easy, and we hope to see many contributions here in the future.
+Each Connector included in the Connector Proxy is itself a small standalone Python application. Check out our [AWS Connector](https://github.com/sartography/connector-aws) for an example.  Adding new plugins is relatively easy, and we welcome contributions here.
 
 ## SpiffWorkflow Backend and Frontend
 SpiffArena's two major components are a Flask API ([SpiffWorkflow Backend](https://github.com/sartography/spiffworkflow-backend)) and a React user interface ([SpiffWorkflow Frontend](https://github.com/sartography/spiffworkflow-frontend)).  
