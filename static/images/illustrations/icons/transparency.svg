@@ -6,11 +6,11 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   viewBox="0 0 300.00001 300.00002"
+   viewBox="0 0 100.00001 100.00001"
    xml:space="preserve"
    sodipodi:docname="transparency.svg"
-   width="300"
-   height="300"
+   width="100"
+   height="100"
    inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -30,12 +30,12 @@
    fit-margin-right="0"
    fit-margin-bottom="0"
    inkscape:zoom="0.87597489"
-   inkscape:cx="301.3785"
-   inkscape:cy="240.30369"
+   inkscape:cx="256.85668"
+   inkscape:cy="172.95016"
    inkscape:window-width="1916"
-   inkscape:window-height="1006"
+   inkscape:window-height="934"
    inkscape:window-x="0"
-   inkscape:window-y="72"
+   inkscape:window-y="144"
    inkscape:window-maximized="1"
    inkscape:current-layer="Layer_1" />
 
@@ -44,7 +44,7 @@
 
 <g
    id="g88124"
-   transform="translate(0,10.354477)"><path
+   transform="matrix(0.2332353,0,0,0.2332353,15.014705,17.429734)"><path
      style="fill:#126d82;fill-opacity:1;stroke-width:0.418702"
      d="m 149.00265,133.12969 -104.510918,41.9824 c -2.239217,0.89937 -2.239217,4.06894 0,4.96831 l 104.510498,41.9824 c 0.6402,0.2575 1.35534,0.2575 1.99554,0 l 104.5105,-41.9824 c 2.23922,-0.89937 2.23922,-4.06894 0,-4.96831 l -104.5105,-41.98282 c -0.6402,-0.25708 -1.35492,-0.25708 -1.99512,4.2e-4 z"
      id="path86924" /><path
@@ -56,62 +56,62 @@
      id="path86932" /></g>
 <g
    id="g86934"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86936"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86938"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86940"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86942"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86944"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86946"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86948"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86950"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86952"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86954"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86956"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86958"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86960"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 <g
    id="g86962"
-   transform="translate(0,-56.69875)">
+   transform="translate(-42.81211,-124.08835)">
 </g>
 </svg>
