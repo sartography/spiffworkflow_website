@@ -34,7 +34,7 @@
                 <div class="item-container">
                     <section class="item">
                         <div class="item-thumbnail">
-                            <a href="{{.Permalink}}">
+                            <a href="{{.RelPermalink}}">
                             {{ with .Params.thumbnail }}
                             <img src="{{ . | relURL }}" alt="Thumbnail">
                             {{ else }}
@@ -43,7 +43,7 @@
                             </a>
                         </div>
                         <div class="item-text">
-                            <a href="{{.Permalink}}">
+                            <a href="{{.RelPermalink}}">
                               <p class="title">{{ .Title }}</p>
                             </a>
                             <div class="brief">
