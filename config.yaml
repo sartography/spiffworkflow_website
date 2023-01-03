@@ -24,7 +24,7 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   images:
-    - illustrations/flow.png
+    - /images/illustrations/flow.png
   # Used as meta data; describe your site to make Google Bots happy
   description: Homepage for SpiffWorkflow and SpiffArena - open source projects which seek to improve transparency and understanding in organizations through intuitive executable diagrams.  These projects are based on the OMG's BPMN and DMN standards.
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
