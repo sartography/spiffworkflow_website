@@ -5,6 +5,7 @@ date: 2022-09-21T10:00:00-05:00
 draft: false
 author: Dan Funk
 thumbnail: /images/articles/messages_thumbnail.png
+description: A thorough explanation of BPMN's Messages -- a poorly understood, but extremely powerful tool for managing communications with a running BPMN process.
 --- 
 
 ![Intro diagram](intro.png)
