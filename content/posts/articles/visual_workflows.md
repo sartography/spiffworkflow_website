@@ -36,7 +36,4 @@ What’s great about BPMN is that you can potentially create software even a CEO
 
 BPMN diagrams don’t just run. You need an interpreter that is capable of executing the diagram, in the same way that you need to have the python interpreter to run a python program. SpiffWorkflow is an interpreter for BPMN that makes the diagram runnable as a part of your Python application.
 
-SpiffWorkflow is open source, and released under the GNU Lesser General Public License.
-
-Two years ago we were searching for an open source workflow library in Python that could handle BPMN. We found SpiffWorkflow, a project founded by Samuel Abels (@knipknap) in 2010. Over the last two years we’ve made thousands of contributions to the code base as we started using it to manage dozens of complex real-world workflows. Earlier this year we released a new version of SpiffWorkflow with all of our contributions, and released a set of new bug fixes just this past week. It is not perfect, but it is definitely battle hardened, and ready for others to pick up, try out, and potentially contribute to.
-
+Please check out our Features to get a better sense of what is possible with these diagrams, then head over to the Get Started Guide, which can show you how to download and test out SpiffArena (a new web application built around SpiffWorkflow) and build your first executable diagrams.

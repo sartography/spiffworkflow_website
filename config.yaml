@@ -110,7 +110,7 @@ params:
     - title: SpiffEditor
       icon: spiffedit
       text: Extensions for the popular BPMN.io diagram editor.
-      url: /
+      url: /pages/spiffeditor
       buttonText: Learn More
   section2:
     title: It's about people
@@ -130,7 +130,7 @@ params:
     title: Intuitive Diagrams
     subtitle: Diagrams can be intuitive AND executable - removing monotony, adding transparency and opening opportunities for improvement and adaptation.
     image: illustrations/school.svg
-    buttonText: Major Features
+    buttonText: Features
     buttonLink: "/pages/features"
   section4:
     title: Join the Innovators

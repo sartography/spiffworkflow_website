@@ -14,8 +14,8 @@ Service Tasks allow you to configure connections to third party applications.  Y
 
 ![Services Video](../../images/features/services.gif) 
 
-### Lanes -- Who is in charge right now?
-Lanes clearly and accurately describe the handoff of authority between groups of people, making it crystal clear who is responsible for each task.  
+### Pools and Lanes -- Who is in charge right now?
+Pools and Lanes clearly and accurately describe the handoff of authority between groups of people, making it crystal clear who is responsible for each task.  
 
 This is great for approval processes. For example ...
 
@@ -33,7 +33,7 @@ Computers watch clocks.  On the average, one could say it is pretty much all the
 ![Timer Video](../../images/features/timer.gif)
 
 ### Messages - Listening to the World
-Service Tasks are how SpiffWorkflow speaks to the world; messages are how SpiffWorkflow listens.  Message Events allow you to start new processes, cancel existing processes, or pause and wait for some external communication.
+Service Tasks are how SpiffWorkflow speaks to the world; messages are how SpiffWorkflow listens.  Message Events allow you to start new processes, cancel existing processes, or pause and wait for some external communication. Learn more in [our article on Messages](/posts/deep_dives/messages).
 
 > "We told our finance software to fire off an API call to SpiffWorkflow whenever a payment is processed. Then SpiffWorkflow does all the legwork of communicating to people via their preferred system -- email, phone, Slack, text -- and it creates the paper trail so there is a record of what went down ..."
 
@@ -61,10 +61,10 @@ With editors for Python, Markdown, and JSON, you can quickly jump from drawing t
 
 
 ### Data Encapsulation
-SpiffWorkflow supports BPMN's Data Objects, Data Inputs and Data Outputs, allowing you to visually control what data is accessible.  When composing diagrams within diagrams, you can declare the expected variables that will be provided and the ones that will be returned, keeping your workflows clean, consistent, and easy to understand.
+SpiffWorkflow supports BPMN's Data Objects, Data Inputs and Data Outputs, allowing you to visually control what data is accessible.  When composing diagrams within diagrams, you can declare the expected variables that will be provided and the ones that will be returned, keeping your workflows clean, consistent, and easy to understand.  Learn more in [our article on Data Objects](/posts/deep_dives/data_objects)
 
 ### Python Editor and Unit Tests
-A robust Python editor allows you to write small bits of code that help modify data (say, user input on a form) to fit a certain purpose (sending a formatted message to Slack).  To make these modifications you can use Script Tasks. And we provide a way to test them to make sure they do what you expect them to do!
+The robust Python editor allows you to write small bits of code that help modify data (say, user input on a form) to fit a certain purpose (sending a formatted message to Slack).  To make these modifications you can use Script Tasks. And we provide a way to test them to make sure they do what you expect them to do!
 
 ![python editor](../../images/features/scripts.gif)
 

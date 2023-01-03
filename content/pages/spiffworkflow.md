@@ -1,6 +1,6 @@
 ---
 title: "SpiffWorkflow"
-subtitle: "A Python library for embedding diagrams into your projects"
+subtitle: "A Python library for adding executable diagrams into your projects"
 date: 2022-12-27T16:05:00-05:00
 draft: false
 description: A brief introduction to SpiffWorkflow a BPMN/DMN execution library written in python.
