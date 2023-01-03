@@ -95,7 +95,7 @@ params:
         url: /posts/deep_dives
   section1:
     title: Open Source Software
-    subtitle:  It's all open.  All of it. The whole enchelada. (well it would be a taquito then, wouldn't it?).
+    subtitle:  It's all open.  All of it. The whole enchilada. (Well it would be a taquito then, wouldn't it?)
     tiles:
     - title: SpiffWorkflow
       icon: spiffworkflow
@@ -114,27 +114,27 @@ params:
       buttonText: Learn More
   section2:
     title: It's about people
-    subtitle: We are betting the future is not about monitizing people using automated systems.  We believe in a future filled with human innovation that is supported by software that increases transparency, understanding and collaboration.
+    subtitle: We bet the future is not about monitizing people using automated systems.  We believe in a future filled with human innovation that is supported by software that increases transparency, understanding and collaboration.
     features:
     - title: Create Transparency
-      text: Only when people understand processes will they can contribute to their improvement.  Executable diagrams allow people to see what is happening behind the curtains.  The benefit of transparency is two fold.  It creates empathy ("I didn't know you were handling so much!") while also creating power ("Hey, if we reviewed this earlier, it would save everyone a lot of time").
+      text: Only when people understand processes will they contribute to their improvement.  Executable diagrams allow people to see what is happening behind the curtains.  The benefit of transparency is two fold&colon;  It creates empathy ("I didn't know you were handling so much!") while also creating power ("Hey, if we reviewed this earlier it would save everyone a lot of time").
       icon: transparency
     - title: Automate The Bots
-      text: No one wants 20 applications telling them what to do all day.  In many cases, what is needed is a little glue -- a way to pull information from one system, and use it in another.  The Services Task in our diagrams allows us to talk to services, gather information, send them to other services, and automate ourselves out of the loop.
+      text: No one wants 20 applications telling them what to do all day.  In many cases, what we need is a little glue -- a way to pull information from one system, and use it in another.  The Services Task in our diagrams allows us to talk to services, gather information, send that information to other services, and automate ourselves out of the loop.
       # Icon (from /images/illustrations/icons/___.svg)
       icon: bots
     - title: Deliver on Schedule
-      text: Computers make great clock watchers. So let them do it.  We need more time by the fireplace for contempation, less time respoding to our endlessly beeping phones and their often pointless interuptions.    If we can reduce the noise, then we we can think in peace. Perhaps, maybe, do something of merit, of consequence.  Something worthy of our pretious time.
+      text: Computers make great clock watchers, so let them do it.  We need more time by the fireplace for contemplation, less time responding to our endlessly beeping phones and their often pointless interruptions.    If we can reduce the noise and think in peace, then perhaps we can do something of merit, of consequence, something worthy of our precious time.
       icon: clock
   section3:
     title: Should we cancel school today?
-    subtitle: Diagrams can be intutive AND executable - removing monotony, adding transpaency and opening opertunities for improvement and adaptation.
+    subtitle: Diagrams can be intuitive AND executable - removing monotony, adding transparency and opening opportunities for improvement and adaptation.
     image: illustrations/school.svg
     buttonText: Get started
     buttonLink: "/posts/articles/get_started"
   section4:
     title: Join the Innovators
-    subtitle: We are just getting started.  Join these innovators and help us continue to refine and improve this important open source project
+    subtitle: We are just getting started.  Join these innovators and help us continue to refine and improve this important open source project.
     clients:
     - name: Jarrad Hope
       quote: Absolutely amazing work, thank you so very much for pulling off the MVP, it's exactly what I was hoping for and really appreciate working with you guys...

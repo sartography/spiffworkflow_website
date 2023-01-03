@@ -11,7 +11,9 @@ thumbnail: /images/articles/data_object_thumbnail.png
 
 
 ### A Simple Default
-One of the benefits of both BPMN and Python is they have low-sloped learning curves. Things are simple by default. As we introduce new concepts into SpiffWorkflow we want the default behavior to be equally intuitive.
+One of the benefits of both BPMN and Python is they have long low-sloped learning curves. Things are simple by default, 
+but have the ability to grow to meet far more complex situations. As we introduce new concepts into SpiffWorkflow we 
+want the default behavior to be equally intuitive and powerful.
 
 In SpiffWorkflow, data follows the process flow. Each task receives all data from the previously executed task.
 
@@ -75,6 +77,10 @@ Only two tasks need access to the Credit Card information, and it isn’t someth
 ![Rule 5](rule5.png)
 
 The example above is a good candidate for a Call Activity. In this example, we use Data Objects to share information with the Call Activity, which defines its required parameters with a Data Input, shown below. The Data Input is used here to indicate that an Invoice is required by this Process, and SpiffWorkflow will throw an exception if data by this name is not available. The process below further promises to provide a “receipt” as output.
+
+Here is a quick video showing Data Inputs and DataOutputs in action:
+{{< video "/videos/data_inputs.mp4" "my-5" >}}
+
 
 ![A Receipt](receipt.png)
 
