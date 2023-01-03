@@ -34,6 +34,9 @@ Please note that it may take a few minutes to download and install the docker im
 
 **Macs**:  Please note that you may need to use curl rather than wget
 
+{{< highlight Bash "linenos=false" >}}
+curl -o docker-compose.yml https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml
+{{< / highlight >}}
 
 ### Open SpiffArena in a browser
 After a few minutes, all processes should be up and running, and you can view the system through your web browser.
