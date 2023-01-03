@@ -17,7 +17,7 @@ Docker is a way for you to run on your laptop what was designed to run on larger
 
 ## Video Instructions
 You can follow the directions below, or you can watch this 10-minute video and follow along. 
-{{< video "/videos/getting_started.mp4" "my-5" >}}
+{{< youtube id="Fjdqb2tdxHg" autoplay="0" rel="0"  >}}
 
 ### Downloading and Starting SpiffArena
 From Mac0S, Linux Command Line, or Windows Powershell, run the following commands:
