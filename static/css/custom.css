@@ -7,6 +7,12 @@
     display: block;
     margin: auto;
 }
+
+.content img.inline {
+    display: inline;
+    margin: 0;
+}
+
 .content p, .content ol, .content ul {
     font-size: 1.3em;
 }

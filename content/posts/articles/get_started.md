@@ -66,11 +66,12 @@ Let’s build and run a very simple workflow to get familiar with the interface,
 ![add_process_model](add_process_model.png)
 
 **Provide the following information:**
- * Display Name:  “Simple Example”
- * The identifier will automatically be set to “simple-example”.  We will cover other fields and options at another time.
- * Description:  “My first SpiffWorkflow Process Model”
-Click “Submit”
-Click “New BPMN File”
+
+1. Display Name:  “Simple Example” 
+2. The identifier will automatically be set to “simple-example”.  We will cover other fields and options at another time. 
+3. Description:  “My first SpiffWorkflow Process Model” 
+4. Click “Submit” 
+5. Click “New BPMN File”
 
 **Welcome to the Diagram Editor!** 
 
@@ -84,7 +85,8 @@ Your diagram should now look like this:
 
 ![diagram 1](diagram_1.png)
 
-Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon ![wrench icon](wrench.png), and select ![script task](script_task.png) “Script Task” from the list of options.
+Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon {{< inline_image src="wrench.png" alt="wrench icon" >}}, and select {{< inline_image src="script_task.png" alt="Script Task icon" >}}“Script Task” from the list of options.
+
 At this point your cursor will be blinking inside of the Task icon, allowing you to enter the name of the Task.  For this time we will use an alternative method, described in the next step
 Click anywhere off the Task and your diagram should now look like this:
 
