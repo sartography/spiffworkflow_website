@@ -4,7 +4,8 @@ subtitle: "Or, “A diagram of Love”"
 date: 2022-09-13T10:00:00-05:00
 draft: false
 author: Dan Funk
-thumbnail: /images/articles/data_object_thumbnail.png
+images: 
+ - /images/articles/data_object_thumbnail.png
 description: A thorough explanation of BPMN's Data Objects and how they can be used within SpiffWorkflow. 
 --- 
 

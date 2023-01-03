@@ -35,8 +35,8 @@
                     <section class="item">
                         <div class="item-thumbnail">
                             <a href="{{.RelPermalink}}">
-                            {{ with .Params.thumbnail }}
-                            <img src="{{ . | relURL }}" alt="Thumbnail">
+                            {{ with .Params.images }}
+                            <img src="{{ index . 0 }}" alt="Thumbnail">
                             {{ else }}
                             <img src="{{"images/default_thumbnail.png" | relURL}}" alt="Thumbnail">
                             {{ end }}

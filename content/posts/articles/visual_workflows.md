@@ -4,7 +4,8 @@ subtitle: "The future of business software is drawn in the code"
 date: 2021-12-01T13:15:00-05:00
 draft: false
 author: Dan Funk
-thumbnail: images/articles/lowcode_thumbnail.png
+images:
+ - /images/articles/lowcode_thumbnail.png
 description: A business level introduction to SpiffWorkflow and why we adopted this open source platform and are building a suite of tools around it.
 ---
 

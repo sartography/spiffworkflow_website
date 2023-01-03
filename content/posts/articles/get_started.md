@@ -3,7 +3,8 @@ title: "Getting Started"
 date: 2022-12-27T13:15:00-05:00
 draft: false
 author: Dan Funk
-thumbnail: /images/articles/get_started_thumbnail.png
+images: 
+ - /images/articles/get_started_thumbnail.png
 description: Detailed directions on how to install SpiffArena and create and run your first executable SpiffWorkflow diagram.
 --- 
 In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram.  We'll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools.  Let's get started and you can see for yourself ...

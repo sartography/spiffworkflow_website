@@ -4,7 +4,8 @@ subtitle: "How to create a multi-person approval process"
 date: 2023-01-02T14:09:00-05:00
 draft: false
 author: Alex Herron & Dan Funk
-thumbnail: /images/articles/parallel_approval_thumbnail.png
+images: 
+ - /images/articles/parallel_approval_thumbnail.png
 description: Detailed instructions for building a parallel approval process in BPMN for SpiffWorkflow.
 ---
 
