@@ -6,7 +6,7 @@ draft: false
 ---
 
 ### User Tasks -- Gather information from people
-Using the excellent and feature complete open source schema from React [Json Form Schema](https://react-jsonschema-form.readthedocs.io/en/latest/) you can create highly complex web forms to gather information from end users - injecting this information into your workflow process.  
+You can create highly complex web forms to gather information from end users - injecting this information into your workflow process.  We are using the excellent and feature complete open source [React Json Form Schema](https://react-jsonschema-form.readthedocs.io/en/latest/) with features such as nested sections, validation, and custom components.  A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.
 
 ### Service Tasks -- Send and retrieve information from other software 
 Service Tasks allow you to configure connections to third party applications.  You can pull live data from an AWS DynamoDB Server, or push a message out to a Slack channel.  Following a basic pattern, you can add new connectors to your own software services by writing a small bit of Python code.  Many connectors are in the works (AWS services, Postgres) and new ones are easy to create.
