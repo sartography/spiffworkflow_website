@@ -12,7 +12,7 @@ In this article (and accompanying video) you will create and run your first exec
 
 ## Install and Start SpiffArena
 
-### Pre-Reqs:
+### Prerequisites:
 You will need to install Docker and Docker-Compose.  Please follow [the Docker Installation instructions](https://docs.docker.com/compose/install/) if you do not have these already.  
 Docker is a way for you to run on your laptop what was designed to run on larger computers and be accessible to many people throughout an organization.  It will not alter your computer, and you can fully remove all the files with a few commands provided at the end of this article.
 
