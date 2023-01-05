@@ -1,7 +1,19 @@
-{{ template "_internal/google_analytics.html" . }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z83G8WLEK"></script>
+<script>
+  var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+  var doNotTrack = (dnt == "1" || dnt == "yes");
+  if (!doNotTrack) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3Z83G8WLEK', { 'anonymize_ip': true });
+  }
+</script>
+
 {{ if eq .Site.Params.openGraph true }}
 {{ template "_internal/opengraph.html" . }}
 {{ end }}
+<!-- Is this here -->
 <meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Hardcoded description; the author should update :){{ end }}" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
