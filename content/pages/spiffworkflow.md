@@ -6,7 +6,7 @@ draft: false
 description: A brief introduction to SpiffWorkflow a BPMN/DMN execution library written in python.
 ---
 
-SpiffWorkflow is an open source Python library with source code available on [GitHub](https://github.com/sartography/SpiffWorkflow]) and detailed documentation available on [ReadTheDocs](https://spiffworkflow.readthedocs.io/en/latest/).  It is the core library within SpiffArena.  Its target audience is Python developers who want to create custom workflow systems or embed BPMN features into existing applications.
+SpiffWorkflow is an open source Python library with source code available on [GitHub](https://github.com/sartography/SpiffWorkflow) and detailed documentation available on [ReadTheDocs](https://spiffworkflow.readthedocs.io/en/latest/).  It is the core library within SpiffArena.  Its target audience is Python developers who want to create custom workflow systems or embed BPMN features into existing applications.
 
 ## Build status
 [![Build Status](https://travis-ci.com/sartography/SpiffWorkflow.svg?branch=master)](https://travis-ci.org/sartography/SpiffWorkflow)
