@@ -25,7 +25,7 @@ You can follow the directions below, or you can watch this 10-minute video and f
 From Mac0S, Linux Command Line, or Windows Powershell, run the following commands:
 {{< highlight Bash "linenos=false" >}}
 mkdir spiffworkflow
-cd spiffworklow
+cd spiffworkflow
 wget https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml -outfile docker-compose.yml
 docker-compose pull
 docker-compose up -d
