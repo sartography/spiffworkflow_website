@@ -26,7 +26,7 @@ From Mac0S, Linux Command Line, or Windows Powershell, run the following command
 {{< highlight Bash "linenos=false" >}}
 mkdir spiffworkflow
 cd spiffworkflow
-wget https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml -outfile docker-compose.yml
+wget https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml
 docker-compose pull
 docker-compose up -d
 {{< / highlight >}}
