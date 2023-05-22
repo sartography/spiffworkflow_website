@@ -47,7 +47,7 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: "/posts/articles/get_started"
+    buttonlink: "/posts/articles/get_started/"
     # Hero image (from static/images/___)
     image: illustrations/flow.svg
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -57,23 +57,23 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Features
-    url: /pages/features
+    url: /pages/features/
   - title: Projects
     sublinks:
       - title: SpiffWorkflow
-        url: /pages/spiffworkflow
+        url: /pages/spiffworkflow/
       - title: SpiffArena
-        url: /pages/spiffarena
+        url: /pages/spiffarena/
       - title: SpiffEditor
-        url: /pages/spiffeditor
+        url: /pages/spiffeditor/
   - title: Articles
     sublinks:
       - title: Introductory Articles
-        url: /posts/articles
+        url: /posts/articles/
       - title: Deep Dives
-        url: /posts/deep_dives
+        url: /posts/deep_dives/
   - title: Support
-    url: /pages/support
+    url: /pages/support/
     button: true
   sidebar:
     # Logo (from /images/logos/___.svg)
@@ -83,18 +83,18 @@ params:
       icon: user
       links:
       - text: SpiffWorkflow
-        url: /pages/spiffworkflow
+        url: /pages/spiffworkflow/
       - text: SpiffArena
-        url: /pages/spiffarena
+        url: /pages/spiffarena/
       - text: SpiffEditor
-        url: /pages/spiffeditor
+        url: /pages/spiffeditor/
     - title: Articles
       icon: envelope
       links:
       - text: Introductory Articles
-        url: /posts/articles
+        url: /posts/articles/
       - text: Deep Dive Articles
-        url: /posts/deep_dives
+        url: /posts/deep_dives/
   section1:
     title: Open Source Software
     subtitle:  It's all open.  All of it. The whole enchilada. (Well it would be a tostada then, wouldn't it?)
@@ -102,17 +102,17 @@ params:
     - title: SpiffWorkflow
       icon: spiffworkflow
       text: The original lightweight diagram execution library.
-      url: /pages/spiffworkflow
+      url: /pages/spiffworkflow/
       buttonText: Learn More
     - title: SpiffArena
       icon: spiffarena
       text: A complete platform for managing diagrams.
-      url: /pages/spiffarena
+      url: /pages/spiffarena/
       buttonText: Learn More
     - title: SpiffEditor
       icon: spiffedit
       text: Extensions for the popular BPMN.io diagram editor.
-      url: /pages/spiffeditor
+      url: /pages/spiffeditor/
       buttonText: Learn More
   section2:
     title: It's about people
@@ -133,7 +133,7 @@ params:
     subtitle: Diagrams can be intuitive AND executable - removing monotony, adding transparency and opening opportunities for improvement and adaptation.
     image: illustrations/school.svg
     buttonText: Features
-    buttonLink: "/pages/features"
+    buttonLink: "/pages/features/"
   section4:
     title: Join the Innovators
     subtitle: We are just getting started.  Join these innovators and help us continue to refine and improve this important open source project.
@@ -171,20 +171,20 @@ params:
         title: "Projects"
         links:
         - text: SpiffArena
-          link: /pages/spiffarena
+          link: /pages/spiffarena/
         - text: SpiffWorkflow
-          link: /pages/spiffworkflow
+          link: /pages/spiffworkflow/
         - text: SpiffEditor
-          link: /pages/spiffeditor
+          link: /pages/spiffeditor/
       column2:
         title: "Docs"
         links:
         - text: Get started
-          link: /posts/articles/get_started
+          link: /posts/articles/get_started/
       column3:
         title: "Blog"
         links:
         - text: Introductory Articles
-          link: /posts/articles
+          link: /posts/articles/
         - text: Deep Dives
-          link: /posts/deep_dives
+          link: /posts/deep_dives/
