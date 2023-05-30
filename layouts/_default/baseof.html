@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "meta.html" . }}
-    <title>{{ block "title" . }}{{ .Params.Title }}, {{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
   </head>
@@ -15,26 +15,16 @@
     {{ end }}
 
     {{ block "main" . }}
-
-    {{ partial "single/single.html" . }}
-
-    {{ if not .Params.no_comments }}
-    <div>
-      {{ partial "comments.html" . }}
-    </div>
     {{ end }}
-
-    {{ partial "footer.html" . }}
 
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
 
+    {{ if .Site.Params.sidebar }}
     {{ partial "sidebar.html" . }}
-
     {{ end }}
 
     {{ partial "javascript.html" . }}
     {{- template "partials/cookie-consent.html" . }}
-
   </body>
 </html>

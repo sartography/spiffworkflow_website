@@ -179,11 +179,15 @@ params:
       column2:
         title: "Docs"
         links:
-        - text: Get started
-          link: /posts/articles/get_started/
+        - text: Privacy Policy
+          link: /pages/privacy_policy/
+        - text: Terms of Service
+          link: /pages/demo_terms_of_service/
       column3:
         title: "Blog"
         links:
+        - text: Get started
+          link: /posts/articles/get_started/
         - text: Introductory Articles
           link: /posts/articles/
         - text: Deep Dives
