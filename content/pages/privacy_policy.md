@@ -1,4 +1,10 @@
-# Privacy Policy
+---
+title: "Privacy Policy"
+subtitle: "How we use your personal information"
+date: 2023-05-26T17:15:00-05:00
+draft: false
+description: In this Privacy Policy we describe how we collect, use, and disclose information that we obtain about visitors to our websites
+---
 
 EFFECTIVE DATE: 2023-05-26
 

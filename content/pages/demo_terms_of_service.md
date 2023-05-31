@@ -1,4 +1,10 @@
-# Terms of Service Agreement for SpiffDemo.org
+---
+title: "Terms of Service Agreement"
+subtitle: "for SpiffDemo.org, our demonstration website"
+date: 2023-05-27T12:49:00-05:00
+draft: false
+description: By accessing and using SpiffDemo.org, you (the "User") agree to be bound by these Terms of Service, which constitute a legally binding agreement between you and Sartography.
+---
 
 ## 1. Introduction
 
