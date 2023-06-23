@@ -16,7 +16,7 @@ Define the logo of the navigation bar in the upper left corner.
 
 ```yaml
 navbarlogo:
- image: logos/fresh.svg # Logo (from static/images/logos/)
+ image: logos/fresh.svg # Logo (from static/get_started/logos/)
  link: /
 ```
 
@@ -49,7 +49,7 @@ hero:
   buttontext: Get started
   buttonlink: "#"
   image: illustrations/worker.svg
-  # Footer logos (from static/images/logos/clients/*.svg)
+  # Footer logos (from static/get_started/logos/clients/*.svg)
   clientlogos:
   - systek
   - tribe
@@ -98,7 +98,7 @@ The sidebar is an optional parameter where you can place even more navigation it
 
 ```yaml
 sidebar:
-  # Logo (from /images/logos/___.svg)
+  # Logo (from /get_started/logos/___.svg)
   logo: fresh-square
   sections:
   - title: User
@@ -178,7 +178,7 @@ section2:
   features:
   - title: Powerful and unified interface
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-    # Icon (from /images/illustrations/icons/___.svg)
+    # Icon (from /get_started/illustrations/icons/___.svg)
     icon: laptop-globe
   - title: Cross-device synchronisation
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
@@ -221,7 +221,7 @@ section4:
   - name: Irma Walters
     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
     job: Accountant
-    img: 1 # From (static/images/illustrations/faces)
+    img: 1 # From (static/get_started/illustrations/faces)
   - name: John Bradley
     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
     job: Financial Analyst

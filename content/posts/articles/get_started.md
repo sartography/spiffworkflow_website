@@ -1,171 +1,106 @@
 ---
-title: "Getting Started"
-date: 2022-12-27T13:15:00-05:00
+title: "Getting Started with SpiffDemo.org"
+date: 2023-06-23T13:15:00-05:00
 draft: false
 author: Dan Funk
-images: 
- - /images/articles/get_started_thumbnail.png
-description: Detailed directions on how to install SpiffArena and create and run your first executable SpiffWorkflow diagram.
---- 
-In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram.  We'll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools.  Let's get started and you can see for yourself ...
+images:
+  - /images/articles/get_started_demo_thumbnail.png
+description: How to use our demonstration site to view and execute diagrams and get a basic understanding of SpiffWorkflow's features.
+---
+
+This guild will get you started instantly thanks to our newly released demo site. Log in and immediately start executing diagrams and learn a powerful new way to do collaborate with collegues and solve problems with your teammates.
+
+{{< admonition title="Running SpiffArena Locally" type="note">}}
+Note: The original getting started guide, which provided details on how to install and use SpiffArena is still available [here](../get_started_docker/).` 
+{{< /admonition >}}
 
 ## Video Instructions
-You can follow the directions below, or you can watch this 10-minute video and follow along. 
-{{< youtube id="Fjdqb2tdxHg" autoplay="0" rel="0"  >}}
 
-## Install and Start SpiffArena
+You can follow the directions below, or you can watch this 6-minute video where we take you step by step 
+through how to use the site.
 
-### Prerequisites:
-You will need to install Docker and Docker-Compose.  Please follow [the Docker Installation instructions](https://docs.docker.com/compose/install/) if you do not have these already.  
-Docker is a way for you to run on your laptop what was designed to run on larger computers and be accessible to many people throughout an organization.  It will not alter your computer, and you can fully remove all the files with a few commands provided at the end of this article.
+{{< youtube id="fhEPyA3d4mE" autoplay="0" rel="0"  >}}
+
+### **Visit Spiffdemo & Login**
+
+To begin your journey, open your web browser and navigate to the [official demo website](http://spiffdemo.org). On the login screen, you will find the option and select "Sign in With Google".  If you do not have a Google account, please [contact us](mailto:dan@sartography.com) and let us know what other sign-on options you would like to use.  We can also create an account for you if needed.
+
+![login](image3.png)
+
+### **Explore the Home Section**
+
+Upon successful login, you will be greeted by our home screen. The home page will be empty at this stage since no processes are assigned to you. Take a moment to familiarize yourself with the layout and available features.
+
+![home page](image5.png)
+
+### **Move to the Process Section**
+
+Go to the "Process" section from the top menu. Within the "Process" section, you will find two main sections: "Example" and "Playground".
+
+![Process Selection](image7.png)
+
+### **Explore Example Processes**
+
+Click on the "Example" option to explore pre-built workflow examples that showcase various functionalities and use cases. In the "Example" section, you will find a list of top-level process models and groups. These examples represent complete workflows with predefined steps and tasks.
+
+Select one of the top-level examples, such as "Minimal Example" or "Essential Example", to view the corresponding process model and diagram.
+
+![Minimal Example](image4.png "image_tooltip")
 
 
-### Downloading and Starting SpiffArena
-From Mac0S, Linux Command Line, or Windows Powershell, run the following commands:
-{{< highlight Bash "linenos=false" >}}
-mkdir spiffworkflow
-cd spiffworkflow
-wget https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml
-docker-compose pull
-docker-compose up -d
-{{< / highlight >}}
+Upon clicking on the process, a new window will open with details and a list of associated files.
+
+![alt_text](image8.png "image_tooltip")
+
+### **Explore BPMN Editor**
+
+If you wish to view and make changes to the process diagram. Open a .bpmn file and you will have a visual diagram representing the workflow. Take a closer look at the diagram and familiarize yourself with the elements, such as start events, tasks, and end events.
 
 
-Please note that it may take a few minutes to download and install the docker images.  Nothing permanent is happening here.  You can delete these images at any time using the Docker Desktop application.   It’s also worth noting that subsequent starts are much faster.
+![BPMN Editor](image9.png)
 
-**Macs**:  Please note that you may need to use curl rather than wget
+You can access detailed information and properties in the right sidebar by clicking on individual tasks. Make modifications to the diagram by adding or modifying tasks, connecting elements, or updating properties.
 
-{{< highlight Bash "linenos=false" >}}
-curl -o docker-compose.yml https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml
-{{< / highlight >}}
+![Launch Markdown Editor](image1.png)
 
-### Open SpiffArena in a browser
-After a few minutes, all processes should be up and running, and you can view the system through your web browser.
 
-  1. Visit http://localhost:8001 in your browser.  
-  2. Log in as admin/admin
+To modify the instructions displayed for manual tasks, navigate to the "Instructions" field. For example, if you wish to update the information in the manual task named "Show Example Manual Task" below, click "Launch Editor." This action will open the editor, allowing you to change the displayed content.
 
-Congratulations!  You have SpiffWorkflow up and running locally! Now what!?    Let’s start with a simple example.
+![Markdown Editor](image2.png)
 
-## Building and running your first Workflow Process
-Let’s build and run a very simple workflow to get familiar with the interface, and then we will follow up with larger and more complex examples. 
+**Note:** In order to save any changes, you must have an editor role. To acquire this role, you must request access to a playground. Once you have the editor role, you can save your modifications successfully.
 
-**Select “Processes” from the Main Menu**
 
-![main menu image](select_processes.png)
+### **Requesting a Playground**
 
-**Select “Add a process group”**
+To access the editor role and create your own diagrams, start by requesting a playground.
 
-![add process button](add_process.png)
+![alt_text](image6.png "image_tooltip")
 
-**Provide the following information:**
-  1. Display Name:  “Playground”  _The identifier will automatically be set to “playground”.    We will cover other fields and options at another time._
-  2. Description:  “These are my test processes.”
-  3. Click “Submit”
+Follow the instructions within the "Request a Playground" process, providing the necessary information. This process will guide you through the steps required to complete the request and grant you access as an editor.
 
-![process group form](process_goup_form.png)
-
-**Select “Add a process model” (the second button)**
-
-![add_process_model](add_process_model.png)
-
-**Provide the following information:**
-
-1. Display Name:  “Simple Example” 
-2. The identifier will automatically be set to “simple-example”.  We will cover other fields and options at another time. 
-3. Description:  “My first SpiffWorkflow Process Model” 
-4. Click “Submit” 
-5. Click “New BPMN File”
-
-**Welcome to the Diagram Editor!** 
-
-Let’s draw a simple functional BPMN Diagram
-
-Every new BPMN diagram is initially populated with a Start Event, which looks like an open circle.  Click on it and it will show a blue outline and a “context menu” – find the “Task” icon in the menu (the rectangle with rounded corners) and click it to “Append Task”.
-
-![append task](append_task.png)
-
-Your diagram should now look like this:
-
-![diagram 1](diagram_1.png)
-
-Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon {{< inline_image src="wrench.png" alt="wrench icon" >}}, and select {{< inline_image src="script_task.png" alt="Script Task icon" >}}“Script Task” from the list of options.
-
-At this point your cursor will be blinking inside of the Task icon, allowing you to enter the name of the Task.  For this time we will use an alternative method, described in the next step
-Click anywhere off the Task and your diagram should now look like this:
-
-![diagram 2](diagram_2.png)
-
-Select the Script Task (the rectangle should have a blue outline around it) and then take a look at the options in the Properties Panel on the right.  You should see something like the image below.  There are three sections.  When you click on a section it will expand.
-
-![Script Properties Panel](prop_panel_script.png)
-
-Click General so it is expanded, we can give the Task a name.  Let’s call it “Set  Name”.  Your diagram should now look like this:
-
-![diagram 3](diagram_3.png)
-
-For this exercise we’ll need two Tasks, so similar to how you added the first Task after the Start Event click on the Script Task you just added, and append a second task,
-
-![diagram 4](diagram_4.png)
-
-so the diagram looks like this:
-
-![diagram 5](diagram_5.png)
-
-Take advantage of the blinking cursor in the middle of the newly added Task and name it “Display Message”.  Next click on the wrench icon and select “Manual Task” .  And to complete the diagram, click on the bolded circle at the top left, it should say “Append EndEvent” as shown below.
-
-![diagram 6](diagram_6.png)
-
-Your diagram should now look like this:
-
-![diagram 7](diagram_7.png)
-
-Now let’s add a bit of Python code to execute.  Click in the Script Task and expand the “Script” Section and click the “Launch Editor” button – which will bring up a python editor.  Paste in the following code, and click the Close Button.
-{{< highlight Python "linenos=true" >}}
-my_name = "World"
-{{< / highlight >}}
-
-Now, in the second task, let’s add some text and Jinja code to display a message.  Click on the Manual Task and in the Property Panel on the right side, expand the Instructions section and add the following:
-
-{{< highlight Jinja2 "linenos=true" >}}
-Hello {{my_name}}!
---------------------------
-Welcome to SpiffWorkflow!
-{{< / highlight >}}
+![Playground Form](image11.png)
 
 
 
-The right hand Property Panel should look like this (you may need to grab the bottom left of the Instruction box and drag it down to see everything you pasted in there).
+### **Access the Playground**
 
-![Manual Properties Panel](prop_panel_manual.png)
-
-Save the diagram using the save button in the upper left.  When it asks for a name call it “hello_world”
-
-Now click on the “Simple Example” in the breadcrumbs at the top of the page to go back to the process model.
-
-Click the Start button, and you should be greeted with your “Hello World!” message:
-
-Click the Continue button to return to the Home page and then the Completed tab to see your first completed process instance!
-
-![Hello World Run](final_screen.png)
+When your account is set up, select the "**Playground**" option in the process section, and gain the ability to create and modify your own workflows.
 
 
-### Shutting it all down
-{{< highlight Bash "linenos=false" >}}
-$ docker-compose down
-$ docker ps
-{{< / highlight >}}
+![alt_text](image10.png "image_tooltip")
 
 
-## What you have learned
-Today you learned a great deal about SpiffWorkflow and the new SpiffArena application, but it’s just the tip of the iceberg.  Here are few things we covered today:
- 1. How to get SpiffArena running locally on your computer.  You can stop it using the DockerDesktop application, or by running docker container down at the command line.
- 2. How to create a new Process Model
- 3. How to create a simple executable BPMN diagram
- 4. How to add start events, tasks, and end events to a diagram.
- 5. How to create a Script Task that contains a bit of python.
- 6. How to create a Manual Task with a message that people can see.
+Within the playground, you will find a container assigned to your name. Inside this container, you will have access to multiple tasks and process models. You can utilize this environment to create your own process models and make necessary modifications to the diagrams. This includes adding or modifying tasks, connecting elements, and updating properties. Furthermore, you can save these changes to ensure your progress is preserved.
 
-Remember that the real power of SpiffWorkflow is its ability to help create transparency around complex rules of a business, government agency, or any other organization.  This isn’t just some quick and easy way to write code.  It is a tool for building consensus and for offering a guarantee that what you see is truly what you get.  Additional tutorials will cover some of the powerful ways that Spiffworkflow helps you create transparency by using seemingly simple diagrams to describe complex processes, critical decision points, and to coordinate parallel actions and the handoff of responsibility from one person or application to the next – all in a way everyone can see and understand.
+![Access Playground](image10.png)
 
-Don’t let this simple tutorial fool you.  There is some substantial power within your reach to create change and improve the world in which you live.  We post tutorials frequently to help you explore this power and understand how others are using SpiffWorkflow to transform their organizations and incorporate more people in the software development life cycle.
+### **Explore Additional Diagrams**
+
+In addition to the top-level examples, our demo site provides a wide range of additional diagrams and workflows for exploration. To delve deeper into various workflow scenarios, you can navigate through the "Essential Examples" and Process groups section.
+
+These sections covers a wealth of resources covering both basic concepts and more advanced topics, allowing you to discover diverse and intricate workflow scenarios.
+
+![explore more models](image12.png)
+
+By following these detailed steps, you will gain a solid understanding of SpiffWorkflow and its features. Enjoy exploring, creating, and executing workflows within the platform, and leverage its capabilities to streamline your business processes effectively.

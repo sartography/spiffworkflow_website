@@ -5,7 +5,7 @@ date: 2023-01-05T15:06:00-05:00
 draft: false
 author: Dan Funk
 images:
- - /images/articles/lowcode2_thumbnail.png
+  - /images/articles/lowcode2_thumbnail.png
 description: A business level introduction to SpiffWorkflow and why we adopted this open source platform and are building a suite of tools around it.
 ---
 

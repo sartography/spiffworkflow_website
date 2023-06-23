@@ -17,10 +17,10 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
   description:
-  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # Preloader ensures get_started are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
   navbarlogo:
-  # Logo (from static/images/logos/___)
+  # Logo (from static/get_started/logos/___)
     image: logos/fresh.svg
     link: /
     # Default width/height. Uncomment if you need to change
@@ -38,9 +38,9 @@ params:
     buttontext: Get started
     # Where the main hero button links to
     buttonlink: "#"
-    # Hero image (from static/images/___)
+    # Hero image (from static/get_started/___)
     image: illustrations/worker.svg
-    # Footer logos (from static/images/logos/clients/___.svg)
+    # Footer logos (from static/get_started/logos/clients/___.svg)
     clientlogos:
     - systek
     - tribe
@@ -67,7 +67,7 @@ params:
     url: /
     button: true
   sidebar:
-    # Logo (from /images/logos/___.svg)
+    # Logo (from /get_started/logos/___.svg)
     logo: fresh-square
     sections:
     - title: User
@@ -125,7 +125,7 @@ params:
     features:
     - title: Powerful and unified interface
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      # Icon (from /images/illustrations/icons/___.svg)
+      # Icon (from /get_started/illustrations/icons/___.svg)
       icon: laptop-globe
     - title: Cross-device synchronisation
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
@@ -157,7 +157,7 @@ params:
       img: 3
   section5: true
   footer:
-    # Logo (from /images/logos/___)
+    # Logo (from /get_started/logos/___)
     logo: fresh-white-alt.svg
     # Social Media Title
     socialmediatitle: Follow Us

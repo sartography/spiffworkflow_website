@@ -24,13 +24,13 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   images:
-    - /images/illustrations/flow.png
+    - /get_started/illustrations/flow.png
   # Used as meta data; describe your site to make Google Bots happy
   description: Homepage for SpiffWorkflow and SpiffArena - open source projects which seek to improve transparency and understanding in organizations through intuitive executable diagrams.  These projects are based on the OMG's BPMN and DMN standards.
-  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # Preloader ensures get_started are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
   navbarlogo:
-  # Logo (from static/images/logos/___)
+  # Logo (from static/get_started/logos/___)
     image: logos/spiffworkflow_logo.png
     link: /
     # Default width/height. Uncomment if you need to change
@@ -48,9 +48,9 @@ params:
     buttontext: Get started
     # Where the main hero button links to
     buttonlink: "/posts/articles/get_started/"
-    # Hero image (from static/images/___)
+    # Hero image (from static/get_started/___)
     image: illustrations/flow.svg
-    # Footer logos (from static/images/logos/clients/___.svg)
+    # Footer logos (from static/get_started/logos/clients/___.svg)
     clientlogos:
     - status
     - uva
@@ -76,7 +76,7 @@ params:
     url: /pages/support/
     button: true
   sidebar:
-    # Logo (from /images/logos/___.svg)
+    # Logo (from /get_started/logos/___.svg)
     logo: spiffworkflow_white
     sections:
     - title: Projects
@@ -123,7 +123,7 @@ params:
       icon: transparency
     - title: Automate The Bots
       text: No one wants 20 applications telling them what to do all day.  In many cases, what we need is a little glue -- a way to pull information from one system and use it in another.  The Service Tasks in our diagrams allows us to talk to services, gather information, send that information to other services, getting ourselves out of the loop.
-      # Icon (from /images/illustrations/icons/___.svg)
+      # Icon (from /get_started/illustrations/icons/___.svg)
       icon: bots
     - title: Deliver on Schedule
       text: Computers make great clock watchers, so let them do it.  We need more time by the fireplace for contemplation and less time responding to our endlessly beeping phones with their often pointless interruptions.    If we can reduce the noise and think in peace, then perhaps we can do something of merit, of consequence -- something worthy of our precious time.
@@ -148,7 +148,7 @@ params:
       img: ron
   section5: true
   footer:
-    # Logo (from /images/logos/___)
+    # Logo (from /get_started/logos/___)
     logo: spiffworkflow_white.svg
     # Social Media Title
     socialmediatitle: Connect
@@ -183,6 +183,8 @@ params:
           link: /pages/privacy_policy/
         - text: Terms of Service
           link: /pages/demo_terms_of_service/
+        - text: Service Level Expectations
+          link: /pages/service_level/
       column3:
         title: "Blog"
         links:
