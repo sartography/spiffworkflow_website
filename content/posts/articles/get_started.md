@@ -8,22 +8,23 @@ images:
 description: How to use our demonstration site to view and execute diagrams and get a basic understanding of SpiffWorkflow's features.
 ---
 
-This guild will get you started instantly thanks to our newly released demo site. Log in and immediately start executing diagrams and learn a powerful new way to do collaborate with collegues and solve problems with your teammates.
+This guild will get you started instantly thanks to our newly released demo site. Log in and immediately start executing diagrams and learn a powerful new way to collaborate with colleagues and solve problems with your teammates.
 
 {{< admonition title="Running SpiffArena Locally" type="note">}}
-Note: The original getting started guide, which provided details on how to install and use SpiffArena is still available [here](../get_started_docker/).` 
+Note: The original getting started guide, which provided details on how to install and use SpiffArena is still available [here](../get_started_docker/).
 {{< /admonition >}}
 
 ## Video Instructions
 
-You can follow the directions below, or you can watch this 6-minute video where we take you step by step 
-through how to use the site.
+You can follow the directions below, or you can watch this 6-minute video where we take you step by step through how to use the site.
 
 {{< youtube id="fhEPyA3d4mE" autoplay="0" rel="0"  >}}
 
 ### **Visit Spiffdemo & Login**
 
-To begin your journey, open your web browser and navigate to the [official demo website](http://spiffdemo.org). On the login screen, you will find the option and select "Sign in With Google".  If you do not have a Google account, please [contact us](mailto:dan@sartography.com) and let us know what other sign-on options you would like to use.  We can also create an account for you if needed.
+To begin your journey, open your web browser and navigate to the [official demo website](http://spiffdemo.org). On the login screen, you will find the option to "Sign in with Google".
+If you do not have a Google account, please [contact us](mailto:dan@sartography.com) and let us know what other sign-on options you would like to use.
+We can also create an account for you if needed.
 
 ![login](image3.png)
 
@@ -35,20 +36,22 @@ Upon successful login, you will be greeted by our home screen. The home page wil
 
 ### **Move to the Process Section**
 
-Go to the "Process" section from the top menu. Within the "Process" section, you will find two main sections: "Example" and "Playground".
+Go to the "Process" section from the top menu. Within the "Process" section, you will find two main sections: "Example" and "Playground."
 
 ![Process Selection](image7.png)
 
 ### **Explore Example Processes**
 
-Click on the "Example" option to explore pre-built workflow examples that showcase various functionalities and use cases. In the "Example" section, you will find a list of top-level process models and groups. These examples represent complete workflows with predefined steps and tasks.
+Click on the "Example" option to explore pre-built workflow examples that showcase various functionality and use cases.
+In the "Example" section, you will find a list of top-level process models and groups.
+These examples represent complete workflows with predefined steps and tasks.
 
-Select one of the top-level examples, such as "Minimal Example" or "Essential Example", to view the corresponding process model and diagram.
+Select one of the top-level examples, such as "Minimal Example" or "Essential Example" to view the corresponding process model and diagram.
 
 ![Minimal Example](image4.png "image_tooltip")
 
 
-Upon clicking on the process, a new window will open with details and a list of associated files.
+Upon clicking on a process model (such as Minimal Example), a new window will open with details and a list of associated files.
 
 ![alt_text](image8.png "image_tooltip")
 
@@ -68,7 +71,7 @@ To modify the instructions displayed for manual tasks, navigate to the "Instruct
 
 ![Markdown Editor](image2.png)
 
-**Note:** In order to save any changes, you must have an editor role. To acquire this role, you must request access to a playground. Once you have the editor role, you can save your modifications successfully.
+**Note:** In order to save any changes, you must have an editor role. To acquire this role, you must request access to a playground (see below). Once you have the editor role, you can save your modifications successfully.
 
 
 ### **Requesting a Playground**
@@ -85,7 +88,7 @@ Follow the instructions within the "Request a Playground" process, providing the
 
 ### **Access the Playground**
 
-When your account is set up, select the "**Playground**" option in the process section, and gain the ability to create and modify your own workflows.
+When your account is set up, select the "**Playground**" option in the process section, and you will see that you have gained the ability to create and modify your own process models.
 
 
 ![alt_text](image10.png "image_tooltip")
@@ -97,10 +100,11 @@ Within the playground, you will find a container assigned to your name. Inside t
 
 ### **Explore Additional Diagrams**
 
-In addition to the top-level examples, our demo site provides a wide range of additional diagrams and workflows for exploration. To delve deeper into various workflow scenarios, you can navigate through the "Essential Examples" and Process groups section.
+In addition to the top-level examples, our demo site provides a wide range of additional diagrams and workflows for exploration. To delve deeper into various workflow scenarios, you can navigate through the "Essentials Example" and the other process models under the "Process Groups" section below.
 
-These sections covers a wealth of resources covering both basic concepts and more advanced topics, allowing you to discover diverse and intricate workflow scenarios.
+The pre-built process models cover a wealth of information including both basic concepts and more advanced topics, allowing you to discover diverse and intricate workflow scenarios.
 
 ![explore more models](image12.png)
 
-By following these detailed steps, you will gain a solid understanding of SpiffWorkflow and its features. Enjoy exploring, creating, and executing workflows within the platform, and leverage its capabilities to streamline your business processes effectively.
+By following these detailed steps, you will gain a solid understanding of SpiffWorkflow and its features.
+Enjoy exploring, creating, and executing workflows within the platform, and we hope that you will leverage its capabilities to streamline your business processes effectively.
