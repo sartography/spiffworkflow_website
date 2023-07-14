@@ -41,7 +41,7 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Executable Diagrams
+    title: Process Automation with BPMN and Python
     # Hero subtitle (optional)
     subtitle: Connect people and software together in a way that makes sense to everyone.
     # Button text
@@ -104,19 +104,22 @@ params:
       text: The original lightweight diagram execution library.
       url: /pages/spiffworkflow/
       buttonText: Learn More
+      class: tile-secondary
     - title: SpiffArena
       icon: spiffarena
       text: A complete platform for managing diagrams.
       url: /pages/spiffarena/
       buttonText: Learn More
+      class: tile-primary
     - title: SpiffEditor
       icon: spiffedit
       text: Extensions for the popular BPMN.io diagram editor.
       url: /pages/spiffeditor/
       buttonText: Learn More
+      class: tile-secondary
   section2:
-    title: It's about people
-    subtitle: We bet the future is not about monitizing people using automated systems.  We believe in a future filled with human innovation that is supported by software that increases transparency, understanding, and collaboration.
+    title: Empower Your People
+    subtitle: We bet the future is not about monetizing people using automated systems.  We believe in a future filled with human innovation that is supported by software that increases transparency, understanding, and collaboration.
     features:
     - title: Create Transparency
       text: Only when people understand processes will they contribute to their improvement.  Executable diagrams allow people to see what is happening behind the curtains.  The benefit of transparency is twofold&colon;  it creates empathy ("I didn't know you were handling so much!") and it provides power ("Hey, if we reviewed this earlier it would save everyone a lot of time").
@@ -129,8 +132,8 @@ params:
       text: Computers make great clock watchers, so let them do it.  We need more time by the fireplace for contemplation and less time responding to our endlessly beeping phones with their often pointless interruptions.    If we can reduce the noise and think in peace, then perhaps we can do something of merit, of consequence -- something worthy of our precious time.
       icon: clock
   section3:
-    title: Intuitive Diagrams
-    subtitle: Diagrams can be intuitive AND executable - removing monotony, adding transparency and opening opportunities for improvement and adaptation.
+    title: A Powerful Low Code Platform
+    subtitle: Excellent tools may take time to master, but in the right hands yield exceptional results. This is a tool for professionals and scientists.  We do not offer paint by numbers coloring books. We do not have any crayons.
     image: illustrations/school.svg
     buttonText: Features
     buttonLink: "/pages/features/"

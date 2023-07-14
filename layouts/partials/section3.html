@@ -14,7 +14,7 @@
       <div class="columns">
         {{- range $tiles }}
         <div class="column is-one-third">
-          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+          <div class="feature-card {{ .class }} is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
             <div class="card-title">
               <h4>{{ .title }}</h4>
             </div>

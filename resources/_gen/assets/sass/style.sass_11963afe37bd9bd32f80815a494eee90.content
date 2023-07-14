@@ -6571,6 +6571,9 @@ Cards and Card content styles
     border: 1px solid #fff;
     border-bottom-color: #fff !important; }
 
+.feature-card.tile-primary {
+  border: 1px solid #F26419; }
+
 /* ==========================================================================
 Inputs styles
 ========================================================================== */

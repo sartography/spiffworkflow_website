@@ -6,6 +6,8 @@ draft: false
 description: A brief description of SpiffEditor - extensntions to BPMN.js that customize this popular diagram editor so it can work well with SpiffWorkflow and SpiffArena.
 ---
 
+The following tools are available as a part of SpiffArena, but can also be used independently.  They are all open source, and we welcome contributions.
+
 ## SpiffEditor
 We've built a number of extensions to the excellent open source [BPMN.js](https://bpmn.io/toolkit/bpmn-js/) editor, specifically for SpiffWorkflow.  Here are few of the major features:
 
@@ -18,10 +20,6 @@ We've built a number of extensions to the excellent open source [BPMN.js](https:
 Connector Proxies provide a discoverable, plug-in style architecture for adding connections to third party applications that work seamlessly with SpiffWorkflow, SpiffArena, and the SpiffEditor.  We created a [Demo Connector Proxy](https://github.com/sartography/connector-proxy-demo) that you can use to get started.
 
 Each Connector included in the Connector Proxy is itself a small standalone Python application. Check out our [AWS Connector](https://github.com/sartography/connector-aws) for an example.  Adding new plugins is relatively easy, and we welcome contributions here.
-
-## SpiffWorkflow Backend and Frontend
-SpiffArena's two major components are a Flask API ([SpiffWorkflow Backend](https://github.com/sartography/spiffworkflow-backend)) and a React user interface ([SpiffWorkflow Frontend](https://github.com/sartography/spiffworkflow-frontend)).  
-
 
 ## License
 All of the above applications fall under the 
