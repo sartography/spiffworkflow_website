@@ -11,9 +11,7 @@ Support and consulting services are available through Sartography, LLC - the tea
 
 Reach out to learn how our SpiffWorkflow Consulting Services can help you design a winning strategy to meet your business goals with simplicity, clarity, and shared vision.  
 
-If you are looking specifically for a support contract, please check out our [Service Level Expectations and Commercial Support Options](/pages/service_level/).
+You can also reach out directly to Dan Funk, Founder, at (540) 457-0024, or contact him via email at dan@sartography.com to discuss your needs.
 
-{{% contact_us %}}
 
-You can also reach out directly to Dan Funk, Founder, at (540) 457-0024, or contact him via email at dan@sartography.com.
 

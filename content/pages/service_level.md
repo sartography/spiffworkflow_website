@@ -56,17 +56,6 @@ Paid support contracts are offered at three levels - Bronze, Silver and Gold:
 ** We can do video calls, phone calls, text messages, private chats, we'll even share a tmux terminal with you. 
 ```
 
-#### Pricing
-Pricing may change at any time.  Some plans can be altered to meet a specific circumstance.  Please contact us for more information.
-
-|        | Base Cost  | Min Contract | Support Hours / Month |
-| ------ |------------| ------------ |-----------------------|
-| Bronze | $640.00    | 6 months     | 4                     |
-| Silver | $1,900.00  | 6 months     | 8                     |
-| Gold   | Contact Us | 6 months     | 16                    |
-
-Additional hours are charged at $200/hr.  Please note that our support hours are not cumulative, unused hours will not be carried over to the next month.  These rates are for paid support.  We offer different rates for Software Development and Consulting Services.  Please contact us for more information. 
-
 
 # 2. Limitations
 To receive support of any kind, you must remain on a supported version of the platform. Major versions will be supported for 12 months after the release of the next major version.  Minor versions will be supported for 6 months after the release of the next minor version.  Patch versions will be supported for 3 months after the release of the next patch version.

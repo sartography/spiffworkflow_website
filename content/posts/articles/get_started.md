@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with SpiffDemo.org"
+title: "Free Trial"
 date: 2023-06-23T13:15:00-05:00
 draft: false
 author: Dan Funk
@@ -8,15 +8,16 @@ images:
 description: How to use our demonstration site to view and execute diagrams and get a basic understanding of SpiffWorkflow's features.
 ---
 
-This guild will get you started instantly thanks to our newly released demo site. Log in and immediately start executing diagrams and learn a powerful new way to collaborate with colleagues and solve problems with your teammates.
+### You can try out SpiffWorkflow right now by visiting our [demo site at SpiffDemo.org](http://spiffdemo.org).  
 
-{{< admonition title="Running SpiffArena Locally" type="note">}}
-Note: The original getting started guide, which provided details on how to install and use SpiffArena is still available [here](../get_started_docker/).
+{{< admonition title="BUT WAIT!" type="note">}}
+There is a lot of information on this page that will help you get the most out of your experience.  So please read on!
 {{< /admonition >}}
+
 
 ## Video Instructions
 
-You can follow the directions below, or you can watch this 6-minute video where we take you step by step through how to use the site.
+You can follow the directions below, or you can watch this short video where we take you step by step through how to use the site.
 
 {{< youtube id="fhEPyA3d4mE" autoplay="0" rel="0"  >}}
 
