@@ -1,7 +1,7 @@
 ---
 title: "Deploying and Integrating With SpiffArena"
 subtitle: "Using the Connector Proxy and an AWS Lambda Function to Integrate with SpiffArena"
-date: 2023-01-02T14:09:00-05:00
+date: 2023-04-06T14:09:00-05:00
 draft: false
 author: Jon Herron
 images: 
