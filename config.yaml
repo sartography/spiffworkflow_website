@@ -2,7 +2,6 @@ baseURL: https://www.spiffworkflow.org/
 languageCode: en-us
 title: SpiffWorkflow
 theme: fresh
-googleAnalytics: G-3Z83G8WLEK
 privacy:
   disqus:
     disable: true
