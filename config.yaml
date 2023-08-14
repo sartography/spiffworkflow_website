@@ -26,7 +26,7 @@ params:
   - /images/favicon.png
   - /images/default_thumbnail.png
   # Used as meta data; describe your site to make Google Bots happy
-  description: Buisness Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone.
+  description: Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone.
   # Preloader ensures get_started are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
   navbarlogo:
