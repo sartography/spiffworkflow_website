@@ -45,7 +45,7 @@ params:
     # Hero subtitle (optional)
     subtitle: Connect people and software together in a way that makes sense to everyone.
     # Button text
-    buttontext: Free Trial!
+    buttontext: Try it now!
     # Where the main hero button links to
     buttonlink: "/posts/articles/get_started/"
     # Hero image (from static/get_started/___)
@@ -138,7 +138,7 @@ params:
     buttonLink: "/pages/features/"
   section4:
     title: Join the Innovators
-    subtitle: We are just getting started.  Join these innovators and help us continue to refine and improve this important open source project.
+    subtitle: Join these innovators and help us continue to refine and improve this important open source project.
     clients:
     - name: Jarrad Hope
       quote: I’m proud of our investment in SpiffWorkflow. It’s in line with our mission and core principles of purposeful technology, public good, and openness. I am excited about the future and looking forward to working with you.
@@ -148,7 +148,12 @@ params:
       quote: You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
       job: VP - IT - UVA
       img: ron
+    - name: Demetrick Ferguson
+      quote: Organizations large and small need SpiffWorkflow! SpiffWorkflow makes it possible to execute adaptable business processes that more than one person, more than one department, can understand.
+      job: Portfolio Performance and Governance - Status
+      img: demetrick
   section5: true
+  section6: true
   footer:
     # Logo (from /get_started/logos/___)
     logo: spiffworkflow_white.svg

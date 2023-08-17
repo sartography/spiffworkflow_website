@@ -1,0 +1,38 @@
+<section class="section section-light-grey is-medium" id="section6">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">Learn More</h2>
+      <h3 class="subtitle is-5 is-muted">Check out these articles on Medium ...</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <br/>
+    <div class="articles">
+    {{ with resources.GetRemote "https://medium.com/feed/@danfunk" | transform.Unmarshal }}
+    {{ range .channel.item }}
+
+    {{ $link := .link | plainify | htmlUnescape }}
+    {{ $content := .encoded }}
+    {{ $figure := findRESubmatch `<figure>\s?<img alt="[^"]*" src="([^"]*)"` $content 1 }}
+    {{ $slice := slice 0 1 }}
+    {{ $image := index $figure $slice }}
+      <div class="feature-card tile-secondary is-bordered has-text-centered revealOnScroll delay-1 animated fadeInLeft" data-animation="fadeInLeft">
+        <div class="card-title">
+          <h4>{{ .title | plainify | htmlUnescape }}</h4>
+          <p>{{ .pubDate }}</p>
+        </div>
+        <div class="card-icon">
+          <img src="{{$image}}">
+        </div>
+        <div class="card-text">
+          <p>{{ $content | plainify | htmlUnescape | truncate 50}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{$link}}" class="button btn-align-md accent-btn raised">Read More</a>
+        </div>
+      </div>
+    {{ end }}
+    {{ end }}
+    </div>
+  </div>
+</section>
+<script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
