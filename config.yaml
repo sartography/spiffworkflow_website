@@ -126,7 +126,7 @@ params:
     - title: 42 Contributors
       text: Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.
       # Icon (from /get_started/illustrations/icons/___.svg)
-      icon: contributors.svg
+      icon: contributors.png
     - title: 200 Discord Members
       text: A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.
       icon: discord.png

@@ -112,7 +112,7 @@ div.admonition p.last {
     margin-bottom: 0;
 }
 
-div.articles {
+.articles {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,13 +121,13 @@ div.articles {
     align-items: stretch;
 }
 
-div.articles div.feature-card {
+.articles div.feature-card {
     margin-bottom: 25px;
     height: 380px;
     width: 360px;
 }
 
-div.articles .feature-card .card-action {
+.articles .feature-card .card-action {
     margin-top: 10px;
     position: absolute;
     bottom: 10px;
