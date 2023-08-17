@@ -95,46 +95,46 @@ params:
       - text: Deep Dive Articles
         url: /posts/deep_dives/
   section1:
-    title: Open Source Software
-    subtitle:  It's all open.  All of it. The whole enchilada. (Well it would be a tostada then, wouldn't it?)
+    title: Commercial Support
+    subtitle:  We offer commercial support for SpiffWorkflow and related projects.  We can help you with everything from getting started, to building your first diagram, to integrating SpiffWorkflow into your existing systems.
     tiles:
-    - title: SpiffWorkflow
-      icon: spiffworkflow
-      text: The original lightweight diagram execution library.
-      url: /pages/spiffworkflow/
+    - title: Training
+      icon: training
+      text: From BPMN to Dev-Ops we offer training to get you moving quickly and to assure you getting the most out of your investment.
+      url: /pages/training/
       buttonText: Learn More
       class: tile-secondary
-    - title: SpiffArena
-      icon: spiffarena
-      text: A complete platform for managing diagrams.
-      url: /pages/spiffarena/
+    - title: Hosting
+      icon: hosting
+      text: Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.
+      url: /pages/hosting/
       buttonText: Learn More
-      class: tile-primary
-    - title: SpiffEditor
-      icon: spiffedit
-      text: Extensions for the popular BPMN.io diagram editor.
-      url: /pages/spiffeditor/
+      class: tile-secondary
+    - title: Intergration
+      icon: enterprise
+      text: Enterprise level integrations for Authentication, pre-built reusable workflows, and connectors to rest of your enterprise systems.
+      url: /pages/enterprise/
       buttonText: Learn More
       class: tile-secondary
   section2:
-    title: Empower Your People
-    subtitle: We bet the future is not about monetizing people using automated systems.  We believe in a future filled with human innovation that is supported by software that increases transparency, understanding, and collaboration.
+    title: A Thriving Open Source Community
+    subtitle: We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.
     features:
-    - title: Create Transparency
-      text: Only when people understand processes will they contribute to their improvement.  Executable diagrams allow people to see what is happening behind the curtains.  The benefit of transparency is twofold&colon;  it creates empathy ("I didn't know you were handling so much!") and it provides power ("Hey, if we reviewed this earlier it would save everyone a lot of time").
-      icon: transparency
-    - title: Automate The Bots
-      text: No one wants 20 applications telling them what to do all day.  In many cases, what we need is a little glue -- a way to pull information from one system and use it in another.  The Service Tasks in our diagrams allows us to talk to services, gather information, send that information to other services, getting ourselves out of the loop.
+    - title: 1500 Stars
+      text: Continuous growth and usage for over a decade, with a thriving community of contributors.
+      icon: star-history.png
+    - title: 42 Contributors
+      text: Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.
       # Icon (from /get_started/illustrations/icons/___.svg)
-      icon: bots
-    - title: Deliver on Schedule
-      text: Computers make great clock watchers, so let them do it.  We need more time by the fireplace for contemplation and less time responding to our endlessly beeping phones with their often pointless interruptions.    If we can reduce the noise and think in peace, then perhaps we can do something of merit, of consequence -- something worthy of our precious time.
-      icon: clock
+      icon: contributors.svg
+    - title: 200 Discord Members
+      text: A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.
+      icon: discord.png
   section3:
     title: A Powerful Low Code Platform
-    subtitle: Excellent tools may take time to master, but in the right hands yield exceptional results. This is a tool for professionals and scientists.  We do not offer paint by numbers coloring books. We do not have any crayons.
-    image: illustrations/school.svg
-    buttonText: Features
+    subtitle: Build your first diagram in minutes. But don't let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.
+    image: build_a_diagram.gif
+    buttonText: Schedule a Demo
     buttonLink: "/pages/features/"
   section4:
     title: Join the Innovators

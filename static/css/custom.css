@@ -133,3 +133,7 @@ div.articles .feature-card .card-action {
     bottom: 10px;
     right: 10px;
 }
+
+#section2 figure .image img {
+    max-width: 200px;
+}
