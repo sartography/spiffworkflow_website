@@ -1,0 +1,141 @@
+
+.content {
+    max-width: 860px;
+}
+
+.content img {
+    display: block;
+    margin: auto;
+}
+
+.content img.inline {
+    display: inline;
+    margin: 0;
+}
+
+.content p, .content ol, .content ul {
+    font-size: 1.3em;
+}
+
+.content figure figcaption {
+    font-size: .875em;
+    font-style: normal;
+    color: #6c757d;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.brief {
+    color: #6c757d;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+.item-thumbnail {
+    min-width: 150px;
+    padding-right: 30px;
+}
+
+.meta {
+    font-size: .875rem;
+    color: #adb5bd;
+}
+
+#cookie-notice {
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 0; left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background: rgb(70, 70, 70);
+    color: rgba(255,255,255,0.8);
+}
+#cookie-notice a {
+    font-weight: 600;
+    display: inline-flex;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+#cookie-notice-accept {
+    color:rgb(86, 228, 58)
+}
+#cookie-notice-deny {
+    color:rgb(243, 34, 34)
+}
+@media (max-width: 767px) {
+    #cookie-notice span { display: block; padding-top: 3px; margin-bottom: 1rem; }
+    #cookie-notice a { position: relative; bottom: 4px; }
+    #cookie-notice { left: 0px; }
+}
+
+
+div.admonition {
+    margin: 20px 0px;
+    padding: 10px 20px;
+    background-color: #e5f7fb;
+    border-left: 5px solid #6c757d;;
+}
+
+div.admonition tt.xref, div.admonition a tt {
+    border-bottom: 1px solid #fafafa;
+}
+
+dd div.admonition {
+    margin-left: -60px;
+    padding-left: 60px;
+}
+
+div.admonition p.admonition-title {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+}
+
+div.admonition p.last {
+    margin-bottom: 0;
+}
+
+.articles {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+.articles div.feature-card {
+    margin-bottom: 25px;
+    height: 380px;
+    width: 360px;
+}
+
+.articles .feature-card .card-action {
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#section2 figure .image img {
+    max-width: 200px;
+}
+
+

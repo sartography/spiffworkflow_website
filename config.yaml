@@ -110,12 +110,36 @@ params:
       url: /pages/hosting/
       buttonText: Learn More
       class: tile-secondary
-    - title: Intergration
+    - title: Integration
       icon: enterprise
       text: Enterprise level integrations for Authentication, pre-built reusable workflows, and connectors to rest of your enterprise systems.
       url: /pages/enterprise/
       buttonText: Learn More
       class: tile-secondary
+  science:
+    title: Grounded in Science
+    subtitle: We have combined the most heavily researched standard in the field of Business Process Automation with the most popular programming language in the world(1).
+    tiles:
+      - title: BPMN
+        icon: bpmn
+        text: 1000's of articles on the efficacy of BPMN in diverse domains from Health Care(3) to Lagistics(4) to Automotive(5).
+        class: tile-secondary
+      - title: Python
+        icon: python
+        text: "\"Python has arguably become the de facto standard for exploratory, interactive, and computation-driven scientific research\"(2)"
+        class: tile-secondary
+    references:
+      - ref: 1
+        citation: "TIOBE index, https://www.tiobe.com/tiobe-index/"
+      - ref: 2
+        citation: "K. J. Millman and M. Aivazis, \"Python for Scientists and Engineers,\" in Computing in Science & Engineering, vol. 13, no. 2, pp. 9-12, March-April 2011, doi: 10.1109/MCSE.2011.36."
+      - ref: 3
+        citation: "PufahlL. et al. \"BPMN in healthcare: Challenges and best practices\", in Information Systems, vol 107, 2922"
+      - ref: 4
+        citation: "E S Kenne,  \"Challenges Facing Port Logistics in Cameroon, Using The Bpmn Model\", International Journal of Latest Research in Humanities and Social Science (IJLRHSS) Volume 04 - Issue 12, 2021, pp. 174-182"
+      - ref: 5
+        citation: "Fernandes, Jorge, João Reis, Nuno Melão, Leonor Teixeira, and Marlene Amorim. 2021. \"The Role of Industry 4.0 and BPMN in the Arise of Condition-Based and Predictive Maintenance: A Case Study in the Automotive Industry\" Applied Sciences 11, no. 8: 3438. https://doi.org/10.3390/app11083438"
+
   section2:
     title: A Thriving Open Source Community
     subtitle: We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.
@@ -152,6 +176,14 @@ params:
       quote: Organizations large and small need SpiffWorkflow! SpiffWorkflow makes it possible to execute adaptable business processes that more than one person, more than one department, can understand.
       job: Portfolio Performance and Governance - Status
       img: demetrick
+    - name: Brian
+      quote: Spiffworkflow streamlines our execution of BPMN workflows, and its extensibility is a boon for us. The authors’ willingness to respond to our inquiries and feedback further enriches our experience with the library.
+      job: CTO - Series C Startup
+      img: brian2
+    - name: Aleksandra Yarokhovich
+      quote: Collaborating on the SpiffWorkflow project has been a delight. Passionate team, open to ideas, and a powerful product combining BPMN with Python's agility. Best wishes for its success!
+      job: Business Analyst - Status
+      img: sasha
   section5: true
   section6: true
   footer:

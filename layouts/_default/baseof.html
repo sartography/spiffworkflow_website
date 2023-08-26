@@ -4,7 +4,9 @@
     {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
-    <link rel="stylesheet" type="text/css" href="/css/custom_sartography.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom_sartography_1.css">
   </head>
   <body>
     {{ if ne .Site.Params.preloader false }}

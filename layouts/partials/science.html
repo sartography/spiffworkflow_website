@@ -1,0 +1,44 @@
+{{- $science := .Site.Params.science }}
+{{- $title    := index $science "title" }}
+{{- $subtitle := index $science "subtitle" }}
+{{- $tiles    := index $science "tiles" }}
+{{- $references := index $science "references" }}
+<section class="section section-secondary is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text">{{ $title }}</h2>
+      <h3 class="subtitle is-5 light-text">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        {{- range $tiles }}
+        <div class="column is-one-half">
+          <div class="feature-card {{ .class }} is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>{{ .title }}</h4>
+            </div>
+            <div class="card-icon">
+                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+            </div>
+            <div class="card-text">
+                <p>{{ .text }}</p>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+    <div class="references ">
+    {{- range $references }}
+      <div class="reference light-text">
+        <sup>{{.ref}}</sup> {{ .citation }}
+      </div>
+    {{- end }}
+    </div>
+    </div>
+
+  </div>
+</section>

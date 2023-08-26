@@ -1,12 +1,12 @@
 <section class="section section-light-grey is-medium" id="section6">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 is-spaced">Learn More</h2>
+      <h2 class="title is-2 is-spaced">Articles</h2>
       <h3 class="subtitle is-5 is-muted">Check out these articles on Medium ...</h3>
       <div class="divider is-centered"></div>
     </div>
     <br/>
-    <div class="articles">
+    <div class="articles owl-carousel">
     {{ with resources.GetRemote "https://medium.com/feed/@danfunk" | transform.Unmarshal }}
     {{ range .channel.item }}
 
