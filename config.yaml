@@ -183,6 +183,10 @@ params:
       quote: Collaborating on the SpiffWorkflow project has been a delight. Passionate team, open to ideas, and a powerful product combining BPMN with Python's agility. Best wishes for its success!
       job: Business Analyst - Status
       img: sasha
+    - name: Rajat Roy
+      quote: We are using spiff workflow in our serverless travel booking engine. It allows us rapid change of business logic with minimum development effort, and in the long run to improve the maintainability thanks to the graphical visualisation.
+      job: Software Engineer
+      img: rajat
   section5: true
   section6: true
   footer:
