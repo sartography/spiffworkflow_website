@@ -13,8 +13,8 @@
     {{ partial "section2.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.section3 }}
-    {{ partial "section3.html" . }}
+    {{ if .Site.Params.contact }}
+    {{ partial "contact.html" . }}
     {{ end }}
 
     {{ if .Site.Params.section4 }}
@@ -29,6 +29,9 @@
     {{ partial "section6.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.newsletter }}
+    {{ partial "newsletter.html" . }}
+    {{ end }}
 
     {{ if .Site.Params.footer }}
     {{ partial "footer.html" . }}

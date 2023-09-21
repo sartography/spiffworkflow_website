@@ -11,6 +11,9 @@
         <div class="footer-logo">
           <img src="{{ printf "/images/logos/%s" $logo | relURL }}">
         </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
       </div>
       {{- range $quickLinks }}
         <div class="column">
@@ -43,7 +46,6 @@
                 {{- end }}
               </div>
             </nav>
-
             {{- if $bulmaLogo }}
             <a href="https://bulma.io" target="_blank">
               <img src="{{ "/images/logos/made-with-bulma.png" | relURL }}" alt="Made with Bulma" width="128" height="24">

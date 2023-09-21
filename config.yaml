@@ -45,11 +45,12 @@ params:
     # Hero subtitle (optional)
     subtitle: Connect people and software together in a way that makes sense to everyone.
     # Button text
-    buttontext: Try it now!
+    buttontext: Schedule a Demo!
     # Where the main hero button links to
-    buttonlink: "/posts/articles/get_started/"
+    buttonlink: "#"
+    buttononclick: 'Calendly.initPopupWidget({url: "https://calendly.com/dan-sartography/60min"});return false;'
     # Hero image (from static/get_started/___)
-    image: illustrations/flow.svg
+    image: illustrations/intro.png
     # Footer logos (from static/get_started/logos/clients/___.svg)
     clientlogos:
     - status
@@ -95,51 +96,13 @@ params:
       - text: Deep Dive Articles
         url: /posts/deep_dives/
   section1:
-    title: Commercial Support
-    subtitle:  We offer commercial support for SpiffWorkflow and related projects.  We can help you with everything from getting started, to building your first diagram, to integrating SpiffWorkflow into your existing systems.
-    tiles:
-    - title: Training
-      icon: training
-      text: From BPMN to Dev-Ops we offer training to get you moving quickly and to assure you getting the most out of your investment.
-      url: /pages/training/
-      buttonText: Learn More
-      class: tile-secondary
-    - title: Hosting
-      icon: hosting
-      text: Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.
-      url: /pages/hosting/
-      buttonText: Learn More
-      class: tile-secondary
-    - title: Integration
-      icon: enterprise
-      text: Enterprise level integrations for Authentication, pre-built reusable workflows, and connectors to rest of your enterprise systems.
-      url: /pages/enterprise/
-      buttonText: Learn More
-      class: tile-secondary
-  science:
-    title: Grounded in Science
-    subtitle: We have combined the most heavily researched standard in the field of Business Process Automation with the most popular programming language in the world(1).
-    tiles:
-      - title: BPMN
-        icon: bpmn
-        text: 1000's of articles on the efficacy of BPMN in diverse domains from Health Care(3) to Lagistics(4) to Automotive(5).
-        class: tile-secondary
-      - title: Python
-        icon: python
-        text: "\"Python has arguably become the de facto standard for exploratory, interactive, and computation-driven scientific research\"(2)"
-        class: tile-secondary
-    references:
-      - ref: 1
-        citation: "TIOBE index, https://www.tiobe.com/tiobe-index/"
-      - ref: 2
-        citation: "K. J. Millman and M. Aivazis, \"Python for Scientists and Engineers,\" in Computing in Science & Engineering, vol. 13, no. 2, pp. 9-12, March-April 2011, doi: 10.1109/MCSE.2011.36."
-      - ref: 3
-        citation: "PufahlL. et al. \"BPMN in healthcare: Challenges and best practices\", in Information Systems, vol 107, 2922"
-      - ref: 4
-        citation: "E S Kenne,  \"Challenges Facing Port Logistics in Cameroon, Using The Bpmn Model\", International Journal of Latest Research in Humanities and Social Science (IJLRHSS) Volume 04 - Issue 12, 2021, pp. 174-182"
-      - ref: 5
-        citation: "Fernandes, Jorge, João Reis, Nuno Melão, Leonor Teixeira, and Marlene Amorim. 2021. \"The Role of Industry 4.0 and BPMN in the Arise of Condition-Based and Predictive Maintenance: A Case Study in the Automotive Industry\" Applied Sciences 11, no. 8: 3438. https://doi.org/10.3390/app11083438"
-
+    title: A Powerful Low Code Platform
+    subtitle: Build your first diagram in minutes. But don't let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.
+    image: build_a_diagram.gif
+    buttonText: Try it Now
+    buttonLink: /posts/articles/get_started/
+  contact: true
+  science: true
   section2:
     title: A Thriving Open Source Community
     subtitle: We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.
@@ -154,11 +117,6 @@ params:
     - title: 200 Discord Members
       text: A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.
       icon: discord.png
-  section3:
-    title: A Powerful Low Code Platform
-    subtitle: Build your first diagram in minutes. But don't let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.
-    image: build_a_diagram.gif
-    buttonText: Schedule a Demo
   section4:
     title: Join the Innovators
     subtitle: Join these innovators and help us continue to refine and improve this important open source project.
@@ -187,8 +145,30 @@ params:
       quote: We are using spiff workflow in our serverless travel booking engine. It allows us rapid change of business logic with minimum development effort, and in the long run to improve the maintainability thanks to the graphical visualisation.
       job: Software Engineer
       img: rajat
-  section5: true
+  section5:
+    title: Commercial Support
+    subtitle:  We offer commercial support for SpiffWorkflow and related projects.  We can help you with everything from getting started, to building your first diagram, to integrating SpiffWorkflow into your existing systems.
+    tiles:
+      - title: Training
+        icon: training
+        text: From BPMN to Dev-Ops we offer training to get you moving quickly and to assure you getting the most out of your investment.
+        url: /pages/training/
+        buttonText: Learn More
+        class: tile-secondary
+      - title: Hosting
+        icon: hosting
+        text: Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.
+        url: /pages/hosting/
+        buttonText: Learn More
+        class: tile-secondary
+      - title: Integration
+        icon: enterprise
+        text: Enterprise level integrations for Authentication, pre-built reusable workflows, and connectors to rest of your enterprise systems.
+        url: /pages/enterprise/
+        buttonText: Learn More
+        class: tile-secondary
   section6: true
+  newsletter: true
   footer:
     # Logo (from /get_started/logos/___)
     logo: spiffworkflow_white.svg
