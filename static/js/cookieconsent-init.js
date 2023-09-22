@@ -98,7 +98,7 @@ cc.run({
             },
           }, {
             title: 'Advertisement and Targeting cookies',
-            description: 'We do not use Advertisement and Targeting cookies on this website.',
+            description: 'We do not sell your information, but we do use 3rd party services to help us understand our audience in order to improve our services. These services may use cookies to track your browsing activity on other websites.',
             toggle: {
               value: 'targeting',
               enabled: false,
