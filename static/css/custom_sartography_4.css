@@ -127,7 +127,7 @@ div.admonition p.last {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 360px;
+    max-width: 360px;
     background-color: black;
     color: #fff;
     text-align: center;
