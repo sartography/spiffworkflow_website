@@ -48,7 +48,7 @@ params:
     buttontext: Schedule a Demo!
     # Where the main hero button links to
     buttonlink: "#"
-    buttononclick: 'Calendly.initPopupWidget({url: "https://calendly.com/dan-sartography/60min"});return false;'
+    buttononclick: 'Calendly.initPopupWidget({url: "https://calendly.com/dan-sartography/spiffworkflow-demo"});return false;'
     # Hero image (from static/get_started/___)
     image: illustrations/intro.png
     # Footer logos (from static/get_started/logos/clients/___.svg)
@@ -167,7 +167,7 @@ params:
         url: /pages/enterprise/
         buttonText: Learn More
         class: tile-secondary
-  section6: true
+  section6: false
   newsletter: true
   footer:
     # Logo (from /get_started/logos/___)

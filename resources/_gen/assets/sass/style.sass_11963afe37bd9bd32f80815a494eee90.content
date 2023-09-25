@@ -3544,6 +3544,7 @@ a.dropdown-item {
   .media .media {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
     display: flex;
+    flex-wrap: wrap;
     padding-top: 0.75rem; }
     .media .media .content:not(:last-child),
     .media .media .control:not(:last-child) {
