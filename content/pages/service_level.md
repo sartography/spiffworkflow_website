@@ -1,7 +1,7 @@
 ---
 title: "Service Level Expectations"
 subtitle: "Our SLA and Commercial Support Options"
-date: 2023-06-21T01:33:00-05:00
+date: 2023-09-26T01:33:00-05:00
 draft: false
 description: We offer these Service Level Expectations to our end users, and provide paid support options for organizations that need guaranteed availability, fast response times to questions, and resources to assure their system remains stable, up to date and free of major security vulnerabilities.
 ---
@@ -44,16 +44,17 @@ Paid support contracts are offered at three levels - Bronze, Silver and Gold:
 | GitHub Ticket Support | ✓         | 24 hrs\*             | 24 hrs\*          | 24 hrs\*   |
 | Discord Channel       | ✓         | 24 hrs\*             | 24 hrs\*          | 24 hrs\*   |
 | Email Security Alerts |           | ✓                    | ✓                 | ✓          |
-| Direct Support\*\*    |           | 8am-12pm EST\* M/W/F | 6am-6pm EST\* M-F | 24/7       |
+| Direct Support\*\*    |           | By Appointment       | 8am-5pm EST M-F** | 24/7 |
+| Support Tickets Per Week ***         |           | 3 | 5 | 8 |
 | Installation Review   |           |                      | ✓                 | ✓          |
 | Annual Health Check   |           |                      | ✓                 | ✓          |
 | VPN Support           |           |                      | ✓                 | ✓          |
 | Monitored Upgrades    |           |                      | ✓                 | ✓          |
-| Security Hot Patches  |           |                      |                   | On Request |
 
 ```
 * On normal business days - not counting weekends and national holidays.  
 ** We can do video calls, phone calls, text messages, private chats, we'll even share a tmux terminal with you. 
+*** Ticket complexity can vary widely. We will handle as many tickets as we can - but we must limit our time to an average of one hour per ticket. 
 ```
 
 
@@ -64,9 +65,9 @@ To receive support of any kind, you must remain on a supported version of the pl
 
 | Service Level | Availability | Response Time (chat/email) | Response Time (Phone/Text)     |
 | ------------- |--------------|----------------------------|--------------------------------|
-| Bronze        | 90%          | 48 hours                   | 1 hour - MWF - 8am to Noon EST |
-| Silver        | 90%          | 24 hours                   | 1 hour - M-F - 6am to 6pm EST  |
-| Gold          | 95%          | 4 hours                    | 1 hour - 24/7                  |
+| Bronze        | 90%          | 48 hours                   | 8 hour - MWF - 8am to Noon EST |
+| Silver        | 90%          | 24 hours                   | 4 hour - M-F - 6am to 6pm EST  |
+| Gold          | 90%          | 4 hours                    | 1 hour - 24/7                  |
 
 ### How to read this chart:
 Availability is the percentage of time that [Sartography](https://sartography.com) will be available within the agreed time windows. For example, Bronze members can expect us to respond to messages within 48 hours, and to phone calls and text messages within an hour (if the request is made within the service window) at least 90% of the time.
@@ -80,7 +81,7 @@ In the event that we fail to meet the above Service Level Indicators the followi
 
 
 * Initial Response time for support requests: If the Provider does not respond to a support ticket within the availability and time frame limits outlined in the Support Level Indicators section above, Client will be entitled to a refund of 10% of the monthly service fees.
-* Resolution time for severe incidents: If the Provider fails to resolve a severe incident within 24 hours, the Client will be entitled to a refund of 10% of the monthly service fees if the incident is related to a defect or security vulnerability in the Provider’s software. If the incident is related to a defect or security vulnerability in a third-party software package, the Client will be entitled to a refund of 5% of the monthly service fees. If the incident is related to a defect or security vulnerability in the Client’s software, hardware or infrastructure, the Client will not be entitled to a refund.
+* Disaster Recovery and Resolution time for severe incidents: If Sartography fails to resolve a severe incident within 24 hours, the Client will be entitled to a refund of 10% of the monthly service fees if the incident is related to a defect or security vulnerability in Sartography’s code base. If the incident is related to a defect or security vulnerability in a third-party software package, the Client will be entitled to a refund of 5% of the monthly service fees. If the incident is related to a defect or security vulnerability in the Client’s software, hardware or infrastructure, the Client will not be entitled to a refund.
 
 **Refunds and credits**: Refunds and credits will be applied to the next monthly invoice.
 
