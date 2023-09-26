@@ -61,14 +61,6 @@ params:
     url: /pages/features/
   - title: Support
     url: /pages/support/
-  - title: Projects
-    sublinks:
-      - title: SpiffWorkflow
-        url: /pages/spiffworkflow/
-      - title: SpiffArena
-        url: /pages/spiffarena/
-      - title: SpiffEditor
-        url: /pages/spiffeditor/
   - title: Articles
     sublinks:
       - title: Introductory Articles

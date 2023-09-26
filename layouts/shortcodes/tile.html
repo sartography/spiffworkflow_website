@@ -1,0 +1,15 @@
+{{- $title := .Get "title" -}}
+{{- $icon := .Get "icon" -}}
+{{- $action := .Get "action" -}}
+
+<div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+  <div class="card-title">
+    <h4>{{ $title }}</h4>
+  </div>
+  <div class="card-icon">
+    <img src="/images/features/icons/{{ $icon }}.svg">
+  </div>
+  <div class="card-text">
+{{ .Inner | markdownify }}
+  </div>
+</div>

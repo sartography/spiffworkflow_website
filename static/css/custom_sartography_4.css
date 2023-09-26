@@ -1,7 +1,4 @@
 
-.content {
-    max-width: 860px;
-}
 
 @media (max-width: 767px) {
     .title.is-1 {
@@ -92,26 +89,37 @@ div.admonition p.last {
     margin-bottom: 0;
 }
 
-.articles {
+.features {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: stretch;
+    background-color: #cfd8db;
+    padding: 20px;
 }
 
-.articles div.feature-card {
+.features div.feature-card {
     margin-bottom: 25px;
-    height: 380px;
+    height: 250px;
     width: 360px;
+    border-radius: 8px;
 }
 
-.articles .feature-card .card-action {
+.features .feature-card .card-action {
     margin-top: 10px;
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.features .feature-card .card-icon img {
+    height: 75px;
+}
+
+.features .feature-card .card-text {
+    padding: 0 20px;
 }
 
 #section2 figure .image img {
