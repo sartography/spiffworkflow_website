@@ -89,6 +89,39 @@ div.admonition p.last {
     margin-bottom: 0;
 }
 
+.section-support {
+    background-size: auto;
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)
+    ), url("/images/features/photos/support.jpg") no-repeat;
+}
+
+.section-support .content {
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    padding: 15px;
+}
+
+.section-features {
+    background-size: auto;
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)
+    ), url("/images/features/photos/coffee.jpg") no-repeat;
+}
+
+.section-features .title, .section-features .subtitle, .section-support .title, .section-support .subtitle {
+    color: #fff !important;
+    text-shadow: 0 1px 0 black;
+}
+
+
+
 .features {
     display:flex;
     flex-direction: row;
@@ -96,8 +129,6 @@ div.admonition p.last {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: stretch;
-    background-color: #cfd8db;
-    padding: 20px;
 }
 
 .features div.feature-card {
@@ -121,6 +152,15 @@ div.admonition p.last {
 .features .feature-card .card-text {
     padding: 0 20px;
 }
+
+.feature-icon {
+    color: #F26419;
+}
+
+.feature-icon:hover {
+    color: #126D82;
+}
+
 
 #section2 figure .image img {
     max-width: 200px;

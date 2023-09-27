@@ -4,13 +4,10 @@ subtitle: "Outcome Based Consulting Services and Service Agreements"
 date: 2023-01-02T10:05:00-05:00
 draft: false
 no_comments: true
-description:  How to get support for SpiffWorkflow and SpiffArena. 
+description:  How to get support for SpiffWorkflow and SpiffArena.
+cssClass: "section-support"
 ---
-Commercial companies with mission-critical installations of SpiffArena and SpiffWorkflow may require enhanced support including fast response times to questions, disaster recovery plans, and regular checkups to ensure their systems remain stable, up to date, and are protected against major security vulnerabilities.  For these cases we offers paid support plans to provide these organizations and groups with priority responses via chat rooms and GitHub, and allow them direct access to core personnel through phone, video, email, and private chat.
-
-Please refer to the chart below for a comparison of service levels.
-
-Paid support contracts are offered at three levels - Bronze, Silver and Gold:
+Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.  We offer paid support plans that provide direct access to the same team that develops, tests, and creates the documenation and training for SpiffWorkflow.  
 
 |                       | Community | Bronze               | Silver            | Gold       |
 |-----------------------|-----------|----------------------|-------------------|------------|
@@ -26,11 +23,10 @@ Paid support contracts are offered at three levels - Bronze, Silver and Gold:
 | VPN Support           |           |                      | ✓                 | ✓          |
 | Monitored Upgrades    |           |                      | ✓                 | ✓          |
 
-```
-* On normal business days - not counting weekends and national holidays.  
-** We can do video calls, phone calls, text messages, private chats, we'll even share a tmux terminal with you. 
-*** Ticket complexity can vary widely. We will handle as many tickets as we can - but we must limit our time to an average of one hour per ticket. 
-```
+* \* On normal business days - not counting weekends and national holidays.  
+* ** We can do video calls, phone calls, text messages, private chats, we'll even share a tmux terminal with you. 
+* *** Ticket complexity can vary widely. We will handle as many tickets as we can - but we must limit our time to an average of one hour per ticket. 
+
 # Contact Us
 Get in touch to discuss your needs and we'll work together to find the right solution for you.
 
