@@ -23,9 +23,9 @@ Mission-critical installations of SpiffWorkflow require fast response times to q
 | VPN Support           |           |                      | ✓                 | ✓          |
 | Monitored Upgrades    |           |                      | ✓                 | ✓          |
 
-* \* On normal business days - not counting weekends and national holidays.  
-* ** We can do video calls, phone calls, text messages, private chats, we'll even share a tmux terminal with you. 
-* *** Ticket complexity can vary widely. We will handle as many tickets as we can - but we must limit our time to an average of one hour per ticket. 
+\* On normal business days - not counting weekends and national holidays.<br />
+** We can do video calls, phone calls, text messages, private chats, we'll even share a tmux terminal with you.<br />
+*** Ticket complexity can vary widely. We will handle as many tickets as we can - but we must limit our time to an average of one hour per ticket. 
 
 # Contact Us
 Get in touch to discuss your needs and we'll work together to find the right solution for you.
