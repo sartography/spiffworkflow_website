@@ -6,7 +6,7 @@ draft: false
 description: A list of the major features of SpiffArena and it's components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors and more...
 cssClass: "section-features"
 ---
-{{< feature_tiles >}}
+{{< tiles>}}
 {{< tile title="Low Code" icon="low_code" >}}
 Get started quickly, but without painting yourself into a corner
 {{< /tile >}}
@@ -43,7 +43,7 @@ Extend the functionality of the application itself with BPMN
 {{< tile title="Connectors" icon="connection" >}}
 Send and receive information from other applications.  Use ours connectors, or build your own!
 {{< /tile >}}
-{{< /feature_tiles >}}
+{{< /tiles >}}
 ## See these features in action
 You can schedule a demo with one of our core team and we can demonstrate these features live on our demo site.  
 We can also answer any questions you may have about SpiffWorkflow and how it can help your organization.

@@ -61,6 +61,8 @@ params:
     url: /pages/features/
   - title: Support
     url: /pages/support/
+  - title: Compare
+    url: /pages/compare/
   - title: Articles
     sublinks:
       - title: Introductory Articles

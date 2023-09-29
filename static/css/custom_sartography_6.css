@@ -136,7 +136,7 @@ section.section-support .content p {
 
 
 
-.features {
+.tiles {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -145,35 +145,45 @@ section.section-support .content p {
     align-items: stretch;
 }
 
-.features div.feature-card {
+.tiles div.feature-card {
     margin-bottom: 25px;
     height: 250px;
     width: 360px;
     border-radius: 8px;
 }
 
-.features .feature-card .card-action {
+.tiles div.feature-card.highlighted {
+    box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.15);
+}
+
+.tiles.compare div.feature-card {
+    width: 500px;
+    min-height: 400px;
+    height: auto;
+}
+
+.tiles .feature-card .card-action {
     margin-top: 10px;
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
-.features .feature-card .card-icon img {
+.tiles .feature-card .card-icon img {
     height: 75px;
 }
-
-.features .feature-card .card-text {
-    padding: 0 20px;
-}
-
 .feature-icon {
     color: #F26419;
 }
-
-.feature-icon:hover {
+.feature-icon:hover, .tiles .highlighted .feature-icon {
     color: #126D82;
 }
+
+
+.tiles .feature-card .card-text {
+    padding: 0 20px;
+}
+
 
 
 #section2 figure .image img {
@@ -226,4 +236,68 @@ section.section-support .content p {
 }
 .cookie_settings a:hover {
     color: #fff;
+}
+
+
+.comparison-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.75rem;
+    background-color:  #ddd;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.comparison-table th:first-child {
+    border: 0;
+}
+
+.comparison-table th:nth-child(2n) {
+    box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.15);
+    width: 20%;
+}
+
+.comparison-table th:nth-child(3n) {
+    width: 20%;
+}
+
+.comparison-table th:nth-child(2n),
+.comparison-table td:nth-child(2n) {
+    position: relative;
+    background: #fff;
+}
+
+.comparison-table td:not(:first-child) {
+    text-align: center;
+}
+
+@media (min-width: 48rem) {
+    .comparison-table {
+        font-size: 0.875rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    .comparison-table {
+        font-size: 1rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1.5rem 2rem;
+    }
 }

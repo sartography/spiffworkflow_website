@@ -6,6 +6,7 @@ Classes to change the feel of bulma buttons
 
 .button {
     cursor: pointer;
+    text-shadow: none;
     transition: all 0.5s;
     &.cta {
         font-family: 'Open Sans', sans-serif;

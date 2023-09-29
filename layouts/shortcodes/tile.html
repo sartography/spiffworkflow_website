@@ -1,11 +1,12 @@
 {{- $title := .Get "title" -}}
 {{- $icon := .Get "icon" -}}
 {{- $action := .Get "action" -}}
+{{- $class := .Get "class" | default "" -}}
 {{- $svg := printf `/static/images/features/icons/%s.svg` $icon -}}
 {{- $match := "<svg (.*)?>(.*)</svg>" -}}
 {{- $replaceWith := printf `<svg class="feature-icon" ${1}>${2}</svg>` -}}
 
-<div class="feature-card is-bordered has-text-centered" data-animation="fadeInLeft">
+<div class="feature-card is-bordered has-text-centered {{$class}}" data-animation="fadeInLeft">
   <div class="card-title">
     <h4>{{ $title }}</h4>
   </div>

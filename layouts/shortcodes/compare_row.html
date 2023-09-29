@@ -1,0 +1,15 @@
+{{- $title := .Get "title" -}}
+{{- $sw := .Get "sw" -}}
+{{- $cm := .Get "cm" -}}
+
+<tr>
+  <td><b>{{$title}}</b> -
+    {{ .Inner | markdownify }}
+  </td>
+  <td>
+    {{ if .Params.sw }}✅{{ else }}❌{{ end }}
+  </td>
+  <td>
+    {{ if .Params.cm }}✅{{ else }}❌{{ end }}
+  </td>
+</tr>
