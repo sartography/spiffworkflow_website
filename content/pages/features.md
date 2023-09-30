@@ -11,10 +11,10 @@ cssClass: "section-features"
 Get started quickly, but without painting yourself into a corner
 {{< /tile >}}
 {{< tile title="Powerful Form Building" icon="form" >}}
-Build detailed forms with validation, conditions, type aheads and more
+Build detailed forms with validation, conditions, type aheads, and more
 {{< /tile >}}
 {{< tile title="Decision Modeling" icon="table" >}}
-Transparent easy to understand spreadsheets capture business rules concisely
+Transparent and easy to understand spreadsheets capture business rules concisely
 {{< /tile >}}
 {{< tile title="Collaboration" icon="approval" >}}
 Manage the handoff of tasks between individuals and teams
@@ -23,13 +23,13 @@ Manage the handoff of tasks between individuals and teams
 Send reminders after a period of time, or kick off tasks on a schedule
 {{< /tile >}}
 {{< tile title="Events" icon="event" >}}
-Respond to external events - such as an api call or a message on Slack
+Respond to external events via api call
 {{< /tile >}}
 {{< tile title="Parallel Execution" icon="parallel" >}}
 Distribute a workload across a number of external services simultaneously
 {{< /tile >}}
 {{< tile title="Real Time Administration" icon="admin" >}}
-Pause, Edit and Resume running workflows
+Pause, Edit, and Resume running workflows
 {{< /tile >}}
 {{< tile title="Unit Testing Tools" icon="test" >}}
 Create automatic tests for your workflows, call activities, and scripts
@@ -41,10 +41,10 @@ Data Extraction from workflows to generate detailed custom reports
 Extend the functionality of the application itself with BPMN
 {{< /tile >}}
 {{< tile title="Connectors" icon="connection" >}}
-Send and receive information from other applications.  Use ours connectors, or build your own!
+Send and receive information from other applications.  Use our connectors or build your own!
 {{< /tile >}}
 {{< /tiles >}}
 ## See these features in action
-You can schedule a demo with one of our core team and we can demonstrate these features live on our demo site.  
+You can schedule a demo with one of our core team members and we can demonstrate these features live on our demo site.  
 We can also answer any questions you may have about SpiffWorkflow and how it can help your organization.
 {{< calendly >}}
