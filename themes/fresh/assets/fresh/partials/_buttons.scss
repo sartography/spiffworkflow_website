@@ -85,24 +85,24 @@ Classes to change the feel of bulma buttons
     }
     &.button.accent-btn {
         outline: none;
-        border-color: $accent;
-        background-color: $accent;
-        color: $white;
+        border-color: $white;
+        background-color: $white;
+        color: $secondary;
         transition: all 0.5s;
         &:hover {
-            color: $white;
+            color: $black;
         }
         &.raised:hover {
             box-shadow: 0 14px 26px -12px rgba(104, 187, 136, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(104, 187, 136, 0.2) !important;
-            opacity: 0.8;
+            opacity: 0.9;
         }
         &.btn-outlined {
-            border-color: $accent;
-            color: $accent;
+            border-color: $primary;
+            color: $primary;
             background-color: transparent;
             &:hover {
-                color: $white;
-                background-color: $accent;
+                color: $black;
+                background-color: $white;
             }
         }
     }

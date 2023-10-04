@@ -1,0 +1,5 @@
+{{- $icon := .Get "icon" -}}
+{{- $svg := printf `/static/images/features/icons/%s.svg` $icon -}}
+{{- $match := "<svg (.*)?>(.*)</svg>" -}}
+{{- $replaceWith := printf `<svg class="feature-icon" ${1}>${2}</svg>` -}}
+{{ replaceRE $match $replaceWith (printf $svg | readFile) | safeHTML }}

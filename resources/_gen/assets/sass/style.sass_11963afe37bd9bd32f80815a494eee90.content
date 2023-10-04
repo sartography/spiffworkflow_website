@@ -6497,22 +6497,22 @@ Classes to change the feel of bulma buttons
 
 .button.button.accent-btn {
   outline: none;
-  border-color: #758E4F;
-  background-color: #758E4F;
-  color: #fff;
+  border-color: #fff;
+  background-color: #fff;
+  color: #F26419;
   transition: all 0.5s; }
   .button.button.accent-btn:hover {
-    color: #fff; }
+    color: #0a0a0a; }
   .button.button.accent-btn.raised:hover {
     box-shadow: 0 14px 26px -12px rgba(104, 187, 136, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(104, 187, 136, 0.2) !important;
-    opacity: 0.8; }
+    opacity: 0.9; }
   .button.button.accent-btn.btn-outlined {
-    border-color: #758E4F;
-    color: #758E4F;
+    border-color: #126D82;
+    color: #126D82;
     background-color: transparent; }
     .button.button.accent-btn.btn-outlined:hover {
-      color: #fff;
-      background-color: #758E4F; }
+      color: #0a0a0a;
+      background-color: #fff; }
 
 /*! _cards.scss v1.0.0 | Commercial License | built on top of bulma.io/Bulmax */
 /* ==========================================================================

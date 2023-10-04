@@ -22,14 +22,14 @@ Camunda is a leading open source workflow engine, and is based on the same core 
 {{< /tile >}}
 {{< /tiles >}}
 
-### Feature Comparion Details
-See how we compare to Camunda on a number of key elements of a workflow engine ...
+### Feature Comparison Details
+See how we compare to Camunda v8 on a number of key elements of a workflow engine ...
 * [End To End Process Orchestration](#end-to-end-process-orchestration)
 * [Open Standards](#open-standards)
 * [Analytics and Optimization](#analytics-and-optimization)
 * [Flexible Architecture](#flexible-architecture)
+* [Open Source](#open-source)
 * [Low Cost of Ownership](#low-cost-of-ownership)
-* [BPMN Support Details](#bpmn-support)
 
 
 ### End To End Process Orchestration
@@ -45,7 +45,7 @@ Script, Service, Decision Tables - the ability to define end execute tasks autom
 Create and expose new APIs and Micro Services from BPMN Diagrams
 {{</compare_row>}}
 {{< compare_row title="External Applications" sw="true" cm="true">}}
-Connect with external applications through a standard protocol. Spiffworkflow users REST based APIs and Json Schemas, Camunda8 users gRPC
+Connect with external applications through a standard protocol. SpiffWorkflow users REST based APIs and Json Schemas, Camunda8 users gRPC
 {{</compare_row>}}
 {{</compare_table>}}
 
@@ -61,7 +61,7 @@ A spreadsheet like notation that describes repeatable business decisions concise
 {{< compare_row title="CMMN" sw="" cm="true">}}
 Case Management - for describing processes that intrinsically unpredictable, not repeatable, weekly structured.  CMMN is also maintained by the [OMG](https://www.omg.org/).  
 {{</compare_row>}}
-{{< compare_row title="JSon Schema" sw="true" cm="">}}
+{{< compare_row title="JSon Schema" sw="true" cm="true">}}
 SpiffWorkflow users Json Schemas to describe web forms, data stores and other internally modeled systems according to a well established standard.
 {{</compare_row>}}
 {{</compare_table>}}
@@ -89,7 +89,7 @@ Ability to execute workflow processes over days, weeks and months.
 ### Flexible Architecture
 Both software applications are designed for integration into your organizations infrastructure.  
 {{< compare_table >}}
-{{< compare_row title="Locally Deployable" sw="true" cm="">}}
+{{< compare_row title="Self Hosted" sw="true" cm="">}}
 While some aspects of Camunda's infrastructure can be deployed in-house, Camunda 8's offering requires that much of the execution happens remotely on their SAAS Platform.
 {{</compare_row>}}
 {{< compare_row title="Embeddable" sw="true" cm="true">}}

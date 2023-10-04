@@ -1,5 +1,6 @@
 {{- $sectionClass := .Params.cssClass | default "" }}
-<section class="section is-medium {{$sectionClass}}">
+{{- $sectionSubClass := .Params.cssSubClass | default "" }}
+<section class="section is-medium {{$sectionClass}} {{$sectionSubClass}}">
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">

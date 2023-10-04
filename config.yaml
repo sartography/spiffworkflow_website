@@ -23,8 +23,7 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   images:
-  - /images/favicon.png
-  - /images/default_thumbnail.png
+  - /images/illustrations/intro.png
   # Used as meta data; describe your site to make Google Bots happy
   description: Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone.
   # Preloader ensures get_started are loaded before displaying to the user. If you don't want it uncomment to set it to false
@@ -59,35 +58,15 @@ params:
   navbar:
   - title: Features
     url: /pages/features/
-  - title: Support
-    url: /pages/support/
-  - title: Compare
+  - title: Comparison
     url: /pages/compare/
+  - title: Pricing
+    url: /pages/price/
   - title: Articles
     sublinks:
       - title: Introductory Articles
         url: /posts/articles/
       - title: Deep Dives
-        url: /posts/deep_dives/
-  sidebar:
-    # Logo (from /get_started/logos/___.svg)
-    logo: spiffworkflow_white
-    sections:
-    - title: Projects
-      icon: user
-      links:
-      - text: SpiffWorkflow
-        url: /pages/spiffworkflow/
-      - text: SpiffArena
-        url: /pages/spiffarena/
-      - text: SpiffEditor
-        url: /pages/spiffeditor/
-    - title: Articles
-      icon: envelope
-      links:
-      - text: Introductory Articles
-        url: /posts/articles/
-      - text: Deep Dive Articles
         url: /posts/deep_dives/
   section1:
     title: A Powerful Low Code Platform
@@ -101,14 +80,14 @@ params:
     title: A Thriving Open Source Community
     subtitle: We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.
     features:
-    - title: 1500 Stars
+    - title: 1500+ Stars
       text: Continuous growth and usage for over a decade, with a thriving community of contributors.
       icon: star-history.png
-    - title: 42 Contributors
+    - title: 40+ Contributors
       text: Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.
       # Icon (from /get_started/illustrations/icons/___.svg)
       icon: contributors.png
-    - title: 200 Discord Members
+    - title: 200+ Discord Members
       text: A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.
       icon: discord.png
   section4:
