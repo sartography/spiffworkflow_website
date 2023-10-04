@@ -75,7 +75,7 @@ cssClass: "section-support"
 
 ### Support
 
-Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.  We offer support plans that provide direct access to the same team that develops, tests, and creates the documenation and training for SpiffWorkflow.
+Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.  We offer support plans that provide direct access to the same team that develops, tests, and creates the documentation and training for SpiffWorkflow.
 <div class="support_table">
 
 
