@@ -73,7 +73,7 @@ params:
     subtitle: Build your first diagram in minutes. But don't let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.
     image: build_a_diagram.gif
     buttonText: Try it Now
-    buttonLink: /posts/articles/get_started/
+    buttonLink: /pages/enterprise
   contact: true
   science: true
   section2:
