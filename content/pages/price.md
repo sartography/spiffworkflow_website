@@ -4,6 +4,7 @@ subtitle: "We offer flexible pricing and support plans to meet your needs."
 date: 2023-09-29T13:20:00-05:00
 draft: false
 description: "Choose a platform and support package that meets your needs.  We offer a range of options, from a free open source platform to a fully supported enterprise edition."
+images: ["/images/opengraph/price.png"]
 cssClass: "section-support"
 ---
 

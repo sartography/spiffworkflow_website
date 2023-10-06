@@ -4,6 +4,7 @@ subtitle: "SpiffWorkflow is a powerful workflow execution engine that is rich wi
 date: 2022-12-27T16:05:00-05:00
 draft: false
 description: A list of the major features of SpiffArena and it's components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors and more...
+images: ["/images/opengraph/features.png"]
 cssClass: "section-features"
 ---
 {{< tiles>}}

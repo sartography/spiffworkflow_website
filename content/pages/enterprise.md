@@ -5,6 +5,7 @@ date: 2022-12-27T16:05:00-05:00
 author: Dan Funk
 draft: false
 description: We are building a series of Enterprise level integrations and extensions to assure that SpiffWorkflow can meet the needs of large scale organizations.
+images: ["/images/opengraph/enterprise.png"]
 cssClass: "section-support"
 cssSubClass: "enterprise"
 ---

@@ -4,6 +4,7 @@ subtitle: "See how we measure up, feature by feature, to other leading business 
 date: 2023-09-27T12:20:00-05:00
 draft: false
 description: SpiffWorkflow is a feature rich implementation of the BPMN standard, with years of development and testing behind it.  See how we compare to other workflow engines.
+images: ["/images/opengraph/compare.png"]
 cssClass: "section-compare"
 ---
 
