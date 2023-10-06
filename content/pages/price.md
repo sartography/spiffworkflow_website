@@ -27,13 +27,13 @@ cssClass: "section-support"
     <td> Unlimited</td>
 </tr>
 <tr>
-    <td><b>Core Features</b> - Form building, decision tables, timers, events, admin tools, reporting, prospectives, parallel execution, and more.
+    <td><b>Core Features</b> - Form building, decision tables, timers, events, admin tools, reporting, perspectives, parallel execution, and more.
     </td>
     <td> {{< svg icon="check" >}}</td>
     <td> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Training</b> - Professional training for business analysts, citizen developers, software engineers and devops.
+    <td><b>Training</b> - Professional training for business analysts, citizen developers, software engineers, and devops.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
@@ -45,7 +45,7 @@ cssClass: "section-support"
     <td class="check"> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Integrated Authentication</b> - Step outside of the box and integrate with your existing authentication system - no need to create new accounts or manage seperate groups and permissions.
+    <td><b>Integrated Authentication</b> - Step outside of the box and integrate with your existing authentication system - no need to create new accounts or manage separate groups and permissions.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
@@ -64,7 +64,7 @@ cssClass: "section-support"
     <td class="check"> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Pre-Built Process Models</b> - Accelerate your development with our prebuilt process models for popular business cases - drag and drop common approval processes into your workflow as call activities and configure them to meet your specific needs.
+    <td><b>Pre-Built Process Models</b> - Accelerate your development with our prebuilt process models for popular business use cases - drag and drop common approval processes into your workflows as call activities and configure them to meet your specific needs.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
