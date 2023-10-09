@@ -125,19 +125,19 @@ params:
       - title: Training
         icon: training
         text: From BPMN to Dev-Ops we offer training to get you moving quickly and to assure you getting the most out of your investment.
-        url: /pages/training/
+        url: /pages/price/
         buttonText: Learn More
         class: tile-secondary
       - title: Hosting
         icon: hosting
         text: Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.
-        url: /pages/hosting/
+        url: /pages/price/
         buttonText: Learn More
         class: tile-secondary
       - title: Integration
-        icon: enterprise
+        icon: integration
         text: Enterprise level integrations for Authentication, pre-built reusable workflows, and connectors to rest of your enterprise systems.
-        url: /pages/enterprise/
+        url: /pages/price/
         buttonText: Learn More
         class: tile-secondary
   section6: false
