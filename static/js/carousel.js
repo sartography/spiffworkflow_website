@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel-testimonial").owlCarousel({
         loop: true,
         responsiveClass:true,
         responsive:{
@@ -16,5 +16,13 @@ $(document).ready(function(){
                 nav:false
             },
         }
+    });
+    $(".owl-carousel-reference").owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true
     });
 });
