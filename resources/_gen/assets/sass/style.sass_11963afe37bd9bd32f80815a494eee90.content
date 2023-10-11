@@ -6965,7 +6965,7 @@ Testimonials Styles
     border-radius: 8px;
     position: relative;
     padding: 30px 50px 65px 50px;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0 0 -40px;
     line-height: 1.6em; }
@@ -6993,12 +6993,10 @@ Testimonials Styles
     text-align: left;
     color: #fff;
     padding: 0 0px;
-    position: relative;
     z-index: 0; }
     .reference .citation h5, .reference .citation span {
       left: 50px;
       right: 50px;
-      position: absolute;
       opacity: 1;
       padding: 3px 5px; }
     .reference .citation h5 {
