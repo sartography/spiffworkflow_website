@@ -16,6 +16,11 @@
       <div class="owl-carousel owl-carousel-reference">
         {{- range $quotes }}
         <div class="science-item">
+          {{ if .image }}
+          <a target="_blank" href="{{ .link }}">
+            <img src="{{ .image }}" class="reference_image"/>
+          </a>
+          {{ end }}
           <figure class="reference">
             <blockquote>
               {{ .quote | markdownify }}
