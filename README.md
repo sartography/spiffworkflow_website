@@ -1,6 +1,6 @@
 # SpiffWorkflow landing page and blog
 
-To get started install Hugo. From there you can just run ```hugo serve``` and you should get the site as designed.
+To get started, install Hugo. From there you can just run ```hugo serve``` and you should get the site as designed.
 
 # Theme
 We used the Fresh Theme
