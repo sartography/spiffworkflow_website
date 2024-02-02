@@ -47,6 +47,7 @@ params:
     buttontext: Schedule a Demo!
     # Where the main hero button links to
     buttonlink: "#"
+    buttonid: "schedule-demo"
     buttononclick: 'Calendly.initPopupWidget({url: "https://calendly.com/dan-sartography/spiffworkflow-demo"});return false;'
     # Hero image (from static/get_started/___)
     image: illustrations/intro.png

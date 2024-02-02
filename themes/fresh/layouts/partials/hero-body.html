@@ -4,6 +4,7 @@
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $buttonOnClick := index $hero "buttononclick" }}
+{{- $buttonId   := index $hero "buttonid" }}
 {{- $image      := index $hero "image" }}
 <div class="hero-body">
   <div class="container">
@@ -18,7 +19,7 @@
         </h2>
         {{ end }}
         <p>
-          <a class="button cta rounded secondary-btn raised" href="{{ $buttonLink }}" onclick="{{ $buttonOnClick | safeJS }}">
+          <a id="{{ $buttonId }}" class="button cta rounded secondary-btn raised" href="{{ $buttonLink }}" onclick="{{ $buttonOnClick | safeJS }}">
             {{ $buttonText }}
           </a>
         </p>
