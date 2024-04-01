@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="Free Trial" />
+<meta property="og:description" content="How to use our demonstration site to view and execute diagrams and get a basic understanding of SpiffWorkflow&#39;s features." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/articles/get_started/" /><meta property="og:image" content="http://localhost:1313/images/articles/get_started_demo_thumbnail.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-23T13:15:00-05:00" />
+<meta property="article:modified_time" content="2023-06-23T13:15:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>Free Trial, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium  ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Free Trial</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <h3 id="you-can-try-out-spiffworkflow-right-now-by-visiting-our-demo-site-at-spiffdemoorghttpspiffdemoorg">You can try out SpiffWorkflow right now by visiting our <a href="http://spiffdemo.org">demo site at SpiffDemo.org</a>.</h3>
+<div class="admonition note">
+<p class="first admonition-title">BUT WAIT!</p>
+<p>There is a lot of information on this page that will help you get the most out of your experience.  So please read on!</p>
+</div>
+<h2 id="video-instructions">Video Instructions</h2>
+<p>You can follow the directions below, or you can watch this short video where we take you step by step through how to use the site.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/fhEPyA3d4mE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="visit-spiffdemo--login"><strong>Visit Spiffdemo &amp; Login</strong></h3>
+<p>To begin your journey, open your web browser and navigate to the <a href="http://spiffdemo.org">official demo website</a>. On the login screen, you will find the option to &ldquo;Sign in with Google&rdquo;.
+If you do not have a Google account, please <a href="mailto:dan@sartography.com">contact us</a> and let us know what other sign-on options you would like to use.
+We can also create an account for you if needed.</p>
+<p><img src="image3.png" alt="login"></p>
+<h3 id="explore-the-home-section"><strong>Explore the Home Section</strong></h3>
+<p>Upon successful login, you will be greeted by our home screen. The home page will be empty at this stage since no processes are assigned to you. Take a moment to familiarize yourself with the layout and available features.</p>
+<p><img src="image5.png" alt="home page"></p>
+<h3 id="move-to-the-process-section"><strong>Move to the Process Section</strong></h3>
+<p>Go to the &ldquo;Process&rdquo; section from the top menu. Within the &ldquo;Process&rdquo; section, you will find two main sections: &ldquo;Example&rdquo; and &ldquo;Playground.&rdquo;</p>
+<p><img src="image7.png" alt="Process Selection"></p>
+<h3 id="explore-example-processes"><strong>Explore Example Processes</strong></h3>
+<p>Click on the &ldquo;Example&rdquo; option to explore pre-built workflow examples that showcase various functionality and use cases.
+In the &ldquo;Example&rdquo; section, you will find a list of top-level process models and groups.
+These examples represent complete workflows with predefined steps and tasks.</p>
+<p>Select one of the top-level examples, such as &ldquo;Minimal Example&rdquo; or &ldquo;Essential Example&rdquo; to view the corresponding process model and diagram.</p>
+<p><img src="image4.png" alt="Minimal Example" title="image_tooltip"></p>
+<p>Upon clicking on a process model (such as Minimal Example), a new window will open with details and a list of associated files.</p>
+<p><img src="image8.png" alt="alt_text" title="image_tooltip"></p>
+<h3 id="explore-bpmn-editor"><strong>Explore BPMN Editor</strong></h3>
+<p>If you wish to view and make changes to the process diagram. Open a .bpmn file and you will have a visual diagram representing the workflow. Take a closer look at the diagram and familiarize yourself with the elements, such as start events, tasks, and end events.</p>
+<p><img src="image9.png" alt="BPMN Editor"></p>
+<p>You can access detailed information and properties in the right sidebar by clicking on individual tasks. Make modifications to the diagram by adding or modifying tasks, connecting elements, or updating properties.</p>
+<p><img src="image1.png" alt="Launch Markdown Editor"></p>
+<p>To modify the instructions displayed for manual tasks, navigate to the &ldquo;Instructions&rdquo; field. For example, if you wish to update the information in the manual task named &ldquo;Show Example Manual Task&rdquo; below, click &ldquo;Launch Editor.&rdquo; This action will open the editor, allowing you to change the displayed content.</p>
+<p><img src="image2.png" alt="Markdown Editor"></p>
+<p><strong>Note:</strong> In order to save any changes, you must have an editor role. To acquire this role, you must request access to a playground (see below). Once you have the editor role, you can save your modifications successfully.</p>
+<h3 id="requesting-a-playground"><strong>Requesting a Playground</strong></h3>
+<p>To access the editor role and create your own diagrams, start by requesting a playground.</p>
+<p><img src="image6.png" alt="alt_text" title="image_tooltip"></p>
+<p>Follow the instructions within the &ldquo;Request a Playground&rdquo; process, providing the necessary information. This process will guide you through the steps required to complete the request and grant you access as an editor.</p>
+<p><img src="image11.png" alt="Playground Form"></p>
+<h3 id="access-the-playground"><strong>Access the Playground</strong></h3>
+<p>When your account is set up, select the &ldquo;<strong>Playground</strong>&rdquo; option in the process section, and you will see that you have gained the ability to create and modify your own process models.</p>
+<p><img src="image10.png" alt="alt_text" title="image_tooltip"></p>
+<p>Within the playground, you will find a container assigned to your name. Inside this container, you will have access to multiple tasks and process models. You can utilize this environment to create your own process models and make necessary modifications to the diagrams. This includes adding or modifying tasks, connecting elements, and updating properties. Furthermore, you can save these changes to ensure your progress is preserved.</p>
+<p><img src="image10.png" alt="Access Playground"></p>
+<h3 id="explore-additional-diagrams"><strong>Explore Additional Diagrams</strong></h3>
+<p>In addition to the top-level examples, our demo site provides a wide range of additional diagrams and workflows for exploration. To delve deeper into various workflow scenarios, you can navigate through the &ldquo;Essentials Example&rdquo; and the other process models under the &ldquo;Process Groups&rdquo; section below.</p>
+<p>The pre-built process models cover a wealth of information including both basic concepts and more advanced topics, allowing you to discover diverse and intricate workflow scenarios.</p>
+<p><img src="image12.png" alt="explore more models"></p>
+<p>By following these detailed steps, you will gain a solid understanding of SpiffWorkflow and its features.
+Enjoy exploring, creating, and executing workflows within the platform, and we hope that you will leverage its capabilities to streamline your business processes effectively.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

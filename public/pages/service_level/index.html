@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="Service Level Expectations" />
+<meta property="og:description" content="We offer these Service Level Expectations to our end users, and provide paid support options for organizations that need guaranteed availability, fast response times to questions, and resources to assure their system remains stable, up to date and free of major security vulnerabilities." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/pages/service_level/" /><meta property="og:image" content="http://localhost:1313/images/opengraph/home.png" /><meta property="article:section" content="pages" />
+<meta property="article:published_time" content="2023-09-26T01:33:00-05:00" />
+<meta property="article:modified_time" content="2023-09-26T01:33:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>Service Level Expectations, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium  ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Service Level Expectations</h1>
+        <h5 class="subtitle is-5 is-muted">Our SLA and Commercial Support Options</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <p>This SLE seeks to outline the basic expectations for a Support Contract or Service Level Agreement between <a href="https://sartography.com">Sartography</a> and an organization seeking to self-host the SpiffArena Application or use the SpiffWorkflow library in a production environment.  It seeks to offer clarification on the following major areas:</p>
+<ol>
+<li><strong>Level of support</strong> you can expect from <a href="https://sartography.com">Sartography</a>. This includes but is not limited to things like availability, response time, and resolution time.</li>
+<li><strong>Framework for resolving disputes.</strong> If there is a problem with the service, this can be used to determine who is responsible and how the problem will be resolved.</li>
+<li><strong>Measure of performance.</strong> The SLA can be used to track the Provider&rsquo;s performance over time.</li>
+</ol>
+<h3 id="terms">Terms:</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Availability</td>
+<td>The percentage of time that our support services will actually be available during support hours. (we hope to be available 100% of the time, but that isn’t always possible)</td>
+</tr>
+<tr>
+<td>Response time</td>
+<td>The time it takes for us to respond to a question or support request.</td>
+</tr>
+<tr>
+<td>Penalty</td>
+<td>A financial or other sanction that is imposed on a service provider for failing to meet the terms of an SLA.</td>
+</tr>
+<tr>
+<td>Software release</td>
+<td>A new version of the software application that is made available to users and that includes new features, bug fixes, or performance improvements.</td>
+</tr>
+<tr>
+<td>Severe Incident</td>
+<td>any incident that results in the unavailability of the service for more than two hours or that affects more than 10% of the users of the service.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-scope-of-service">1. Scope of Service</h2>
+<p><a href="https://sartography.com">Sartography</a> strives to provide all SpiffWorkflow users with the following:</p>
+<ul>
+<li>Releasing new versions of the project on a regular basis</li>
+<li>Creating Security updates and bug fixes for the latest version of the project</li>
+<li>Providing a public chat room for users to discuss the project</li>
+<li>Creating and maintaining basic documentation</li>
+</ul>
+<h3 id="paid-support">Paid Support</h3>
+<p>Commercial companies with mission-critical installations of SpiffArena and SpiffWorkflow may require enhanced Provider availability including fast response times to questions, and regular checkups to ensure their systems remain stable, up to date, and are protected against major security vulnerabilities.  For these cases <a href="https://sartography.com">Sartography</a> offers paid support plans to provide these organizations and groups with priority responses via chat rooms and GitHub, and  allow them direct access to <a href="https://sartography.com">Sartography</a> personnel through phone, video, email, and private chat.</p>
+<p>Please refer to the chart below for a comparison of service levels.</p>
+<p>Paid support contracts are offered at three levels - Bronze, Silver and Gold:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Community</th>
+<th>Bronze</th>
+<th>Silver</th>
+<th>Gold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regular Releases</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Security Patches</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>GitHub Ticket Support</td>
+<td>✓</td>
+<td>24 hrs*</td>
+<td>24 hrs*</td>
+<td>24 hrs*</td>
+</tr>
+<tr>
+<td>Discord Channel</td>
+<td>✓</td>
+<td>24 hrs*</td>
+<td>24 hrs*</td>
+<td>24 hrs*</td>
+</tr>
+<tr>
+<td>Email Security Alerts</td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Direct Support**</td>
+<td></td>
+<td>By Appointment</td>
+<td>8am-5pm EST M-F**</td>
+<td>24/7</td>
+</tr>
+<tr>
+<td>Support Tickets Per Week ***</td>
+<td></td>
+<td>3</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Installation Review</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Annual Health Check</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>VPN Support</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Monitored Upgrades</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>* On normal business days - not counting weekends and national holidays.  
+** We can do video calls, phone calls, text messages, private chats, we&#39;ll even share a tmux terminal with you. 
+*** Ticket complexity can vary widely. We will handle as many tickets as we can - but we must limit our time to an average of one hour per ticket. 
+</code></pre><h1 id="2-limitations">2. Limitations</h1>
+<p>To receive support of any kind, you must remain on a supported version of the platform. Major versions will be supported for 12 months after the release of the next major version.  Minor versions will be supported for 6 months after the release of the next minor version.  Patch versions will be supported for 3 months after the release of the next patch version.</p>
+<h1 id="3-service-level-indicators">3. Service Level Indicators</h1>
+<table>
+<thead>
+<tr>
+<th>Service Level</th>
+<th>Availability</th>
+<th>Response Time (chat/email)</th>
+<th>Response Time (Phone/Text)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bronze</td>
+<td>90%</td>
+<td>48 hours</td>
+<td>8 hour - MWF - 8am to Noon EST</td>
+</tr>
+<tr>
+<td>Silver</td>
+<td>90%</td>
+<td>24 hours</td>
+<td>4 hour - M-F - 6am to 6pm EST</td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>90%</td>
+<td>4 hours</td>
+<td>1 hour - 24/7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-read-this-chart">How to read this chart:</h3>
+<p>Availability is the percentage of time that <a href="https://sartography.com">Sartography</a> will be available within the agreed time windows. For example, Bronze members can expect us to respond to messages within 48 hours, and to phone calls and text messages within an hour (if the request is made within the service window) at least 90% of the time.</p>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>Except for Gold Members, support is not offered on weekends or national holidays in the U.S.  In such a case our response times will be measured from the next business day.</li>
+</ul>
+<h1 id="4-penalties">4. Penalties</h1>
+<p>In the event that we fail to meet the above Service Level Indicators the following penalty will apply:</p>
+<ul>
+<li>Initial Response time for support requests: If the Provider does not respond to a support ticket within the availability and time frame limits outlined in the Support Level Indicators section above, Client will be entitled to a refund of 10% of the monthly service fees.</li>
+<li>Disaster Recovery and Resolution time for severe incidents: If Sartography fails to resolve a severe incident within 24 hours, the Client will be entitled to a refund of 10% of the monthly service fees if the incident is related to a defect or security vulnerability in Sartography’s code base. If the incident is related to a defect or security vulnerability in a third-party software package, the Client will be entitled to a refund of 5% of the monthly service fees. If the incident is related to a defect or security vulnerability in the Client’s software, hardware or infrastructure, the Client will not be entitled to a refund.</li>
+</ul>
+<p><strong>Refunds and credits</strong>: Refunds and credits will be applied to the next monthly invoice.</p>
+<p><strong>Waiver</strong>: The Provider may waive any penalty if it can demonstrate that the failure to meet the service levels was due to circumstances beyond its reasonable control.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="Deploying and Integrating With SpiffArena" />
+<meta property="og:description" content="Detailed instructions that cover making an external connection from SpiffWorkflow to a 3rd party service." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/deep_dives/deploy_integrate/" /><meta property="og:image" content="http://localhost:1313/images/articles/deploy_integrate_thumbnail.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-06T14:09:00-05:00" />
+<meta property="article:modified_time" content="2023-04-06T14:09:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>Deploying and Integrating With SpiffArena, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium  ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Deploying and Integrating With SpiffArena</h1>
+        <h5 class="subtitle is-5 is-muted">Using the Connector Proxy and an AWS Lambda Function to Integrate with SpiffArena</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <h1 id="deploying-and-integrating-with-spiffarena">Deploying and Integrating With SpiffArena</h1>
+<p>This guide shows you how to deploy the demo <code>Connector Proxy</code> as an <code>AWS Lambda Function</code> as well as how to integrate it with <a href="https://www.spiffworkflow.org/pages/spiffarena/">SpiffArena</a>. The <a href="https://www.spiffworkflow.org/posts/articles/get_started/">Getting Started Guide</a> will be used as the basis for integration but the steps should easily map to any custom installation.</p>
+<p>There is an assumption that you have access to login to the AWS Console and can create/deploy Lambda functions.</p>
+<h2 id="checkout-the-source-code">Checkout the source code</h2>
+<p>The source code for this project is available on <a href="https://github.com/sartography/connector-proxy-lambda-demo">GitHub</a>.
+You will need to close this repository to complete the steps below.</p>
+<h2 id="building-the-zip">Building the zip</h2>
+<p>One option when deploying a Lambda function is to upload a zip file containing the source code or executable. In the root of this repository run:</p>
+<pre tabindex="0"><code>make zip
+</code></pre><p>This will create a zip file containing the <a href="https://github.com/jbirddog/connector-proxy-lambda-demo/blob/main/connector_proxy_lambda_demo/lambda_function.py#L5">lambda entry point function</a> as well as all the dependencies needed to execute the connectors. For this example the libraries <a href="https://github.com/sartography/spiffworkflow-proxy">spiffworkflow-proxy</a> is used for discovering connectors and <a href="https://github.com/sartography/connector-http">connector-http</a> is an example connector that provides http get and post requests.</p>
+<p>Once <code>make zip</code> completes <code>connector_proxy_lambda_demo.zip</code> will be available in the repository root.</p>
+<h2 id="creating-the-lambda-function">Creating the Lambda Function</h2>
+<p>Log in to the AWS Console and navigate to the Lambda section.</p>
+<p><img src="./login.png" alt="Login"></p>
+<p>From there choose <code>Create function</code>.</p>
+<p><img src="create_function.png" alt="Create Function ScreenShot"></p>
+<p>Choose to <code>Author from scratch</code> and select the most recent Python runtime.</p>
+<p><img src="author_from_scratch.png" alt="Author From Scratch Screenshot"></p>
+<p>Under <code>Advanced Settings</code> check <code>Enable function URL</code>. For this demo we will use the <code>NONE</code> auth type to keep things simple.</p>
+<p><img src="advanced_settings.png" alt="Advanced Settings Screenshot"></p>
+<p>After hitting the <code>Create function</code> button you will be taken to your new Lambda function:</p>
+<p><img src="lambda.png" alt="Lambda Screenshot"></p>
+<p>In the bottom right of the first section is a link to your Lamba&rsquo;s function URL. Click it for a hello world response.</p>
+<p><img src="function_url.png" alt="Function URL Screenshot"></p>
+<h2 id="deploying-the-lambda-function">Deploying the Lambda Function</h2>
+<p>If you scroll down you will see a section with the example code created with your Lambda function. We are going to replace this with the contents of our zip file. Choose <code>Upload from</code> and select <code>.zip file</code>.</p>
+<p><img src="code_source.png" alt="Code Source Screenshot"></p>
+<p>After a confirmation dialog you will see your lambda has been updated:</p>
+<p><img src="code_source2.png" alt="Code Source 2 Screenshot"></p>
+<p>Click your function URL again to see a hello from our deployed Connector Proxy.</p>
+<h2 id="integrating-with-spiffarena">Integrating With SpiffArena</h2>
+<p>Congrats, your Connector Proxy has been deployed as a Lambda function. To integrate it with SpiffArena we simply need to update an environment variable and restart the backend. If using the <a href="/posts/articles/get_started/">Getting Started Guide</a> open the docker-compose.yml file, else edit the environment variable in the way appropriate for your deployment. The variable we need to change is called <code>SPIFFWORKFLOW_BACKEND_CONNECTOR_PROXY_URL</code>.</p>
+<p>Example diff using the function URL from the above images:</p>
+<pre tabindex="0"><code>diff --git a/docker-compose.yml b/docker-compose.yml
+index 95b87b39..7d55c492 100644
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -26,7 +26,7 @@ services:
+       SPIFFWORKFLOW_BACKEND_URL: &#34;http://localhost:${SPIFF_BACKEND_PORT:-8000}&#34;
+ 
+       SPIFFWORKFLOW_BACKEND_BPMN_SPEC_ABSOLUTE_DIR: &#34;/app/process_models&#34;
+-      SPIFFWORKFLOW_BACKEND_CONNECTOR_PROXY_URL: &#34;http://spiffworkflow-connector:8004&#34;
++      SPIFFWORKFLOW_BACKEND_CONNECTOR_PROXY_URL: &#34;https://crbxgaopinfxqscntkqixjbl4e0gigpm.lambda-url.us-east-1.on.aws&#34;
+       SPIFFWORKFLOW_BACKEND_DATABASE_URI: &#34;mysql+mysqlconnector://root:${SPIFF_MYSQL_PASS:-my-secret-pw}@spiffworkflow-db:${SPIFF_MYSQL_PORT:-8003}/spiffworkflow_backend_development&#34;
+       SPIFFWORKFLOW_BACKEND_LOAD_FIXTURE_DATA: &#34;false&#34;
+       SPIFFWORKFLOW_BACKEND_OPEN_ID_CLIENT_ID: &#34;spiffworkflow-backend&#34;
+</code></pre><p>Restart:</p>
+<pre tabindex="0"><code>docker compose down
+docker compose up -d
+</code></pre><h2 id="testing">Testing</h2>
+<p>Create a new process model as described in the <a href="/posts/articles/get_started/">Getting Started Guide</a>. Add a <code>Service Task</code> and in its properties panel you will see a drop down to pick which connector in your <code>Connector Proxy</code> to call. In this demo we deployed http get and post connectors:</p>
+<p><img src="bpmn_editor.png" alt="BPMN Editor Screenshot"></p>
+<p>Choose the <code>http/GetRequest</code> operator ID and enter the <a href="https://dog-api.kinduff.com/api/facts">dog fact api</a> URL. Remember to quote it since parameters are evaluated as Python expressions.</p>
+<p><img src="properties.png" alt="Properties Screenshot"></p>
+<p>Run the process and once complete you can see the response in the workflow:</p>
+<p><img src="task_data.png" alt="Task Data"></p>
+<h2 id="congrats">Congrats!</h2>
+<p>You have successfully deployed your own <code>Connector Proxy</code> as an <code>AWS Lambda function</code> and integrated it with <code>SpiffArena</code>. You made a call from a workflow to get a dog fact. Now imagine that call was to talk to an external system relevant to your business processes.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

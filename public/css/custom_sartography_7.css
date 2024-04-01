@@ -1,0 +1,398 @@
+
+
+@media (max-width: 767px) {
+    .title.is-1 {
+        font-size: 2.5rem;
+    }
+    .title.is-2 {
+        font-size: 2rem;
+    }
+    .hero-foot img.partner-logo {
+        height: 40px;
+    }
+}
+
+.content img {
+    display: block;
+    margin: auto;
+}
+
+.content img.inline {
+    display: inline;
+    margin: 0;
+}
+
+.content p, .content ol, .content ul {
+    font-size: 1.3em;
+}
+
+.content figure figcaption {
+    font-size: .875em;
+    font-style: normal;
+    color: #6c757d;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.brief {
+    color: #6c757d;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+.item-thumbnail {
+    min-width: 150px;
+    padding-right: 30px;
+}
+
+.meta {
+    font-size: .875rem;
+    color: #adb5bd;
+}
+
+div.admonition {
+    margin: 20px 0px;
+    padding: 10px 20px;
+    background-color: #e5f7fb;
+    border-left: 5px solid #6c757d;;
+}
+
+div.admonition tt.xref, div.admonition a tt {
+    border-bottom: 1px solid #fafafa;
+}
+
+dd div.admonition {
+    margin-left: -60px;
+    padding-left: 60px;
+}
+
+div.admonition p.admonition-title {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+}
+
+div.admonition p.last {
+    margin-bottom: 0;
+}
+
+.section-support {
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)
+    ), url("/images/features/photos/support.jpg");
+}
+
+.section-support.enterprise {
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.8)
+    ), url("/images/features/photos/enterprise.jpg");
+}
+
+.section-support .content {
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.section-features {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)
+    ), url("/images/features/photos/coffee.jpg");
+}
+
+.section-features .title, .section-features .subtitle, .section-support .title, .section-support .subtitle,
+.section-features p, .section-features h2, .section-support p, .section-support h2 {
+    color: #fff;
+    text-shadow: 0 1px 0 black;
+}
+
+section.section-support .content p {
+    color: #4a4a4a;
+    text-shadow: none;
+}
+
+.section-features .subtitle.is-muted, .section-support .subtitle.is-muted {
+    color: #ddd;
+}
+
+
+
+.tiles {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+.tiles div.feature-card {
+    margin-bottom: 25px;
+    height: 250px;
+    width: 360px;
+    border-radius: 8px;
+}
+
+.tiles div.feature-card.highlighted {
+    box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.15);
+}
+
+.tiles.compare div.feature-card {
+    width: 500px;
+    min-height: 400px;
+    height: auto;
+}
+
+.tiles .feature-card .card-action {
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.tiles .feature-card .card-icon img {
+    height: 75px;
+}
+.feature-icon {
+    color: #F26419;
+}
+.feature-icon:hover, .tiles .highlighted .feature-icon {
+    color: #126D82;
+}
+
+
+.tiles .feature-card .card-text {
+    padding: 0 20px;
+}
+
+
+
+#section2 figure .image img {
+    max-width: 200px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    max-width: 360px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -160px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.cookie_settings a {
+    display: block;
+    padding-top: 20px;
+    color: #98a9c3;
+}
+.cookie_settings a:hover {
+    color: #fff;
+}
+
+
+.comparison-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.75rem;
+    background-color:  #ddd;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.comparison-table th:first-child {
+    border: 0;
+}
+
+.comparison-table th:nth-child(2n) {
+    box-shadow: 0 0 2rem hsla(0, 0%, 0%, 0.15);
+    width: 30%;
+}
+.pricing-table th:nth-child(3n) {
+    background: #fff;
+    width: 30%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.comparison-table.pricing-table th:nth-child(2n) {
+    box-shadow: none;
+    width: 30%;
+}
+
+.comparison-table th:nth-child(3n) {
+    width: 30%;
+}
+
+.comparison-table th:nth-child(2n),
+.comparison-table td:nth-child(2n) {
+    position: relative;
+    background: #fff;
+}
+
+.pricing-table th:first-child,
+.pricing-table td:nth-child(1n) {
+    background: #fff;
+}
+
+.pricing-table th:nth-child(3n), .pricing-table th:nth-child(3n) h4,
+.pricing-table td:nth-child(3n) {
+    position: relative;
+    background: #F26419;
+    color: #fff;
+    text-shadow: 0 1px 0 black;
+}
+
+.pricing-table th:nth-child(2n), .pricing-table th:nth-child(2n) h4,
+.pricing-table td:nth-child(2n) {
+    color: #4a4a4a;
+}
+
+
+.pricing-table td.x .feature-icon {
+    color: darkred;
+}
+
+.pricing-table td.check .feature-icon {
+    color: white;
+}
+
+.pricing-table td svg {
+    max-height: 40px;
+}
+
+.pricing-table td:nth-child(2n) svg {
+    color: #4a4a4a;
+}
+
+.pricing-table td:nth-child(3n) svg {
+    color: white;
+}
+
+
+.comparison-table td:not(:first-child), .comparison-table th:not(:first-child) {
+    text-align: center;
+}
+
+.pricing-table td.check .feature-icon {
+    color: white;
+    animation: check 5s ease alternate infinite;
+}
+@keyframes check {
+    10% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.comparison-table th a {
+    font-size:2vw;
+}
+
+
+.support_table table {
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+@media (min-width: 48rem) {
+    .comparison-table {
+        font-size: 0.875rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    .comparison-table th:nth-child(2n), .comparison-table th:nth-child(3n) {
+        width: 20%;
+    }
+
+    .comparison-table {
+        font-size: 1rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1.5rem 2rem;
+    }
+
+    .pricing-table td svg {
+        max-height: 40px;
+    }
+}
+

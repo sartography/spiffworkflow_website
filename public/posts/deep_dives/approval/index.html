@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="Parallel Approval Processes" />
+<meta property="og:description" content="Detailed instructions for building a parallel approval process in BPMN for SpiffWorkflow." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/deep_dives/approval/" /><meta property="og:image" content="http://localhost:1313/images/articles/parallel_approval_thumbnail.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-02T14:09:00-05:00" />
+<meta property="article:modified_time" content="2023-01-02T14:09:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>Parallel Approval Processes, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium  ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Parallel Approval Processes</h1>
+        <h5 class="subtitle is-5 is-muted">How to create a multi-person approval process</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <p>Felix on the <a href="https://discord.gg/F6Kb7HNK7B">SpiffWorkflow Discord Channel</a> asked:</p>
+<blockquote>
+<p>hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve. Is SpiffWorkflow able to do this?</p>
+</blockquote>
+<p>Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix&rsquo;s questions.   In this diagram we model a case where three people are asked to approve a request, but only two of the three people actually need to take action for the request to go through.</p>
+<p>Details are below, but here is a video that might be a little easier to follow.
+<div class="container">
+    <div id="player-wrapper" class="my-5"></div>
+</div>
+
+<script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"
+>
+</script>
+
+<script>
+  var playerElement = document.getElementById("player-wrapper");
+
+  var player = new Clappr.Player({
+    source: "/videos/parallel_approval.mp4",
+  mute: true,
+    height: 360,
+    width: 500
+  });
+
+  player.attachTo(playerElement);
+</script>
+</p>
+<p>Here is how the diagram looks in SpiffArena in our Process Instance Viewer.  It is worth studying. Even though the diagram for each lane is identical, they each executed very differently.
+<img src="./completed_process.png" alt="Image of a completed process"></p>
+<ol>
+<li>The top lane is the &ldquo;instigating user&rdquo;, the person that started the process.  Their first two tasks are grayed-out as completed.  It&rsquo;s the lanes below that are important &hellip;</li>
+<li>In the Approver 1 lane, the Approval happens (through a manual task). Then we check a Data Store (process-level variables) to see how many approvals were completed.  In this first case, only one approval has happened, so that path of the parallel gateway is complete.</li>
+<li>In the Approver 2 lane, we do the same, only this time when we increment the Data Store variable, we have the two required approvals, which causes an Event to fire. This second parallel path is then complete.</li>
+<li>When the Event fires, it cancels the final waiting approval, and that final parallel path completes.</li>
+<li>At this point all three parallel paths are complete and the diagram closes out.</li>
+</ol>
+<p>Here is the original BPMN file if you would like to try it out yourself.<br>
+<a href="./multi-approvals-1.bpmn" title="download">Download Diagram</a></p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

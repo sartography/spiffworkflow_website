@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="How We Compare to the Competition" />
+<meta property="og:description" content="SpiffWorkflow is a feature rich implementation of the BPMN standard, with years of development and testing behind it.  See how we compare to other workflow engines." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/pages/compare/" /><meta property="og:image" content="http://localhost:1313/images/opengraph/compare.png" /><meta property="article:section" content="pages" />
+<meta property="article:published_time" content="2023-09-27T12:20:00-05:00" />
+<meta property="article:modified_time" content="2023-09-27T12:20:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>How We Compare to the Competition, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium section-compare ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">How We Compare to the Competition</h1>
+        <h5 class="subtitle is-5 is-muted">See how we measure up, feature by feature, to other leading business workflow engines.</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <h2 id="how-do-you-compare-to-camunda">How do you compare to Camunda?</h2>
+<p>Camunda is a leading open source workflow engine, and is based on the same core platform as offerings from IBM, Flowable, Appian and others.  Many of the comparisons here are also applicable to these other systems.</p>
+<div class="tiles compare">
+  
+<div class="feature-card is-bordered has-text-centered " data-animation="fadeInLeft">
+  <div class="card-title">
+    <h4>Camunda</h4>
+  </div>
+  <div class="card-icon">
+    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><path fill="currentColor" d="M 31.488281 2 C 24.800781 1.878906 18.332031 4.046875 13.015625 8.25 C 6.9375 13.058594 3.09375 19.9375 2.195313 27.632813 C 1.296875 35.328125 3.449219 42.910156 8.25 48.984375 C 13.054688 55.0625 19.9375 58.90625 27.632813 59.804688 C 28.777344 59.9375 29.921875 60.003906 31.058594 60.003906 C 37.550781 60.003906 43.8125 57.835938 48.984375 53.75 C 55.0625 48.941406 58.902344 42.058594 59.800781 34.367188 C 60.703125 26.671875 58.550781 19.089844 53.75 13.015625 C 48.941406 6.9375 42.0625 3.09375 34.367188 2.195313 C 33.40625 2.082031 32.445313 2.019531 31.488281 2 Z M 30.945313 3.996094 C 32.003906 3.996094 33.070313 4.058594 34.136719 4.183594 C 48.921875 5.914063 59.546875 19.351563 57.816406 34.136719 C 56.980469 41.300781 53.402344 47.707031 47.746094 52.179688 C 42.085938 56.652344 35.023438 58.660156 27.863281 57.816406 C 13.078125 56.089844 2.453125 42.648438 4.183594 27.863281 C 5.019531 20.699219 8.597656 14.292969 14.253906 9.820313 C 19.070313 6.011719 24.898438 3.996094 30.945313 3.996094 Z M 34.125 9.117188 C 33.996094 9.097656 33.863281 9.105469 33.730469 9.140625 C 33.195313 9.277344 32.871094 9.820313 33.003906 10.355469 C 33.8125 13.535156 32.214844 14.941406 29.324219 17.160156 C 27.621094 18.46875 25.691406 19.953125 24.546875 22.210938 C 22.21875 27.242188 26.984375 30.722656 28.546875 31.867188 C 28.726563 31.996094 28.933594 32.0625 29.136719 32.0625 C 29.445313 32.0625 29.75 31.917969 29.945313 31.652344 C 30.269531 31.203125 30.175781 30.578125 29.730469 30.253906 C 26.265625 27.722656 25.226563 25.5 26.34375 23.082031 C 27.269531 21.261719 28.933594 19.984375 30.542969 18.75 C 33.152344 16.746094 36.113281 14.472656 34.941406 9.863281 C 34.839844 9.460938 34.507813 9.179688 34.125 9.117188 Z M 39.0625 17.167969 C 38.9375 17.148438 38.800781 17.152344 38.667969 17.1875 C 38.394531 17.253906 31.929688 18.90625 29.8125 22.597656 C 29.09375 23.847656 28.933594 25.179688 29.332031 26.558594 C 29.460938 26.996094 29.859375 27.28125 30.292969 27.28125 C 30.386719 27.28125 30.480469 27.265625 30.574219 27.238281 C 31.101563 27.085938 31.40625 26.53125 31.253906 26 C 31.007813 25.152344 31.101563 24.363281 31.546875 23.59375 C 32.949219 21.144531 37.511719 19.539063 39.152344 19.125 C 39.6875 18.992188 40.015625 18.449219 39.878906 17.914063 C 39.78125 17.511719 39.449219 17.226563 39.0625 17.167969 Z M 14.109375 17.230469 C 13.855469 17.269531 13.613281 17.402344 13.449219 17.621094 C 13.121094 18.0625 13.210938 18.691406 13.65625 19.019531 L 15.257813 20.214844 C 15.4375 20.347656 15.648438 20.410156 15.855469 20.410156 C 16.160156 20.410156 16.460938 20.273438 16.65625 20.011719 C 16.984375 19.570313 16.894531 18.941406 16.453125 18.609375 L 14.847656 17.417969 C 14.625 17.253906 14.359375 17.191406 14.109375 17.230469 Z M 49.847656 19.40625 C 49.722656 19.421875 49.59375 19.464844 49.472656 19.535156 C 49 19.820313 48.84375 20.433594 49.125 20.90625 C 49.515625 21.5625 49.875 22.246094 50.1875 22.9375 C 50.359375 23.304688 50.722656 23.523438 51.101563 23.523438 C 51.242188 23.523438 51.382813 23.496094 51.515625 23.433594 C 52.019531 23.203125 52.242188 22.613281 52.011719 22.109375 C 51.664063 21.347656 51.273438 20.601563 50.84375 19.886719 C 50.632813 19.527344 50.234375 19.351563 49.847656 19.40625 Z M 11.496094 22.117188 C 11.105469 22.125 10.738281 22.363281 10.589844 22.75 C 10.382813 23.265625 10.632813 23.84375 11.144531 24.046875 L 13.003906 24.785156 C 13.125 24.835938 13.25 24.859375 13.375 24.859375 C 13.769531 24.859375 14.148438 24.621094 14.304688 24.226563 C 14.507813 23.710938 14.257813 23.132813 13.746094 22.925781 L 11.886719 22.1875 C 11.757813 22.136719 11.625 22.113281 11.496094 22.117188 Z M 52.667969 25.652344 C 52.539063 25.628906 52.402344 25.636719 52.269531 25.667969 C 51.734375 25.792969 51.398438 26.328125 51.523438 26.867188 C 52.347656 30.414063 52.238281 34.125 51.214844 37.601563 C 51.058594 38.128906 51.359375 38.6875 51.890625 38.84375 C 51.984375 38.871094 52.078125 38.886719 52.171875 38.886719 C 52.605469 38.886719 53.003906 38.605469 53.128906 38.167969 C 54.253906 34.359375 54.371094 30.296875 53.46875 26.414063 C 53.375 26.011719 53.050781 25.71875 52.667969 25.652344 Z M 10.261719 27.566406 C 9.710938 27.503906 9.214844 27.894531 9.148438 28.445313 C 9.085938 28.992188 9.476563 29.488281 10.027344 29.554688 L 12.011719 29.785156 C 12.050781 29.792969 12.09375 29.796875 12.128906 29.796875 C 12.628906 29.796875 13.0625 29.417969 13.121094 28.910156 C 13.183594 28.359375 12.792969 27.863281 12.246094 27.800781 Z M 31.933594 27.953125 C 31.679688 27.933594 31.417969 28.011719 31.207031 28.191406 C 30.789063 28.554688 30.746094 29.1875 31.109375 29.605469 C 31.710938 30.296875 31.753906 30.953125 31.25 31.722656 C 30.949219 32.1875 31.078125 32.804688 31.539063 33.109375 C 31.707031 33.21875 31.898438 33.269531 32.085938 33.269531 C 32.410156 33.269531 32.734375 33.113281 32.921875 32.820313 C 33.914063 31.308594 33.800781 29.65625 32.617188 28.292969 C 32.4375 28.082031 32.1875 27.96875 31.933594 27.953125 Z M 41.910156 30.730469 C 41.261719 30.710938 40.589844 30.816406 39.933594 31.046875 C 39.410156 31.230469 39.136719 31.800781 39.316406 32.320313 C 39.5 32.839844 40.074219 33.117188 40.59375 32.933594 C 41.875 32.480469 42.902344 32.832031 43.433594 33.308594 C 43.707031 33.554688 44.140625 34.085938 43.953125 34.890625 C 43.640625 36.273438 41.742188 37.585938 38.886719 38.402344 C 38.355469 38.550781 38.046875 39.105469 38.199219 39.636719 C 38.324219 40.074219 38.726563 40.359375 39.160156 40.359375 C 39.25 40.359375 39.34375 40.347656 39.4375 40.324219 C 44.394531 38.910156 45.617188 36.59375 45.90625 35.34375 C 46.207031 34.039063 45.78125 32.722656 44.765625 31.816406 C 44 31.132813 42.988281 30.761719 41.910156 30.730469 Z M 25.589844 30.796875 C 25.40625 30.820313 21.6875 30.808594 18.859375 32.414063 C 17.59375 33.195313 17.875 34.132813 17.992188 34.402344 C 18.3125 35.140625 19.585938 35.644531 21.390625 35.9375 C 20.667969 36.582031 20.628906 37.246094 20.792969 37.769531 C 21.027344 38.527344 21.898438 39.132813 23.175781 39.5625 C 22.710938 39.894531 22.425781 40.277344 22.332031 40.730469 C 22.253906 41.09375 22.25 41.8125 23.066406 42.484375 C 24.140625 43.363281 26.648438 44.015625 29.601563 44.015625 C 31.945313 44.015625 34.574219 43.605469 36.984375 42.570313 C 37.492188 42.351563 37.730469 41.765625 37.511719 41.257813 C 37.292969 40.75 36.703125 40.511719 36.199219 40.734375 C 31.320313 42.820313 25.859375 41.9375 24.515625 41.082031 C 24.699219 40.988281 25.003906 40.859375 25.484375 40.726563 C 25.5 40.722656 26.65625 40.371094 27.871094 40.363281 C 27.921875 40.363281 27.96875 40.339844 28.019531 40.332031 C 28.363281 40.34375 28.710938 40.355469 29.066406 40.355469 C 31.703125 40.355469 34.609375 39.996094 37.238281 39.226563 C 37.769531 39.070313 38.074219 38.515625 37.917969 37.984375 C 37.761719 37.457031 37.207031 37.152344 36.675781 37.308594 C 30.300781 39.171875 24.191406 38.160156 22.878906 37.300781 C 23.078125 37.167969 23.449219 36.96875 24.125 36.742188 C 24.523438 36.617188 25.738281 36.296875 26.621094 36.28125 C 26.625 36.28125 26.628906 36.28125 26.636719 36.28125 C 30.621094 36.261719 35.109375 35.765625 38.09375 34.964844 C 38.628906 34.820313 38.945313 34.273438 38.800781 33.738281 C 38.660156 33.207031 38.109375 32.886719 37.578125 33.03125 C 34.105469 33.964844 30.042969 34.300781 26.660156 34.296875 C 26.636719 34.296875 26.617188 34.285156 26.59375 34.28125 C 26.519531 34.285156 26.4375 34.292969 26.359375 34.296875 C 23.839844 34.28125 21.726563 34.074219 20.574219 33.789063 C 22.816406 32.808594 25.554688 32.796875 25.585938 32.796875 C 26.136719 32.796875 26.585938 32.351563 26.585938 31.796875 C 26.585938 31.246094 26.140625 30.800781 25.589844 30.796875 Z M 12.058594 32.894531 L 10.078125 33.183594 C 9.53125 33.261719 9.15625 33.769531 9.234375 34.316406 C 9.308594 34.8125 9.734375 35.171875 10.222656 35.171875 C 10.269531 35.171875 10.316406 35.167969 10.367188 35.160156 L 12.347656 34.871094 C 12.894531 34.792969 13.269531 34.285156 13.191406 33.738281 C 13.109375 33.191406 12.597656 32.804688 12.058594 32.894531 Z M 13.582031 37.78125 C 13.453125 37.78125 13.320313 37.808594 13.195313 37.863281 L 11.359375 38.65625 C 10.851563 38.875 10.617188 39.460938 10.835938 39.96875 C 11 40.347656 11.367188 40.574219 11.753906 40.574219 C 11.886719 40.574219 12.019531 40.546875 12.152344 40.488281 L 13.988281 39.699219 C 14.496094 39.476563 14.730469 38.890625 14.511719 38.386719 C 14.34375 38.003906 13.972656 37.777344 13.582031 37.78125 Z M 21 41.503906 C 19.351563 41.378906 17.136719 42.066406 16.078125 42.699219 C 14.847656 43.4375 14.671875 44.242188 14.738281 44.785156 C 14.90625 46.113281 16.625 46.628906 17.234375 46.8125 C 20.847656 47.71875 24.660156 48.097656 28.238281 48.097656 C 36.175781 48.101563 42.933594 46.230469 43.671875 44.109375 C 43.90625 43.429688 43.714844 42.503906 42.472656 41.941406 C 41.972656 41.714844 41.378906 41.9375 41.152344 42.441406 C 40.945313 42.902344 41.113281 43.433594 41.523438 43.699219 C 39.492188 45.25 28.5625 47.59375 17.765625 44.886719 C 17.324219 44.75 17.050781 44.628906 16.890625 44.539063 C 17.730469 43.867188 20.550781 43.1875 21.246094 43.566406 C 21.695313 43.878906 22.316406 43.769531 22.632813 43.324219 C 22.949219 42.871094 22.839844 42.246094 22.390625 41.925781 C 22.03125 41.675781 21.546875 41.546875 21 41.503906 Z M 43.71875 45.171875 C 43.148438 45.136719 42.6875 45.542969 42.640625 46.09375 C 42.523438 47.632813 35.769531 49.441406 25.453125 48.78125 C 24.90625 48.769531 24.429688 49.167969 24.390625 49.71875 C 24.359375 50.269531 24.773438 50.742188 25.328125 50.78125 C 25.550781 50.792969 27.21875 50.894531 29.496094 50.894531 C 35.085938 50.894531 44.324219 50.28125 44.636719 46.25 C 44.679688 45.695313 44.269531 45.214844 43.71875 45.171875 Z"/></svg>
+  </div>
+  <div class="card-text">
+<p><strong>Java Developer Friendly</strong></p>
+<p>Camunda focuses on supporting professional software engineers, allowing them to use their development environments of choice to write the code behind a BPMN Diagram.  It provides introspection and analytics tools for decision makers within a company.
+
+  </div>
+</div>
+
+
+<div class="feature-card is-bordered has-text-centered highlighted" data-animation="fadeInLeft">
+  <div class="card-title">
+    <h4>SpiffWorkflow</h4>
+  </div>
+  <div class="card-icon">
+    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><path fill="currentColor" d="M 30.824219 0 C 22.800781 0 15.976563 5.46875 14.230469 13.296875 L 11.78125 24.269531 C 11.277344 26.527344 10.375 28.65625 9.101563 30.589844 L 7.4375 33.109375 C 6.945313 33.859375 6.8125 34.777344 7.074219 35.636719 C 7.339844 36.496094 7.96875 37.1875 8.804688 37.535156 C 10.097656 38.070313 11.558594 38.570313 13.144531 39.035156 L 8.25 41.378906 C 4.460938 43.199219 2 47.089844 2 51.300781 L 2 59 C 2 60.648438 3.351563 62 5 62 L 59 62 C 60.648438 62 62 60.648438 62 59 L 62 51.300781 C 62 47.089844 59.539063 43.199219 55.75 41.378906 L 50.8125 39.015625 C 52.425781 38.554688 53.90625 38.058594 55.199219 37.53125 C 56.027344 37.1875 56.660156 36.5 56.925781 35.644531 C 57.195313 34.785156 57.0625 33.863281 56.570313 33.109375 L 54.710938 30.261719 C 53.476563 28.375 52.597656 26.304688 52.09375 24.109375 L 49.824219 14.203125 C 48.136719 6.847656 41.75 1.476563 34.230469 1.046875 C 33.207031 0.359375 32.035156 0 30.824219 0 Z M 30.824219 2 C 31.707031 2 32.5625 2.285156 33.296875 2.828125 C 33.457031 2.949219 33.652344 3.019531 33.851563 3.023438 C 40.601563 3.292969 46.367188 8.074219 47.875 14.648438 L 50.144531 24.554688 C 50.703125 26.980469 51.671875 29.269531 53.035156 31.355469 L 54.894531 34.199219 C 55.0625 34.453125 55.105469 34.761719 55.015625 35.050781 C 54.960938 35.21875 54.820313 35.523438 54.4375 35.675781 C 52.648438 36.410156 50.488281 37.082031 48.035156 37.6875 L 42.480469 35.03125 C 43.550781 33.371094 44.410156 31.558594 45.011719 29.730469 C 46.238281 29.269531 47.359375 27.769531 47.902344 25.78125 C 48.210938 24.597656 48.28125 23.410156 48.078125 22.429688 C 47.828125 21.21875 47.199219 20.410156 46.289063 20.171875 C 46.167969 20.140625 46.019531 20.109375 45.859375 20.109375 C 45.75 19.300781 45.570313 18.519531 45.328125 17.75 C 45.160156 17.21875 44.589844 16.929688 44.070313 17.097656 C 43.539063 17.269531 43.25 17.828125 43.421875 18.347656 C 43.738281 19.347656 43.921875 20.378906 43.96875 21.429688 C 43.992188 21.789063 44.191406 22.109375 44.511719 22.28125 C 44.828125 22.4375 45.210938 22.421875 45.511719 22.21875 C 45.691406 22.109375 45.78125 22.097656 45.78125 22.097656 C 45.808594 22.109375 46 22.28125 46.121094 22.828125 C 46.25 23.5 46.199219 24.390625 45.96875 25.261719 C 45.71875 26.179688 45.359375 26.839844 45.019531 27.261719 C 44.691406 27.679688 44.378906 27.878906 44.230469 27.878906 C 43.789063 27.878906 43.398438 28.167969 43.269531 28.597656 C 42.699219 30.519531 41.808594 32.460938 40.679688 34.171875 C 40.308594 34.75 39.910156 35.300781 39.46875 35.8125 C 37.429688 38.289063 34.828125 40 32 40 C 29.171875 40 26.570313 38.289063 24.53125 35.8125 C 24.089844 35.300781 23.691406 34.75 23.320313 34.171875 C 22.191406 32.460938 21.300781 30.519531 20.730469 28.597656 C 20.601563 28.167969 20.210938 27.878906 19.769531 27.878906 C 19.46875 27.878906 18.53125 27.101563 18.03125 25.261719 C 17.800781 24.390625 17.75 23.5 17.878906 22.828125 C 18 22.269531 18.191406 22.109375 18.210938 22.097656 C 18.222656 22.097656 18.300781 22.109375 18.488281 22.21875 C 18.789063 22.421875 19.171875 22.4375 19.488281 22.28125 C 19.808594 22.109375 20.007813 21.789063 20.03125 21.429688 C 20.078125 20.390625 20.261719 19.359375 20.578125 18.371094 C 20.738281 17.839844 20.449219 17.28125 19.921875 17.109375 C 19.398438 16.949219 18.839844 17.238281 18.671875 17.769531 C 18.429688 18.53125 18.25 19.308594 18.140625 20.109375 C 17.980469 20.109375 17.832031 20.140625 17.710938 20.171875 C 16.800781 20.410156 16.171875 21.21875 15.921875 22.429688 C 15.71875 23.410156 15.789063 24.597656 16.097656 25.78125 C 16.640625 27.769531 17.761719 29.269531 18.988281 29.730469 C 19.589844 31.558594 20.449219 33.371094 21.519531 35.03125 L 15.90625 37.71875 C 13.503906 37.117188 11.367188 36.4375 9.570313 35.6875 C 9.289063 35.574219 9.074219 35.339844 8.984375 35.050781 C 8.933594 34.882813 8.882813 34.550781 9.109375 34.207031 L 10.769531 31.6875 C 12.175781 29.550781 13.175781 27.203125 13.734375 24.703125 L 16.183594 13.730469 C 17.726563 6.824219 23.746094 2 30.824219 2 Z M 26.527344 12.125 C 25.8125 12.0625 25.09375 12.390625 24.683594 13.015625 L 23.078125 15.449219 C 22.773438 15.910156 22.902344 16.53125 23.363281 16.835938 C 23.53125 16.949219 23.722656 17 23.910156 17 C 24.238281 17 24.554688 16.84375 24.75 16.550781 L 26.355469 14.117188 L 27.917969 14.878906 C 30.765625 16.265625 33.941406 17 37.109375 17 L 39.667969 17 C 40.222656 17 40.667969 16.550781 40.667969 16 C 40.667969 15.449219 40.222656 15 39.667969 15 L 37.109375 15 C 34.246094 15 31.367188 14.335938 28.792969 13.078125 L 27.230469 12.316406 C 27.003906 12.207031 26.765625 12.144531 26.527344 12.125 Z M 22.699219 36.6875 C 25.148438 39.800781 28.410156 42 32 42 C 35.589844 42 38.851563 39.800781 41.300781 36.6875 L 41.941406 36.996094 L 37.089844 50.945313 L 35.078125 46.921875 L 35.949219 44.316406 C 36.121094 43.792969 35.839844 43.226563 35.316406 43.050781 C 34.789063 42.875 34.226563 43.160156 34.050781 43.683594 L 33.28125 46 L 30.71875 46 L 29.949219 43.683594 C 29.773438 43.160156 29.214844 42.875 28.683594 43.050781 C 28.160156 43.226563 27.875 43.792969 28.050781 44.316406 L 28.921875 46.921875 L 26.90625 50.945313 L 22.058594 37 Z M 20.242188 37.863281 L 27.941406 60 L 25.5 60 L 17.25 49 L 19.800781 45.597656 C 19.960938 45.386719 20.027344 45.121094 19.988281 44.859375 L 19.070313 38.421875 Z M 43.757813 37.863281 L 44.929688 38.425781 L 44.011719 44.859375 C 43.972656 45.121094 44.039063 45.386719 44.199219 45.601563 L 46.730469 48.972656 L 38.222656 59.367188 C 38.074219 59.550781 38.015625 59.777344 38.015625 60 L 36.058594 60 Z M 17.179688 39.328125 L 17.953125 44.730469 L 15.199219 48.402344 C 14.933594 48.753906 14.933594 49.246094 15.199219 49.597656 L 23 60 L 5 60 C 4.449219 60 4 59.550781 4 59 L 4 51.300781 C 4 47.859375 6.007813 44.667969 9.117188 43.179688 Z M 46.820313 39.328125 L 54.878906 43.183594 C 57.992188 44.671875 60 47.859375 60 51.300781 L 60 59 C 60 59.550781 59.550781 60 59 60 L 40.292969 60 L 48.777344 49.632813 C 49.066406 49.277344 49.078125 48.769531 48.800781 48.402344 L 46.046875 44.734375 Z M 30.617188 48 L 33.382813 48 L 36.105469 53.449219 C 36.125 53.488281 36.15625 53.519531 36.183594 53.558594 L 34.058594 59.671875 C 34.019531 59.78125 34.011719 59.890625 34.011719 60 L 29.988281 60 C 29.988281 59.890625 29.984375 59.78125 29.945313 59.671875 L 27.8125 53.546875 C 27.839844 53.511719 27.875 53.488281 27.894531 53.449219 Z M 7 54 C 6.445313 54 6 54.449219 6 55 L 6 57 C 6 57.550781 6.445313 58 7 58 C 7.554688 58 8 57.550781 8 57 L 8 55 C 8 54.449219 7.554688 54 7 54 Z M 12 54 C 11.445313 54 11 54.449219 11 55 L 11 57 C 11 57.550781 11.445313 58 12 58 C 12.554688 58 13 57.550781 13 57 L 13 55 C 13 54.449219 12.554688 54 12 54 Z M 17 54 C 16.445313 54 16 54.449219 16 55 L 16 57 C 16 57.550781 16.445313 58 17 58 C 17.554688 58 18 57.550781 18 57 L 18 55 C 18 54.449219 17.554688 54 17 54 Z M 47 54 C 46.445313 54 46 54.449219 46 55 L 46 57 C 46 57.550781 46.445313 58 47 58 C 47.554688 58 48 57.550781 48 57 L 48 55 C 48 54.449219 47.554688 54 47 54 Z M 52 54 C 51.445313 54 51 54.449219 51 55 L 51 57 C 51 57.550781 51.445313 58 52 58 C 52.554688 58 53 57.550781 53 57 L 53 55 C 53 54.449219 52.554688 54 52 54 Z M 57 54 C 56.445313 54 56 54.449219 56 55 L 56 57 C 56 57.550781 56.445313 58 57 58 C 57.554688 58 58 57.550781 58 57 L 58 55 C 58 54.449219 57.554688 54 57 54 Z"/></svg>
+  </div>
+  <div class="card-text">
+<p><strong>Citizen Developer Friendly</strong></p>
+<p>We focus on putting automation tools in the hands of decision makers throughout the company.  We use BPMN as a tool for collaboration in an interdisciplinary effort of streamlining your internal processes, engaging everyone in making things work better.
+
+  </div>
+</div>
+
+
+</div>
+
+<h3 id="feature-comparison-details">Feature Comparison Details</h3>
+<p>See how we compare to Camunda v8 on a number of key elements of a workflow engine &hellip;</p>
+<ul>
+<li><a href="#end-to-end-process-orchestration">End To End Process Orchestration</a></li>
+<li><a href="#open-standards">Open Standards</a></li>
+<li><a href="#analytics-and-optimization">Analytics and Optimization</a></li>
+<li><a href="#flexible-architecture">Flexible Architecture</a></li>
+<li><a href="#open-source">Open Source</a></li>
+<li><a href="#low-cost-of-ownership">Low Cost of Ownership</a></li>
+</ul>
+<h3 id="end-to-end-process-orchestration">End To End Process Orchestration</h3>
+<p>Both Camunda and SpiffWorkflow provide full end to end process orchestration - we don&rsquo;t solve a small specific problem.  We help you improve your overall process.
+<table class="comparison-table">
+  <thead>
+  <th>&nbsp;</th>
+  <th><img src="/images/logos/spiffworkflow_small.png"></th>
+  <th><img src="/images/logos/camunda.png"></th>
+  </thead>
+  <tbody>
+  
+<tr>
+  <td><b>Human Tasks</b> -
+    Ability to create web forms that can be completed by end users.  SpiffWorkflow uses an open standard (Json Schema) Camunda uses a proprietary Form Builder.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Automated Tasks</b> -
+    Script, Service, Decision Tables - the ability to define end execute tasks automatically.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>APIs &amp; MicroServices</b> -
+    Create and expose new APIs and Micro Services from BPMN Diagrams
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>External Applications</b> -
+    Connect with external applications through a standard protocol. SpiffWorkflow users REST based APIs and Json Schemas, Camunda8 users gRPC
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+
+  </tbody>
+</table></p>
+<h3 id="open-standards">Open Standards</h3>
+<p>Both systems are founded on open standards that have seen substantial research, are backed by well respected international organizations, and are widely across the industry.
+<table class="comparison-table">
+  <thead>
+  <th>&nbsp;</th>
+  <th><img src="/images/logos/spiffworkflow_small.png"></th>
+  <th><img src="/images/logos/camunda.png"></th>
+  </thead>
+  <tbody>
+  
+<tr>
+  <td><b>BPMN 2.0</b> -
+    BPMN is a flow chart like notation that models the tasks and events within a complete business process.  BPMN 2.0 is maintained by the <a href="https://www.omg.org/">OMG</a> an international standards body.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>DMN</b> -
+    A spreadsheet like notation that describes repeatable business decisions concisely and comprehensively.  DMN is also maintained by the <a href="https://www.omg.org/">OMG</a>.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>CMMN</b> -
+    Case Management - for describing processes that intrinsically unpredictable, not repeatable, weekly structured.  CMMN is also maintained by the <a href="https://www.omg.org/">OMG</a>.
+  </td>
+  <td>
+    ❌
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>JSon Schema</b> -
+    SpiffWorkflow users Json Schemas to describe web forms, data stores and other internally modeled systems according to a well established standard.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+
+  </tbody>
+</table></p>
+<h3 id="analytics-and-optimization">Analytics and Optimization</h3>
+<p>The ability to track workflow processes as they execute, and to use that information to improve the process over time.
+<table class="comparison-table">
+  <thead>
+  <th>&nbsp;</th>
+  <th><img src="/images/logos/spiffworkflow_small.png"></th>
+  <th><img src="/images/logos/camunda.png"></th>
+  </thead>
+  <tbody>
+  
+<tr>
+  <td><b>Deep Analytics</b> -
+    Highly detailed logging of the execution of workflows
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Data Extraction</b> -
+    Ability to query and report on details collected within a workflow process
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Heat Maps</b> -
+    Heatmaps allow you to view all running processes as a single diagram, allow you to quickly pinpoint areas that need improvement.  Heatmaps are a top level item on SpiffWorkflows Roadmap but are not yet available.
+  </td>
+  <td>
+    ❌
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Issue Resolution</b> -
+    The ability to suspend, modify, and resume a running process when something going wrong.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Long Running Processes</b> -
+    Ability to execute workflow processes over days, weeks and months.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+
+  </tbody>
+</table></p>
+<h3 id="flexible-architecture">Flexible Architecture</h3>
+<p>Both software applications are designed for integration into your organizations infrastructure.<br>
+<table class="comparison-table">
+  <thead>
+  <th>&nbsp;</th>
+  <th><img src="/images/logos/spiffworkflow_small.png"></th>
+  <th><img src="/images/logos/camunda.png"></th>
+  </thead>
+  <tbody>
+  
+<tr>
+  <td><b>Self Hosted</b> -
+    While some aspects of Camunda&rsquo;s infrastructure can be deployed in-house, Camunda 8&rsquo;s offering requires that much of the execution happens remotely on their SAAS Platform.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ❌
+  </td>
+</tr>
+
+<tr>
+  <td><b>Embeddable</b> -
+    The core SpiffWorkflow library is designed specifically for embedding in any Python based application in any framework.  Some aspects of Camunda are embeddable in Java frameworks, such as Spring.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+
+  </tbody>
+</table></p>
+<h3 id="open-source">Open Source</h3>
+<p>Open Source Software is software that is provided along with its source code, with license that permits users to study, change, and improve its design.
+<table class="comparison-table">
+  <thead>
+  <th>&nbsp;</th>
+  <th><img src="/images/logos/spiffworkflow_small.png"></th>
+  <th><img src="/images/logos/camunda.png"></th>
+  </thead>
+  <tbody>
+  
+<tr>
+  <td><b>Open Source</b> -
+    SpiffWorkflow provides its core source code under an open source license.  While some extensions and plugins are proprietary, the core library, editor extensions, and user interface are released on the LGPL license.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ❌
+  </td>
+</tr>
+
+<tr>
+  <td><b>Source Available</b> -
+    &ldquo;Source Available&rdquo; licenses permit users to view the source code, but additional restrictions may prevent you from modifying it or using it without permission.  Camunda&rsquo;s core Zeeby engine is released under a restricted license that prohibits use as a &lsquo;process automation service&rsquo;, but it does provide the source code for examination.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Open Source Contributions</b> -
+    Both organizations make substantial contributions to the open source community.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+
+  </tbody>
+</table></p>
+<h3 id="low-cost-of-ownership">Low Cost of Ownership</h3>
+<table class="comparison-table">
+  <thead>
+  <th>&nbsp;</th>
+  <th><img src="/images/logos/spiffworkflow_small.png"></th>
+  <th><img src="/images/logos/camunda.png"></th>
+  </thead>
+  <tbody>
+  
+<tr>
+  <td><b>Early Assessment</b> -
+    SpiffWorkflow and Camunda both provide demo sites that allows people to immediately try out the project with freely available videos and documentation.   We encourage you to make a comparison!
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ✅
+  </td>
+</tr>
+
+<tr>
+  <td><b>Low sloped learning curve</b> -
+    SpiffWorkflow allows a novice user to build and execute a diagram within minutes.  While it can take years to master everything, the basics are easy to learn.  Camunda&rsquo;s structure is more complex, and requires software engineers to create and deploy even a simple diagram.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ❌
+  </td>
+</tr>
+
+<tr>
+  <td><b>Simple Pricing Model</b> -
+    SpiffWorkflow commercial pricing models are based on features and support contracts, we don&rsquo;t set our prices based on intrusive details about your business, such as the number of processes you execute.
+  </td>
+  <td>
+    ✅
+  </td>
+  <td>
+    ❌
+  </td>
+</tr>
+
+
+  </tbody>
+</table>
+<h2 id="see-spiffworkflow-for-yourself">See SpiffWorkflow for yourself</h2>
+<p>Schedule a demo with a member of our core team, and we can demonstrate these capabilities live on our demo site.
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<p>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/dan-sartography/spiffworkflow-demo'});return false;">
+  <span class="button signup-button rounded secondary-btn raised">
+    Schedule Demo
+  </span>
+</a></p></p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="The Low Code Wall" />
+<meta property="og:description" content="A business level introduction to SpiffWorkflow and why we adopted this open source platform and are building a suite of tools around it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/articles/low_code/" /><meta property="og:image" content="http://localhost:1313/images/articles/lowcode2_thumbnail.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-05T15:06:00-05:00" />
+<meta property="article:modified_time" content="2023-01-05T15:06:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>The Low Code Wall, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium  ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">The Low Code Wall</h1>
+        <h5 class="subtitle is-5 is-muted">Citizen Developers play a critical role in modern software development, but some low-code solutions trap their potential, rather than releasing it.  We’ll talk about how to spot low-code solutions that don’t have walls.</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <p><img src="low-code-jail.png" alt="Woman behind bars"></p>
+<h2 id="what-is-low-code--no-code">What is Low-Code / No-Code?</h2>
+<p>Low Code and No Code describe tools that allow people to create software applications (web sites, mobile apps, games, etc…) using graphical tools that don’t require writing code in traditional programming languages.  There are some brilliant examples - and they aren’t new - the idea has been around for … ever.  We’ve always been trying to make it easier to talk to computers.  Check out MIT’s Scratch which helps introduce software concepts to young students, or consider what anyone can do these days with WordPress.  In fact, pick up any popular cross-discipline software from 3D modeling (Blender) to clinical research (the delightful R language), and you will find this idea blossoming in every corner.</p>
+<h2 id="who-is-this-citizen-developer">Who is this Citizen Developer?</h2>
+<p>Citizen Developers are people who are authoring software, but whose primary role within a group or organization is not software engineering.  An excellent example might be a postgraduate student in Psychology, building an online study of anxiety, or a small business owner who creates a mobile application to help draw people to her bakery.   Citizen Developers is a term that will, over time, become ubiquitous.  People from all walks of life are creating software these days and nearly everyone is getting some exposure to software as they travel through life.</p>
+<h2 id="what-is-the-low-code-wall">What is the Low-Code Wall</h2>
+<p>The Low-Code Wall is the point at which a well intentioned tool becomes a hindrance rather than an aide.  It is the moment when a Citizen Developer&rsquo;s aspirations, vision and abilities exceed the capabilities of the tool.  Some Low-Code tools are carefully designed to offer a clean exit, a way to move beyond their baked in limitations and assumptions.  In many cases, however, these tools don’t offer a way out.  Maybe it&rsquo;s a malicious vendor lock-in, but mostly it’s just because offering a way out is damn hard.  Like Alice in Wonderland, Citizen Developers drink the “Low Code” potion, and it solves some of their problems – they can get in that rabbit hole, it costs a lot less to fill a tea cup.  But what do they do when they can’t get back to normal without demolishing everything around them?</p>
+<h2 id="avoiding-the-low-code-wall">Avoiding the Low-Code Wall</h2>
+<p>Here are a few ways to tell if a “Low-Code” system is building you a golden walkway right into a pile of busted bricks:</p>
+<ol>
+<li>Look out for terms like <strong>“Build your app in minutes.”</strong>  A quick start is like a too-goodlooking and too-interested first date – the faster you move in the beginning, the more quickly you may find the assumptions being made aren’t ones you are comfortable with long term.</li>
+<li>Require direct and clear assertions of a low-code system&rsquo;s ability to address <strong>security vulnerabilities</strong>. One of the things that makes software development hard is making sure it can’t get abused – you don’t want hackers taking over your website, or app explosions (the infamous Shadow-IT) creating security vulnerabilities in your organization.</li>
+<li><strong>No-Code At All!</strong>  That’s not a real benefit.  Sometimes the easiest and simplest way to get something done is to write a little code.  Basic scripting is a skill anyone can learn, and it comes with staggering power.  If you can’t move the low-code / no-code tool out of the way and add your own code directly, it <strong>is a wall by definition</strong>.</li>
+<li><strong>Open Standards</strong>.  Avoid proprietary languages owned and controlled by a single organization.   Look for low-code tools that are built on top of existing standards that have broad support.  A good low-code tool is a stepping stone to doing more things and growing.  The absence of open standards is like the absence of doors and windows - you are walking into a prison cell.</li>
+<li><strong>SAAS Only</strong> - SAAS or Software As a Service is a wonderful business model - but if you go with a vendor that only offers their services through their website then you didn’t buy a product - the product bought you.  You can’t control security, you will be forced into each upgrade cycle on their schedule, you will walk to the beat of their drum, and there is no way to prevent the vendor from throwing away all your efforts and leaving you behind.</li>
+<li><strong>Trust the lessons of the industry</strong> - There are tools no software developer can do without. Whether it is low-code or high-code, you need some basic things.  A testing framework - a way to test your work and assert it meets specific expectations.  A versioning system that allows you to track changes, go back three hours to when things were still working, and collaborate with others. And a debugging environment, so when you ask “Why is the damn thing not working?”, you have some way to dig in and find out.  You also want a place to ask questions that aren&rsquo;t restricted to paying clients - like Stack Overflow, an open chat room, or a public message board of some type.  Finally, you need a Staging Environment - a place where you can make mistakes and test out ideas before you show your work to the world.</li>
+</ol>
+<h2 id="an-alternative-to-low-code-for-citizen-developers">An alternative to Low-Code for Citizen Developers</h2>
+<h3 id="or-and-now-a-word-from-our-sponsors">(or “And now a word from our sponsors”)</h3>
+<p>I’m going to switch gears here and tell you about the open source project we created that seeks to support Citizen Developers in a way that avoids the pitfalls outlined above.</p>
+<p>As an alternative to the largely proprietary low-code systems that exist today, perhaps we could look at ways to better include Citizen Developers in the standard software development process through tools focused on collaboration between the Citizen Developers and an IT Department.  In doing so we can naturally build on the lessons of the industry and avoid some of the common pitfalls outlined above.  And if done right, it creates wide open roads for Citizen Developers to continue to grow, innovate, and expand their contributions.</p>
+<p>It is with this vision in mind that we developed SpiffArena - a new open source tool based on the popular SpiffWorkflow Library.  SpiffArena is a complete web based application that encourages collaboration between the IT Team and Citizen Developers.  It is a low-code environment that uses visual tools (in this case Flow-Chart like diagrams) and familiar interfaces (like spreadsheets) to create applications.  Citizen Developers can use these tools directly and independently to gather information from end users, make decisions, pass information along to other systems within the organization (anything from Slack Messages to databases to custom API calls).  In the meantime, the core system can be controlled by the IT Department, which can handle critical security concerns and build integration points.</p>
+<p>Those Flow-Chart diagrams are a well established standard called BPMN, and the spreadsheets follow another standard called DMN.  So building skills here are useful beyond the application, and resources abound for learning how to use these tools effectively.  The rest of the system is managed through the delightfully intuitive and powerful Python programming language, which is relatively easy to learn and also exceedingly well documented (it’s one of the most popular programming languages in the world for doing just about anything).</p>
+<p>If you would like to learn more, please check out our website at <a href="https://www.spiffworkflow.org">https://www.spiffworkflow.org</a>.  There are tutorials that will help you get started, and a detailed overview of major features and core components.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<span id="{{ index .Params 0 }}_param" />
+{{ if strings.ContainsNonSpace .Inner }}
+Inner is not empty
+{{ end }}
+
+<script>
+  (function () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const param_name = {{ index .Params 0 }}
+    const value = urlParams.get(param_name)
+    const element = document.getElementById(param_name + "_param");
+    const node = document.createTextNode(value);
+    element.appendChild(node);
+    console.log(queryString, urlParams, param_name, value, element)
+  })()
+</script>
+

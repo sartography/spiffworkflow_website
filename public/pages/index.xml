@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on SpiffWorkflow</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on SpiffWorkflow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Oct 2023 10:00:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpiffWorkflow&#39;s Open Source Code</title>
+      <link>http://localhost:1313/pages/open_source/</link>
+      <pubDate>Mon, 02 Oct 2023 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/open_source/</guid>
+      <description>Get The Code and Join our Community! SpiffWorkflow is made up of several open source projects available on GitHub. We recommend you start with SpiffArena, but you can also delve into the core workflow engine, BPMN.IO editor extensions, and the connector proxy.&#xA;To stay up to date on changes and updates, Star and Follow our GitHub repos, register for our newsletter (below), and join our Discord channel.</description>
+    </item>
+    <item>
+      <title>Pricing and Support Plans</title>
+      <link>http://localhost:1313/pages/price/</link>
+      <pubDate>Fri, 29 Sep 2023 13:20:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/price/</guid>
+      <description>&amp;nbsp; Open Source Learn More Enter&amp;shy;prise Try Now Participants - The maximum number of people that can participate in starting and completing a process instance. Unlimited Unlimited Process Models - The maximum number of process models you can draw. Unlimited Unlimited Process Instances - The maximum number of instances you can execute. Unlimited Unlimited Core Features - Form building, decision tables, timers, events, admin tools, reporting, perspectives, parallel execution, and more.</description>
+    </item>
+    <item>
+      <title>How We Compare to the Competition</title>
+      <link>http://localhost:1313/pages/compare/</link>
+      <pubDate>Wed, 27 Sep 2023 12:20:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/compare/</guid>
+      <description>How do you compare to Camunda? Camunda is a leading open source workflow engine, and is based on the same core platform as offerings from IBM, Flowable, Appian and others. Many of the comparisons here are also applicable to these other systems.&#xA;Camunda Java Developer Friendly&#xA;Camunda focuses on supporting professional software engineers, allowing them to use their development environments of choice to write the code behind a BPMN Diagram. It provides introspection and analytics tools for decision makers within a company.</description>
+    </item>
+    <item>
+      <title>Service Level Expectations</title>
+      <link>http://localhost:1313/pages/service_level/</link>
+      <pubDate>Tue, 26 Sep 2023 01:33:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/service_level/</guid>
+      <description>This SLE seeks to outline the basic expectations for a Support Contract or Service Level Agreement between Sartography and an organization seeking to self-host the SpiffArena Application or use the SpiffWorkflow library in a production environment. It seeks to offer clarification on the following major areas:&#xA;Level of support you can expect from Sartography. This includes but is not limited to things like availability, response time, and resolution time. Framework for resolving disputes.</description>
+    </item>
+    <item>
+      <title>Professional Hosting</title>
+      <link>http://localhost:1313/pages/hosting/</link>
+      <pubDate>Thu, 17 Aug 2023 12:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/hosting/</guid>
+      <description>We can give you a private cloud hosted instance of SpiffWorkflow that is monitored and maintained by our team of experts. We can also provide you with a dedicated support team to help you get the most out of your investment in SpiffWorkflow.&#xA;Let&amp;rsquo;s Talk Get in touch today to discuss your needs and determine the best package for you.</description>
+    </item>
+    <item>
+      <title>Terms of Service Agreement</title>
+      <link>http://localhost:1313/pages/demo_terms_of_service/</link>
+      <pubDate>Sat, 27 May 2023 12:49:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/demo_terms_of_service/</guid>
+      <description>1. Introduction This is the Terms of Service (&amp;ldquo;TOS&amp;rdquo;) agreement for SpiffDemo.org (the &amp;ldquo;Website&amp;rdquo;), operated by Sartography, a company located in Virginia, USA. This Website is intended for evaluation purposes only, and its primary purpose is to demonstrate the features and capabilities of SpiffWorkflow, an open-source product developed by Sartography. By accessing and using the Website, you (the &amp;ldquo;User&amp;rdquo;) agree to be bound by these Terms of Service, which constitute a legally binding agreement between you and Sartography.</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/pages/privacy_policy/</link>
+      <pubDate>Fri, 26 May 2023 17:15:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/privacy_policy/</guid>
+      <description>EFFECTIVE DATE: 2023-05-26&#xA;In this Privacy Policy (“Policy”), we describe how Sartography (&amp;ldquo;Sartography&amp;rdquo;, &amp;ldquo;Sartography LLC&amp;rdquo;, “SpiffWorkflow,” &amp;ldquo;SpiffDemo,&amp;rdquo; “we,” or “us”) collects, uses, and discloses information that we obtain about visitors to our websites https://spiffworkflow.org and https://spiffdemo.org (together the “Sites”) and the services available through our Sites (collectively, the “Services”).&#xA;By visiting the Sites, or using any of our Services, you agree that your personal information will be handled as described in this Policy.</description>
+    </item>
+    <item>
+      <title>Thank you</title>
+      <link>http://localhost:1313/pages/enterprise_thankyou/</link>
+      <pubDate>Mon, 02 Jan 2023 10:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/enterprise_thankyou/</guid>
+      <description>Thank you for your interest !&#xA;Our demo site is hosted on SpiffDemo.org. You will be redirected to the site in 10 seconds where you can create a new account through popular single sign on systems such as Google, Linked In or GitHub.&#xA;We will keep you posted on updates and changes to our Demo site via email to .&#xA;{{ &amp;lt; redirect &amp;ldquo;https://spiffdemo.org&amp;rdquo; 10 &amp;gt; }}</description>
+    </item>
+    <item>
+      <title>Thank you</title>
+      <link>http://localhost:1313/pages/thankyou/</link>
+      <pubDate>Mon, 02 Jan 2023 10:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/thankyou/</guid>
+      <description>Thank you for getting in contact with us, we will be in touch soon.</description>
+    </item>
+    <item>
+      <title>Features</title>
+      <link>http://localhost:1313/pages/features/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/features/</guid>
+      <description>Low Code Get started quickly, but without painting yourself into a corner Powerful Form Building Build detailed forms with validation, conditions, type aheads, and more Decision Modeling &lt;?xml version=&#34;1.0&#34;?&gt; Transparent and easy to understand spreadsheets capture business rules concisely Collaboration Manage the handoff of tasks between individuals and teams Timers Send reminders after a period of time, or kick off tasks on a schedule Events &lt;?xml version=&#34;1.0&#34;?&gt; Respond to external events via api call Parallel Execution &lt;?</description>
+    </item>
+    <item>
+      <title>Features</title>
+      <link>http://localhost:1313/pages/features2/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/features2/</guid>
+      <description>User Tasks &amp;ndash; Gather information from people You can create highly complex web forms to gather information from end users - injecting this information into your workflow process. We are using the excellent and feature complete open source React Json Form Schema with features such as nested sections, validation, and custom components. A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.</description>
+    </item>
+    <item>
+      <title>SpiffArena</title>
+      <link>http://localhost:1313/pages/spiffarena/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/spiffarena/</guid>
+      <description>SpiffArena combines many tools into a single web-based application. If you would like access to all of the Features (plus a lot more) this is the tool you want.&#xA;The full source code for SpiffArena is available on GitHub. Please visit the project and give it a star if you like it. We welcome contributions.&#xA;You can test out SpiffArena right now by following our Getting Started guide.&#xA;If you need support, please contact us for a free consultation.</description>
+    </item>
+    <item>
+      <title>SpiffEditor (and other open source projects)</title>
+      <link>http://localhost:1313/pages/spiffeditor/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/spiffeditor/</guid>
+      <description>The following tools are available as a part of SpiffArena, but can also be used independently. They are all open source, and we welcome contributions.&#xA;SpiffEditor We&amp;rsquo;ve built a number of extensions to the excellent open source BPMN.js editor, specifically for SpiffWorkflow. Here are few of the major features:&#xA;Data Objects, Inputs and Outputs: Improved support for adding, referencing and updating data references, providing a standards based way to manage data within a diagram.</description>
+    </item>
+    <item>
+      <title>SpiffWorkflow</title>
+      <link>http://localhost:1313/pages/spiffworkflow/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/spiffworkflow/</guid>
+      <description>SpiffWorkflow is an open source Python library with source code available on GitHub and detailed documentation available on ReadTheDocs. It is the core library within SpiffArena. Its target audience is Python developers who want to create custom workflow systems or embed BPMN features into existing applications.</description>
+    </item>
+    <item>
+      <title>Spiffworkflow Enterprise</title>
+      <link>http://localhost:1313/pages/enterprise/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/enterprise/</guid>
+      <description>Sign up below to get access to our demo site. There you can view diagrams and run example workflows. You can see some of our Enterprise Level integrations in action, and request edit access to your own playground where you can start building diagrams and workflows of your own.&#xA;Sign Up Please fill out the required fields to continue.</description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>http://localhost:1313/pages/training/</link>
+      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/training/</guid>
+      <description>Get dedicated training from experienced professionals. We offer training at a variety of levels to help you get the most out of your investment in SpiffWorkflow, and can tailor the training to your specific needs. We offer training for:&#xA;Training is offered as a part of an Enterprise Support Package. Please get in touch with us to discuss your needs and determine the best tier for you.&#xA;BPMN Architects Let us show you how to get most from our BPMN system and how to design your workflows to be as efficient as possible.</description>
+    </item>
+  </channel>
+</rss>

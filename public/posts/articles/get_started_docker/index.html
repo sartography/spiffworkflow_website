@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta property="og:title" content="Running SpiffWorkflow Locally with Docker" />
+<meta property="og:description" content="Detailed directions on how to install SpiffArena and create and run your first executable SpiffWorkflow diagram." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/articles/get_started_docker/" /><meta property="og:image" content="http://localhost:1313/images/articles/get_started_thumbnail.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-27T13:15:00-05:00" />
+<meta property="article:modified_time" content="2022-12-27T13:15:00-05:00" />
+
+
+
+<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <title>Running SpiffWorkflow Locally with Docker, SpiffWorkflow</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/css/custom_sartography_7.css">
+
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/pages/features/" class="navbar-item is-secondary">
+            Features
+          </a>
+          <a href="/pages/compare/" class="navbar-item is-secondary">
+            Comparison
+          </a>
+          <a href="/pages/price/" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Docs
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Application
+              </a>
+              <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+                SpiffWorkflow Python Library
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Articles
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/posts/articles/" class="navbar-item">
+                Introductory Articles
+              </a>
+              <a href="/posts/deep_dives/" class="navbar-item">
+                Deep Dives
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Videos
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+                Brief Demo
+              </a>
+              <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+                Building Web Forms
+              </a>
+              <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+                Building an Approval Process
+              </a>
+              <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+                more videos...
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/pages/enterprise" class="navbar-item">
+            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
+              Try Now
+            </span>
+        </a>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/pages/features/" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="/pages/compare/" class="navbar-item is-secondary">
+          Comparison
+        </a>
+        <a href="/pages/price/" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Docs
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://spiff-arena.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Application
+            </a>
+            <a href="https://spiffworkflow.readthedocs.io/en/latest/" class="navbar-item">
+              SpiffWorkflow Python Library
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Articles
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/posts/articles/" class="navbar-item">
+              Introductory Articles
+            </a>
+            <a href="/posts/deep_dives/" class="navbar-item">
+              Deep Dives
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Videos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s" class="navbar-item">
+              Brief Demo
+            </a>
+            <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s" class="navbar-item">
+              Building Web Forms
+            </a>
+            <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc" class="navbar-item">
+              Building an Approval Process
+            </a>
+            <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA" class="navbar-item">
+              more videos...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+<section class="section is-medium  ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Running SpiffWorkflow Locally with Docker</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="content">
+      <p>In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram.  We&rsquo;ll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools.  Let&rsquo;s get started and you can see for yourself &hellip;</p>
+<h2 id="video-instructions">Video Instructions</h2>
+<p>You can follow the directions below, or you can watch this 10-minute video and follow along.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Fjdqb2tdxHg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h2 id="install-and-start-spiffarena">Install and Start SpiffArena</h2>
+<h3 id="prerequisites">Prerequisites:</h3>
+<p>You will need to install Docker and Docker-Compose.  Please follow <a href="https://docs.docker.com/compose/install/">the Docker Installation instructions</a> if you do not have these already.<br>
+Docker is a way for you to run on your laptop what was designed to run on larger computers and be accessible to many people throughout an organization.  It will not alter your computer, and you can fully remove all the files with a few commands provided at the end of this article.</p>
+<h3 id="downloading-and-starting-spiffarena">Downloading and Starting SpiffArena</h3>
+<p>From Mac0S, Linux Command Line, or Windows Powershell, run the following commands:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>mkdir spiffworkflow
+</span></span><span style="display:flex;"><span>cd spiffworkflow
+</span></span><span style="display:flex;"><span>wget https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml
+</span></span><span style="display:flex;"><span>docker-compose pull
+</span></span><span style="display:flex;"><span>docker-compose up -d</span></span></code></pre></div></p>
+<p>Please note that it may take a few minutes to download and install the docker images.  Nothing permanent is happening here.  You can delete these images at any time using the Docker Desktop application.   It’s also worth noting that subsequent starts are much faster.</p>
+<p><strong>Macs</strong>:  Please note that you may need to use curl rather than wget</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>curl -o docker-compose.yml https://raw.githubusercontent.com/sartography/spiff-arena/main/docker-compose.yml</span></span></code></pre></div>
+<h3 id="open-spiffarena-in-a-browser">Open SpiffArena in a browser</h3>
+<p>After a few minutes, all processes should be up and running, and you can view the system through your web browser.</p>
+<ol>
+<li>Visit http://localhost:8001 in your browser.</li>
+<li>Log in as admin/admin</li>
+</ol>
+<p>Congratulations!  You have SpiffWorkflow up and running locally! Now what!?    Let’s start with a simple example.</p>
+<h2 id="building-and-running-your-first-workflow-process">Building and running your first Workflow Process</h2>
+<p>Let’s build and run a very simple workflow to get familiar with the interface, and then we will follow up with larger and more complex examples.</p>
+<p><strong>Select “Processes” from the Main Menu</strong></p>
+<p><img src="select_processes.png" alt="main menu image"></p>
+<p><strong>Select “Add a process group”</strong></p>
+<p><img src="add_process.png" alt="add process button"></p>
+<p><strong>Provide the following information:</strong></p>
+<ol>
+<li>Display Name:  “Playground”  <em>The identifier will automatically be set to “playground”.    We will cover other fields and options at another time.</em></li>
+<li>Description:  “These are my test processes.”</li>
+<li>Click “Submit”</li>
+</ol>
+<p><img src="process_goup_form.png" alt="process group form"></p>
+<p><strong>Select “Add a process model” (the second button)</strong></p>
+<p><img src="add_process_model.png" alt="add_process_model"></p>
+<p><strong>Provide the following information:</strong></p>
+<ol>
+<li>Display Name:  “Simple Example”</li>
+<li>The identifier will automatically be set to “simple-example”.  We will cover other fields and options at another time.</li>
+<li>Description:  “My first SpiffWorkflow Process Model”</li>
+<li>Click “Submit”</li>
+<li>Click “New BPMN File”</li>
+</ol>
+<p><strong>Welcome to the Diagram Editor!</strong></p>
+<p>Let’s draw a simple functional BPMN Diagram</p>
+<p>Every new BPMN diagram is initially populated with a Start Event, which looks like an open circle.  Click on it and it will show a blue outline and a “context menu” – find the “Task” icon in the menu (the rectangle with rounded corners) and click it to “Append Task”.</p>
+<p><img src="append_task.png" alt="append task"></p>
+<p>Your diagram should now look like this:</p>
+<p><img src="diagram_1.png" alt="diagram 1"></p>
+<p>Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon <img class="inline" src=" wrench.png" alt=" wrench icon"/>
+, and select <img class="inline" src=" script_task.png" alt=" Script Task icon"/>
+“Script Task” from the list of options.</p>
+<p>At this point your cursor will be blinking inside of the Task icon, allowing you to enter the name of the Task.  For this time we will use an alternative method, described in the next step
+Click anywhere off the Task and your diagram should now look like this:</p>
+<p><img src="diagram_2.png" alt="diagram 2"></p>
+<p>Select the Script Task (the rectangle should have a blue outline around it) and then take a look at the options in the Properties Panel on the right.  You should see something like the image below.  There are three sections.  When you click on a section it will expand.</p>
+<p><img src="prop_panel_script.png" alt="Script Properties Panel"></p>
+<p>Click General so it is expanded, we can give the Task a name.  Let’s call it “Set  Name”.  Your diagram should now look like this:</p>
+<p><img src="diagram_3.png" alt="diagram 3"></p>
+<p>For this exercise we’ll need two Tasks, so similar to how you added the first Task after the Start Event click on the Script Task you just added, and append a second task,</p>
+<p><img src="diagram_4.png" alt="diagram 4"></p>
+<p>so the diagram looks like this:</p>
+<p><img src="diagram_5.png" alt="diagram 5"></p>
+<p>Take advantage of the blinking cursor in the middle of the newly added Task and name it “Display Message”.  Next click on the wrench icon and select “Manual Task” .  And to complete the diagram, click on the bolded circle at the top left, it should say “Append EndEvent” as shown below.</p>
+<p><img src="diagram_6.png" alt="diagram 6"></p>
+<p>Your diagram should now look like this:</p>
+<p><img src="diagram_7.png" alt="diagram 7"></p>
+<p>Now let’s add a bit of Python code to execute.  Click in the Script Task and expand the “Script” Section and click the “Launch Editor” button – which will bring up a python editor.  Paste in the following code, and click the Close Button.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>my_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;World&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>Now, in the second task, let’s add some text and Jinja code to display a message.  Click on the Manual Task and in the Property Panel on the right side, expand the Instructions section and add the following:</p>
+<pre tabindex="0"><code class="language-Jinja2" data-lang="Jinja2">Hello {{my_name}}!
+--------------------------
+Welcome to SpiffWorkflow!</code></pre>
+<p>The right hand Property Panel should look like this (you may need to grab the bottom left of the Instruction box and drag it down to see everything you pasted in there).</p>
+<p><img src="prop_panel_manual.png" alt="Manual Properties Panel"></p>
+<p>Save the diagram using the save button in the upper left.  When it asks for a name call it “hello_world”</p>
+<p>Now click on the “Simple Example” in the breadcrumbs at the top of the page to go back to the process model.</p>
+<p>Click the Start button, and you should be greeted with your “Hello World!” message:</p>
+<p>Click the Continue button to return to the Home page and then the Completed tab to see your first completed process instance!</p>
+<p><img src="final_screen.png" alt="Hello World Run"></p>
+<h3 id="shutting-it-all-down">Shutting it all down</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>$ docker-compose down
+</span></span><span style="display:flex;"><span>$ docker ps</span></span></code></pre></div>
+<h2 id="what-you-have-learned">What you have learned</h2>
+<p>Today you learned a great deal about SpiffWorkflow and the new SpiffArena application, but it’s just the tip of the iceberg.  Here are few things we covered today:</p>
+<ol>
+<li>How to get SpiffArena running locally on your computer.  You can stop it using the DockerDesktop application, or by running docker container down at the command line.</li>
+<li>How to create a new Process Model</li>
+<li>How to create a simple executable BPMN diagram</li>
+<li>How to add start events, tasks, and end events to a diagram.</li>
+<li>How to create a Script Task that contains a bit of python.</li>
+<li>How to create a Manual Task with a message that people can see.</li>
+</ol>
+<p>Remember that the real power of SpiffWorkflow is its ability to help create transparency around complex rules of a business, government agency, or any other organization.  This isn’t just some quick and easy way to write code.  It is a tool for building consensus and for offering a guarantee that what you see is truly what you get.  Additional tutorials will cover some of the powerful ways that Spiffworkflow helps you create transparency by using seemingly simple diagrams to describe complex processes, critical decision points, and to coordinate parallel actions and the handoff of responsibility from one person or application to the next – all in a way everyone can see and understand.</p>
+<p>Don’t let this simple tutorial fool you.  There is some substantial power within your reach to create change and improve the world in which you live.  We post tutorials frequently to help you explore this power and understand how others are using SpiffWorkflow to transform their organizations and incorporate more people in the software development life cycle.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <div>
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div class="content-wrapper">
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <div id="commento"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/spiffworkflow_white.svg">
+        </div>
+        <div class="cookie_settings">
+          <a data-cc="c-settings">Show cookie settings</a>
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Videos</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
+                  Building Web Forms
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+                  Brief Demo
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
+                  Building an Approval Process
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  more videos...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Docs</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://spiff-arena.readthedocs.io/en/latest/">
+                  SpiffWorkflow Application
+                </a>
+              </li>
+              <li>
+                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
+                  SpiffWorkflow Library
+                </a>
+              </li>
+              <li>
+                <a href="/pages/privacy_policy/">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/pages/demo_terms_of_service/">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/pages/service_level/">
+                  Service Level Expectations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Blog</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/posts/articles/get_started/">
+                  Get started
+                </a>
+              </li>
+              <li>
+                <a href="/posts/articles/">
+                  Introductory Articles
+                </a>
+              </li>
+              <li>
+                <a href="/posts/deep_dives/">
+                  Deep Dives
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Connect</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
+                  <span class="icon"><i class="fa fa-comments"></i></span>
+                </a>
+                <a class="level-item" href="https://github.com/sartography">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
+                  <span class="icon"><i class="fa fa-youtube"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+    </ul>
+  </div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/carousel.js"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iyrm5frdjh");
+</script>
+
+
+  </body>
+</html>

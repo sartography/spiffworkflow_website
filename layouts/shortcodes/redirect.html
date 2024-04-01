@@ -1,0 +1,14 @@
+<span id="{{ index .Params 0 }}_param" />
+{{ if strings.ContainsNonSpace .Inner }}
+Inner is not empty
+{{ end }}
+
+<script>
+  (function () {
+    window.setTimeout(function(){
+      // Move to a new location or you can do something else
+      window.location.href = "{{ index .Params 0 }}";
+    }, {{ index .Params 1 }});
+  })()
+</script>
+
