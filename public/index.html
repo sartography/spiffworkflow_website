@@ -426,7 +426,15 @@
     hbspt.forms.create({
         region: "na1",
         portalId: "42562038",
-        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d"
+        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/contact_thankyou?" + formData;
+          }, 250); 
+        }
     });
 </script>
   </div>
@@ -601,7 +609,7 @@
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">News Letter</h2>
-      <h3 class="subtitle is-5 is-muted">Join our mailing list to get quarterly updates on our progress.</h3>
+      <h3 class="subtitle is-5 is-muted">Join our mailing list to get quarterly updates on our progress, and get a <b>FREE POSTER</b> with a BPMN cheat-sheet specific to SpiffWorkflow.</h3>
       <div class="divider is-centered"></div>
     </div>
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
@@ -609,7 +617,15 @@
       hbspt.forms.create({
         region: "na1",
         portalId: "42562038",
-        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42"
+        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/newsletter_thankyou?" + formData;
+          }, 250); 
+        }
       });
     </script>
   </div>

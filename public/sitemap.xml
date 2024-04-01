@@ -44,7 +44,13 @@
     <loc>http://localhost:1313/posts/deep_dives/approval/</loc>
     <lastmod>2023-01-02T14:09:00-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pages/contact_thankyou/</loc>
+    <lastmod>2023-01-02T10:05:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/pages/enterprise_thankyou/</loc>
+    <lastmod>2023-01-02T10:05:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/newsletter_thankyou/</loc>
     <lastmod>2023-01-02T10:05:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/thankyou/</loc>

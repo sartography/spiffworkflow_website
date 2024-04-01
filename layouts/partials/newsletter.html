@@ -10,7 +10,15 @@
       hbspt.forms.create({
         region: "na1",
         portalId: "42562038",
-        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42"
+        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/newsletter_thankyou?" + formData;
+          }, 250); // Redirects to url with query string data from form fields after 250 milliseconds.
+        }
       });
     </script>
   </div>

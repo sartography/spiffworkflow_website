@@ -226,7 +226,15 @@
     hbspt.forms.create({
         region: "na1",
         portalId: "42562038",
-        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d"
+        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/contact_thankyou?" + formData;
+          }, 250); 
+        }
     });
 </script>
 

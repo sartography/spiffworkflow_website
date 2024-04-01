@@ -6,14 +6,28 @@
     <description>Recent content on SpiffWorkflow</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Oct 2023 10:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2024 10:05:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thank you</title>
+      <link>http://localhost:1313/pages/contact_thankyou/</link>
+      <pubDate>Mon, 01 Apr 2024 10:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/contact_thankyou/</guid>
+      <description>Thank you for your interest !&#xA;We will be in touch shortly! We will reach back out to you soon, and schedule a time for us to talk. We&amp;rsquo;re looking forward to meeting you.&#xA;While you wait &amp;hellip; You might want to checkout our demo site at SpiffDemo.org. You can visit the site right now and create an account using your Google, Linked In or GitHub account where you will be able to see many examples of the types of workflows that are possible.</description>
+    </item>
+    <item>
+      <title>Thank you</title>
+      <link>http://localhost:1313/pages/newsletter_thankyou/</link>
+      <pubDate>Mon, 01 Apr 2024 10:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/newsletter_thankyou/</guid>
+      <description>Thank you for your interest !&#xA;We will keep you posted on updates and changes to our Application via email to .&#xA;Free PDF CheatSheet As a small thank you, here is a link to our SpiffWorkflow Cheat Sheet - a PDF with hints and tips on how to get the most out of SpiffWorkflow. Click on the image below to download.&#xA;What&amp;rsquo;s next? Now that you are signed up for our mailing list you might want to checkout our demo site and SpiffDemo.</description>
+    </item>
     <item>
       <title>SpiffWorkflow&#39;s Open Source Code</title>
       <link>http://localhost:1313/pages/open_source/</link>
       <pubDate>Mon, 02 Oct 2023 10:00:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/open_source/</guid>
-      <description>Get The Code and Join our Community! SpiffWorkflow is made up of several open source projects available on GitHub. We recommend you start with SpiffArena, but you can also delve into the core workflow engine, BPMN.IO editor extensions, and the connector proxy.&#xA;To stay up to date on changes and updates, Star and Follow our GitHub repos, register for our newsletter (below), and join our Discord channel.</description>
+      <description>Get The Code and Join our Community! SpiffWorkflow is made up of several open source projects available on GitHub. We recommend you start with SpiffArena, but you can also delve into the core workflow engine, BPMN.IO editor extensions, and the connector proxy.&#xA;To stay up to date on changes and updates, Star and Follow our GitHub repos, register for our newsletter (below), and join our Discord channel.&#xA;News Letter Join our mailing list to get quarterly updates on our progress.</description>
     </item>
     <item>
       <title>Pricing and Support Plans</title>
@@ -90,7 +104,7 @@
       <link>http://localhost:1313/pages/enterprise_thankyou/</link>
       <pubDate>Mon, 02 Jan 2023 10:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/enterprise_thankyou/</guid>
-      <description>Thank you for your interest !&#xA;Our demo site is hosted on SpiffDemo.org. You will be redirected to the site in 10 seconds where you can create a new account through popular single sign on systems such as Google, Linked In or GitHub.&#xA;We will keep you posted on updates and changes to our Demo site via email to .&#xA;{{ &amp;lt; redirect &amp;ldquo;https://spiffdemo.org&amp;rdquo; 10 &amp;gt; }}</description>
+      <description>Thank you for your interest !&#xA;Our demo site is hosted on SpiffDemo.org. You will be redirected to the site in 10 seconds where you can create a new account through popular single sign on systems such as Google, Linked In or GitHub.&#xA;We will keep you posted on updates and changes to our Demo site via email to .</description>
     </item>
     <item>
       <title>Thank you</title>
