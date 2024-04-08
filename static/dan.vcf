@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Dan Funk
+N;CHARSET=UTF-8:Funk;Dan;;Mr.;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:dan@sartography.com
+TEL;TYPE=CELL:540-457-0024
+ADR;CHARSET=UTF-8;TYPE=WORK:;;PO Box 3003;Staunton;Va;24402;
+TITLE;CHARSET=UTF-8:Founder
+ORG;CHARSET=UTF-8:Sartography
+URL;type=WORK;CHARSET=UTF-8:www.sartography.com
+X-SOCIALPROFILE;TYPE=twitter:https://twitter.com/SpiffWorkflow
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/funkdan/
+X-SOCIALPROFILE;TYPE=youtube:https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA
+X-SOCIALPROFILE;TYPE=Discord:https://discord.gg/F6Kb7HNK7B
+REV:2024-04-08T16:42:16.541Z
+END:VCARD
