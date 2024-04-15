@@ -18,10 +18,10 @@ $(document).ready(function(){
         }
     });
     $(".owl-carousel-reference").owlCarousel({
-        items:1,
-        loop:true,
+        items:2,
+        loop:false,
         margin:10,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:6000,
         autoplayHoverPause:true
     });
