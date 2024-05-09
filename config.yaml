@@ -100,7 +100,7 @@ params:
       citation: "D. Funk, \"Creating a Low-Code Business Process Execution Platform With Python, BPMN, and DMN,\" in IEEE Software, vol. 40, no. 1, pp. 9-17, Jan.-Feb. 2023, doi: 10.1109/MS.2022.3212033."
       image: /images/ieee.png
       link: /ieee_spiffworkflow_article.pdf
-      buttonText: Download Now
+      buttonText: View PDF
   science2:
     title: Listen to the Pod Cast
     subtitle: Featured on The Real Python Podcast, Feburary 2023
