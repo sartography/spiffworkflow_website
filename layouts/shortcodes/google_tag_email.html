@@ -1,0 +1,15 @@
+
+{{ if strings.ContainsNonSpace .Inner }}
+Inner is not empty
+{{ end }}
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const email = urlParams.get('email')
+  dataLayer.push({
+    'event':'ec_formsubmit',
+    'enhanced_conversion_data': {
+      "email": email
+    }
+  })
+</script>

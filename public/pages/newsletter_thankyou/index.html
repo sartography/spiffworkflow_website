@@ -221,7 +221,21 @@ What&rsquo;s next? Now that you are signed up for our mailing list you might wan
       </div>
     </div>
     <div class="content">
-      <p>Thank you for your interest <span id="firstname_param" />
+      
+
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const email = urlParams.get('email')
+  dataLayer.push({
+    'event':'ec_formsubmit',
+    'enhanced_conversion_data': {
+      "email": email
+    }
+  })
+</script>
+
+<p>Thank you for your interest <span id="firstname_param" />
 
 
 <script>

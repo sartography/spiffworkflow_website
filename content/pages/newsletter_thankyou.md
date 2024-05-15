@@ -10,6 +10,8 @@ cssClass: "section-support"
 cssSubClass: "enterprise"
 ---
 
+{{< google_tag_email />}}
+
 Thank you for your interest {{< url_param firstname />}} {{< url_param lastname />}}!
 
 We will keep you posted on updates and changes to our Application via email to {{< url_param email />}}.  

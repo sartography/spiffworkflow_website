@@ -220,7 +220,21 @@ We will keep you posted on updates and changes to our Demo site via email to ." 
       </div>
     </div>
     <div class="content">
-      <p>Thank you for your interest <span id="firstname_param" />
+      <p>
+
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const email = urlParams.get('email')
+  dataLayer.push({
+    'event':'ec_formsubmit',
+    'enhanced_conversion_data': {
+      "email": email
+    }
+  })
+</script>
+
+Thank you for your interest <span id="firstname_param" />
 
 
 <script>
