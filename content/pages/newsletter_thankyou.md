@@ -3,7 +3,6 @@ title: "Thank you"
 subtitle: "Thank you for signing up for our news letter!"
 date: 2024-04-01T10:05:00-05:00
 draft: false
-no_comments: true
 escription: We are building a series of Enterprise level integrations and extensions to assure that SpiffWorkflow can meet the needs of large scale organizations.
 images: ["/images/opengraph/enterprise.png"]
 cssClass: "section-support"

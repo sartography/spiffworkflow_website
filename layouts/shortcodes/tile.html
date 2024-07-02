@@ -3,6 +3,7 @@
 {{- $action := .Get "action" -}}
 {{- $class := .Get "class" | default "" -}}
 {{- $svg := printf `/static/images/features/icons/%s.svg` $icon -}}
+{{- $link := .Get "link" | default "" -}}
 {{- $match := "<svg (.*)?>(.*)</svg>" -}}
 {{- $replaceWith := printf `<svg class="feature-icon" ${1}>${2}</svg>` -}}
 
@@ -11,7 +12,14 @@
     <h4>{{ $title }}</h4>
   </div>
   <div class="card-icon">
-    {{ replaceRE $match $replaceWith (printf $svg | readFile) | safeHTML }}
+    {{ if $link }}
+      <a href="{{$link}}">
+      {{ replaceRE $match $replaceWith (printf $svg | readFile) | safeHTML }}
+      </a>
+    {{ else }}
+      {{ replaceRE $match $replaceWith (printf $svg | readFile) | safeHTML }}
+    {{ end }}
+
   </div>
   <div class="card-text">
 {{ .Inner | markdownify }}

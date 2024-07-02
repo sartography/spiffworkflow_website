@@ -57,34 +57,16 @@ params:
     - uva
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+  - title: Get Started
+    url: /pages/get_started/
   - title: Features
     url: /pages/features/
   - title: Comparison
     url: /pages/compare/
-  - title: Pricing
-    url: /pages/price/
-  - title: Docs
-    sublinks:
-      - title: SpiffWorkflow Application
-        url: https://spiff-arena.readthedocs.io/en/latest/
-      - title: SpiffWorkflow Python Library
-        url: https://spiffworkflow.readthedocs.io/en/latest/
-  - title: Articles
-    sublinks:
-      - title: Introductory Articles
-        url: /posts/articles/
-      - title: Deep Dives
-        url: /posts/deep_dives/
-  - title: Videos
-    sublinks:
-      - title: Brief Demo
-        url: https://www.youtube.com/watch?v=876q2s5fwUY&t=1s
-      - title: Building Web Forms
-        url: https://www.youtube.com/watch?v=1IaiaquQ0y0&t=15s
-      - title: Building an Approval Process
-        url: https://www.youtube.com/watch?v=EfTbTg3KRqc
-      - title: more videos...
-        url: https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA
+  - title: Support
+    url: /pages/support/
+  - title: Documentation
+    url: /pages/docs/
   section1:
     title: A Powerful Low Code Platform
     subtitle: Build your first diagram in minutes. But don't let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.

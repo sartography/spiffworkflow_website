@@ -6,8 +6,29 @@
     <description>Recent content on SpiffWorkflow</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2024 10:05:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2024 12:20:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/pages/docs/</link>
+      <pubDate>Thu, 27 Jun 2024 12:20:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/docs/</guid>
+      <description>Documentation We continuously update and maintain our documentation Our docs include a quick start guide and a reference guide for building diagrams, and support section that covers how to modify running processes in production. We also cover more technical details, such as how to contribute to this open source project, and provide a dedicated dev/ops section that covers complex installation and integration concerns.&#xA;Core Python Library Documentation We maintain a separate Read The Docs page for our SpiffWorkflow Python Library.</description>
+    </item>
+    <item>
+      <title>SpiffWorkflow Demo Site Registration</title>
+      <link>http://localhost:1313/pages/demo_register/</link>
+      <pubDate>Thu, 27 Jun 2024 12:05:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/demo_register/</guid>
+      <description>Sign up below to get access to our demo site. There you can view diagrams and run example workflows. Once there, you can request your own playground where you can start building diagrams and workflows of your own.&#xA;Sign Up Please fill out the required fields to continue.</description>
+    </item>
+    <item>
+      <title>Support</title>
+      <link>http://localhost:1313/pages/support/</link>
+      <pubDate>Tue, 25 Jun 2024 13:20:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/support/</guid>
+      <description>&amp;nbsp;&#xA;&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt; Sartography-Logo-Vertical-Color WORKFLOW APPLICATIONS Sartography-Logo-Vertical-Color Get support from the same people who develop and maintain SpiffWorkflow. Sartography offers process integration and consulting plans that cover training, BPMN process development and software development services.&#xA;Contact Us &amp;nbsp;&#xA;Community Support Check our Detailed Documentation. Join our Discord channel to ask questions of the community. Our core development team is often available to lend a quick hand. Contact Us Get in touch to discuss your needs and we&amp;rsquo;ll work together to find the right solution for you.</description>
+    </item>
     <item>
       <title>Thank you</title>
       <link>http://localhost:1313/pages/contact_thankyou/</link>
@@ -35,6 +56,13 @@
       <pubDate>Fri, 29 Sep 2023 13:20:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/price/</guid>
       <description>&amp;nbsp; Open Source Learn More Enter&amp;shy;prise Try Now Participants - The maximum number of people that can participate in starting and completing a process instance. Unlimited Unlimited Process Models - The maximum number of process models you can draw. Unlimited Unlimited Process Instances - The maximum number of instances you can execute. Unlimited Unlimited Core Features - Form building, decision tables, timers, events, admin tools, reporting, perspectives, parallel execution, and more.</description>
+    </item>
+    <item>
+      <title>Get Started</title>
+      <link>http://localhost:1313/pages/get_started/</link>
+      <pubDate>Wed, 27 Sep 2023 12:20:00 -0500</pubDate>
+      <guid>http://localhost:1313/pages/get_started/</guid>
+      <description>What Is SpiffWorkflow? SpiffWorkflow is a platform for building, running, and monitoring executable diagrams. It is a great way to build transparent processes within your organization that foster continuous improvement, shared understanding, and persistence of a collective vision.&#xA;If you have never used SpiffWorkflow, then we highly recommend checking out this short video, which will walk you through building and running a simple process diagram.&#xA;Try the Live Demo View and execute example process models on our live demo site.</description>
     </item>
     <item>
       <title>How We Compare to the Competition</title>
@@ -147,13 +175,6 @@
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/spiffworkflow/</guid>
       <description>SpiffWorkflow is an open source Python library with source code available on GitHub and detailed documentation available on ReadTheDocs. It is the core library within SpiffArena. Its target audience is Python developers who want to create custom workflow systems or embed BPMN features into existing applications.</description>
-    </item>
-    <item>
-      <title>Spiffworkflow Enterprise</title>
-      <link>http://localhost:1313/pages/enterprise/</link>
-      <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
-      <guid>http://localhost:1313/pages/enterprise/</guid>
-      <description>Sign up below to get access to our demo site. There you can view diagrams and run example workflows. You can see some of our Enterprise Level integrations in action, and request edit access to your own playground where you can start building diagrams and workflows of your own.&#xA;Sign Up Please fill out the required fields to continue.</description>
     </item>
     <item>
       <title>Training</title>

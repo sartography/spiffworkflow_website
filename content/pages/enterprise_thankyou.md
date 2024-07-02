@@ -3,7 +3,6 @@ title: "Thank you"
 subtitle: "Redirecting to our Demo Site ..."
 date: 2023-01-02T10:05:00-05:00
 draft: false
-no_comments: true
 escription: We are building a series of Enterprise level integrations and extensions to assure that SpiffWorkflow can meet the needs of large scale organizations.
 images: ["/images/opengraph/enterprise.png"]
 cssClass: "section-support"

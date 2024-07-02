@@ -339,6 +339,7 @@ section.section-support .content p {
     text-align: center;
 }
 
+
 .pricing-table td.check .feature-icon {
     color: white;
     animation: check 5s ease alternate infinite;
@@ -355,6 +356,16 @@ section.section-support .content p {
 .comparison-table th a {
     font-size:2vw;
 }
+
+.flex_group {
+    display: flex;
+}
+
+.flex_group > * {
+    margin-right: 20px;
+}
+
+
 
 
 .support_table table {
@@ -395,4 +406,3 @@ section.section-support .content p {
         max-height: 40px;
     }
 }
-

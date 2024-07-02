@@ -17,12 +17,6 @@
 
     {{ partial "single/single.html" . }}
 
-    {{ if not .Params.no_comments }}
-    <div>
-      {{ partial "comments.html" . }}
-    </div>
-    {{ end }}
-
     {{ partial "footer.html" . }}
 
     <!-- Back To Top Button -->

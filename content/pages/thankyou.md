@@ -3,7 +3,6 @@ title: "Thank you"
 subtitle: "Message Received."
 date: 2023-01-02T10:05:00-05:00
 draft: false
-no_comments: true
 ---
 
 ![Thank you, processing ...](./thankyou.svg)
