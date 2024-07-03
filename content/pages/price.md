@@ -34,13 +34,13 @@ cssClass: "section-support"
     <td> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Training</b> - Professional training for business analysts, citizen developers, software engineers, and devops.
+    <td><b>Training</b> - Professional training for business analysts, citizen developers, software engineers, and DevOps.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Support</b> - Bronze, Silver, and Gold support plans to assure you have the support you need when you need it. 
+    <td><b>Support</b> - Bronze, Silver, and Gold support plans to ensure you have the support you need when you need it.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
@@ -52,8 +52,7 @@ cssClass: "section-support"
     <td class="check"> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Featured Extensions</b> - Use our prebuilt extensions to provide detailed reports and tight integrations
-     within your organization.
+    <td><b>Featured Extensions</b> - Use our prebuilt extensions to provide detailed reports and tight integrations within your organization.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
