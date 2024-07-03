@@ -7,7 +7,6 @@ draft: false
 description: We offer training at a variety of levels to help you get the most out of your investment in SpiffWorkflow.
 ---
 
-
 Get dedicated training from experienced professionals.
 We offer training at a variety of levels to help you get the most out of your investment in SpiffWorkflow, and can tailor the training to your specific needs.
 We offer training for:
@@ -17,7 +16,7 @@ Please get in touch with us to discuss your needs and determine the best tier fo
 
 ### BPMN Architects
 
-Let us show you how to get most from our BPMN system and how to design your workflows to be as efficient as possible.  
+Let us show you how to get the most from our BPMN system and how to design your workflows to be as efficient as possible.
 * Introduction and Basic Training
 * Advanced BPMN with SpiffWorkflow
 * Designing Extensions to create new features for your end users.
@@ -30,7 +29,7 @@ We can help orient you on how to do this efficiently and effectively.
 ### Software Engineering and DevOps
 
 When it comes time to build integration points with your existing systems, we can help you get started quickly.
-We can help with onsite deployments or work alongside your DevOps engineers in a cloud hosted environment.
+We can help with onsite deployments or work alongside your DevOps engineers in a cloud-hosted environment.
 When it comes time to build custom extensions, we can work with your team to design and implement the features you need.
 
 ## Let's Talk

@@ -4,25 +4,23 @@ subtitle: "Or, “A diagram of Love”"
 date: 2022-09-13T10:00:00-05:00
 draft: false
 author: Dan Funk
-images: 
+images:
  - /images/articles/data_object_thumbnail.png
-description: A thorough explanation of BPMN's Data Objects and how they can be used within SpiffWorkflow. 
---- 
+description: A thorough explanation of BPMN's Data Objects and how they can be used within SpiffWorkflow.
+---
 
 ![Intro diagram](intro.png)
-
 
 ### A Simple Default
 
 One of the benefits of both BPMN and Python is they have long low-sloped learning curves.
-Things are simple by default,  but have the ability to grow to meet far more complex situations.
-As we introduce new concepts into SpiffWorkflow we  want the default behavior to be equally intuitive and powerful.
+Things are simple by default, but have the ability to grow to meet far more complex situations.
+As we introduce new concepts into SpiffWorkflow, we want the default behavior to be equally intuitive and powerful.
 
 In SpiffWorkflow, data follows the process flow.
 Each task receives all data from the previously executed task.
 
 ![Default Data Flow](default.png)
-
 
 As such, you can expect your web form submission to be available as variables in the following service task.
 And the variables you create in that task will be available to the next task, and so on.
@@ -30,21 +28,20 @@ And the variables you create in that task will be available to the next task, an
 We call this type of data **Task Data**, because it belongs to the task.
 Each task has full control over the information it receives, and can choose to pass the data on unaffected, or make any changes to it, including clearing it out completely.
 
-This is different from how many BPMN based systems work, but we feel it creates a very intuitive and easy to learn system.
+This is different from how many BPMN-based systems work, but we feel it creates a very intuitive and easy-to-learn system.
 It has some limitations, particularly as your diagrams become larger and more complex.
-At this point BPMN Developers may need more control.
-
+At this point, BPMN Developers may need more control.
 
 ### Data Objects
 
 Data Objects are graphical notations that allow BPMN Developers to control which tasks have access to which variables.
-As we will demonstrate below, this ability has some far reaching implications, and can become a critical tool as your BPMN structures grow in size and complexity.
+As we will demonstrate below, this ability has some far-reaching implications, and can become a critical tool as your BPMN structures grow in size and complexity.
 
 ![A Data Object](data_object.png)
 
-Rather than feed you a list of rules, we’ll cover the full definition of these notations in a detailed example later down in the article.
+Rather than feed you a list of rules, we’ll cover the full definition of these notations in a detailed example later in the article.
 
-But first we want to introduce you to one more common task with data: transforming it.
+But first, we want to introduce you to one more common task with data: transforming it.
 This is important as you will often need to change the shape of information as you use it for different purposes.
 
 ### Data Mapping and Transformations
@@ -61,11 +58,10 @@ In the process, we will describe how SpiffWorkflow can solve the problem using i
 
 ![A Simple Example](example.png)
 
-
-This diagram will work in SpiffWorkflow as is, and each task would gather more information, add it to the Task Data and then send a new copy of that data on to the next task in the flow.
+This diagram will work in SpiffWorkflow as is, and each task would gather more information, add it to the Task Data, and then send a new copy of that data on to the next task in the flow.
 The benefit here is you don’t have to model the data at all.
 It’s clear where information is coming from, and that it will be available when you need it.
-The data and the flow are one in the same.
+The data and the flow are one and the same.
 The problem is that the Credit Card task would be passed in a list of all 500 available pizza toppings — information it really doesn’t likely need.
 Worse, the data we provided in credit card details will be passed on to the task for making pizza or sent off in the external call activity, data exposure which is unnecessary and potentially unsafe.
 
@@ -95,7 +91,6 @@ Since almost all of the tasks here will need to deal with the order details, it 
 It is far better to allow it to pass from task to task as we add additional information to the order.
 The process will do things like adding the calculated costs, showing that the payment is complete, and determining if the cheap gluttonous jerks bothered to leave any kind of tip for the driver.
 
-
 #### Rule #4: Do Use Data Objects to limit access to information
 
 ![Rule 4](rule4.png)
@@ -112,12 +107,10 @@ In this example, we use Data Objects to share information with the Call Activity
 The Data Input is used here to indicate that an Invoice is required by this Process, and SpiffWorkflow will throw an exception if data by this name is not available.
 The process below further promises to provide a “receipt” as output.
 
-Here is a quick video showing Data Inputs and DataOutputs in action:
+Here is a quick video showing Data Inputs and Data Outputs in action:
 {{< video "/videos/data_inputs.mp4" "my-5" >}}
 
-
 ![A Receipt](receipt.png)
-
 
 ## Two Types of Data
 
@@ -130,13 +123,13 @@ Here is an overview of their behavior for reference:
 Task Data is information that belongs to the TASK.
 It is most useful within a single process model that does not contain large amounts of information.
 
-* Task Data is thread safe by nature, as the data follows the Flow (arrows) of the BPMN diagram.
+* Task Data is thread-safe by nature, as the data follows the Flow (arrows) of the BPMN diagram.
 * Task Data is transferred by default. Any variables created by forms, decision tables, and scripts are passed on in the Task Data.
 * Task Data behaves like a pipeline architecture. Each task has control over the data and may alter it in any way before passing it on.
 * Each completed task in a workflow will retain a copy of the data as it was when the task executed. “Rewinding” to a previously completed task would allow access to the Task Data as it was when the Task was first executed.
 * Task Data can be directly referenced by name in script tasks, gateways, forms in user tasks, and decision tables.
 
-### Dat Objects 
+### Data Objects
 
 Data Objects are information that belongs to the PROCESS.
 It offers encapsulation as well as control over data from within the BPMN diagram.
@@ -152,15 +145,15 @@ As Bruno Paré-Simard pointed out in a recent GitHub Issue, we should find ways 
 
 ## References and Further Reading
 
-The implementation of BPMN Data Objects, Data Inputs and Data Outputs has, at times, been hotly debated, as you can find in the comments of this article from BPMN expert Bruce Silver: https://www.trisotech.com/bpmn-decoded-data-flow/
+The implementation of BPMN Data Objects, Data Inputs, and Data Outputs has, at times, been hotly debated, as you can find in the comments of this article from BPMN expert Bruce Silver: https://www.trisotech.com/bpmn-decoded-data-flow/
 
-We looked at a number of existing BPMN based products to see how they handled Data, and they took widely divergent approaches.
+We looked at a number of existing BPMN-based products to see how they handled Data, and they took widely divergent approaches.
 We looked closely at some other BPMN implementations as we formulated our approach.
 
 Camunda [avoids the use of BPMN’s Data Objects](https://docs.camunda.io/docs/components/best-practices/development/handling-data-in-processes/) and prefers its own proprietary method for transferring data between tasks, as they describe in their documentation.
 
 Flowable [follows this same trend](https://www.flowable.com/open-source/docs/bpmn/ch07b-BPMN-Constructs/#passing-variables), evolving away from the BPMN spec and using extension elements to handle the exchange of data.
 
-Trisotech favors using Data Objects for all data, and sticks close the the standard as described in this recent Bruce Silver article: https://methodandstyle.com/executable-bpmn-vs-method-and-style/
+Trisotech favors using Data Objects for all data, and sticks close to the standard as described in this recent Bruce Silver article: https://methodandstyle.com/executable-bpmn-vs-method-and-style/
 
 In our opinion, these all seem to create difficult interfaces for Citizen Developers (folks from other domains that have picked up programming skills along the way) — and we are hoping that our approach makes it a little easier for people to develop BPMN diagrams without having to understand everything from the very beginning.
