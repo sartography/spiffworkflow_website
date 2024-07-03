@@ -11,9 +11,11 @@ description: Detailed instructions for building a parallel approval process in B
 
 Felix on the [SpiffWorkflow Discord Channel](https://discord.gg/F6Kb7HNK7B) asked:
 
-> hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve. Is SpiffWorkflow able to do this?
+> hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve.
+Is SpiffWorkflow able to do this?
 
-Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix's questions.   In this diagram we model a case where three people are asked to approve a request, but only two of the three people actually need to take action for the request to go through. 
+Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix's questions.
+In this diagram we model a case where three people are asked to approve a request, but only two of the three people actually need to take action for the request to go through.
 
 Details are below, but here is a video that might be a little easier to follow.
 {{< video "/videos/parallel_approval.mp4" "my-5" >}}
@@ -27,5 +29,5 @@ Here is how the diagram looks in SpiffArena in our Process Instance Viewer.  It 
 4. When the Event fires, it cancels the final waiting approval, and that final parallel path completes.
 5. At this point all three parallel paths are complete and the diagram closes out. 
 
-Here is the original BPMN file if you would like to try it out yourself.  
+Here is the original BPMN file if you would like to try it out yourself.
 [Download Diagram](./multi-approvals-1.bpmn "download")

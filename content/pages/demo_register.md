@@ -10,9 +10,12 @@ cssClass: "section-support"
 cssSubClass: "enterprise"
 ---
 
-Sign up below to get access to our demo site.  There you can view diagrams and run example workflows. Once there, you can request your own playground where you can start building diagrams and workflows of your own.
+Sign up below to get access to our demo site.
+There you can view diagrams and run example workflows.
+Once there, you can request your own playground where you can start building diagrams and workflows of your own.
 
 ### Sign Up
+
 Please fill out the required fields to continue.
 
 

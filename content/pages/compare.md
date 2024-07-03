@@ -9,7 +9,9 @@ cssClass: "section-compare"
 ---
 
 ## How do you compare to Camunda?
-Camunda is a leading open source workflow engine, and is based on the same core platform as offerings from IBM, Flowable, Appian and others.  Many of the comparisons here are also applicable to these other systems.
+
+Camunda is a leading open source workflow engine, and is based on the same core platform as offerings from IBM, Flowable, Appian and others.
+Many of the comparisons here are also applicable to these other systems.
 
 {{< tiles class="compare">}}
 {{< tile title="Camunda" icon="java" >}}
@@ -24,6 +26,7 @@ Camunda is a leading open source workflow engine, and is based on the same core 
 {{< /tiles >}}
 
 ### Feature Comparison Details
+
 See how we compare to Camunda v8 on a number of key elements of a workflow engine ...
 * [End To End Process Orchestration](#end-to-end-process-orchestration)
 * [Open Standards](#open-standards)
@@ -34,6 +37,7 @@ See how we compare to Camunda v8 on a number of key elements of a workflow engin
 
 
 ### End To End Process Orchestration
+
 Both Camunda and SpiffWorkflow provide full end to end process orchestration - we don't solve a small specific problem.  We help you improve your overall process.
 {{< compare_table >}}
 {{< compare_row title="Human Tasks" sw="true" cm="true">}}
@@ -51,6 +55,7 @@ Connect with external applications through a standard protocol. SpiffWorkflow us
 {{</compare_table>}}
 
 ### Open Standards
+
 Both systems are founded on open standards that have seen substantial research, are backed by well respected international organizations, and are widely across the industry.
 {{< compare_table >}}
 {{< compare_row title="BPMN 2.0" sw="true" cm="true">}}
@@ -68,6 +73,7 @@ SpiffWorkflow users Json Schemas to describe web forms, data stores and other in
 {{</compare_table>}}
 
 ### Analytics and Optimization
+
 The ability to track workflow processes as they execute, and to use that information to improve the process over time. 
 {{< compare_table >}}
 {{< compare_row title="Deep Analytics" sw="true" cm="true">}}
@@ -88,6 +94,7 @@ Ability to execute workflow processes over days, weeks and months.
 {{</compare_table>}}
 
 ### Flexible Architecture
+
 Both software applications are designed for integration into your organizations infrastructure.  
 {{< compare_table >}}
 {{< compare_row title="Self Hosted" sw="true" cm="">}}
@@ -99,6 +106,7 @@ The core SpiffWorkflow library is designed specifically for embedding in any Pyt
 {{</compare_table>}}
 
 ### Open Source
+
 Open Source Software is software that is provided along with its source code, with license that permits users to study, change, and improve its design. 
 {{< compare_table >}}
 {{< compare_row title="Open Source" sw="true" cm="">}}
@@ -113,6 +121,7 @@ Both organizations make substantial contributions to the open source community.
 {{</compare_table>}}
 
 ### Low Cost of Ownership
+
 {{< compare_table >}}
 {{< compare_row title="Early Assessment" sw="true" cm="true">}}
 SpiffWorkflow and Camunda both provide demo sites that allows people to immediately try out the project with freely available videos and documentation.   We encourage you to make a comparison! 
@@ -127,5 +136,6 @@ SpiffWorkflow commercial pricing models are based on features and support contra
 
 
 ## See SpiffWorkflow for yourself 
+
 Schedule a demo with a member of our core team, and we can demonstrate these capabilities live on our demo site.
 {{< calendly >}}

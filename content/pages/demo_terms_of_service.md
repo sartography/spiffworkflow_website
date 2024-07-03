@@ -8,38 +8,49 @@ description: By accessing and using SpiffDemo.org, you (the "User") agree to be 
 
 ## 1. Introduction
 
-This is the Terms of Service ("TOS") agreement for SpiffDemo.org (the "Website"), operated by Sartography, a company located in Virginia, USA. 
-This Website is intended for evaluation purposes only, and its primary purpose is to demonstrate the features and capabilities of SpiffWorkflow, an open-source product developed by Sartography. 
+This is the Terms of Service ("TOS") agreement for SpiffDemo.org (the "Website"), operated by Sartography, a company located in Virginia, USA.
+This Website is intended for evaluation purposes only, and its primary purpose is to demonstrate the features and capabilities of SpiffWorkflow, an open-source product developed by Sartography.
 By accessing and using the Website, you (the "User") agree to be bound by these Terms of Service, which constitute a legally binding agreement between you and Sartography.
 
 Sartography may update this TOS at any time and without prior notice by posting a new version at http://www.spiffworkflow.org/pages/demo_terms_of_service/.
 The information on this site and your use of it is subject to the most recent version of the TOS posted.
 
 ## 2. Evaluation Use Only
-The Website is intended for evaluation purposes only. 
+
+The Website is intended for evaluation purposes only.
 You acknowledge and agree that any data you submit to the Website, including but not limited to workflow data, user information, and any other content, will be routinely cleared from the Website and may be deleted at any time without notice.
 
 ## 3. No Warranty
-The Website and SpiffWorkflow are provided "as is" without any warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. 
+
+The Website and SpiffWorkflow are provided "as is" without any warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
 Sartography does not warrant that the Website or SpiffWorkflow will meet your requirements, be uninterrupted, secure, or error-free.
 
 ## 4. Limitation of Liability
+
 In no event shall Sartography, its affiliates, directors, employees, or agents be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to lost profits, data loss, or any other damages arising from your use of the Website or SpiffWorkflow, even if Sartography has been advised of the possibility of such damages.
 
 ## 5. Intellectual Property
-SpiffWorkflow and all related trademarks, logos, and other intellectual property are the property of Sartography or its licensors. You agree not to reproduce, distribute, modify, or create derivative works from the Website without the express written permission of Sartography.
+
+SpiffWorkflow and all related trademarks, logos, and other intellectual property are the property of Sartography or its licensors.
+You agree not to reproduce, distribute, modify, or create derivative works from the Website without the express written permission of Sartography.
 
 ## 6. Governing Law
+
 These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of Virginia, United States of America, without regard to its conflict of law provisions.
 
 ## 7. Changes to Terms
-Sartography reserves the right to modify these Terms at any time without prior notice. By continuing to access or use the Website after any revisions become effective, you agree to be bound by the revised Terms.
+
+Sartography reserves the right to modify these Terms at any time without prior notice.
+By continuing to access or use the Website after any revisions become effective, you agree to be bound by the revised Terms.
 
 
 ## 8. Your Conduct
-You understand that all information, data, text, software, graphics or other materials (“Content”), whether publicly posted or privately transmitted, are the sole responsibility of the person from whom such Content originated. This means that you, and not Sartography, are entirely responsible for all Content that you upload, post, email, transmit or otherwise make available via this Website.
 
-Sartography does not control the Content you post and, as such, does not guarantee the accuracy, integrity or quality of such Content. Under no circumstances will Sartography be liable in any way for any Content, including, but not limited to, any errors or omissions in any Content, or any loss or damage of any kind incurred as a result of the use of any Content posted, emailed, transmitted or otherwise made available via the Website.
+You understand that all information, data, text, software, graphics or other materials (“Content”), whether publicly posted or privately transmitted, are the sole responsibility of the person from whom such Content originated.
+This means that you, and not Sartography, are entirely responsible for all Content that you upload, post, email, transmit or otherwise make available via this Website.
+
+Sartography does not control the Content you post and, as such, does not guarantee the accuracy, integrity or quality of such Content.
+Under no circumstances will Sartography be liable in any way for any Content, including, but not limited to, any errors or omissions in any Content, or any loss or damage of any kind incurred as a result of the use of any Content posted, emailed, transmitted or otherwise made available via the Website.
 
 You agree to not use the Website to:
 1. upload, post, email, transmit or otherwise make available any Content that is unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, vulgar, obscene, libelous, invasive of another’s privacy, hateful, or racially, ethnically or otherwise objectionable or harm minors;
@@ -60,6 +71,7 @@ You agree to not use the Website to:
   * respond to your requests for customer service; or (e) protect the rights, property or personal safety of SpiffWorkflow its users and the public.
 
 ## 9. Contact Information
+
 If you have any questions about these Terms or your use of the Website, please contact Sartography via email at dan@sartography.com or using the following address.
 ```
 Mr. Dan Funk
@@ -71,4 +83,6 @@ USA
 ```
 
 ## 10. Agreement
-By using the Website, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use the Website.
+
+By using the Website, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+If you do not agree to these Terms, you must not access or use the Website.

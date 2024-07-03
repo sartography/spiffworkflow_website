@@ -10,6 +10,7 @@ description: Detailed directions on how to install SpiffArena and create and run
 In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram.  We'll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools.  Let's get started and you can see for yourself ...
 
 ## Video Instructions
+
 You can follow the directions below, or you can watch this 10-minute video and follow along. 
 {{< youtube id="Fjdqb2tdxHg" autoplay="0" rel="0"  >}}
 
@@ -21,6 +22,7 @@ Docker is a way for you to run on your laptop what was designed to run on larger
 
 
 ### Downloading and Starting SpiffArena
+
 From Mac0S, Linux Command Line, or Windows Powershell, run the following commands:
 {{< highlight Bash "linenos=false" >}}
 mkdir spiffworkflow
@@ -31,7 +33,10 @@ docker-compose up -d
 {{< / highlight >}}
 
 
-Please note that it may take a few minutes to download and install the docker images.  Nothing permanent is happening here.  You can delete these images at any time using the Docker Desktop application.   It’s also worth noting that subsequent starts are much faster.
+Please note that it may take a few minutes to download and install the docker images.
+Nothing permanent is happening here.
+You can delete these images at any time using the Docker Desktop application.
+It’s also worth noting that subsequent starts are much faster.
 
 **Macs**:  Please note that you may need to use curl rather than wget
 
@@ -40,15 +45,20 @@ curl -o docker-compose.yml https://raw.githubusercontent.com/sartography/spiff-a
 {{< / highlight >}}
 
 ### Open SpiffArena in a browser
+
 After a few minutes, all processes should be up and running, and you can view the system through your web browser.
 
   1. Visit http://localhost:8001 in your browser.  
   2. Log in as admin/admin
 
-Congratulations!  You have SpiffWorkflow up and running locally! Now what!?    Let’s start with a simple example.
+Congratulations!
+You have SpiffWorkflow up and running locally!
+Now what!?
+Let’s start with a simple example.
 
 ## Building and running your first Workflow Process
-Let’s build and run a very simple workflow to get familiar with the interface, and then we will follow up with larger and more complex examples. 
+
+Let’s build and run a very simple workflow to get familiar with the interface, and then we will follow up with larger and more complex examples.
 
 **Select “Processes” from the Main Menu**
 
@@ -81,7 +91,8 @@ Let’s build and run a very simple workflow to get familiar with the interface,
 
 Let’s draw a simple functional BPMN Diagram
 
-Every new BPMN diagram is initially populated with a Start Event, which looks like an open circle.  Click on it and it will show a blue outline and a “context menu” – find the “Task” icon in the menu (the rectangle with rounded corners) and click it to “Append Task”.
+Every new BPMN diagram is initially populated with a Start Event, which looks like an open circle.
+Click on it and it will show a blue outline and a “context menu” – find the “Task” icon in the menu (the rectangle with rounded corners) and click it to “Append Task”.
 
 ![append task](append_task.png)
 
@@ -89,18 +100,25 @@ Your diagram should now look like this:
 
 ![diagram 1](diagram_1.png)
 
-Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram. Click the Task, to get the context menu up again. Click the wrench icon {{< inline_image src="wrench.png" alt="wrench icon" >}}, and select {{< inline_image src="script_task.png" alt="Script Task icon" >}}“Script Task” from the list of options.
+Now let’s turn the “Task” (the rectangle) into a Script Task, and we will add a bit of Python code to our diagram.
+Click the Task, to get the context menu up again.
+Click the wrench icon {{< inline_image src="wrench.png" alt="wrench icon" >}}, and select {{< inline_image src="script_task.png" alt="Script Task icon" >}}“Script Task” from the list of options.
 
-At this point your cursor will be blinking inside of the Task icon, allowing you to enter the name of the Task.  For this time we will use an alternative method, described in the next step
-Click anywhere off the Task and your diagram should now look like this:
+At this point your cursor will be blinking inside of the Task icon, allowing you to enter the name of the Task.
+For this time we will use an alternative method, described in the next step Click anywhere off the Task and your diagram should now look like this:
 
 ![diagram 2](diagram_2.png)
 
-Select the Script Task (the rectangle should have a blue outline around it) and then take a look at the options in the Properties Panel on the right.  You should see something like the image below.  There are three sections.  When you click on a section it will expand.
+Select the Script Task (the rectangle should have a blue outline around it) and then take a look at the options in the Properties Panel on the right.
+You should see something like the image below.
+There are three sections.
+When you click on a section it will expand.
 
 ![Script Properties Panel](prop_panel_script.png)
 
-Click General so it is expanded, we can give the Task a name.  Let’s call it “Set  Name”.  Your diagram should now look like this:
+Click General so it is expanded, we can give the Task a name.
+Let’s call it “Set  Name”.
+Your diagram should now look like this:
 
 ![diagram 3](diagram_3.png)
 
@@ -112,7 +130,9 @@ so the diagram looks like this:
 
 ![diagram 5](diagram_5.png)
 
-Take advantage of the blinking cursor in the middle of the newly added Task and name it “Display Message”.  Next click on the wrench icon and select “Manual Task” .  And to complete the diagram, click on the bolded circle at the top left, it should say “Append EndEvent” as shown below.
+Take advantage of the blinking cursor in the middle of the newly added Task and name it “Display Message”.
+Next click on the wrench icon and select “Manual Task” .
+And to complete the diagram, click on the bolded circle at the top left, it should say “Append EndEvent” as shown below.
 
 ![diagram 6](diagram_6.png)
 
@@ -125,7 +145,8 @@ Now let’s add a bit of Python code to execute.  Click in the Script Task and e
 my_name = "World"
 {{< / highlight >}}
 
-Now, in the second task, let’s add some text and Jinja code to display a message.  Click on the Manual Task and in the Property Panel on the right side, expand the Instructions section and add the following:
+Now, in the second task, let’s add some text and Jinja code to display a message.
+Click on the Manual Task and in the Property Panel on the right side, expand the Instructions section and add the following:
 
 {{< highlight Jinja2 "linenos=true" >}}
 Hello {{my_name}}!
@@ -139,7 +160,8 @@ The right hand Property Panel should look like this (you may need to grab the bo
 
 ![Manual Properties Panel](prop_panel_manual.png)
 
-Save the diagram using the save button in the upper left.  When it asks for a name call it “hello_world”
+Save the diagram using the save button in the upper left.
+When it asks for a name call it “hello_world”
 
 Now click on the “Simple Example” in the breadcrumbs at the top of the page to go back to the process model.
 
@@ -151,6 +173,7 @@ Click the Continue button to return to the Home page and then the Completed tab 
 
 
 ### Shutting it all down
+
 {{< highlight Bash "linenos=false" >}}
 $ docker-compose down
 $ docker ps
@@ -158,6 +181,7 @@ $ docker ps
 
 
 ## What you have learned
+
 Today you learned a great deal about SpiffWorkflow and the new SpiffArena application, but it’s just the tip of the iceberg.  Here are few things we covered today:
  1. How to get SpiffArena running locally on your computer.  You can stop it using the DockerDesktop application, or by running docker container down at the command line.
  2. How to create a new Process Model
@@ -166,6 +190,11 @@ Today you learned a great deal about SpiffWorkflow and the new SpiffArena applic
  5. How to create a Script Task that contains a bit of python.
  6. How to create a Manual Task with a message that people can see.
 
-Remember that the real power of SpiffWorkflow is its ability to help create transparency around complex rules of a business, government agency, or any other organization.  This isn’t just some quick and easy way to write code.  It is a tool for building consensus and for offering a guarantee that what you see is truly what you get.  Additional tutorials will cover some of the powerful ways that Spiffworkflow helps you create transparency by using seemingly simple diagrams to describe complex processes, critical decision points, and to coordinate parallel actions and the handoff of responsibility from one person or application to the next – all in a way everyone can see and understand.
+Remember that the real power of SpiffWorkflow is its ability to help create transparency around complex rules of a business, government agency, or any other organization.
+This isn’t just some quick and easy way to write code.
+It is a tool for building consensus and for offering a guarantee that what you see is truly what you get.
+Additional tutorials will cover some of the powerful ways that Spiffworkflow helps you create transparency by using seemingly simple diagrams to describe complex processes, critical decision points, and to coordinate parallel actions and the handoff of responsibility from one person or application to the next – all in a way everyone can see and understand.
 
-Don’t let this simple tutorial fool you.  There is some substantial power within your reach to create change and improve the world in which you live.  We post tutorials frequently to help you explore this power and understand how others are using SpiffWorkflow to transform their organizations and incorporate more people in the software development life cycle.
+Don’t let this simple tutorial fool you.
+There is some substantial power within your reach to create change and improve the world in which you live.
+We post tutorials frequently to help you explore this power and understand how others are using SpiffWorkflow to transform their organizations and incorporate more people in the software development life cycle.

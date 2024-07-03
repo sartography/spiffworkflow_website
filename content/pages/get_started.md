@@ -25,7 +25,8 @@ building and running a simple process diagram.</p>
 
 ## Try the Live Demo
 
-View and execute example process models on our live demo site.  [Register here to get started](/pages/demo_register).
+View and execute example process models on our live demo site.
+[Register here to get started](/pages/demo_register).
 Explore on your own, or follow along with a [guided tour](https://spiff-arena.readthedocs.io/en/latest/Getting_Started/quick_start.html).
 
 ## Run it locally
@@ -38,7 +39,6 @@ Download the source code and contribute to the project, by [following these dire
 
 ## Learn More
 
-SpiffWorkflow is a powerful system.  There is a lot to learn.  Please checkout our [Documentation](/pages/docs) for more information.
-
-
-
+SpiffWorkflow is a powerful system.
+There is a lot to learn.
+Please checkout our [Documentation](/pages/docs) for more information.

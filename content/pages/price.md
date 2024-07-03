@@ -75,12 +75,15 @@ cssClass: "section-support"
 
 ### Training
 
-SpiffWorkflow is a powerful tool that can be used by a wide range of people.  We offer training for Business Analysts, Citizen Developers, Software Engineers, and DevOps.  We also offer a free introduction to SpiffWorkflow for end users that will be logging into the system to complete forms, make requests, and handle approvals.
+SpiffWorkflow is a powerful tool that can be used by a wide range of people.
+We offer training for Business Analysts, Citizen Developers, Software Engineers, and DevOps.
+We also offer a free introduction to SpiffWorkflow for end users that will be logging into the system to complete forms, make requests, and handle approvals.
 
 
 ### Support
 
-Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.  We offer support plans that provide direct access to the same team that develops, tests, and creates the documentation and training for SpiffWorkflow.
+Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.
+We offer support plans that provide direct access to the same team that develops, tests, and creates the documentation and training for SpiffWorkflow.
 <div class="support_table">
 
 
