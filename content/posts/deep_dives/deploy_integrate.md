@@ -11,7 +11,8 @@ description: Detailed instructions that cover making an external connection from
 
 # Deploying and Integrating With SpiffArena
 
-This guide shows you how to deploy the demo `Connector Proxy` as an `AWS Lambda Function` as well as how to integrate it with [SpiffArena](https://www.spiffworkflow.org/pages/spiffarena/). The [Getting Started Guide](https://www.spiffworkflow.org/posts/articles/get_started/) will be used as the basis for integration but the steps should easily map to any custom installation.
+This guide shows you how to deploy the demo `Connector Proxy` as an `AWS Lambda Function` as well as how to integrate it with [SpiffArena](https://www.spiffworkflow.org/pages/spiffarena/).
+The [Getting Started Guide](https://www.spiffworkflow.org/posts/articles/get_started/) will be used as the basis for integration but the steps should easily map to any custom installation.
 
 There is an assumption that you have access to login to the AWS Console and can create/deploy Lambda functions.
 
@@ -22,19 +23,21 @@ You will need to close this repository to complete the steps below.
 
 ## Building the zip
 
-One option when deploying a Lambda function is to upload a zip file containing the source code or executable. In the root of this repository run:
+One option when deploying a Lambda function is to upload a zip file containing the source code or executable.
+In the root of this repository run:
 
 ```
 make zip
 ```
 
-This will create a zip file containing the [lambda entry point function](https://github.com/jbirddog/connector-proxy-lambda-demo/blob/main/connector_proxy_lambda_demo/lambda_function.py#L5) as well as all the dependencies needed to execute the connectors. For this example the libraries [spiffworkflow-proxy](https://github.com/sartography/spiffworkflow-proxy) is used for discovering connectors and [connector-http](https://github.com/sartography/connector-http) is an example connector that provides http get and post requests.
+This will create a zip file containing the [lambda entry point function](https://github.com/jbirddog/connector-proxy-lambda-demo/blob/main/connector_proxy_lambda_demo/lambda_function.py#L5) as well as all the dependencies needed to execute the connectors.
+For this example the libraries [spiffworkflow-proxy](https://github.com/sartography/spiffworkflow-proxy) is used for discovering connectors and [connector-http](https://github.com/sartography/connector-http) is an example connector that provides http get and post requests.
 
 Once `make zip` completes `connector_proxy_lambda_demo.zip` will be available in the repository root.
 
 ## Creating the Lambda Function
 
-Log in to the AWS Console and navigate to the Lambda section. 
+Log in to the AWS Console and navigate to the Lambda section.
 
 ![Login](./login.png)
 
@@ -46,7 +49,8 @@ Choose to `Author from scratch` and select the most recent Python runtime.
 
 ![Author From Scratch Screenshot](author_from_scratch.png)
 
-Under `Advanced Settings` check `Enable function URL`. For this demo we will use the `NONE` auth type to keep things simple.
+Under `Advanced Settings` check `Enable function URL`.
+For this demo we will use the `NONE` auth type to keep things simple.
 
 ![Advanced Settings Screenshot](advanced_settings.png)
 
@@ -54,13 +58,16 @@ After hitting the `Create function` button you will be taken to your new Lambda 
 
 ![Lambda Screenshot](lambda.png)
 
-In the bottom right of the first section is a link to your Lamba's function URL. Click it for a hello world response.
+In the bottom right of the first section is a link to your Lamba's function URL.
+Click it for a hello world response.
 
 ![Function URL Screenshot](function_url.png)
 
 ## Deploying the Lambda Function
 
-If you scroll down you will see a section with the example code created with your Lambda function. We are going to replace this with the contents of our zip file. Choose `Upload from` and select `.zip file`.
+If you scroll down you will see a section with the example code created with your Lambda function.
+We are going to replace this with the contents of our zip file.
+Choose `Upload from` and select `.zip file`.
 
 ![Code Source Screenshot](code_source.png)
 
@@ -72,7 +79,10 @@ Click your function URL again to see a hello from our deployed Connector Proxy.
 
 ## Integrating With SpiffArena
 
-Congrats, your Connector Proxy has been deployed as a Lambda function. To integrate it with SpiffArena we simply need to update an environment variable and restart the backend. If using the [Getting Started Guide](/posts/articles/get_started/) open the docker-compose.yml file, else edit the environment variable in the way appropriate for your deployment. The variable we need to change is called `SPIFFWORKFLOW_BACKEND_CONNECTOR_PROXY_URL`.
+Congrats, your Connector Proxy has been deployed as a Lambda function.
+To integrate it with SpiffArena we simply need to update an environment variable and restart the backend.
+If using the [Getting Started Guide](/posts/articles/get_started/) open the docker-compose.yml file, else edit the environment variable in the way appropriate for your deployment.
+The variable we need to change is called `SPIFFWORKFLOW_BACKEND_CONNECTOR_PROXY_URL`.
 
 Example diff using the function URL from the above images:
 
@@ -102,11 +112,14 @@ docker compose up -d
 
 ## Testing
 
-Create a new process model as described in the [Getting Started Guide](/posts/articles/get_started/). Add a `Service Task` and in its properties panel you will see a drop down to pick which connector in your `Connector Proxy` to call. In this demo we deployed http get and post connectors:
+Create a new process model as described in the [Getting Started Guide](/posts/articles/get_started/).
+Add a `Service Task` and in its properties panel you will see a drop down to pick which connector in your `Connector Proxy` to call.
+In this demo we deployed http get and post connectors:
 
 ![BPMN Editor Screenshot](bpmn_editor.png)
 
-Choose the `http/GetRequest` operator ID and enter the [dog fact api](https://dog-api.kinduff.com/api/facts) URL. Remember to quote it since parameters are evaluated as Python expressions.
+Choose the `http/GetRequest` operator ID and enter the [dog fact api](https://dog-api.kinduff.com/api/facts) URL.
+Remember to quote it since parameters are evaluated as Python expressions.
 
 ![Properties Screenshot](properties.png)
 
@@ -116,4 +129,6 @@ Run the process and once complete you can see the response in the workflow:
 
 ## Congrats!
 
-You have successfully deployed your own `Connector Proxy` as an `AWS Lambda function` and integrated it with `SpiffArena`. You made a call from a workflow to get a dog fact. Now imagine that call was to talk to an external system relevant to your business processes.
+You have successfully deployed your own `Connector Proxy` as an `AWS Lambda function` and integrated it with `SpiffArena`.
+You made a call from a workflow to get a dog fact.
+Now imagine that call was to talk to an external system relevant to your business processes.

@@ -13,6 +13,7 @@ This SLE seeks to outline the basic expectations for a Support Contract or Servi
 
 
 ### Terms:
+
 | Term             | Definition                                                                                                                                                                   |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Availability     | The percentage of time that our support services will actually be available during support hours. (we hope to be available 100% of the time, but that isn’t always possible) |
@@ -31,7 +32,9 @@ This SLE seeks to outline the basic expectations for a Support Contract or Servi
 * Creating and maintaining basic documentation
 
 ### Paid Support
-Commercial companies with mission-critical installations of SpiffArena and SpiffWorkflow may require enhanced Provider availability including fast response times to questions, and regular checkups to ensure their systems remain stable, up to date, and are protected against major security vulnerabilities.  For these cases [Sartography](https://sartography.com) offers paid support plans to provide these organizations and groups with priority responses via chat rooms and GitHub, and  allow them direct access to [Sartography](https://sartography.com) personnel through phone, video, email, and private chat.
+
+Commercial companies with mission-critical installations of SpiffArena and SpiffWorkflow may require enhanced Provider availability including fast response times to questions, and regular checkups to ensure their systems remain stable, up to date, and are protected against major security vulnerabilities.
+For these cases [Sartography](https://sartography.com) offers paid support plans to provide these organizations and groups with priority responses via chat rooms and GitHub, and  allow them direct access to [Sartography](https://sartography.com) personnel through phone, video, email, and private chat.
 
 Please refer to the chart below for a comparison of service levels.
 
@@ -70,9 +73,12 @@ To receive support of any kind, you must remain on a supported version of the pl
 | Gold          | 90%          | 4 hours                    | 1 hour - 24/7                  |
 
 ### How to read this chart:
-Availability is the percentage of time that [Sartography](https://sartography.com) will be available within the agreed time windows. For example, Bronze members can expect us to respond to messages within 48 hours, and to phone calls and text messages within an hour (if the request is made within the service window) at least 90% of the time.
+
+Availability is the percentage of time that [Sartography](https://sartography.com) will be available within the agreed time windows.
+For example, Bronze members can expect us to respond to messages within 48 hours, and to phone calls and text messages within an hour (if the request is made within the service window) at least 90% of the time.
 
 ### Limitations
+
 * Except for Gold Members, support is not offered on weekends or national holidays in the U.S.  In such a case our response times will be measured from the next business day.
 
 
@@ -86,4 +92,3 @@ In the event that we fail to meet the above Service Level Indicators the followi
 **Refunds and credits**: Refunds and credits will be applied to the next monthly invoice.
 
 **Waiver**: The Provider may waive any penalty if it can demonstrate that the failure to meet the service levels was due to circumstances beyond its reasonable control.
-
