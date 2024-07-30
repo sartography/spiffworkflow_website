@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 <meta property="og:title" content="Features" />
-<meta property="og:description" content="A list of the major features of SpiffArena and it&#39;s components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors and more..." />
+<meta property="og:description" content="A list of the major features of SpiffArena and its components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors, and more..." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/pages/features2/" /><meta property="og:image" content="http://localhost:1313/images/opengraph/home.png" /><meta property="article:section" content="pages" />
 <meta property="article:published_time" content="2022-12-27T16:05:00-05:00" />
@@ -135,47 +135,73 @@
     </div>
     <div class="content">
       <h3 id="user-tasks----gather-information-from-people">User Tasks &ndash; Gather information from people</h3>
-<p>You can create highly complex web forms to gather information from end users - injecting this information into your workflow process.  We are using the excellent and feature complete open source <a href="https://react-jsonschema-form.readthedocs.io/en/latest/">React Json Form Schema</a> with features such as nested sections, validation, and custom components.  A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.</p>
+<p>You can create highly complex web forms to gather information from end users - injecting this information into your workflow process.
+We are using the excellent and feature-complete open-source <a href="https://react-jsonschema-form.readthedocs.io/en/latest/">React Json Form Schema</a> with features such as nested sections, validation, and custom components.
+A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.</p>
 <h3 id="service-tasks----send-and-retrieve-information-from-other-software">Service Tasks &ndash; Send and retrieve information from other software</h3>
-<p>Service Tasks allow you to configure connections to third party applications.  You can pull live data from an AWS DynamoDB Server, or push a message out to a Slack channel.  Following a basic pattern, you can add new connectors to your own software services by writing a small bit of Python code.  Many connectors are in the works (AWS services, Postgres) and new ones are easy to create.</p>
+<p>Service Tasks allow you to configure connections to third-party applications.
+You can pull live data from an AWS DynamoDB Server, or push a message out to a Slack channel.
+Following a basic pattern, you can add new connectors to your own software services by writing a small bit of Python code.
+Many connectors are in the works (AWS services, Postgres) and new ones are easy to create.</p>
 <p><img src="../../images/features/services.gif" alt="Services Video"></p>
 <h3 id="pools-and-lanes----who-is-in-charge-right-now">Pools and Lanes &ndash; Who is in charge right now?</h3>
-<p>Pools and Lanes clearly and accurately describe the handoff of authority between groups of people, making it crystal clear who is responsible for each task.</p>
-<p>This is great for approval processes. For example &hellip;</p>
+<p>Pools and Lanes clearly and accurately describe the handoff of authority between groups of people, making it crystal clear who is responsible for each task.
+This is great for approval processes.
+For example&hellip;</p>
 <blockquote>
-<p>&ldquo;Does Jason deserve that Heavy Metal Cruise Ship vacation in February?&rdquo; (He definitely does)</p>
+<p>&ldquo;Does Jason deserve that Heavy Metal Cruise Ship vacation in February?&rdquo;
+(He definitely does)</p>
 </blockquote>
-<p>Or the hand off of a complex job from one team to the text</p>
+<p>Or the handoff of a complex job from one team to the next</p>
 <blockquote>
-<p>The field crew is done. It&rsquo;s time for Steve to do the computations.</p>
+<p>The field crew is done.
+It&rsquo;s time for Steve to do the computations.</p>
 </blockquote>
 <h3 id="timer-events---watching-the-clock">Timer Events - Watching the clock</h3>
-<p>Computers watch clocks.  On the average, one could say it is pretty much all they do. Rather than have the computers constantly remind us of what time it is, perhaps they could just deal with the problem, kick off the process, make the request, check the feedback, send the reminder.</p>
+<p>Computers watch clocks.
+On average, one could say it is pretty much all they do.
+Rather than have the computers constantly remind us of what time it is, perhaps they could just deal with the problem, kick off the process, make the request, check the feedback, send the reminder.</p>
 <blockquote>
-<p>&ldquo;The Field Crew completed the survey. It&rsquo;s been on Steve&rsquo;s desk for two days. It&rsquo;s time to ping Agnes and get this back on track.&rdquo;</p>
+<p>&ldquo;The Field Crew completed the survey.
+It&rsquo;s been on Steve&rsquo;s desk for two days.
+It&rsquo;s time to ping Agnes and get this back on track.&rdquo;</p>
 </blockquote>
 <p><img src="../../images/features/timer.gif" alt="Timer Video"></p>
 <h3 id="messages---listening-to-the-world">Messages - Listening to the World</h3>
-<p>Service Tasks are how SpiffWorkflow speaks to the world; messages are how SpiffWorkflow listens.  Message Events allow you to start new processes, cancel existing processes, or pause and wait for some external communication. Learn more in <a href="/posts/deep_dives/messages">our article on Messages</a>.</p>
+<p>Service Tasks are how SpiffWorkflow speaks to the world; messages are how SpiffWorkflow listens.
+Message Events allow you to start new processes, cancel existing processes, or pause and wait for some external communication.
+Learn more in <a href="/posts/deep_dives/messages">our article on Messages</a>.</p>
 <blockquote>
-<p>&ldquo;We told our finance software to fire off an API call to SpiffWorkflow whenever a payment is processed. Then SpiffWorkflow does all the legwork of communicating to people via their preferred system &ndash; email, phone, Slack, text &ndash; and it creates the paper trail so there is a record of what went down &hellip;&rdquo;</p>
+<p>&ldquo;We told our finance software to fire off an API call to SpiffWorkflow whenever a payment is processed.
+Then SpiffWorkflow does all the legwork of communicating to people via their preferred system &ndash; email, phone, Slack, text &ndash; and it creates the paper trail so there is a record of what went down&hellip;&rdquo;</p>
 </blockquote>
 <h3 id="perspectives----custom-reporting-tools">Perspectives &ndash; Custom Reporting Tools</h3>
-<p>It doesn&rsquo;t always make sense to do things in the order in which they are received.  Urgent requests may need to be prioritized, and &ldquo;urgent&rdquo; can be defined in many ways.  Perspectives allow you to report on processes in custom ways.  You can extract important information from the workflow as it executes and make this data available to your lists. Now you can easily find which tasks you should pick up next.</p>
+<p>It doesn&rsquo;t always make sense to do things in the order in which they are received.
+Urgent requests may need to be prioritized, and &ldquo;urgent&rdquo; can be defined in many ways.
+Perspectives allow you to report on processes in custom ways.
+You can extract important information from the workflow as it executes and make this data available to your lists.
+Now you can easily find which tasks you should pick up next.</p>
 <p><img src="../../images/features/perspectives.gif" alt="Timer Video"></p>
 <h3 id="decision-tables">Decision Tables</h3>
-<p>Decision tables (DMN / Decision Model Notation) look a bit like spreadsheets and allow you to articulate core business rules in ways that are easy to understand, update, and maintain. These tables can be directly embedded and referenced from your diagrams.</p>
+<p>Decision tables (DMN / Decision Model Notation) look a bit like spreadsheets and allow you to articulate core business rules in ways that are easy to understand, update, and maintain.
+These tables can be directly embedded and referenced from your diagrams.</p>
 <p><img src="../../images/features/decisions.gif" alt="Markdown Video"></p>
 <h3 id="granular-permissions">Granular Permissions</h3>
-<p>SpiffArena can be connected to any OpenID system. It is possible to manage user authentication outside SpiffWorkflow using public systems like Google and Facebook or private systems with products like KeyCloak.</p>
-<p>At the same time, SpiffArena comes with a permission system that can grow with you.  You can use the same diagram tools described above to control permissions for all of your  users - setting up permission tables that can be simple (everyone can start any process) to very specific (&ldquo;This API endpoint is only accessible to the accounting department lead&rdquo;).</p>
+<p>SpiffArena can be connected to any OpenID system.
+It is possible to manage user authentication outside SpiffWorkflow using public systems like Google and Facebook or private systems with products like KeyCloak.
+At the same time, SpiffArena comes with a permission system that can grow with you.
+You can use the same diagram tools described above to control permissions for all of your users - setting up permission tables that can be simple (everyone can start any process) to very specific (&ldquo;This API endpoint is only accessible to the accounting department lead&rdquo;).</p>
 <h3 id="built-in-editors">Built-in Editors</h3>
-<p>With editors for Python, Markdown, and JSON, you can quickly jump from drawing the diagram to incorporating the small bits of code, documentation, and end user instructions in a way that is fast, simple and intuitive.</p>
+<p>With editors for Python, Markdown, and JSON, you can quickly jump from drawing the diagram to incorporating the small bits of code, documentation, and end-user instructions in a way that is fast, simple, and intuitive.</p>
 <p><img src="../../images/features/markdown.gif" alt="Markdown Video"></p>
 <h3 id="data-encapsulation">Data Encapsulation</h3>
-<p>SpiffWorkflow supports BPMN&rsquo;s Data Objects, Data Inputs and Data Outputs, allowing you to visually control what data is accessible.  When composing diagrams within diagrams, you can declare the expected variables that will be provided and the ones that will be returned, keeping your workflows clean, consistent, and easy to understand.  Learn more in <a href="/posts/deep_dives/data_objects">our article on Data Objects</a></p>
+<p>SpiffWorkflow supports BPMN&rsquo;s Data Objects, Data Inputs, and Data Outputs, allowing you to visually control what data is accessible.
+When composing diagrams within diagrams, you can declare the expected variables that will be provided and the ones that will be returned, keeping your workflows clean, consistent, and easy to understand.
+Learn more in <a href="/posts/deep_dives/data_objects">our article on Data Objects</a>.</p>
 <h3 id="python-editor-and-unit-tests">Python Editor and Unit Tests</h3>
-<p>The robust Python editor allows you to write small bits of code that help modify data (say, user input on a form) to fit a certain purpose (sending a formatted message to Slack).  To make these modifications you can use Script Tasks. And we provide a way to test them to make sure they do what you expect them to do!</p>
+<p>The robust Python editor allows you to write small bits of code that help modify data (say, user input on a form) to fit a certain purpose (sending a formatted message to Slack).
+To make these modifications you can use Script Tasks.
+And we provide a way to test them to make sure they do what you expect them to do!</p>
 <p><img src="../../images/features/scripts.gif" alt="python editor"></p>
 
     </div>

@@ -42,7 +42,7 @@ patents, guests on leading podcasts, and the humble but thoughtful responses to 
 the web.  Together we are the creators and maintainers of SpiffWorkflow - a suite of open source tools focused on
 improving back office productivity, predictability, and transparency.
 
-<a  href="#contact_us">
+<a  href="#contact">
 <span class="button signup-button rounded primary-btn raised">Get a Quote</span>
 </a>
 
@@ -52,7 +52,7 @@ Your SpiffWorkflow Library or Spiff-Arena deployment deserves the highest level 
 essential. As the creators of these tools, we offer unparalleled expertise to swiftly resolve critical issues. 
 Our support contracts start at $2k per month and ensure your operations run smoothly and efficiently.
 
-<a  href="#contact_us">
+<a  href="#contact">
 <span class="button signup-button rounded primary-btn raised">Contact Us</span>
 </a>
 
@@ -71,6 +71,7 @@ project to make sure we understand what you are looking for and how we prioritiz
 
 ![Sartography](/images/Sartography-Logo-Horizontal-Color.png)
 
+<a name="contact"></a>
 ### Contact Us
 
 {{< contact_us >}}

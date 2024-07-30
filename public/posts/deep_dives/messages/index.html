@@ -135,51 +135,102 @@
     </div>
     <div class="content">
       <p><img src="intro.png" alt="Intro diagram"></p>
-<p>This is a deep dive into BPMN 2.0 <strong>Messages</strong> and how we implemented them in our open source project SpiffWorkflow.  This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with Spiffworkflow that would benefit from having their BPMN diagrams communicate with each other. This is thick material, but there is a beautiful idea here well worth understanding, and beneficial to anyone who is interested in prolonged communications between complex systems.</p>
-<p>Adherence to the BPMN standard for Messages is exceedingly rare. There are few working examples that actually implement the standard or attempted to further its adoption. That isn’t surprising, as the BPMN specification’s paragraph on Message “Correlations” is one the most dense and challenging bits of technical writing you will ever be so unfortunate as to confront. But it is beautiful at its heart, and we will try to capture that here.</p>
+<p>This is a deep dive into BPMN 2.0 <strong>Messages</strong> and how we implemented them in our open-source project SpiffWorkflow.
+This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other.
+This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.</p>
+<p>Adherence to the BPMN standard for Messages is exceedingly rare.
+There are few working examples that actually implement the standard or attempt to further its adoption.
+That isn’t surprising, as the BPMN specification’s paragraph on Message “Correlations” is one of the most dense and challenging bits of technical writing you will ever be so unfortunate as to confront.
+But it is beautiful at its heart, and we will try to capture that here.</p>
 <h3 id="the-concepts">The Concepts</h3>
-<p>In this section we will cover the following major concepts: The <strong>Message</strong> itself, <strong>Collaborations</strong>, and <strong>Correlations</strong>. Understanding these concepts is critical to the following sections where we will describe their usage.</p>
+<p>In this section, we will cover the following major concepts: The <strong>Message</strong> itself, <strong>Collaborations</strong>, and <strong>Correlations</strong>.
+Understanding these concepts is critical to the following sections where we will describe their usage.</p>
 <h3 id="a-simple-message">A Simple Message</h3>
-<p>Messages themselves are pretty simple. They have a unique name and a payload. If you imagine two people talking in a quiet room, that’s all that is needed.</p>
-<p>Messages always have a one-to-one relationship. One sender to one receiver.</p>
-<p>To better explain messages, we’ll build on a simple example that doesn’t initially require one. Buddy and Peggy, deeply in love, are in a tight embrace and Buddy says: “Peggy Sue, Oh how my heart yearns for you”, and Peggy, hearing it, responds: “Buddy Holly, how you make my heart jolly!” It is a perfect moment, and can be captured in a happy little BPMN diagram.</p>
+<p>Messages themselves are pretty simple.
+They have a unique name and a payload.
+If you imagine two people talking in a quiet room, that’s all that is needed.</p>
+<p>Messages always have a one-to-one relationship.
+One sender to one receiver.</p>
+<p>To better explain messages, we’ll build on a simple example that doesn’t initially require one.
+Buddy and Peggy, deeply in love, are in a tight embrace and Buddy says: “Peggy Sue, Oh how my heart yearns for you”, and Peggy, hearing it, responds: “Buddy Holly, how you make my heart jolly!” It is a perfect moment and can be captured in a happy little BPMN diagram.</p>
 <p><img src="happy.png" alt="Happy little bpmn diagram"></p>
-<p>But love isn’t always so simple. And neither is BPMN.</p>
+<p>But love isn’t always so simple.
+And neither is BPMN.</p>
 <h3 id="collaborations">Collaborations</h3>
-<p>Let’s move Buddy and Peggy to a room full of romantic couples and track all the romantic profferings in BPMN. To do that we will need to use more generic terms and introduce a Collaboration diagram, as shown below. Collaborations encompass multiple participants/processes with interconnected messages.</p>
+<p>Let’s move Buddy and Peggy to a room full of romantic couples and track all the romantic profferings in BPMN.
+To do that we will need to use more generic terms and introduce a Collaboration diagram, as shown below.
+Collaborations encompass multiple participants/processes with interconnected messages.</p>
 <p><img src="bpmn1.png" alt="participant diagram"></p>
-<p>Imagine we have 2 “Admirer” and 2 “Beloved” instances running at the same time: Buddy and Mary Jane play the “Admirer”, “Peggy” and “Tom” are the beloved. If we get this right, it’s a romantic evening. If we get it wrong, there will be blood.</p>
-<p>It is all about context. If Buddy is saying nice things to Peggy, then we don’t want Peggy responding to Mary Jane. The critical concept here is a “conversation”, and just like in real life, there are some very complex social rules about how conversations work.</p>
-<p>Some “conversations” in life are terrible. They seem to meander about from one thing to the next with no rhyme or reason, and no end in sight. That isn’t an actual conversation, it’s a nuisance — an area not covered by BPMN. We want good conversations, and that requires a subject or topic on which the conversation is grounded. All the messages back and forth should relate to the topic of the conversation. Or, to use the correct BPMN words, a <strong>Collaboration</strong> (the conversation) has a <strong>CorrelationKey</strong> (topic). THIS IS IMPORTANT</p>
+<p>Imagine we have 2 “Admirer” and 2 “Beloved” instances running at the same time: Buddy and Mary Jane play the “Admirer”, “Peggy” and “Tom” are the beloved.
+If we get this right, it’s a romantic evening.
+If we get it wrong, there will be blood.</p>
+<p>It is all about context.
+If Buddy is saying nice things to Peggy, then we don’t want Peggy responding to Mary Jane.
+The critical concept here is a “conversation”, and just like in real life, there are some very complex social rules about how conversations work.</p>
+<p>Some “conversations” in life are terrible.
+They seem to meander about from one thing to the next with no rhyme or reason, and no end in sight.
+That isn’t an actual conversation, it’s a nuisance — an area not covered by BPMN.
+We want good conversations, and that requires a subject or topic on which the conversation is grounded.
+All the messages back and forth should relate to the topic of the conversation.
+Or, to use the correct BPMN words, a <strong>Collaboration</strong> (the conversation) has a <strong>CorrelationKey</strong> (topic).
+THIS IS IMPORTANT</p>
 <h3 id="correlations">Correlations</h3>
-<p>Think of a correlation as the “Subject of the Conversation”. In our example, a good subject would be the beloved’s name: “Peggy”, “Tom”. The Admirers know who they admire, and each beloved knows their own name — so we have a kind of “Key” on which to base the conversation. You don’t get the Key wrong. You don’t yell out Tom’s name in a passionate moment with Peggy.</p>
-<p><strong>Collaborations</strong>, <strong>Messages</strong>, and <strong>Correlations</strong> have no visual representation in the BPMN diagrams. So I can’t draw you a picture. But they are first order concepts carefully covered in the BPMN 2.0 standard. You have to manipulate them through some sort of “Properties Panel,” which we will cover in the next section.</p>
-<p>The hardest concept for me, when I read the specification, was understanding that Correlations apply to the Collaboration as a whole. It is the subject of the conversation. It isn’t (as I struggled with for weeks) the address on an envelope. It is a sticky thing that should be used consistently across all the messages in a conversation, So as we continue, fight to keep this idea in your head: It’s all about having a good conversation about a specific subject.</p>
-<p><img src="bpmn2.png" alt="particiant diagram external"></p>
-<p>Finally, it is worth noting that you will likely model these different processes in completely different BPMN files. So in the real world, you would describe the other process in a collapsed state as shown to the left. It will be up to the application that is executing these processes to coordinate the messages between them. We will cover that responsibility in the following section on Applications and the SpiffWorkflow Backend.</p>
+<p>Think of a correlation as the “Subject of the Conversation”.
+In our example, a good subject would be the beloved’s name: “Peggy”, “Tom”.
+The Admirers know who they admire, and each beloved knows their own name — so we have a kind of “Key” on which to base the conversation.
+You don’t get the Key wrong.
+You don’t yell out Tom’s name in a passionate moment with Peggy.</p>
+<p><strong>Collaborations</strong>, <strong>Messages</strong>, and <strong>Correlations</strong> have no visual representation in the BPMN diagrams.
+So I can’t draw you a picture.
+But they are first-order concepts carefully covered in the BPMN 2.0 standard.
+You have to manipulate them through some sort of “Properties Panel,” which we will cover in the next section.</p>
+<p>The hardest concept for me, when I read the specification, was understanding that Correlations apply to the Collaboration as a whole.
+It is the subject of the conversation.
+It isn’t (as I struggled with for weeks) the address on an envelope.
+It is a sticky thing that should be used consistently across all the messages in a conversation.
+So as we continue, fight to keep this idea in your head: It’s all about having a good conversation about a specific subject.</p>
+<p><img src="bpmn2.png" alt="participant diagram external"></p>
+<p>Finally, it is worth noting that you will likely model these different processes in completely different BPMN files.
+So in the real world, you would describe the other process in a collapsed state as shown to the left.
+It will be up to the application that is executing these processes to coordinate the messages between them.
+We will cover that responsibility in the following section on Applications and the SpiffWorkflow Backend.</p>
 <h2 id="implementation-in-spiffworkflow">Implementation in SpiffWorkflow</h2>
-<p>This section will cover the changes to 4 different SpiffWorkflow applications in order to support messages as described above, working with the standard and attempting to avoid any custom BPMN extensions.  We’ll tackle the BPMN editor first — as this is where many of the changes are visible, then we will delve into the XML and how the backend systems will process this information.</p>
-<h3 id="bpmnjs--spiffworkflow">BPMN.js — Spiffworkflow</h3>
-<p>This section includes our additions and modifications to the excellent open source BPMN.js editor maintained by Camunda. The changes will impact the Properties Panel when specific visual elements are selected. Included here are actual screen shots from our working extensions to the BPMN.js editor. We’ll provide links lower in this article to our code repository so you can try it out!</p>
+<p>This section will cover the changes to 4 different SpiffWorkflow applications in order to support messages as described above, working with the standard and attempting to avoid any custom BPMN extensions.
+We’ll tackle the BPMN editor first — as this is where many of the changes are visible, then we will delve into the XML and how the backend systems will process this information.</p>
+<h3 id="bpmnjs--spiffworkflow">BPMN.js — SpiffWorkflow</h3>
+<p>This section includes our additions and modifications to the excellent open-source BPMN.js editor maintained by Camunda.
+The changes will impact the Properties Panel when specific visual elements are selected.
+Included here are actual screenshots from our working extensions to the BPMN.js editor.
+We’ll provide links lower in this article to our code repository so you can try it out!</p>
 <h3 id="collaboration">Collaboration</h3>
 <p><img src="collaboration.png" alt="Collaboration Panel"></p>
-<p>When a collaboration is selected in the editor, we will display a new section called “Correlation Keys”. We want to make it clear at a glance that this conversation is based around the “beloved_name”, and that communications back and forth should relate to this name somehow.</p>
-<p>But this can also be a cumbersome place to go as you are working through the diagram. So we will make it possible to edit these correlation keys elsewhere within the context of Send and Receive tasks and events.</p>
+<p>When a collaboration is selected in the editor, we will display a new section called “Correlation Keys”.
+We want to make it clear at a glance that this conversation is based around the “beloved_name”, and that communications back and forth should relate to this name somehow.</p>
+<p>But this can also be a cumbersome place to go as you are working through the diagram.
+So we will make it possible to edit these correlation keys elsewhere within the context of Send and Receive tasks and events.</p>
 <h3 id="send-tasks-and-message-throw-events">Send Tasks, and Message Throw Events</h3>
-<p><img src="message_panel.png" alt="Message  Panel"></p>
+<p><img src="message_panel.png" alt="Message Panel"></p>
 <p>When defining a message to be sent out in SpiffWorkflow, you will need to specify three things:</p>
 <ul>
-<li>The message id — a message name that should be unique among all messages in your system, but human readable. And it should match up on the receiving end.</li>
+<li>The message id — a message name that should be unique among all messages in your system, but human-readable. And it should match up on the receiving end.</li>
 <li>The Payload — the content of the message. SpiffWorkflow is all about Python, so here we define the payload as a Python Dictionary.</li>
 <li>Any correlations directly related to this message, if there are any.</li>
 </ul>
 <p>When this message is sent out, it will contain these three parts, and the SpiffWorkflow Backend (described later) will use the ID and Correlation to match this message up with the correct process.</p>
-<p><img src="event.png" alt="Event  Panel"></p>
+<p><img src="event.png" alt="Event Panel"></p>
 <h3 id="receive-tasks-and-message-catch-tasks">Receive Tasks and Message Catch Tasks</h3>
-<p>When receiving a message, you can specify the message id (you can create a new id, or select it from a dropdown list). The Correlation here should match exactly the correlation defined in the other BPMN diagram if these are separate. We’ll talk about this as well in the section on SpiffWorkflow Backend, where it may be possible through API integrations to ensure these remain locked between disparate diagrams.</p>
+<p>When receiving a message, you can specify the message id (you can create a new id, or select it from a dropdown list).
+The Correlation here should match exactly the correlation defined in the other BPMN diagram if these are separate.
+We’ll talk about this as well in the section on SpiffWorkflow Backend, where it may be possible through API integrations to ensure these remain locked between disparate diagrams.</p>
 <h3 id="resulting-xml">Resulting XML</h3>
-<p>The extensions we will add to BPMN.io will produce BPMN 2.0 compliant XML. We will create only one extension to the BPMN to complete this effort to make it easy to define the message payload.</p>
-<p>Messages and Correlations will be defined within the root element, per the specification. The SpiffWorkflow Backend will work to assure these values remain consistent across all processes, and can provide endpoints to verify the messages are correctly aligned. <strong><em>IMPORTANT</em></strong>: Don’t think about messages and correlations as belonging to a process. They do not. They belong to the system as a whole, and can be maintained across different BPMN diagrams. The resulting XML in this case is:
+<p>The extensions we will add to BPMN.io will produce BPMN 2.0 compliant XML.
+We will create only one extension to the BPMN to complete this effort to make it easy to define the message payload.</p>
+<p>Messages and Correlations will be defined within the root element, per the specification.
+The SpiffWorkflow Backend will work to ensure these values remain consistent across all processes, and can provide endpoints to verify the messages are correctly aligned.
+<strong><em>IMPORTANT</em></strong>: Don’t think about messages and correlations as belonging to a process.
+They do not.
+They belong to the system as a whole and can be maintained across different BPMN diagrams.
+The resulting XML in this case is:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:message</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;love_letter&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Love Letter&#34;</span><span style="color:#f92672">/&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:message</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;love_letter_response&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Love Letter Response&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span><span style="display:flex;"><span>
@@ -191,7 +242,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:formalExpression&gt;</span>from.name<span style="color:#f92672">&lt;/bpmn:formalExpression&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/bpmn:correlationPropertyRetrievalExpression&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bpmn:correlationProperty&gt;</span></span></span></code></pre></div></p>
-<p>Collaborations will contain the message flows, and will offer a correlation Key that connects the correlation properties defined as described above.</p>
+<p>Collaborations will contain the message flows, and will offer a Correlation Key that connects the correlation properties defined as described above.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:collaboration</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;my_collaboration&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:participant</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;buddy&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Buddy&#34;</span> <span style="color:#a6e22e">processRef=</span><span style="color:#e6db74">&#34;process_buddy&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:participant</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;Person&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Person&#34;</span> <span style="color:#a6e22e">processRef=</span><span style="color:#e6db74">&#34;random_person_process&#34;</span> <span style="color:#f92672">/&gt;</span>
@@ -200,11 +251,12 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:messageFlow</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;response_flow&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;response flow&#34;</span>
 </span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sourceRef=</span><span style="color:#e6db74">&#34;Activity_13eq2gr&#34;</span> <span style="color:#a6e22e">targetRef=</span><span style="color:#e6db74">&#34;EventReceiveLetter&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:correlationKey</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lover&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:correlationPropertyRef&gt;</span>Lover_first_name<span style="color:#f92672">&lt;/bpmn:correlationPropertyRef&gt;</span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:correlationPropertyRef&gt;</span>Lover_first_name<span style="color:#f92672">&lt;/bpmn:correlationPropertyRef&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:correlationPropertyRef&gt;</span>Lover_last_name<span style="color:#f92672">&lt;/bpmn:correlationPropertyRef&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/bpmn:correlationKey&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bpmn:collaboration&gt;</span></span></span></code></pre></div>
-<p>Send Tasks and Receive Tasks can just reference the unique message id. The SendTask will include a custom SpiffWorkflow extension to define the payload in a simple and direct way, and is the only custom extension we will create as a part of this effort.</p>
+<p>Send Tasks and Receive Tasks can just reference the unique message id.
+The SendTask will include a custom SpiffWorkflow extension to define the payload in a simple and direct way, and is the only custom extension we will create as a part of this effort.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:sendTask</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;send_task_letter&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Send romantic words&#34;</span> <span style="color:#a6e22e">messageRef=</span><span style="color:#e6db74">&#34;love_letter&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:extension&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;spiffworkflow:messagePayload&gt;</span>
@@ -220,9 +272,13 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:outgoing&gt;</span>Flow_0tp8uut<span style="color:#f92672">&lt;/bpmn:outgoing&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bpmn:sendTask&gt;</span></span></span></code></pre></div>
 <h3 id="in-closing">In Closing</h3>
-<p>Most implementations of BPMN see messages as primarily a means of communicating with other external applications. This article is focused specifically on how multiple BPMN processes can communicate with each other in a loosely coupled way. Loosely enough, that in theory, one process could actually be an external application.  Service Tasks are another way of sending and retrieving information from an external system.</p>
+<p>Most implementations of BPMN see messages as primarily a means of communicating with other external applications.
+This article is focused specifically on how multiple BPMN processes can communicate with each other in a loosely coupled way.
+Loosely enough, that in theory, one process could actually be an external application.
+Service Tasks are another way of sending and retrieving information from an external system.</p>
 <h3 id="references">References</h3>
-<p>When tackling a new area of SpiffWorkflow we take a careful look at other BPMN based systems. Here are links to some of the resources we consulted in addition to the official BPMN 2.0 Specification.</p>
+<p>When tackling a new area of SpiffWorkflow we take a careful look at other BPMN based systems.
+Here are links to some of the resources we consulted in addition to the official BPMN 2.0 Specification.</p>
 <ul>
 <li><a href="https://youtu.be/8SYEc3dHnM4">https://youtu.be/8SYEc3dHnM4</a> (A great video on Camunda’s process)</li>
 <li><a href="https://youtu.be/-UaFHzit7LA">https://youtu.be/-UaFHzit7LA</a> (Using Message Based Correlation in an Oracle BPM Process)</li>

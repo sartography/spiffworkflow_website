@@ -20,7 +20,7 @@
       <link>http://localhost:1313/pages/docs/</link>
       <pubDate>Thu, 27 Jun 2024 12:20:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/docs/</guid>
-      <description>Documentation We continuously update and maintain our documentation Our docs include a quick start guide and a reference guide for building diagrams, and support section that covers how to modify running processes in production. We also cover more technical details, such as how to contribute to this open source project, and provide a dedicated dev/ops section that covers complex installation and integration concerns.&#xA;Core Python Library Documentation We maintain a separate Read The Docs page for our SpiffWorkflow Python Library.</description>
+      <description>Documentation We continuously update and maintain our documentation. Our docs include a quick start guide and a reference guide for building diagrams, and a support section that covers how to modify running processes in production. We also cover more technical details, such as how to contribute to this open-source project, and provide a dedicated dev/ops section that covers complex installation and integration concerns.&#xA;Core Python Library Documentation We maintain a separate Read The Docs page for our SpiffWorkflow Python Library.</description>
     </item>
     <item>
       <title>SpiffWorkflow Demo Site Registration</title>
@@ -34,28 +34,28 @@
       <link>http://localhost:1313/pages/support/</link>
       <pubDate>Tue, 25 Jun 2024 13:20:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/support/</guid>
-      <description>&amp;nbsp;&#xA;&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt; Sartography-Logo-Vertical-Color WORKFLOW APPLICATIONS Sartography-Logo-Vertical-Color Get support from the same people who develop and maintain SpiffWorkflow. Sartography offers process integration and consulting plans that cover training, BPMN process development and software development services.&#xA;Contact Us &amp;nbsp;&#xA;Community Support Check our Detailed Documentation. Join our Discord channel to ask questions of the community. Our core development team is often available to lend a quick hand. Contact Us Get in touch to discuss your needs and we&amp;rsquo;ll work together to find the right solution for you.</description>
+      <description>&amp;nbsp;&#xA;&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt; Sartography-Logo-Vertical-Color WORKFLOW APPLICATIONS Sartography-Logo-Vertical-Color Get support from the same people who develop and maintain SpiffWorkflow. Sartography offers process integration and consulting plans that cover training, BPMN process development, and software development services.&#xA;Contact Us &amp;nbsp;&#xA;Community Support Check our Detailed Documentation. Join our Discord channel to ask questions of the community. Our core development team is often available to lend a quick hand. Contact Us Get in touch to discuss your needs and we&amp;rsquo;ll work together to find the right solution for you.</description>
     </item>
     <item>
       <title>Thank you</title>
       <link>http://localhost:1313/pages/contact_thankyou/</link>
       <pubDate>Mon, 01 Apr 2024 10:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/contact_thankyou/</guid>
-      <description>Thank you for your interest !&#xA;We will be in touch shortly! We will reach back out to you soon, and schedule a time for us to talk. We&amp;rsquo;re looking forward to meeting you.&#xA;While you wait &amp;hellip; You might want to checkout our demo site at SpiffDemo.org. You can visit the site right now and create an account using your Google, Linked In or GitHub account where you will be able to see many examples of the types of workflows that are possible.</description>
+      <description>Thank you for your interest !&#xA;We will be in touch shortly! We will reach back out to you soon and schedule a time for us to talk. We&amp;rsquo;re looking forward to meeting you.&#xA;While you wait &amp;hellip; You might want to check out our demo site at SpiffDemo.org. You can visit the site right now and create an account using your Google, LinkedIn, or GitHub account where you will be able to see many examples of the types of workflows that are possible.</description>
     </item>
     <item>
       <title>Thank you</title>
       <link>http://localhost:1313/pages/newsletter_thankyou/</link>
       <pubDate>Mon, 01 Apr 2024 10:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/newsletter_thankyou/</guid>
-      <description>Thank you for your interest !&#xA;We will keep you posted on updates and changes to our Application via email to .&#xA;Free PDF CheatSheet As a small thank you, here is a link to our SpiffWorkflow Cheat Sheet - a PDF with hints and tips on how to get the most out of SpiffWorkflow. Click on the image below to download.&#xA;What&amp;rsquo;s next? Now that you are signed up for our mailing list you might want to checkout our demo site and SpiffDemo.</description>
+      <description>Thank you for your interest !&#xA;We will keep you posted on updates and changes to our application via email to .&#xA;Free PDF Cheat Sheet As a small thank you, here is a link to our SpiffWorkflow Cheat Sheet - a PDF with hints and tips on how to get the most out of SpiffWorkflow. Click on the image below to download.&#xA;What&amp;rsquo;s next? Now that you are signed up for our mailing list, you might want to check out our demo site at SpiffDemo.</description>
     </item>
     <item>
       <title>SpiffWorkflow&#39;s Open Source Code</title>
       <link>http://localhost:1313/pages/open_source/</link>
       <pubDate>Mon, 02 Oct 2023 10:00:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/open_source/</guid>
-      <description>Get The Code and Join our Community! SpiffWorkflow is made up of several open source projects available on GitHub. We recommend you start with SpiffArena, but you can also delve into the core workflow engine, BPMN.IO editor extensions, and the connector proxy.&#xA;To stay up to date on changes and updates, Star and Follow our GitHub repos, register for our newsletter (below), and join our Discord channel.&#xA;News Letter Join our mailing list to get quarterly updates on our progress.</description>
+      <description>Get The Code and Join Our Community! SpiffWorkflow is made up of several open source projects available on GitHub. We recommend you start with SpiffArena, but you can also delve into the core workflow engine, BPMN.IO editor extensions, and the connector proxy.&#xA;To stay up to date on changes and updates, star and follow our GitHub repos, register for our newsletter (below), and join our Discord channel.&#xA;News Letter Join our mailing list to get quarterly updates on our progress.</description>
     </item>
     <item>
       <title>Pricing and Support Plans</title>
@@ -76,7 +76,7 @@
       <link>http://localhost:1313/pages/compare/</link>
       <pubDate>Wed, 27 Sep 2023 12:20:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/compare/</guid>
-      <description>How do you compare to Camunda? Camunda is a leading open source workflow engine, and is based on the same core platform as offerings from IBM, Flowable, Appian and others. Many of the comparisons here are also applicable to these other systems.&#xA;Camunda Java Developer Friendly&#xA;Camunda focuses on supporting professional software engineers, allowing them to use their development environments of choice to write the code behind a BPMN Diagram. It provides introspection and analytics tools for decision makers within a company.</description>
+      <description>How do you compare to Camunda? Camunda is a leading open-source workflow engine and is based on the same core platform as offerings from IBM, Flowable, Appian, and others. Many of the comparisons here are also applicable to these other systems.&#xA;Camunda Java Developer Friendly&#xA;Camunda focuses on supporting professional software engineers, allowing them to use their development environments of choice to write the code behind a BPMN Diagram. It provides introspection and analytics tools for decision-makers within a company.</description>
     </item>
     <item>
       <title>Service Level Expectations</title>
@@ -90,7 +90,7 @@
       <link>http://localhost:1313/pages/hosting/</link>
       <pubDate>Thu, 17 Aug 2023 12:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/hosting/</guid>
-      <description>We can give you a private cloud hosted instance of SpiffWorkflow that is monitored and maintained by our team of experts. We can also provide you with a dedicated support team to help you get the most out of your investment in SpiffWorkflow.&#xA;Let&amp;rsquo;s Talk Get in touch today to discuss your needs and determine the best package for you.</description>
+      <description>We can give you a private cloud-hosted instance of SpiffWorkflow that is monitored and maintained by our team of experts. We can also provide you with a dedicated support team to help you get the most out of your investment in SpiffWorkflow.&#xA;Let&amp;rsquo;s Talk Get in touch today to discuss your needs and determine the best package for you.</description>
     </item>
     <item>
       <title>Free Trial</title>
@@ -118,14 +118,14 @@
       <link>http://localhost:1313/posts/deep_dives/deploy_integrate/</link>
       <pubDate>Thu, 06 Apr 2023 14:09:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/deep_dives/deploy_integrate/</guid>
-      <description>Deploying and Integrating With SpiffArena This guide shows you how to deploy the demo Connector Proxy as an AWS Lambda Function as well as how to integrate it with SpiffArena. The Getting Started Guide will be used as the basis for integration but the steps should easily map to any custom installation.&#xA;There is an assumption that you have access to login to the AWS Console and can create/deploy Lambda functions.</description>
+      <description>Deploying and Integrating With SpiffArena This guide shows you how to deploy the demo Connector Proxy as an AWS Lambda Function as well as how to integrate it with SpiffArena. The Getting Started Guide will be used as the basis for integration but the steps should easily map to any custom installation.&#xA;There is an assumption that you have access to log in to the AWS Console and can create/deploy Lambda functions.</description>
     </item>
     <item>
       <title>The Low Code Wall</title>
       <link>http://localhost:1313/posts/articles/low_code/</link>
       <pubDate>Thu, 05 Jan 2023 15:06:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/articles/low_code/</guid>
-      <description>What is Low-Code / No-Code? Low Code and No Code describe tools that allow people to create software applications (web sites, mobile apps, games, etc…) using graphical tools that don’t require writing code in traditional programming languages. There are some brilliant examples - and they aren’t new - the idea has been around for … ever. We’ve always been trying to make it easier to talk to computers. Check out MIT’s Scratch which helps introduce software concepts to young students, or consider what anyone can do these days with WordPress.</description>
+      <description>What is Low-Code / No-Code? Low Code and No Code describe tools that allow people to create software applications (websites, mobile apps, games, etc&amp;hellip;) using graphical tools that don’t require writing code in traditional programming languages. There are some brilliant examples - and they aren’t new - the idea has been around forever. We’ve always been trying to make it easier to talk to computers. Check out MIT’s Scratch, which helps introduce software concepts to young students, or consider what anyone can do these days with WordPress.</description>
     </item>
     <item>
       <title>Parallel Approval Processes</title>
@@ -139,84 +139,84 @@
       <link>http://localhost:1313/pages/enterprise_thankyou/</link>
       <pubDate>Mon, 02 Jan 2023 10:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/enterprise_thankyou/</guid>
-      <description>Thank you for your interest !&#xA;Our demo site is hosted on SpiffDemo.org. You will be redirected to the site in 10 seconds where you can create a new account through popular single sign on systems such as Google, Linked In or GitHub.&#xA;We will keep you posted on updates and changes to our Demo site via email to .</description>
+      <description>Thank you for your interest !&#xA;Our demo site is hosted on SpiffDemo.org. You will be redirected to the site in 10 seconds where you can create a new account through popular single sign-on systems such as Google, LinkedIn, or GitHub.&#xA;We will keep you posted on updates and changes to our demo site via email to .</description>
     </item>
     <item>
       <title>Thank you</title>
       <link>http://localhost:1313/pages/thankyou/</link>
       <pubDate>Mon, 02 Jan 2023 10:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/thankyou/</guid>
-      <description>Thank you for getting in contact with us, we will be in touch soon.</description>
+      <description>Thank you for getting in contact with us. We will be in touch soon.</description>
     </item>
     <item>
       <title>Features</title>
       <link>http://localhost:1313/pages/features/</link>
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/features/</guid>
-      <description>Low Code Get started quickly, but without painting yourself into a corner Powerful Form Building Build detailed forms with validation, conditions, type aheads, and more Decision Modeling &lt;?xml version=&#34;1.0&#34;?&gt; Transparent and easy to understand spreadsheets capture business rules concisely Collaboration Manage the handoff of tasks between individuals and teams Timers Send reminders after a period of time, or kick off tasks on a schedule Events &lt;?xml version=&#34;1.0&#34;?&gt; Respond to external events via api call Parallel Execution &lt;?</description>
+      <description>Low Code Get started quickly, but without painting yourself into a corner. Powerful Form Building Build detailed forms with validation, conditions, type-aheads, and more. Decision Modeling &lt;?xml version=&#34;1.0&#34;?&gt; Transparent and easy-to-understand spreadsheets capture business rules concisely. Collaboration Manage the handoff of tasks between individuals and teams. Timers Send reminders after a period of time, or kick off tasks on a schedule. Events &lt;?xml version=&#34;1.0&#34;?&gt; Respond to external events via API call.</description>
     </item>
     <item>
       <title>Features</title>
       <link>http://localhost:1313/pages/features2/</link>
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/features2/</guid>
-      <description>User Tasks &amp;ndash; Gather information from people You can create highly complex web forms to gather information from end users - injecting this information into your workflow process. We are using the excellent and feature complete open source React Json Form Schema with features such as nested sections, validation, and custom components. A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.</description>
+      <description>User Tasks &amp;ndash; Gather information from people You can create highly complex web forms to gather information from end users - injecting this information into your workflow process. We are using the excellent and feature-complete open-source React Json Form Schema with features such as nested sections, validation, and custom components. A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.</description>
     </item>
     <item>
       <title>SpiffArena</title>
       <link>http://localhost:1313/pages/spiffarena/</link>
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/spiffarena/</guid>
-      <description>SpiffArena combines many tools into a single web-based application. If you would like access to all of the Features (plus a lot more) this is the tool you want.&#xA;The full source code for SpiffArena is available on GitHub. Please visit the project and give it a star if you like it. We welcome contributions.&#xA;You can test out SpiffArena right now by following our Getting Started guide.&#xA;If you need support, please contact us for a free consultation.</description>
+      <description>SpiffArena combines many tools into a single web-based application. If you would like access to all of the Features (plus a lot more), this is the tool you want.&#xA;The full source code for SpiffArena is available on GitHub. Please visit the project and give it a star if you like it. We welcome contributions.&#xA;You can test out SpiffArena right now by following our Getting Started guide.&#xA;If you need support, please contact us for a free consultation.</description>
     </item>
     <item>
       <title>SpiffEditor (and other open source projects)</title>
       <link>http://localhost:1313/pages/spiffeditor/</link>
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/spiffeditor/</guid>
-      <description>The following tools are available as a part of SpiffArena, but can also be used independently. They are all open source, and we welcome contributions.&#xA;SpiffEditor We&amp;rsquo;ve built a number of extensions to the excellent open source BPMN.js editor, specifically for SpiffWorkflow. Here are few of the major features:&#xA;Data Objects, Inputs and Outputs: Improved support for adding, referencing and updating data references, providing a standards based way to manage data within a diagram.</description>
+      <description>The following tools are available as a part of SpiffArena, but can also be used independently. They are all open source, and we welcome contributions.&#xA;SpiffEditor We&amp;rsquo;ve built a number of extensions to the excellent open source BPMN.js editor, specifically for SpiffWorkflow. Here are a few of the major features:&#xA;Data Objects, Inputs and Outputs: Improved support for adding, referencing, and updating data references, providing a standards-based way to manage data within a diagram.</description>
     </item>
     <item>
       <title>SpiffWorkflow</title>
       <link>http://localhost:1313/pages/spiffworkflow/</link>
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/spiffworkflow/</guid>
-      <description>SpiffWorkflow is an open source Python library with source code available on GitHub and detailed documentation available on ReadTheDocs. It is the core library within SpiffArena. Its target audience is Python developers who want to create custom workflow systems or embed BPMN features into existing applications.</description>
+      <description>SpiffWorkflow is an open-source Python library with source code available on GitHub and detailed documentation available on ReadTheDocs. It is the core library within SpiffArena. Its target audience is Python developers who want to create custom workflow systems or embed BPMN features into existing applications.</description>
     </item>
     <item>
       <title>Training</title>
       <link>http://localhost:1313/pages/training/</link>
       <pubDate>Tue, 27 Dec 2022 16:05:00 -0500</pubDate>
       <guid>http://localhost:1313/pages/training/</guid>
-      <description>Get dedicated training from experienced professionals. We offer training at a variety of levels to help you get the most out of your investment in SpiffWorkflow, and can tailor the training to your specific needs. We offer training for:&#xA;Training is offered as a part of an Enterprise Support Package. Please get in touch with us to discuss your needs and determine the best tier for you.&#xA;BPMN Architects Let us show you how to get most from our BPMN system and how to design your workflows to be as efficient as possible.</description>
+      <description>Get dedicated training from experienced professionals. We offer training at a variety of levels to help you get the most out of your investment in SpiffWorkflow, and can tailor the training to your specific needs. We offer training for:&#xA;Training is offered as a part of an Enterprise Support Package. Please get in touch with us to discuss your needs and determine the best tier for you.&#xA;BPMN Architects Let us show you how to get the most from our BPMN system and how to design your workflows to be as efficient as possible.</description>
     </item>
     <item>
       <title>Running SpiffWorkflow Locally with Docker</title>
       <link>http://localhost:1313/posts/articles/get_started_docker/</link>
       <pubDate>Tue, 27 Dec 2022 13:15:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/articles/get_started_docker/</guid>
-      <description>In this article (and accompanying video) you will create and run your first executable SpiffWorkflow diagram. We&amp;rsquo;ll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier to use interface that provides a host of important tools. Let&amp;rsquo;s get started and you can see for yourself &amp;hellip;&#xA;Video Instructions You can follow the directions below, or you can watch this 10-minute video and follow along.</description>
+      <description>In this article (and accompanying video), you will create and run your first executable SpiffWorkflow diagram. We&amp;rsquo;ll be using a brand new open source application called SpiffArena that wraps the SpiffWorkflow library in an easier-to-use interface that provides a host of important tools. Let&amp;rsquo;s get started and you can see for yourself&amp;hellip;&#xA;Video Instructions You can follow the directions below, or you can watch this 10-minute video and follow along. Install and Start SpiffArena Prerequisites: You will need to install Docker and Docker-Compose.</description>
     </item>
     <item>
       <title>BPMN Messages in SpiffWorkflow</title>
       <link>http://localhost:1313/posts/deep_dives/messages/</link>
       <pubDate>Wed, 21 Sep 2022 10:00:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/deep_dives/messages/</guid>
-      <description>This is a deep dive into BPMN 2.0 Messages and how we implemented them in our open source project SpiffWorkflow. This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with Spiffworkflow that would benefit from having their BPMN diagrams communicate with each other. This is thick material, but there is a beautiful idea here well worth understanding, and beneficial to anyone who is interested in prolonged communications between complex systems.</description>
+      <description>This is a deep dive into BPMN 2.0 Messages and how we implemented them in our open-source project SpiffWorkflow. This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other. This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.</description>
     </item>
     <item>
       <title>Data Objects in SpiffWorkflow</title>
       <link>http://localhost:1313/posts/deep_dives/data_objects/</link>
       <pubDate>Tue, 13 Sep 2022 10:00:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/deep_dives/data_objects/</guid>
-      <description>A Simple Default One of the benefits of both BPMN and Python is they have long low-sloped learning curves. Things are simple by default, but have the ability to grow to meet far more complex situations. As we introduce new concepts into SpiffWorkflow we want the default behavior to be equally intuitive and powerful.&#xA;In SpiffWorkflow, data follows the process flow. Each task receives all data from the previously executed task.</description>
+      <description>A Simple Default One of the benefits of both BPMN and Python is they have long low-sloped learning curves. Things are simple by default, but have the ability to grow to meet far more complex situations. As we introduce new concepts into SpiffWorkflow, we want the default behavior to be equally intuitive and powerful.&#xA;In SpiffWorkflow, data follows the process flow. Each task receives all data from the previously executed task.</description>
     </item>
     <item>
       <title>Why we adopted SpiffWorkflow</title>
       <link>http://localhost:1313/posts/articles/visual_workflows/</link>
       <pubDate>Wed, 01 Dec 2021 13:15:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/articles/visual_workflows/</guid>
-      <description>(originally posted on Medium)&#xA;SpiffWorkflow allows your python application to process BPMN diagrams (think of them as very powerful flow charts) to accomplish what would otherwise require writing a lot of complex business logic in your code. You can use these diagrams to accomplish a number of tasks, such as:&#xA;Creating an online questionnaire which changes depending on the answers to previous questions Building a complex approval process that needs to be handed off between multiple people Allowing non-developers to make iterative changes to the flow of an application over time SpiffWorkflow can do all of this while drastically improving communication within multidisciplinary teams, allowing more people to contribute to your application and making it more resilient to changing requirements.</description>
+      <description>(originally posted on Medium)&#xA;SpiffWorkflow allows your Python application to process BPMN diagrams (think of them as very powerful flow charts) to accomplish what would otherwise require writing a lot of complex business logic in your code. You can use these diagrams to accomplish a number of tasks, such as:&#xA;Creating an online questionnaire which changes depending on the answers to previous questions Building a complex approval process that needs to be handed off between multiple people Allowing non-developers to make iterative changes to the flow of an application over time SpiffWorkflow can do all of this while drastically improving communication within multidisciplinary teams, allowing more people to contribute to your application and making it more resilient to changing requirements.</description>
     </item>
   </channel>
 </rss>
