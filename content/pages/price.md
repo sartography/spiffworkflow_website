@@ -34,13 +34,13 @@ cssClass: "section-support"
     <td> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Training</b> - Professional training for business analysts, citizen developers, software engineers, and devops.
+    <td><b>Training</b> - Professional training for business analysts, citizen developers, software engineers, and DevOps.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Support</b> - Bronze, Silver, and Gold support plans to assure you have the support you need when you need it. 
+    <td><b>Support</b> - Bronze, Silver, and Gold support plans to ensure you have the support you need when you need it.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
@@ -52,8 +52,7 @@ cssClass: "section-support"
     <td class="check"> {{< svg icon="check" >}}</td>
 </tr>
 <tr>
-    <td><b>Featured Extensions</b> - Use our prebuilt extensions to provide detailed reports and tight integrations
-     within your organization.
+    <td><b>Featured Extensions</b> - Use our prebuilt extensions to provide detailed reports and tight integrations within your organization.
     </td>
     <td></td>
     <td class="check"> {{< svg icon="check" >}}</td>
@@ -75,12 +74,15 @@ cssClass: "section-support"
 
 ### Training
 
-SpiffWorkflow is a powerful tool that can be used by a wide range of people.  We offer training for Business Analysts, Citizen Developers, Software Engineers, and DevOps.  We also offer a free introduction to SpiffWorkflow for end users that will be logging into the system to complete forms, make requests, and handle approvals.
+SpiffWorkflow is a powerful tool that can be used by a wide range of people.
+We offer training for Business Analysts, Citizen Developers, Software Engineers, and DevOps.
+We also offer a free introduction to SpiffWorkflow for end users that will be logging into the system to complete forms, make requests, and handle approvals.
 
 
 ### Support
 
-Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.  We offer support plans that provide direct access to the same team that develops, tests, and creates the documentation and training for SpiffWorkflow.
+Mission-critical installations of SpiffWorkflow require fast response times to questions, disaster recovery plans, and regular checkups.
+We offer support plans that provide direct access to the same team that develops, tests, and creates the documentation and training for SpiffWorkflow.
 <div class="support_table">
 
 

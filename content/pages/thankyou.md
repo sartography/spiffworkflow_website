@@ -7,6 +7,5 @@ draft: false
 
 ![Thank you, processing ...](./thankyou.svg)
 
-Thank you for getting in contact with us, we will be in touch soon.
-
-
+Thank you for getting in contact with us.
+We will be in touch soon.

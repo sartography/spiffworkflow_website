@@ -4,15 +4,18 @@ subtitle: "Try out a working instance of SpiffWorkflow right now."
 date: 2024-06-27T12:05:00-05:00
 author: Dan Funk
 draft: false
-description: Sign up to gt access to our demo web site.
+description: Sign up to get access to our demo website.
 images: ["/images/opengraph/enterprise.png"]
 cssClass: "section-support"
 cssSubClass: "enterprise"
 ---
 
-Sign up below to get access to our demo site.  There you can view diagrams and run example workflows. Once there, you can request your own playground where you can start building diagrams and workflows of your own.
+Sign up below to get access to our demo site.
+There you can view diagrams and run example workflows.
+Once there, you can request your own playground where you can start building diagrams and workflows of your own.
 
 ### Sign Up
+
 Please fill out the required fields to continue.
 
 
