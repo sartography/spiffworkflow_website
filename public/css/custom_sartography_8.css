@@ -238,6 +238,17 @@ section.section-support .content p {
     visibility: visible;
 }
 
+.contact-info {
+    a {
+        color: #98a9c3;
+        font-weight: 400;
+        transition: all 0.5s;
+    }
+    :hover {
+        color: #98a9c3;
+    }
+}
+
 .cookie_settings a {
     display: block;
     padding-top: 20px;
