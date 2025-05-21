@@ -23,16 +23,15 @@ cssClass: "section-compare"
 
 View and execute example process models on our live demo site.
 [Register here to get started](/pages/demo_register).
-Explore on your own, or follow along with a [guided tour](https://spiff-arena.readthedocs.io/en/latest/Getting_Started/quick_start.html).
-
+Explore on your own, or follow along with a [guided tour](https://spiff-arena.readthedocs.io/en/latest/getting_started/quickstart_guide.html).
 ## Run it locally
 
-Start up a [local docker container](https://www.spiffworkflow.org/posts/articles/get_started_docker/) and run SpiffWorkflow from your own infrastructure.
+Start up a [local docker container](https://spiff-arena.readthedocs.io/en/latest/how_to_guides/deployment/index.html) and run SpiffWorkflow from your own infrastructure.
 
 ## Set up a Development Environment
 
-Download the source code and contribute to the project by [following these directions](https://spiff-arena.readthedocs.io/en/latest/dev/setup.html).
-
+Download the source code and contribute to the project by [following these directions](https://spiff-arena.readthedocs.io/en/latest/explanation/dev/developer_setup.html).
+ sdafsd
 ## Learn More
 
 SpiffWorkflow is a powerful system.
