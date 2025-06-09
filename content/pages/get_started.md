@@ -8,6 +8,17 @@ images: ["/images/opengraph/compare.png"]
 cssClass: "section-compare"
 ---
 
+## Premium Hosting Available at SpiffWorks
+<div style="margin:5px 20px 0px 20px;">
+{{< flex-container >}}
+<a href="https://spiff.works"><img src="/images/features/icons/spiffworks.png" style="margin-right:40px"></a>
+<div>
+<p>SpiffWorks offers a hosted version of SpiffWorkflow with additional 
+premium features, including an Analytics engine, heat map, and a new BPMN editor.</p>
+</div>
+{{< /flex-container >}}
+</div>
+
 ## What Is SpiffWorkflow?
 
 {{< flex-container >}}
@@ -19,11 +30,13 @@ cssClass: "section-compare"
 {{< video "/videos/getting_started.mp4" "my-5" >}}
 {{< /flex-container >}}
 
-## Try the Live Demo
+## Try the Free Demo
 
 View and execute example process models on our live demo site.
 [Register here to get started](/pages/demo_register).
 Explore on your own, or follow along with a [guided tour](https://spiff-arena.readthedocs.io/en/latest/getting_started/quickstart_guide.html).
+
+
 ## Run it locally
 
 Start up a [local docker container](https://spiff-arena.readthedocs.io/en/latest/how_to_guides/deployment/index.html) and run SpiffWorkflow from your own infrastructure.
@@ -31,7 +44,7 @@ Start up a [local docker container](https://spiff-arena.readthedocs.io/en/latest
 ## Set up a Development Environment
 
 Download the source code and contribute to the project by [following these directions](https://spiff-arena.readthedocs.io/en/latest/explanation/dev/developer_setup.html).
- sdafsd
+
 ## Learn More
 
 SpiffWorkflow is a powerful system.

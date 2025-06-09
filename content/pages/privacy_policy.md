@@ -7,7 +7,7 @@ description: In this Privacy Policy we describe how we collect, use, and disclos
 ---
 
 EFFECTIVE DATE: 2023-05-26
-
+<z
 In this Privacy Policy (“Policy”), we describe how Sartography ("Sartography", "Sartography LLC", “SpiffWorkflow,” "SpiffDemo," “we,” or “us”) collects, uses, and discloses information that we obtain about visitors to our websites https://spiffworkflow.org and https://spiffdemo.org (together the “Sites”) and the services available through our Sites (collectively, the “Services”).
 
 By visiting the Sites, or using any of our Services, you agree that your personal information will be handled as described in this Policy.

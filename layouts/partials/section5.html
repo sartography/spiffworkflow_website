@@ -13,13 +13,10 @@
     <div class="content-wrapper">
       <div class="columns">
         {{- range $tiles }}
-        <div class="column is-one-third">
+        <div class="column">
           <div class="feature-card {{ .class }} is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
-            </div>
             <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.png" .icon | relURL }}">
+                <img src="{{ printf "/images/features/icons/%s.png" .icon | relURL }}">
             </div>
             <div class="card-text">
                 <p>{{ .text }}</p>

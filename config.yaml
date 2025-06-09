@@ -44,11 +44,10 @@ params:
     # Hero subtitle (optional)
     subtitle: Connect people and software together in a way that makes sense to everyone.
     # Button text
-    buttontext: Schedule a Demo!
+    buttontext: Available Now at SpiffWorks
     # Where the main hero button links to
-    buttonlink: "#"
-    buttonid: "schedule-demo"
-    buttononclick: 'Calendly.initPopupWidget({url: "https://calendly.com/dan-sartography/spiffworkflow-demo"});return false;'
+    buttonlink: "https://spiff.works"
+    buttonid: "spiff-works"
     # Hero image (from static/get_started/___)
     image: illustrations/intro.png
     # Footer logos (from static/get_started/logos/clients/___.svg)
@@ -96,14 +95,14 @@ params:
     title: A Thriving Open Source Community
     subtitle: We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.
     features:
-    - title: 1500+ Stars
+    - title: 1800+ Stars
       text: Continuous growth and usage for over a decade, with a thriving community of contributors.
       icon: star-history.png
     - title: 40+ Contributors
       text: Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.
       # Icon (from /get_started/illustrations/icons/___.svg)
       icon: contributors.png
-    - title: 200+ Discord Members
+    - title: 500+ Discord Members
       text: A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.
       icon: discord.png
   section4:
@@ -135,25 +134,14 @@ params:
       job: Software Engineer
       img: rajat
   section5:
-    title: Commercial Support
-    subtitle:  We offer commercial support for SpiffWorkflow and related projects.  We can help you with everything from getting started, to building your first diagram, to integrating SpiffWorkflow into your existing systems.
+    title: Ready To Go SpiffWorkflow
+    subtitle: A Hosted and managed instance of SpiffWorkflow is now available at SpiffWorks.  We have everything you need to get started
+      quickly.  We will be there to help you build your first diagram and integrate SpiffWorkflow into your existing organization.
     tiles:
-      - title: Training
-        icon: training
-        text: From Business Analysts to Dev-Ops we offer training to get you moving quickly and to assure you are getting the most out of your investment.
-        url: /pages/price/
-        buttonText: Learn More
-        class: tile-secondary
-      - title: Hosting
-        icon: hosting
+      - title: SpiffWorks
+        icon: spiffworks
         text: Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.
-        url: /pages/price/
-        buttonText: Learn More
-        class: tile-secondary
-      - title: Integration
-        icon: integration
-        text: Enterprise level integrations for Authentication, pre-built reusable workflows, and connectors to rest of your enterprise systems.
-        url: /pages/price/
+        url: https://spiff.works
         buttonText: Learn More
         class: tile-secondary
   section6: false

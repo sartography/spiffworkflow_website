@@ -10,12 +10,12 @@ cssClass: "section-support"
 <p></p>
 <p>&nbsp;</p>
 {{< tiles class="compare">}}
-{{< tile title="" icon="sartography" class="highlighted" link="https://sartography.com">}}
+{{< tile title="" icon="spiffworks" class="highlighted" link="https://Spiff.Works">}}
 <p></p>
 <p>Get support from the same people who develop and maintain SpiffWorkflow.
-Sartography offers process integration and consulting plans that cover training, BPMN process development, and software development services.</p>
-<a href="#contact-us">
-<span class="button signup-button rounded primary-btn raised">Contact Us</span>
+SpiffWorks offers hosting plans, process integration and consulting services that support you every step of the way.</p>
+<a href="https://spiff.works">
+<span class="button signup-button rounded primary-btn raised">Learn More!</span>
 </a>
 <p>&nbsp;</p>
 {{< /tile >}}
