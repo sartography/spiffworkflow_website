@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5; url=https://spiff.works/community//community/">
+  <title>SpiffWorkflow has moved to SpiffWorks</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+      background: #f5f9fb;
+      color: #344258;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 32px rgba(18, 109, 130, 0.12);
+      padding: 3rem 2.5rem;
+      max-width: 560px;
+      width: 100%;
+    }
+
+    .logo {
+      max-width: 220px;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #126D82;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #444F60;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .countdown {
+      font-size: 1rem;
+      color: #878787;
+      margin-bottom: 1.75rem;
+    }
+
+    .countdown span {
+      font-weight: 700;
+      color: #F26419;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #126D82;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.85rem 2.25rem;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: #0e5568; }
+
+    .new-url {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #878787;
+    }
+
+    .new-url a {
+      color: #126D82;
+      text-decoration: none;
+    }
+
+    .new-url a:hover { text-decoration: underline; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #ededed;
+      margin: 2rem 0;
+    }
+
+    .footer-note {
+      font-size: 0.85rem;
+      color: #a0aab4;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="/images/logos/spiffworkflow_logo.png" alt="SpiffWorkflow" class="logo">
+
+    <h1>SpiffWorkflow.org has a new home</h1>
+
+    <p>
+      We have moved! Everything you love about SpiffWorkflow&mdash;open-source BPMN
+      process automation with Python&mdash;is now at
+      <strong>spiff.works</strong>.
+    </p>
+
+    <p class="countdown">
+      Redirecting you in <span id="seconds">5</span> seconds&hellip;
+    </p>
+
+    <a href="https://spiff.works/community/" class="btn">Take me to SpiffWorks</a>
+
+    <p class="new-url">
+      New address: <a href="https://spiff.works/community/">https://spiff.works/community/</a>
+    </p>
+
+    <hr class="divider">
+
+    <p class="footer-note">
+      Please update your bookmarks. This page will eventually be retired.
+    </p>
+  </div>
+
+  <script>
+    var seconds = 5;
+    var el = document.getElementById('seconds');
+    var interval = setInterval(function () {
+      seconds -= 1;
+      el.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(interval);
+        window.location.href = 'https://spiff.works/community/';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
