@@ -2,12 +2,16 @@
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
-<meta property="og:title" content="BPMN Messages in SpiffWorkflow" />
-<meta property="og:description" content="A thorough explanation of BPMN&#39;s Messages -- a poorly understood, but extremely powerful tool for managing communications with a running BPMN process." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/deep_dives/messages/" /><meta property="og:image" content="http://localhost:1313/images/articles/messages_thumbnail.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-21T10:00:00-05:00" />
-<meta property="article:modified_time" content="2022-09-21T10:00:00-05:00" />
+<meta property="og:url" content="http://localhost:1313/posts/deep_dives/messages/">
+	<meta property="og:site_name" content="SpiffWorkflow">
+	<meta property="og:title" content="BPMN Messages in SpiffWorkflow">
+	<meta property="og:description" content="A thorough explanation of BPMN&#39;s Messages -- a poorly understood, but extremely powerful tool for managing communications with a running BPMN process.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2022-09-21T10:00:00-05:00">
+		<meta property="article:modified_time" content="2022-09-21T10:00:00-05:00">
+		<meta property="og:image" content="http://localhost:1313/images/articles/messages_thumbnail.png">
 
 
 
@@ -40,8 +44,9 @@
     
 
     
-
     
+    <section class="hero is-fullheight is-default is-bold">
+  
 
 <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
@@ -85,7 +90,7 @@
   </div>
 </nav>
 
-
+  
 
 <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
@@ -124,175 +129,391 @@
 </div>
 </nav>
 
-
-<section class="section is-medium  ">
+  
+<div class="hero-body">
   <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">BPMN Messages in SpiffWorkflow</h1>
-        <h5 class="subtitle is-5 is-muted">Or, “A diagram of Love”</h5>
-        <div class="divider"></div>
+    <div class="columns is-vcentered">
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-2 is-bold is-spaced">
+          Process Automation with BPMN and Python
+        </h1>
+        
+        <h2 class="subtitle is-5 is-muted">
+          Connect people and software together in a way that makes sense to everyone.
+        </h2>
+        
+        <p>
+          <a id="spiff-works" class="button cta rounded secondary-btn raised" href="https://spiff.works" onclick="">
+            Available Now at SpiffWorks
+          </a>
+        </p>
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="image">
+          <img src="/images/illustrations/intro.png" alt="Description">
+        </figure>
       </div>
     </div>
-    <div class="content">
-      <p><img src="intro.png" alt="Intro diagram"></p>
-<p>This is a deep dive into BPMN 2.0 <strong>Messages</strong> and how we implemented them in our open-source project SpiffWorkflow.
-This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other.
-This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.</p>
-<p>Adherence to the BPMN standard for Messages is exceedingly rare.
-There are few working examples that actually implement the standard or attempt to further its adoption.
-That isn’t surprising, as the BPMN specification’s paragraph on Message “Correlations” is one of the most dense and challenging bits of technical writing you will ever be so unfortunate as to confront.
-But it is beautiful at its heart, and we will try to capture that here.</p>
-<h3 id="the-concepts">The Concepts</h3>
-<p>In this section, we will cover the following major concepts: The <strong>Message</strong> itself, <strong>Collaborations</strong>, and <strong>Correlations</strong>.
-Understanding these concepts is critical to the following sections where we will describe their usage.</p>
-<h3 id="a-simple-message">A Simple Message</h3>
-<p>Messages themselves are pretty simple.
-They have a unique name and a payload.
-If you imagine two people talking in a quiet room, that’s all that is needed.</p>
-<p>Messages always have a one-to-one relationship.
-One sender to one receiver.</p>
-<p>To better explain messages, we’ll build on a simple example that doesn’t initially require one.
-Buddy and Peggy, deeply in love, are in a tight embrace and Buddy says: “Peggy Sue, Oh how my heart yearns for you”, and Peggy, hearing it, responds: “Buddy Holly, how you make my heart jolly!” It is a perfect moment and can be captured in a happy little BPMN diagram.</p>
-<p><img src="happy.png" alt="Happy little bpmn diagram"></p>
-<p>But love isn’t always so simple.
-And neither is BPMN.</p>
-<h3 id="collaborations">Collaborations</h3>
-<p>Let’s move Buddy and Peggy to a room full of romantic couples and track all the romantic profferings in BPMN.
-To do that we will need to use more generic terms and introduce a Collaboration diagram, as shown below.
-Collaborations encompass multiple participants/processes with interconnected messages.</p>
-<p><img src="bpmn1.png" alt="participant diagram"></p>
-<p>Imagine we have 2 “Admirer” and 2 “Beloved” instances running at the same time: Buddy and Mary Jane play the “Admirer”, “Peggy” and “Tom” are the beloved.
-If we get this right, it’s a romantic evening.
-If we get it wrong, there will be blood.</p>
-<p>It is all about context.
-If Buddy is saying nice things to Peggy, then we don’t want Peggy responding to Mary Jane.
-The critical concept here is a “conversation”, and just like in real life, there are some very complex social rules about how conversations work.</p>
-<p>Some “conversations” in life are terrible.
-They seem to meander about from one thing to the next with no rhyme or reason, and no end in sight.
-That isn’t an actual conversation, it’s a nuisance — an area not covered by BPMN.
-We want good conversations, and that requires a subject or topic on which the conversation is grounded.
-All the messages back and forth should relate to the topic of the conversation.
-Or, to use the correct BPMN words, a <strong>Collaboration</strong> (the conversation) has a <strong>CorrelationKey</strong> (topic).
-THIS IS IMPORTANT</p>
-<h3 id="correlations">Correlations</h3>
-<p>Think of a correlation as the “Subject of the Conversation”.
-In our example, a good subject would be the beloved’s name: “Peggy”, “Tom”.
-The Admirers know who they admire, and each beloved knows their own name — so we have a kind of “Key” on which to base the conversation.
-You don’t get the Key wrong.
-You don’t yell out Tom’s name in a passionate moment with Peggy.</p>
-<p><strong>Collaborations</strong>, <strong>Messages</strong>, and <strong>Correlations</strong> have no visual representation in the BPMN diagrams.
-So I can’t draw you a picture.
-But they are first-order concepts carefully covered in the BPMN 2.0 standard.
-You have to manipulate them through some sort of “Properties Panel,” which we will cover in the next section.</p>
-<p>The hardest concept for me, when I read the specification, was understanding that Correlations apply to the Collaboration as a whole.
-It is the subject of the conversation.
-It isn’t (as I struggled with for weeks) the address on an envelope.
-It is a sticky thing that should be used consistently across all the messages in a conversation.
-So as we continue, fight to keep this idea in your head: It’s all about having a good conversation about a specific subject.</p>
-<p><img src="bpmn2.png" alt="participant diagram external"></p>
-<p>Finally, it is worth noting that you will likely model these different processes in completely different BPMN files.
-So in the real world, you would describe the other process in a collapsed state as shown to the left.
-It will be up to the application that is executing these processes to coordinate the messages between them.
-We will cover that responsibility in the following section on Applications and the SpiffWorkflow Backend.</p>
-<h2 id="implementation-in-spiffworkflow">Implementation in SpiffWorkflow</h2>
-<p>This section will cover the changes to 4 different SpiffWorkflow applications in order to support messages as described above, working with the standard and attempting to avoid any custom BPMN extensions.
-We’ll tackle the BPMN editor first — as this is where many of the changes are visible, then we will delve into the XML and how the backend systems will process this information.</p>
-<h3 id="bpmnjs--spiffworkflow">BPMN.js — SpiffWorkflow</h3>
-<p>This section includes our additions and modifications to the excellent open-source BPMN.js editor maintained by Camunda.
-The changes will impact the Properties Panel when specific visual elements are selected.
-Included here are actual screenshots from our working extensions to the BPMN.js editor.
-We’ll provide links lower in this article to our code repository so you can try it out!</p>
-<h3 id="collaboration">Collaboration</h3>
-<p><img src="collaboration.png" alt="Collaboration Panel"></p>
-<p>When a collaboration is selected in the editor, we will display a new section called “Correlation Keys”.
-We want to make it clear at a glance that this conversation is based around the “beloved_name”, and that communications back and forth should relate to this name somehow.</p>
-<p>But this can also be a cumbersome place to go as you are working through the diagram.
-So we will make it possible to edit these correlation keys elsewhere within the context of Send and Receive tasks and events.</p>
-<h3 id="send-tasks-and-message-throw-events">Send Tasks, and Message Throw Events</h3>
-<p><img src="message_panel.png" alt="Message Panel"></p>
-<p>When defining a message to be sent out in SpiffWorkflow, you will need to specify three things:</p>
-<ul>
-<li>The message id — a message name that should be unique among all messages in your system, but human-readable. And it should match up on the receiving end.</li>
-<li>The Payload — the content of the message. SpiffWorkflow is all about Python, so here we define the payload as a Python Dictionary.</li>
-<li>Any correlations directly related to this message, if there are any.</li>
-</ul>
-<p>When this message is sent out, it will contain these three parts, and the SpiffWorkflow Backend (described later) will use the ID and Correlation to match this message up with the correct process.</p>
-<p><img src="event.png" alt="Event Panel"></p>
-<h3 id="receive-tasks-and-message-catch-tasks">Receive Tasks and Message Catch Tasks</h3>
-<p>When receiving a message, you can specify the message id (you can create a new id, or select it from a dropdown list).
-The Correlation here should match exactly the correlation defined in the other BPMN diagram if these are separate.
-We’ll talk about this as well in the section on SpiffWorkflow Backend, where it may be possible through API integrations to ensure these remain locked between disparate diagrams.</p>
-<h3 id="resulting-xml">Resulting XML</h3>
-<p>The extensions we will add to BPMN.io will produce BPMN 2.0 compliant XML.
-We will create only one extension to the BPMN to complete this effort to make it easy to define the message payload.</p>
-<p>Messages and Correlations will be defined within the root element, per the specification.
-The SpiffWorkflow Backend will work to ensure these values remain consistent across all processes, and can provide endpoints to verify the messages are correctly aligned.
-<strong><em>IMPORTANT</em></strong>: Don’t think about messages and correlations as belonging to a process.
-They do not.
-They belong to the system as a whole and can be maintained across different BPMN diagrams.
-The resulting XML in this case is:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:message</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;love_letter&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Love Letter&#34;</span><span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:message</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;love_letter_response&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Love Letter Response&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:correlationProperty</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;lover_name&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Lover&#39;s Name&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:correlationPropertyRetrievalExpression</span> <span style="color:#a6e22e">messageRef=</span><span style="color:#e6db74">&#34;love_letter&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:formalExpression&gt;</span>lover.name<span style="color:#f92672">&lt;/bpmn:formalExpression&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/bpmn:correlationPropertyRetrievalExpression&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:correlationPropertyRetrievalExpression</span> <span style="color:#a6e22e">messageRef=</span><span style="color:#e6db74">&#34;love_letter_response&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:formalExpression&gt;</span>from.name<span style="color:#f92672">&lt;/bpmn:formalExpression&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/bpmn:correlationPropertyRetrievalExpression&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bpmn:correlationProperty&gt;</span></span></span></code></pre></div></p>
-<p>Collaborations will contain the message flows, and will offer a Correlation Key that connects the correlation properties defined as described above.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:collaboration</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;my_collaboration&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:participant</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;buddy&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Buddy&#34;</span> <span style="color:#a6e22e">processRef=</span><span style="color:#e6db74">&#34;process_buddy&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:participant</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;Person&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Person&#34;</span> <span style="color:#a6e22e">processRef=</span><span style="color:#e6db74">&#34;random_person_process&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:messageFlow</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;love_letter_flow&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Love Letter Flow&#34;</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sourceRef=</span><span style="color:#e6db74">&#34;ActivitySendLetter&#34;</span> <span style="color:#a6e22e">targetRef=</span><span style="color:#e6db74">&#34;Event_0ym6ptw&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:messageFlow</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;response_flow&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;response flow&#34;</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sourceRef=</span><span style="color:#e6db74">&#34;Activity_13eq2gr&#34;</span> <span style="color:#a6e22e">targetRef=</span><span style="color:#e6db74">&#34;EventReceiveLetter&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:correlationKey</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lover&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:correlationPropertyRef&gt;</span>Lover_first_name<span style="color:#f92672">&lt;/bpmn:correlationPropertyRef&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;bpmn:correlationPropertyRef&gt;</span>Lover_last_name<span style="color:#f92672">&lt;/bpmn:correlationPropertyRef&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/bpmn:correlationKey&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bpmn:collaboration&gt;</span></span></span></code></pre></div>
-<p>Send Tasks and Receive Tasks can just reference the unique message id.
-The SendTask will include a custom SpiffWorkflow extension to define the payload in a simple and direct way, and is the only custom extension we will create as a part of this effort.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#f92672">&lt;bpmn:sendTask</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;send_task_letter&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Send romantic words&#34;</span> <span style="color:#a6e22e">messageRef=</span><span style="color:#e6db74">&#34;love_letter&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:extension&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;spiffworkflow:messagePayload&gt;</span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>&#39;to&#39;: {&#39;name&#39;: my_lover_var},
-</span></span><span style="display:flex;"><span>&#39;from&#39;: {&#39;name&#39;: &#39;buddy&#39;},
-</span></span><span style="display:flex;"><span>&#39;salutation&#39;: &#39;Dear Beloved&#39;,
-</span></span><span style="display:flex;"><span>&#39;body&#39;: &#39;Oh how my heart yearns for you!&#39;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/spiffworkflow:messagePayload&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/bpmn:extension&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:incoming&gt;</span>Flow_1bl6jeh<span style="color:#f92672">&lt;/bpmn:incoming&gt;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;bpmn:outgoing&gt;</span>Flow_0tp8uut<span style="color:#f92672">&lt;/bpmn:outgoing&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bpmn:sendTask&gt;</span></span></span></code></pre></div>
-<h3 id="in-closing">In Closing</h3>
-<p>Most implementations of BPMN see messages as primarily a means of communicating with other external applications.
-This article is focused specifically on how multiple BPMN processes can communicate with each other in a loosely coupled way.
-Loosely enough, that in theory, one process could actually be an external application.
-Service Tasks are another way of sending and retrieving information from an external system.</p>
-<h3 id="references">References</h3>
-<p>When tackling a new area of SpiffWorkflow we take a careful look at other BPMN based systems.
-Here are links to some of the resources we consulted in addition to the official BPMN 2.0 Specification.</p>
-<ul>
-<li><a href="https://youtu.be/8SYEc3dHnM4">https://youtu.be/8SYEc3dHnM4</a> (A great video on Camunda’s process)</li>
-<li><a href="https://youtu.be/-UaFHzit7LA">https://youtu.be/-UaFHzit7LA</a> (Using Message Based Correlation in an Oracle BPM Process)</li>
-<li><a href="https://www.trisotech.com/using-messages-in-executable-bpmn/">https://www.trisotech.com/using-messages-in-executable-bpmn/</a> (Silver / Trisotech)</li>
-<li><a href="https://community.bonitasoft.com/blog/when-use-call-activity-or-bpm-message">https://community.bonitasoft.com/blog/when-use-call-activity-or-bpm-message</a> (BonitaSoft)</li>
-</ul>
+  </div>
+</div>
+  
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/status.svg">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/uva.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+    
 
+    
+    
+<section class="section section-feature-grey is-medium" id="section3">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="has-text-centered">
+          <img class="pushed-image" src="/images/build_a_diagram.gif">
+        </div>
+      </div>
+    </div>
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">A Powerful Low Code Platform</h2>
+      <h3 class="subtitle is-5 is-muted">Build your first diagram in minutes. But don&#39;t let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.</h3>
+    </div>
+
+    <p class="has-text-centered mt-20">
+      <a  href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+        <span class="button signup-button rounded primary-btn raised">
+          View Full Video
+        </span>
+      </a>
+    </p>
+  </div>
+</section>
+    
+
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Case Study</h2>
+      <h3 class="subtitle is-muted light-text">Featured in IEEE Software, Jan 2023</h3>
+    </div>
+
+    <div class="content-wrapper">
+        <figure class="reference">
+          <blockquote>
+            How our software development team used an open source Python library and the popular modeling notation, BPMN, to shed light on a set of complex approval processes at a university.
+          </blockquote>
+          <div class="author">
+            <a href="/ieee_spiffworkflow_article.pdf"><img src="/images/ieee.png" alt=""/></a>
+            <br/>
+            <a href="/ieee_spiffworkflow_article.pdf" class="button btn-align-md accent-btn raised">View PDF</a>
+          </div>
+        </figure>
     </div>
   </div>
 </section>
 
 
 
+
+
+    
+    
+<section class="section section-feature-grey is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Ready To Go SpiffWorkflow</h2>
+      <h3 class="subtitle is-5 is-muted">A Hosted and managed instance of SpiffWorkflow is now available at SpiffWorks.  We have everything you need to get started quickly.  We will be there to help you build your first diagram and integrate SpiffWorkflow into your existing organization.</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column">
+          <div class="feature-card tile-secondary is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-icon">
+                <img src="/images/features/icons/spiffworks.png">
+            </div>
+            <div class="card-text">
+                <p>Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://spiff.works" class="button btn-align-md accent-btn raised">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium" id="section2">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">A Thriving Open Source Community</h1>
+        <h3 class="subtitle is-5 is-muted">We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-7 mt-60">
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/social/star-history.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">1800&#43; Stars</span>
+
+                <span class="icon-box-text">Continuous growth and usage for over a decade, with a thriving community of contributors.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/social/contributors.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">40&#43; Contributors</span>
+
+                <span class="icon-box-text">Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/social/discord.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">500&#43; Discord Members</span>
+
+                <span class="icon-box-text">A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Listen to the Pod Cast</h2>
+      <h3 class="subtitle is-muted light-text">Featured on The Real Python Podcast, Feburary 2023</h3>
+    </div>
+
+    <div class="content-wrapper">
+        <figure class="reference">
+          <blockquote>
+            We discuss the concept of low-code software tools. Dan also talks about how SpiffWorkflow aims at getting non-developers within an organization involved in development.
+          </blockquote>
+          <div class="author">
+            <a href="https://realpython.com/podcasts/rpp/144/"><img src="/images/podcast.avif" alt=""/></a>
+            <br/>
+            <a href="https://realpython.com/podcasts/rpp/144/" class="button btn-align-md accent-btn raised">Listen Now</a>
+          </div>
+        </figure>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+    <section class="section section-light-grey is-medium" id="contact">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">Contact Us</h2>
+      <h3 class="subtitle is-5 is-muted">Complete the form below, and we will get in contact with you shortly!</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+    hbspt.forms.create({
+        region: "na1",
+        portalId: "42562038",
+        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/contact_thankyou?" + formData;
+          }, 250); 
+        }
+    });
+</script>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Join the Innovators</h2>
+      <h3 class="subtitle is-5 light-text">Join these innovators and help us continue to refine and improve this important open source project.</h3>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="owl-carousel owl-carousel-testimonial">
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              I’m proud of our investment in SpiffWorkflow. It’s in line with our mission and core principles of purposeful technology, public good, and openness. I am excited about the future and looking forward to working with you.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/jarrad.png" alt=""/>
+              <h5>Jarrad Hope</h5>
+              <span>CoFounder - Status.im</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/ron.png" alt=""/>
+              <h5>Ron Hutchins</h5>
+              <span>VP - IT - UVA</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              Organizations large and small need SpiffWorkflow! SpiffWorkflow makes it possible to execute adaptable business processes that more than one person, more than one department, can understand.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/demetrick.png" alt=""/>
+              <h5>Demetrick Ferguson</h5>
+              <span>Portfolio Performance and Governance - Status</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              Spiffworkflow streamlines our execution of BPMN workflows, and its extensibility is a boon for us. The authors’ willingness to respond to our inquiries and feedback further enriches our experience with the library.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/brian2.png" alt=""/>
+              <h5>Brian</h5>
+              <span>CTO - Series C Startup</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              Collaborating on the SpiffWorkflow project has been a delight. Passionate team, open to ideas, and a powerful product combining BPMN with Python&#39;s agility. Best wishes for its success!
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/sasha.png" alt=""/>
+              <h5>Aleksandra Yarokhovich</h5>
+              <span>Business Analyst - Status</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              We are using spiff workflow in our serverless travel booking engine. It allows us rapid change of business logic with minimum development effort, and in the long run to improve the maintainability thanks to the graphical visualisation.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/rajat.png" alt=""/>
+              <h5>Rajat Roy</h5>
+              <span>Software Engineer</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+
+
+    
+
+    
+    <section class="section section is-medium" id="newsletter">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">News Letter</h2>
+      <h3 class="subtitle is-5 is-muted">Join our mailing list to get quarterly updates on our progress.</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "42562038",
+        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/newsletter_thankyou?" + formData;
+          }, 250); 
+        }
+      });
+    </script>
+  </div>
+</section>
+    
+
+    
     
 <footer class="footer footer-dark">
   <div class="container">
@@ -430,25 +651,14 @@ Here are links to some of the resources we consulted in addition to the official
   </div>
 </footer>
 
+    
 
     
     <div id="backtotop"><a href="#"></a></div>
 
     
-<div class="sidebar">
-  <div class="sidebar-header">
-    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
-    <a class="sidebar-close" href="javascript:void(0);">
-      <i data-feather="x"></i>
-    </a>
-  </div>
-  <div class="inner">
-    <ul class="sidebar-menu">
-    </ul>
-  </div>
-</div>
-
     
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>

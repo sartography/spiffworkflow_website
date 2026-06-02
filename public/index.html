@@ -1,750 +1,148 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.124.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    
-<meta property="og:title" content="SpiffWorkflow" />
-<meta property="og:description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" /><meta property="og:image" content="http://localhost:1313/images/opengraph/home.png" />
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.162.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5; url=https://spiff.works/community//community/">
+  <title>SpiffWorkflow has moved to SpiffWorks</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+      background: #f5f9fb;
+      color: #344258;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
 
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 32px rgba(18, 109, 130, 0.12);
+      padding: 3rem 2.5rem;
+      max-width: 560px;
+      width: 100%;
+    }
 
-<meta name="description" content="Business Process Automation with BPMN and Python.  Connect people and software together in a way that makes sense to everyone." />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+    .logo {
+      max-width: 220px;
+      margin-bottom: 2rem;
+    }
 
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #126D82;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
 
-    <title>SpiffWorkflow</title>
-    
-<link rel="icon" type="image/png" href="/images/favicon.png" />
-<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
-<link rel="stylesheet" type="text/css" href="/css/icons.css">
+    p {
+      font-size: 1.05rem;
+      color: #444F60;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
 
-<link rel="stylesheet" href="/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/css/owl.theme.default.min.css">
-<link rel="stylesheet" type="text/css" href="/css/custom_sartography_8.css">
+    .countdown {
+      font-size: 1rem;
+      color: #878787;
+      margin-bottom: 1.75rem;
+    }
 
-<link rel="stylesheet" type="text/css" href="/css/cookieconsent.css">
+    .countdown span {
+      font-weight: 700;
+      color: #F26419;
+    }
 
-  </head>
-  <body>
-  
-    
-    <div id="preloader">
-      <div id="status"></div>
-    </div>
-    
+    .btn {
+      display: inline-block;
+      background: #126D82;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.85rem 2.25rem;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: background 0.2s;
+    }
 
-    
-    
-    <section class="hero is-fullheight is-default is-bold">
-  
+    .btn:hover { background: #0e5568; }
 
-<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="28">
-      </a>
+    .new-url {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #878787;
+    }
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+    .new-url a {
+      color: #126D82;
+      text-decoration: none;
+    }
 
-      <div id="navbar-menu" class="navbar-menu is-static">
+    .new-url a:hover { text-decoration: underline; }
 
-        <div class="navbar-end">
-          <a href="/pages/get_started/" class="navbar-item is-secondary">
-            Get Started
-          </a>
-          <a href="/pages/features/" class="navbar-item is-secondary">
-            Features
-          </a>
-          <a href="/pages/compare/" class="navbar-item is-secondary">
-            Comparison
-          </a>
-          <a href="/pages/support/" class="navbar-item is-secondary">
-            Support
-          </a>
-          <a href="/pages/docs/" class="navbar-item is-secondary">
-            Documentation
-          </a>
-        </div>
-        <a href="/pages/demo_register" class="navbar-item">
-            <span id="try_now_button" class="button signup-button rounded primary-btn raised">
-              Free Demo
-            </span>
-        </a>
-      </div>
-  </div>
-</nav>
+    .divider {
+      border: none;
+      border-top: 1px solid #ededed;
+      margin: 2rem 0;
+    }
 
-  
+    .footer-note {
+      font-size: 0.85rem;
+      color: #a0aab4;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="/images/logos/spiffworkflow_logo.png" alt="SpiffWorkflow" class="logo">
 
-<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="/images/logos/spiffworkflow_logo.png" alt="" width="138" height="138">
-      </a>
+    <h1>SpiffWorkflow.org has a new home</h1>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+    <p>
+      We have moved! Everything you love about SpiffWorkflow&mdash;open-source BPMN
+      process automation with Python&mdash;is now at
+      <strong>spiff.works</strong>.
+    </p>
 
-    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+    <p class="countdown">
+      Redirecting you in <span id="seconds">5</span> seconds&hellip;
+    </p>
 
-      <div class="navbar-end">
-        <a href="/pages/get_started/" class="navbar-item is-secondary">
-          Get Started
-        </a>
-        <a href="/pages/features/" class="navbar-item is-secondary">
-          Features
-        </a>
-        <a href="/pages/compare/" class="navbar-item is-secondary">
-          Comparison
-        </a>
-        <a href="/pages/support/" class="navbar-item is-secondary">
-          Support
-        </a>
-        <a href="/pages/docs/" class="navbar-item is-secondary">
-          Documentation
-        </a>
-      </div>
-    </div>
-</div>
-</nav>
+    <a href="https://spiff.works/community/" class="btn">Take me to SpiffWorks</a>
 
-  
-<div class="hero-body">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-5 is-offset-1 landing-caption">
-        <h1 class="title is-2 is-bold is-spaced">
-          Process Automation with BPMN and Python
-        </h1>
-        
-        <h2 class="subtitle is-5 is-muted">
-          Connect people and software together in a way that makes sense to everyone.
-        </h2>
-        
-        <p>
-          <a id="spiff-works" class="button cta rounded secondary-btn raised" href="https://spiff.works" onclick="">
-            Available Now at SpiffWorks
-          </a>
-        </p>
-      </div>
-      <div class="column is-5 is-offset-1">
-        <figure class="image">
-          <img src="/images/illustrations/intro.png" alt="Description">
-        </figure>
-      </div>
-    </div>
-  </div>
-</div>
-  
-<div class="hero-foot mb-20">
-  <div class="container">
-    <div class="tabs is-centered">
-      <ul>
-        <li>
-          <a>
-            <img class="partner-logo" src="/images/logos/clients/status.svg">
-          </a>
-        </li>
-        <li>
-          <a>
-            <img class="partner-logo" src="/images/logos/clients/uva.svg">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-</section>
-    
+    <p class="new-url">
+      New address: <a href="https://spiff.works/community/">https://spiff.works/community/</a>
+    </p>
 
-    
-    
-<section class="section section-feature-grey is-medium" id="section3">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="has-text-centered">
-          <img class="pushed-image" src="/images/build_a_diagram.gif">
-        </div>
-      </div>
-    </div>
+    <hr class="divider">
 
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">A Powerful Low Code Platform</h2>
-      <h3 class="subtitle is-5 is-muted">Build your first diagram in minutes. But don&#39;t let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.</h3>
-    </div>
-
-    <p class="has-text-centered mt-20">
-      <a  href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
-        <span class="button signup-button rounded primary-btn raised">
-          View Full Video
-        </span>
-      </a>
+    <p class="footer-note">
+      Please update your bookmarks. This page will eventually be retired.
     </p>
   </div>
-</section>
-    
 
-    
-<section class="section is-medium section-secondary" id="section4">
-  <div class="container">
-
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 light-text is-spaced">Case Study</h2>
-      <h3 class="subtitle is-muted light-text">Featured in IEEE Software, Jan 2023</h3>
-    </div>
-
-    <div class="content-wrapper">
-        <figure class="reference">
-          <blockquote>
-            How our software development team used an open source Python library and the popular modeling notation, BPMN, to shed light on a set of complex approval processes at a university.
-          </blockquote>
-          <div class="author">
-            <a href="/ieee_spiffworkflow_article.pdf"><img src="/images/ieee.png" alt=""/></a>
-            <br/>
-            <a href="/ieee_spiffworkflow_article.pdf" class="button btn-align-md accent-btn raised">View PDF</a>
-          </div>
-        </figure>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-    
-    
-<section class="section section-feature-grey is-medium" id="section1">
-  <div class="container">
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">Ready To Go SpiffWorkflow</h2>
-      <h3 class="subtitle is-5 is-muted">A Hosted and managed instance of SpiffWorkflow is now available at SpiffWorks.  We have everything you need to get started quickly.  We will be there to help you build your first diagram and integrate SpiffWorkflow into your existing organization.</h3>
-      <div class="divider is-centered"></div>
-    </div>
-
-    <div class="content-wrapper">
-      <div class="columns">
-        <div class="column">
-          <div class="feature-card tile-secondary is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-icon">
-                <img src="/images/features/icons/spiffworks.png">
-            </div>
-            <div class="card-text">
-                <p>Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.</p>
-            </div>
-            <div class="card-action">
-              <a href="https://spiff.works" class="button btn-align-md accent-btn raised">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    
-
-    
-    
-<section class="section is-medium" id="section2">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">A Thriving Open Source Community</h1>
-        <h3 class="subtitle is-5 is-muted">We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.</h3>
-        <div class="divider"></div>
-      </div>
-      <div class="column is-7 mt-60">
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p class="image">
-              <img src="/images/social/star-history.png">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">1800&#43; Stars</span>
-
-                <span class="icon-box-text">Continuous growth and usage for over a decade, with a thriving community of contributors.</span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p class="image">
-              <img src="/images/social/contributors.png">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">40&#43; Contributors</span>
-
-                <span class="icon-box-text">Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.</span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p class="image">
-              <img src="/images/social/discord.png">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">500&#43; Discord Members</span>
-
-                <span class="icon-box-text">A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.</span>
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-    
-
-    
-<section class="section is-medium section-secondary" id="section4">
-  <div class="container">
-
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 light-text is-spaced">Listen to the Pod Cast</h2>
-      <h3 class="subtitle is-muted light-text">Featured on The Real Python Podcast, Feburary 2023</h3>
-    </div>
-
-    <div class="content-wrapper">
-        <figure class="reference">
-          <blockquote>
-            We discuss the concept of low-code software tools. Dan also talks about how SpiffWorkflow aims at getting non-developers within an organization involved in development.
-          </blockquote>
-          <div class="author">
-            <a href="https://realpython.com/podcasts/rpp/144/"><img src="/images/podcast.avif" alt=""/></a>
-            <br/>
-            <a href="https://realpython.com/podcasts/rpp/144/" class="button btn-align-md accent-btn raised">Listen Now</a>
-          </div>
-        </figure>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-    
-    <section class="section section-light-grey is-medium" id="contact">
-  <div class="container">
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 is-spaced">Contact Us</h2>
-      <h3 class="subtitle is-5 is-muted">Complete the form below, and we will get in contact with you shortly!</h3>
-      <div class="divider is-centered"></div>
-    </div>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-<script>
-    hbspt.forms.create({
-        region: "na1",
-        portalId: "42562038",
-        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d",
-        onFormSubmit: function ($form) {
-          console.log("Form Submitted");
-          setTimeout(function () {
-            console.log("Time out!")
-            let formData = $form.serialize();
-            window.location = "/pages/contact_thankyou?" + formData;
-          }, 250); 
-        }
-    });
-</script>
-  </div>
-</section>
-
-    
-
-    
-    
-<section class="section is-medium section-secondary" id="section4">
-  <div class="container">
-
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 light-text is-spaced">Join the Innovators</h2>
-      <h3 class="subtitle is-5 light-text">Join these innovators and help us continue to refine and improve this important open source project.</h3>
-    </div>
-
-    <div class="content-wrapper">
-      <div class="owl-carousel owl-carousel-testimonial">
-        <div>
-          <figure class="testimonial">
-            <blockquote>
-              I’m proud of our investment in SpiffWorkflow. It’s in line with our mission and core principles of purposeful technology, public good, and openness. I am excited about the future and looking forward to working with you.
-            </blockquote>
-            <div class="author">
-              <img src="/images/illustrations/faces/jarrad.png" alt=""/>
-              <h5>Jarrad Hope</h5>
-              <span>CoFounder - Status.im</span>
-            </div>
-          </figure>
-        </div>
-        <div>
-          <figure class="testimonial">
-            <blockquote>
-              You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
-            </blockquote>
-            <div class="author">
-              <img src="/images/illustrations/faces/ron.png" alt=""/>
-              <h5>Ron Hutchins</h5>
-              <span>VP - IT - UVA</span>
-            </div>
-          </figure>
-        </div>
-        <div>
-          <figure class="testimonial">
-            <blockquote>
-              Organizations large and small need SpiffWorkflow! SpiffWorkflow makes it possible to execute adaptable business processes that more than one person, more than one department, can understand.
-            </blockquote>
-            <div class="author">
-              <img src="/images/illustrations/faces/demetrick.png" alt=""/>
-              <h5>Demetrick Ferguson</h5>
-              <span>Portfolio Performance and Governance - Status</span>
-            </div>
-          </figure>
-        </div>
-        <div>
-          <figure class="testimonial">
-            <blockquote>
-              Spiffworkflow streamlines our execution of BPMN workflows, and its extensibility is a boon for us. The authors’ willingness to respond to our inquiries and feedback further enriches our experience with the library.
-            </blockquote>
-            <div class="author">
-              <img src="/images/illustrations/faces/brian2.png" alt=""/>
-              <h5>Brian</h5>
-              <span>CTO - Series C Startup</span>
-            </div>
-          </figure>
-        </div>
-        <div>
-          <figure class="testimonial">
-            <blockquote>
-              Collaborating on the SpiffWorkflow project has been a delight. Passionate team, open to ideas, and a powerful product combining BPMN with Python&#39;s agility. Best wishes for its success!
-            </blockquote>
-            <div class="author">
-              <img src="/images/illustrations/faces/sasha.png" alt=""/>
-              <h5>Aleksandra Yarokhovich</h5>
-              <span>Business Analyst - Status</span>
-            </div>
-          </figure>
-        </div>
-        <div>
-          <figure class="testimonial">
-            <blockquote>
-              We are using spiff workflow in our serverless travel booking engine. It allows us rapid change of business logic with minimum development effort, and in the long run to improve the maintainability thanks to the graphical visualisation.
-            </blockquote>
-            <div class="author">
-              <img src="/images/illustrations/faces/rajat.png" alt=""/>
-              <h5>Rajat Roy</h5>
-              <span>Software Engineer</span>
-            </div>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-    
-
-
-    
-
-    
-    <section class="section section is-medium" id="newsletter">
-  <div class="container">
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 is-spaced">News Letter</h2>
-      <h3 class="subtitle is-5 is-muted">Join our mailing list to get quarterly updates on our progress.</h3>
-      <div class="divider is-centered"></div>
-    </div>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-    <script>
-      hbspt.forms.create({
-        region: "na1",
-        portalId: "42562038",
-        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42",
-        onFormSubmit: function ($form) {
-          console.log("Form Submitted");
-          setTimeout(function () {
-            console.log("Time out!")
-            let formData = $form.serialize();
-            window.location = "/pages/newsletter_thankyou?" + formData;
-          }, 250); 
-        }
-      });
-    </script>
-  </div>
-</section>
-    
-
-    
-    
-<footer class="footer footer-dark">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <div class="footer-logo">
-          <img src="/images/logos/Sartography-White.png">
-        </div>
-        <div class="contact-info">
-          <p>This is site is owned and operated by Sartography, LLC
-          of Staunton, Va, USA.</p>
-          <p>
-          <a href="sartography.com">Sartography.com</a>
-          <a href="mailto:Dan@Sartography.com">Dan@Sartography.com</a>
-          </p>
-        </div>
-        <div class="cookie_settings">
-            <a data-cc="c-settings">Show cookie settings</a>
-        </div>
-      </div>
-        <div class="column">
-          <div class="footer-column">
-            <div class="footer-header">
-                <h3>Videos</h3>
-            </div>
-            <ul class="link-list">
-              <li>
-                <a href="https://www.youtube.com/watch?v=1IaiaquQ0y0&amp;t=15s">
-                  Building Web Forms
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
-                  Brief Demo
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=EfTbTg3KRqc">
-                  Building an Approval Process
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
-                  more videos...
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column">
-          <div class="footer-column">
-            <div class="footer-header">
-                <h3>Docs</h3>
-            </div>
-            <ul class="link-list">
-              <li>
-                <a href="https://spiff-arena.readthedocs.io/en/latest/">
-                  SpiffWorkflow Application
-                </a>
-              </li>
-              <li>
-                <a href="https://spiffworkflow.readthedocs.io/en/latest/">
-                  SpiffWorkflow Library
-                </a>
-              </li>
-              <li>
-                <a href="/pages/privacy_policy/">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="/pages/demo_terms_of_service/">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="/pages/service_level/">
-                  Service Level Expectations
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column">
-          <div class="footer-column">
-            <div class="footer-header">
-                <h3>Blog</h3>
-            </div>
-            <ul class="link-list">
-              <li>
-                <a href="/posts/articles/get_started/">
-                  Get started
-                </a>
-              </li>
-              <li>
-                <a href="/posts/articles/">
-                  Introductory Articles
-                </a>
-              </li>
-              <li>
-                <a href="/posts/deep_dives/">
-                  Deep Dives
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-            <h3>Connect</h3>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" href="https://discord.gg/F6Kb7HNK7B">
-                  <span class="icon"><i class="fa fa-comments"></i></span>
-                </a>
-                <a class="level-item" href="https://github.com/sartography">
-                  <span class="icon"><i class="fa fa-github"></i></span>
-                </a>
-                <a class="level-item" href="https://www.youtube.com/channel/UCtDHzDfhyvnAb8CFmdwucUA">
-                  <span class="icon"><i class="fa fa-youtube"></i></span>
-                </a>
-                <a class="level-item" href="https://twitter.com/SpiffWorkflow">
-                  <span class="icon"><i class="fa fa-twitter"></i></span>
-                </a>
-                <a class="level-item" href="https://spiffworkflow.readthedocs.io/en/latest/index.html">
-                  <span class="icon"><i class="fa fa-book"></i></span>
-                </a>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-    
-
-    
-    <div id="backtotop"><a href="#"></a></div>
-
-    
-    
-
-
-  <a href="https://github.com/sartography/spiff-arena" class="github-corner" aria-label="View source on GitHub">
-    <svg width="80" height="80" viewBox="0 0 250 250"
-         style="fill:#126D82; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index:101" aria-hidden="true">
-      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-      <path
-        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-      <path
-        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-        fill="currentColor" class="octo-body"></path>
-    </svg>
-  </a>
-  <style>.github-corner:hover .octo-arm {
-      animation: octocat-wave 560ms ease-in-out;
-  }
-
-  @keyframes octocat-wave {
-      0%, 100% {
-          transform: rotate(0)
+  <script>
+    var seconds = 5;
+    var el = document.getElementById('seconds');
+    var interval = setInterval(function () {
+      seconds -= 1;
+      el.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(interval);
+        window.location.href = 'https://spiff.works/community/';
       }
-      20%, 60% {
-          transform: rotate(-25deg)
-      }
-      40%, 80% {
-          transform: rotate(10deg)
-      }
-  }
-
-  @media (max-width: 500px) {
-      .github-corner:hover .octo-arm {
-          animation: none
-      }
-
-      .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out
-      }
-  }</style>
-
-
-
-  
-    <div id="backtotop"><a href="#"></a></div>
-
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://unpkg.com/feather-icons"></script>
-<script src="/js/fresh.js"></script>
-<script src="/js/jquery.panelslider.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="/js/carousel.js"></script>
-
-<script defer src="/js/cookieconsent.js"></script>
-<script defer src="/js/cookieconsent-init.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
-
-<script>
-  
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied'
-  });
-</script>
-
-
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NFMNL96Z');</script>
-
-
-
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "iyrm5frdjh");
-</script>
-
-  </body>
+    }, 1000);
+  </script>
+</body>
 </html>

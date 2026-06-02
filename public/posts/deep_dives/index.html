@@ -2,10 +2,13 @@
 <html lang="en-us">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
-<meta property="og:title" content="Deep Dive Articles" />
-<meta property="og:description" content="Detailed information about specific topics related to SpiffWorkflow - including answers to frequently asked questions, technical documentation, and articles on more complex topics." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/deep_dives/" /><meta property="og:image" content="http://localhost:1313/images/opengraph/home.png" />
+<meta property="og:url" content="http://localhost:1313/posts/deep_dives/">
+	<meta property="og:site_name" content="SpiffWorkflow">
+	<meta property="og:title" content="Deep Dive Articles">
+	<meta property="og:description" content="Detailed information about specific topics related to SpiffWorkflow - including answers to frequently asked questions, technical documentation, and articles on more complex topics.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="website">
+		<meta property="og:image" content="http://localhost:1313/images/opengraph/home.png">
 
 
 
@@ -153,8 +156,10 @@ We hope these articles help spawn higher-level discussions that will guide Spiff
                             <div class="brief">
                                 <p>
                                     
-                                    Deploying and Integrating With SpiffArena This guide shows you how to deploy the demo Connector Proxy as an AWS Lambda Function as well as how to integrate it with SpiffArena. The Getting Started Guide will be used as the basis for integration but the steps should easily map to any custom installation.
-There is an assumption that you have access to log in to the AWS Console and can create/deploy Lambda functions.
+                                    <h1 id="deploying-and-integrating-with-spiffarena">Deploying and Integrating With SpiffArena</h1>
+<p>This guide shows you how to deploy the demo <code>Connector Proxy</code> as an <code>AWS Lambda Function</code> as well as how to integrate it with <a href="https://www.spiffworkflow.org/pages/spiffarena/">SpiffArena</a>.
+The <a href="https://www.spiffworkflow.org/posts/articles/get_started/">Getting Started Guide</a> will be used as the basis for integration but the steps should easily map to any custom installation.</p>
+<p>There is an assumption that you have access to log in to the AWS Console and can create/deploy Lambda functions.</p>
                                     
                                 </p>
                             </div>
@@ -190,9 +195,13 @@ There is an assumption that you have access to log in to the AWS Console and can
                             <div class="brief">
                                 <p>
                                     
-                                    Felix on the SpiffWorkflow Discord Channel asked:
-hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve. Is SpiffWorkflow able to do this?
-Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix&rsquo;s questions.
+                                    <p>Felix on the <a href="https://discord.gg/F6Kb7HNK7B">SpiffWorkflow Discord Channel</a> asked:</p>
+<blockquote>
+<p>hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve.
+Is SpiffWorkflow able to do this?</p>
+</blockquote>
+<p>Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix&rsquo;s questions.
+In this diagram, we model a case where three people are asked to approve a request, but only two of the three people actually need to take action for the request to go through.</p>
                                     
                                 </p>
                             </div>
@@ -228,7 +237,10 @@ Alex (our modeling and business analysis expert) built the following diagram to 
                             <div class="brief">
                                 <p>
                                     
-                                    This is a deep dive into BPMN 2.0 Messages and how we implemented them in our open-source project SpiffWorkflow. This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other. This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.
+                                    <p><img src="intro.png" alt="Intro diagram"></p>
+<p>This is a deep dive into BPMN 2.0 <strong>Messages</strong> and how we implemented them in our open-source project SpiffWorkflow.
+This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other.
+This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.</p>
                                     
                                 </p>
                             </div>
@@ -264,8 +276,13 @@ Alex (our modeling and business analysis expert) built the following diagram to 
                             <div class="brief">
                                 <p>
                                     
-                                    A Simple Default One of the benefits of both BPMN and Python is they have long low-sloped learning curves. Things are simple by default, but have the ability to grow to meet far more complex situations. As we introduce new concepts into SpiffWorkflow, we want the default behavior to be equally intuitive and powerful.
-In SpiffWorkflow, data follows the process flow. Each task receives all data from the previously executed task.
+                                    <p><img src="intro.png" alt="Intro diagram"></p>
+<h3 id="a-simple-default">A Simple Default</h3>
+<p>One of the benefits of both BPMN and Python is they have long low-sloped learning curves.
+Things are simple by default, but have the ability to grow to meet far more complex situations.
+As we introduce new concepts into SpiffWorkflow, we want the default behavior to be equally intuitive and powerful.</p>
+<p>In SpiffWorkflow, data follows the process flow.
+Each task receives all data from the previously executed task.</p>
                                     
                                 </p>
                             </div>

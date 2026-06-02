@@ -2,12 +2,16 @@
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
-<meta property="og:title" content="Features" />
-<meta property="og:description" content="A list of the major features of SpiffArena and its components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors, and more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/pages/features2/" /><meta property="og:image" content="http://localhost:1313/images/opengraph/home.png" /><meta property="article:section" content="pages" />
-<meta property="article:published_time" content="2022-12-27T16:05:00-05:00" />
-<meta property="article:modified_time" content="2022-12-27T16:05:00-05:00" />
+<meta property="og:url" content="http://localhost:1313/pages/features2/">
+	<meta property="og:site_name" content="SpiffWorkflow">
+	<meta property="og:title" content="Features">
+	<meta property="og:description" content="A list of the major features of SpiffArena and its components. SpiffWorkflow, BPMN Diagram Editor, form editors, service connectors, and more...">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="pages">
+		<meta property="article:published_time" content="2022-12-27T16:05:00-05:00">
+		<meta property="article:modified_time" content="2022-12-27T16:05:00-05:00">
+		<meta property="og:image" content="http://localhost:1313/images/opengraph/home.png">
 
 
 
@@ -40,8 +44,9 @@
     
 
     
-
     
+    <section class="hero is-fullheight is-default is-bold">
+  
 
 <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
@@ -85,7 +90,7 @@
   </div>
 </nav>
 
-
+  
 
 <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
@@ -124,93 +129,391 @@
 </div>
 </nav>
 
-
-<section class="section is-medium  ">
+  
+<div class="hero-body">
   <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">Features</h1>
-        <h5 class="subtitle is-5 is-muted">These are just a handful of the major features available</h5>
-        <div class="divider"></div>
+    <div class="columns is-vcentered">
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-2 is-bold is-spaced">
+          Process Automation with BPMN and Python
+        </h1>
+        
+        <h2 class="subtitle is-5 is-muted">
+          Connect people and software together in a way that makes sense to everyone.
+        </h2>
+        
+        <p>
+          <a id="spiff-works" class="button cta rounded secondary-btn raised" href="https://spiff.works" onclick="">
+            Available Now at SpiffWorks
+          </a>
+        </p>
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="image">
+          <img src="/images/illustrations/intro.png" alt="Description">
+        </figure>
       </div>
     </div>
-    <div class="content">
-      <h3 id="user-tasks----gather-information-from-people">User Tasks &ndash; Gather information from people</h3>
-<p>You can create highly complex web forms to gather information from end users - injecting this information into your workflow process.
-We are using the excellent and feature-complete open-source <a href="https://react-jsonschema-form.readthedocs.io/en/latest/">React Json Form Schema</a> with features such as nested sections, validation, and custom components.
-A new form builder is in the works to make getting started easy, while expert users can take full control of all this tool has to offer.</p>
-<h3 id="service-tasks----send-and-retrieve-information-from-other-software">Service Tasks &ndash; Send and retrieve information from other software</h3>
-<p>Service Tasks allow you to configure connections to third-party applications.
-You can pull live data from an AWS DynamoDB Server, or push a message out to a Slack channel.
-Following a basic pattern, you can add new connectors to your own software services by writing a small bit of Python code.
-Many connectors are in the works (AWS services, Postgres) and new ones are easy to create.</p>
-<p><img src="../../images/features/services.gif" alt="Services Video"></p>
-<h3 id="pools-and-lanes----who-is-in-charge-right-now">Pools and Lanes &ndash; Who is in charge right now?</h3>
-<p>Pools and Lanes clearly and accurately describe the handoff of authority between groups of people, making it crystal clear who is responsible for each task.
-This is great for approval processes.
-For example&hellip;</p>
-<blockquote>
-<p>&ldquo;Does Jason deserve that Heavy Metal Cruise Ship vacation in February?&rdquo;
-(He definitely does)</p>
-</blockquote>
-<p>Or the handoff of a complex job from one team to the next</p>
-<blockquote>
-<p>The field crew is done.
-It&rsquo;s time for Steve to do the computations.</p>
-</blockquote>
-<h3 id="timer-events---watching-the-clock">Timer Events - Watching the clock</h3>
-<p>Computers watch clocks.
-On average, one could say it is pretty much all they do.
-Rather than have the computers constantly remind us of what time it is, perhaps they could just deal with the problem, kick off the process, make the request, check the feedback, send the reminder.</p>
-<blockquote>
-<p>&ldquo;The Field Crew completed the survey.
-It&rsquo;s been on Steve&rsquo;s desk for two days.
-It&rsquo;s time to ping Agnes and get this back on track.&rdquo;</p>
-</blockquote>
-<p><img src="../../images/features/timer.gif" alt="Timer Video"></p>
-<h3 id="messages---listening-to-the-world">Messages - Listening to the World</h3>
-<p>Service Tasks are how SpiffWorkflow speaks to the world; messages are how SpiffWorkflow listens.
-Message Events allow you to start new processes, cancel existing processes, or pause and wait for some external communication.
-Learn more in <a href="/posts/deep_dives/messages">our article on Messages</a>.</p>
-<blockquote>
-<p>&ldquo;We told our finance software to fire off an API call to SpiffWorkflow whenever a payment is processed.
-Then SpiffWorkflow does all the legwork of communicating to people via their preferred system &ndash; email, phone, Slack, text &ndash; and it creates the paper trail so there is a record of what went down&hellip;&rdquo;</p>
-</blockquote>
-<h3 id="perspectives----custom-reporting-tools">Perspectives &ndash; Custom Reporting Tools</h3>
-<p>It doesn&rsquo;t always make sense to do things in the order in which they are received.
-Urgent requests may need to be prioritized, and &ldquo;urgent&rdquo; can be defined in many ways.
-Perspectives allow you to report on processes in custom ways.
-You can extract important information from the workflow as it executes and make this data available to your lists.
-Now you can easily find which tasks you should pick up next.</p>
-<p><img src="../../images/features/perspectives.gif" alt="Timer Video"></p>
-<h3 id="decision-tables">Decision Tables</h3>
-<p>Decision tables (DMN / Decision Model Notation) look a bit like spreadsheets and allow you to articulate core business rules in ways that are easy to understand, update, and maintain.
-These tables can be directly embedded and referenced from your diagrams.</p>
-<p><img src="../../images/features/decisions.gif" alt="Markdown Video"></p>
-<h3 id="granular-permissions">Granular Permissions</h3>
-<p>SpiffArena can be connected to any OpenID system.
-It is possible to manage user authentication outside SpiffWorkflow using public systems like Google and Facebook or private systems with products like KeyCloak.
-At the same time, SpiffArena comes with a permission system that can grow with you.
-You can use the same diagram tools described above to control permissions for all of your users - setting up permission tables that can be simple (everyone can start any process) to very specific (&ldquo;This API endpoint is only accessible to the accounting department lead&rdquo;).</p>
-<h3 id="built-in-editors">Built-in Editors</h3>
-<p>With editors for Python, Markdown, and JSON, you can quickly jump from drawing the diagram to incorporating the small bits of code, documentation, and end-user instructions in a way that is fast, simple, and intuitive.</p>
-<p><img src="../../images/features/markdown.gif" alt="Markdown Video"></p>
-<h3 id="data-encapsulation">Data Encapsulation</h3>
-<p>SpiffWorkflow supports BPMN&rsquo;s Data Objects, Data Inputs, and Data Outputs, allowing you to visually control what data is accessible.
-When composing diagrams within diagrams, you can declare the expected variables that will be provided and the ones that will be returned, keeping your workflows clean, consistent, and easy to understand.
-Learn more in <a href="/posts/deep_dives/data_objects">our article on Data Objects</a>.</p>
-<h3 id="python-editor-and-unit-tests">Python Editor and Unit Tests</h3>
-<p>The robust Python editor allows you to write small bits of code that help modify data (say, user input on a form) to fit a certain purpose (sending a formatted message to Slack).
-To make these modifications you can use Script Tasks.
-And we provide a way to test them to make sure they do what you expect them to do!</p>
-<p><img src="../../images/features/scripts.gif" alt="python editor"></p>
+  </div>
+</div>
+  
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/status.svg">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/uva.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+    
 
+    
+    
+<section class="section section-feature-grey is-medium" id="section3">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="has-text-centered">
+          <img class="pushed-image" src="/images/build_a_diagram.gif">
+        </div>
+      </div>
+    </div>
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">A Powerful Low Code Platform</h2>
+      <h3 class="subtitle is-5 is-muted">Build your first diagram in minutes. But don&#39;t let the simplicity fool you. SpiffWorkflow is a powerful platform that can handle the most complex of business processes.</h3>
+    </div>
+
+    <p class="has-text-centered mt-20">
+      <a  href="https://www.youtube.com/watch?v=876q2s5fwUY&amp;t=1s">
+        <span class="button signup-button rounded primary-btn raised">
+          View Full Video
+        </span>
+      </a>
+    </p>
+  </div>
+</section>
+    
+
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Case Study</h2>
+      <h3 class="subtitle is-muted light-text">Featured in IEEE Software, Jan 2023</h3>
+    </div>
+
+    <div class="content-wrapper">
+        <figure class="reference">
+          <blockquote>
+            How our software development team used an open source Python library and the popular modeling notation, BPMN, to shed light on a set of complex approval processes at a university.
+          </blockquote>
+          <div class="author">
+            <a href="/ieee_spiffworkflow_article.pdf"><img src="/images/ieee.png" alt=""/></a>
+            <br/>
+            <a href="/ieee_spiffworkflow_article.pdf" class="button btn-align-md accent-btn raised">View PDF</a>
+          </div>
+        </figure>
     </div>
   </div>
 </section>
 
 
 
+
+
+    
+    
+<section class="section section-feature-grey is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Ready To Go SpiffWorkflow</h2>
+      <h3 class="subtitle is-5 is-muted">A Hosted and managed instance of SpiffWorkflow is now available at SpiffWorks.  We have everything you need to get started quickly.  We will be there to help you build your first diagram and integrate SpiffWorkflow into your existing organization.</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column">
+          <div class="feature-card tile-secondary is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-icon">
+                <img src="/images/features/icons/spiffworks.png">
+            </div>
+            <div class="card-text">
+                <p>Let us set up and host SpiffWorkflow for you.  We can help you get started, and provide ongoing support and maintenance.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://spiff.works" class="button btn-align-md accent-btn raised">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium" id="section2">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">A Thriving Open Source Community</h1>
+        <h3 class="subtitle is-5 is-muted">We are open source, releasing much of our software under the LGPLv3.  We welcome contributions from the community and are happy to help you get started.  We make contributions to the open source community on a daily basis.</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-7 mt-60">
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/social/star-history.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">1800&#43; Stars</span>
+
+                <span class="icon-box-text">Continuous growth and usage for over a decade, with a thriving community of contributors.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/social/contributors.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">40&#43; Contributors</span>
+
+                <span class="icon-box-text">Contributors from across the world, from the States, Germany, Sweden, South America, the Netherlands, and more.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/social/discord.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">500&#43; Discord Members</span>
+
+                <span class="icon-box-text">A growing community of users and contributors, with a dedicated Discord server, and regular community calls and AMAs.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Listen to the Pod Cast</h2>
+      <h3 class="subtitle is-muted light-text">Featured on The Real Python Podcast, Feburary 2023</h3>
+    </div>
+
+    <div class="content-wrapper">
+        <figure class="reference">
+          <blockquote>
+            We discuss the concept of low-code software tools. Dan also talks about how SpiffWorkflow aims at getting non-developers within an organization involved in development.
+          </blockquote>
+          <div class="author">
+            <a href="https://realpython.com/podcasts/rpp/144/"><img src="/images/podcast.avif" alt=""/></a>
+            <br/>
+            <a href="https://realpython.com/podcasts/rpp/144/" class="button btn-align-md accent-btn raised">Listen Now</a>
+          </div>
+        </figure>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+    <section class="section section-light-grey is-medium" id="contact">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">Contact Us</h2>
+      <h3 class="subtitle is-5 is-muted">Complete the form below, and we will get in contact with you shortly!</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+    hbspt.forms.create({
+        region: "na1",
+        portalId: "42562038",
+        formId: "2f6bed8b-3c81-4ea9-a475-91e8e0a69c1d",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/contact_thankyou?" + formData;
+          }, 250); 
+        }
+    });
+</script>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Join the Innovators</h2>
+      <h3 class="subtitle is-5 light-text">Join these innovators and help us continue to refine and improve this important open source project.</h3>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="owl-carousel owl-carousel-testimonial">
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              I’m proud of our investment in SpiffWorkflow. It’s in line with our mission and core principles of purposeful technology, public good, and openness. I am excited about the future and looking forward to working with you.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/jarrad.png" alt=""/>
+              <h5>Jarrad Hope</h5>
+              <span>CoFounder - Status.im</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/ron.png" alt=""/>
+              <h5>Ron Hutchins</h5>
+              <span>VP - IT - UVA</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              Organizations large and small need SpiffWorkflow! SpiffWorkflow makes it possible to execute adaptable business processes that more than one person, more than one department, can understand.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/demetrick.png" alt=""/>
+              <h5>Demetrick Ferguson</h5>
+              <span>Portfolio Performance and Governance - Status</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              Spiffworkflow streamlines our execution of BPMN workflows, and its extensibility is a boon for us. The authors’ willingness to respond to our inquiries and feedback further enriches our experience with the library.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/brian2.png" alt=""/>
+              <h5>Brian</h5>
+              <span>CTO - Series C Startup</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              Collaborating on the SpiffWorkflow project has been a delight. Passionate team, open to ideas, and a powerful product combining BPMN with Python&#39;s agility. Best wishes for its success!
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/sasha.png" alt=""/>
+              <h5>Aleksandra Yarokhovich</h5>
+              <span>Business Analyst - Status</span>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="testimonial">
+            <blockquote>
+              We are using spiff workflow in our serverless travel booking engine. It allows us rapid change of business logic with minimum development effort, and in the long run to improve the maintainability thanks to the graphical visualisation.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/rajat.png" alt=""/>
+              <h5>Rajat Roy</h5>
+              <span>Software Engineer</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+
+
+    
+
+    
+    <section class="section section is-medium" id="newsletter">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">News Letter</h2>
+      <h3 class="subtitle is-5 is-muted">Join our mailing list to get quarterly updates on our progress.</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "42562038",
+        formId: "1c67d053-d29d-4ea7-a426-de96c5ed0d42",
+        onFormSubmit: function ($form) {
+          console.log("Form Submitted");
+          setTimeout(function () {
+            console.log("Time out!")
+            let formData = $form.serialize();
+            window.location = "/pages/newsletter_thankyou?" + formData;
+          }, 250); 
+        }
+      });
+    </script>
+  </div>
+</section>
+    
+
+    
     
 <footer class="footer footer-dark">
   <div class="container">
@@ -348,25 +651,14 @@ And we provide a way to test them to make sure they do what you expect them to d
   </div>
 </footer>
 
+    
 
     
     <div id="backtotop"><a href="#"></a></div>
 
     
-<div class="sidebar">
-  <div class="sidebar-header">
-    <img src="/images/logos/%25!s%28%3cnil%3e%29.svg">
-    <a class="sidebar-close" href="javascript:void(0);">
-      <i data-feather="x"></i>
-    </a>
-  </div>
-  <div class="inner">
-    <ul class="sidebar-menu">
-    </ul>
-  </div>
-</div>
-
     
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>

@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Deep Dive Articles on SpiffWorkflow</title>
-    <link>http://localhost:1313/posts/deep_dives/</link>
-    <description>Recent content in Deep Dive Articles on SpiffWorkflow</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 06 Apr 2023 14:09:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/deep_dives/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Deploying and Integrating With SpiffArena</title>
-      <link>http://localhost:1313/posts/deep_dives/deploy_integrate/</link>
-      <pubDate>Thu, 06 Apr 2023 14:09:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/deep_dives/deploy_integrate/</guid>
-      <description>Deploying and Integrating With SpiffArena This guide shows you how to deploy the demo Connector Proxy as an AWS Lambda Function as well as how to integrate it with SpiffArena. The Getting Started Guide will be used as the basis for integration but the steps should easily map to any custom installation.&#xA;There is an assumption that you have access to log in to the AWS Console and can create/deploy Lambda functions.</description>
-    </item>
-    <item>
-      <title>Parallel Approval Processes</title>
-      <link>http://localhost:1313/posts/deep_dives/approval/</link>
-      <pubDate>Mon, 02 Jan 2023 14:09:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/deep_dives/approval/</guid>
-      <description>Felix on the SpiffWorkflow Discord Channel asked:&#xA;hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve. Is SpiffWorkflow able to do this?&#xA;Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix&amp;rsquo;s questions.</description>
-    </item>
-    <item>
-      <title>BPMN Messages in SpiffWorkflow</title>
-      <link>http://localhost:1313/posts/deep_dives/messages/</link>
-      <pubDate>Wed, 21 Sep 2022 10:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/deep_dives/messages/</guid>
-      <description>This is a deep dive into BPMN 2.0 Messages and how we implemented them in our open-source project SpiffWorkflow. This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other. This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.</description>
-    </item>
-    <item>
-      <title>Data Objects in SpiffWorkflow</title>
-      <link>http://localhost:1313/posts/deep_dives/data_objects/</link>
-      <pubDate>Tue, 13 Sep 2022 10:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/deep_dives/data_objects/</guid>
-      <description>A Simple Default One of the benefits of both BPMN and Python is they have long low-sloped learning curves. Things are simple by default, but have the ability to grow to meet far more complex situations. As we introduce new concepts into SpiffWorkflow, we want the default behavior to be equally intuitive and powerful.&#xA;In SpiffWorkflow, data follows the process flow. Each task receives all data from the previously executed task.</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Deep Dive Articles on SpiffWorkflow</title>
+		<link>http://localhost:1313/posts/deep_dives/</link>
+		<description>Recent content in Deep Dive Articles on SpiffWorkflow</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 06 Apr 2023 14:09:00 -0500</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/posts/deep_dives/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Deploying and Integrating With SpiffArena</title>
+				<link>http://localhost:1313/posts/deep_dives/deploy_integrate/</link>
+				<pubDate>Thu, 06 Apr 2023 14:09:00 -0500</pubDate>
+				<guid>http://localhost:1313/posts/deep_dives/deploy_integrate/</guid>
+				<description>&lt;h1 id=&#34;deploying-and-integrating-with-spiffarena&#34;&gt;Deploying and Integrating With SpiffArena&lt;/h1&gt;&#xA;&lt;p&gt;This guide shows you how to deploy the demo &lt;code&gt;Connector Proxy&lt;/code&gt; as an &lt;code&gt;AWS Lambda Function&lt;/code&gt; as well as how to integrate it with &lt;a href=&#34;https://www.spiffworkflow.org/pages/spiffarena/&#34;&gt;SpiffArena&lt;/a&gt;.&#xA;The &lt;a href=&#34;https://www.spiffworkflow.org/posts/articles/get_started/&#34;&gt;Getting Started Guide&lt;/a&gt; will be used as the basis for integration but the steps should easily map to any custom installation.&lt;/p&gt;&#xA;&lt;p&gt;There is an assumption that you have access to log in to the AWS Console and can create/deploy Lambda functions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Parallel Approval Processes</title>
+				<link>http://localhost:1313/posts/deep_dives/approval/</link>
+				<pubDate>Mon, 02 Jan 2023 14:09:00 -0500</pubDate>
+				<guid>http://localhost:1313/posts/deep_dives/approval/</guid>
+				<description>&lt;p&gt;Felix on the &lt;a href=&#34;https://discord.gg/F6Kb7HNK7B&#34;&gt;SpiffWorkflow Discord Channel&lt;/a&gt; asked:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;hey all, I am designing an approval process using spiff-workflow, a multi instances user task has 3 assignees, the task should complete if more than 2 users approve.&#xA;Is SpiffWorkflow able to do this?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Alex (our modeling and business analysis expert) built the following diagram to think through how best to describe a set of parallel tasks that can interrupt each other in a way that would support Felix&amp;rsquo;s questions.&#xA;In this diagram, we model a case where three people are asked to approve a request, but only two of the three people actually need to take action for the request to go through.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>BPMN Messages in SpiffWorkflow</title>
+				<link>http://localhost:1313/posts/deep_dives/messages/</link>
+				<pubDate>Wed, 21 Sep 2022 10:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/posts/deep_dives/messages/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;intro.png&#34; alt=&#34;Intro diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is a deep dive into BPMN 2.0 &lt;strong&gt;Messages&lt;/strong&gt; and how we implemented them in our open-source project SpiffWorkflow.&#xA;This will be primarily of interest to people who care about the BPMN 2.0 standard or are developing larger applications with SpiffWorkflow that would benefit from having their BPMN diagrams communicate with each other.&#xA;This is thick material, but there is a beautiful idea here well worth understanding and beneficial to anyone who is interested in prolonged communications between complex systems.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Data Objects in SpiffWorkflow</title>
+				<link>http://localhost:1313/posts/deep_dives/data_objects/</link>
+				<pubDate>Tue, 13 Sep 2022 10:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/posts/deep_dives/data_objects/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;intro.png&#34; alt=&#34;Intro diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;a-simple-default&#34;&gt;A Simple Default&lt;/h3&gt;&#xA;&lt;p&gt;One of the benefits of both BPMN and Python is they have long low-sloped learning curves.&#xA;Things are simple by default, but have the ability to grow to meet far more complex situations.&#xA;As we introduce new concepts into SpiffWorkflow, we want the default behavior to be equally intuitive and powerful.&lt;/p&gt;&#xA;&lt;p&gt;In SpiffWorkflow, data follows the process flow.&#xA;Each task receives all data from the previously executed task.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
